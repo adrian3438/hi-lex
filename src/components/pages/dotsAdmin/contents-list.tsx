@@ -9,7 +9,7 @@ import api from "@/lib/api";
 import { useRouter } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
-import calCulateIndex from "@/components/calculateIndex";
+import calculateIndex from "@/components/calculateIndex";
 
 interface Props {
     contentsType : any,
@@ -134,7 +134,7 @@ export default function ContentsListPage ({
                                 <tr key={index}>
                                     <td onClick={()=>router.push(`/dotsAdmin/contents-management/contents?c=${contentsType}&id=${list?.contentDetailKrId}&lang=${'KR'}`)}>
                                     <span className="readOnly">
-                                        {calCulateIndex(page , size , totalCount , index)}
+                                        {calculateIndex(page , size , totalCount , index)}
                                     </span>
                                     </td>
                                     <td onClick={()=>router.push(`/dotsAdmin/contents-management/contents?c=${contentsType}&id=${list?.contentDetailKrId}&lang=${'KR'}`)}>

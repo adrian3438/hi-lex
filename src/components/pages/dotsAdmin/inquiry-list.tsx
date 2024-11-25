@@ -7,7 +7,7 @@ import ListSizeBox from "@/components/DotsAdmin/List/ListSizeBox";
 import api from "@/lib/api";
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
-import calCulateIndex from "@/components/calculateIndex";
+import calculateIndex from "@/components/calculateIndex";
 
 interface Props {
     inquiryType : string
@@ -91,7 +91,7 @@ export default function InquiryListPage ({
                             <tr key={list?.ID}>
                                 <td>
                                     <span className="readOnly">
-                                        {calCulateIndex(page , size , totalCount , index)}
+                                        {calculateIndex(page , size , totalCount , index)}
                                     </span>
                                 </td>
                                 <td>
