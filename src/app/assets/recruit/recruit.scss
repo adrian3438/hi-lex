@@ -1,0 +1,262 @@
+.banner {
+  .banner-text {
+    height: calc(100% - 260px);
+    padding-top: 80px;
+  }
+}
+
+.banner-btn {
+  text-align: center;
+  a {
+    display: inline-block;
+    color: #fff;
+    font-size: 18px;
+    border: 1px solid #fff;
+    padding: 19px 70px;
+    span {
+      vertical-align: middle;
+      display: inline-block;
+      width: 13px;
+      height: 21.5px;
+      margin: 0 0 0 10px;
+      background: url("/images/common/sub/right-arrow-icon.svg") no-repeat 0 0;
+    }
+  }
+}
+
+.recruit {
+  .section-01 {
+    margin-top: 100px;
+    margin-bottom: 125px;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px 170px;
+    align-items: flex-start;
+    .recruiter {
+      position: relative;
+      padding: 250px 0;
+      width: 40%;
+      h3 {
+        color: #000;
+        font-size: 24px;
+        font-weight: 600;
+        margin-bottom: 80px;
+      }
+      ul {
+        margin-bottom: 60px;
+        li {
+          color: #333;
+          font-size: 18px;
+          margin-top: 23px;
+          padding-left: 40px;
+          background-repeat: no-repeat;
+          background-position: 0 center;
+          line-height: 27px;
+          &:nth-child(1) {
+            background-image: url("/images/common/sub/recuritor-icon.svg");
+          }
+          &:nth-child(2) {
+            background-image: url("/images/common/sub/mail-icon.svg");
+          }
+          &:nth-child(3) {
+            background-image: url("/images/common/sub/tel-icon.svg");
+          }
+        }
+      }
+      &:before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: #eee;
+        display: block;
+        content: "";
+        width: 200%;
+        height: 100%;
+        z-index: -1;
+        border-radius: 0 30px 30px 0;
+        transform: translateX(-50%);
+      }
+    }
+    .process {
+      width: 60%;
+      h3 {
+        color: #000;
+        font-size: 24px;
+        margin-bottom: 125px;
+        font-weight: 600;
+      }
+      ol {
+        position: relative;
+        overflow: hidden;
+        &:before {
+          position: absolute;
+          top: 75px;
+          left: 37px;
+          width: 1px;
+          height: 100%;
+          background-color: #ddd;
+          display: block;
+          content: "";
+          z-index: -1;
+        }
+        li {
+          margin-top: 125px;
+          min-height: 75px;
+          padding-left: 122px;
+          background-repeat: no-repeat;
+          background-position: 0 0;
+          &:nth-child(1) {
+            margin-top: 0;
+            background-image: url("/images/recruit/process-01.png");
+          }
+          &:nth-child(2) {
+            background-image: url("/images/recruit/process-02.png");
+          }
+          &:nth-child(3) {
+            background-image: url("/images/recruit/process-03.png");
+          }
+          &:nth-child(4) {
+            background-image: url("/images/recruit/process-04.png");
+          }
+          dl {
+            padding-top: 10px;
+            dt {
+              color: #333;
+              font-size: 24px;
+              font-weight: 600;
+            }
+            dd {
+              margin-top: 10px;
+              color: #999;
+              font-size: 18px;
+              line-height: 27px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .section-02 {
+    display: flex;
+    gap: 30px 0;
+    .talent-title {
+      width: 45%;
+      > div {
+        position: sticky;
+        top: 30px;
+      }
+      h3 {
+        color: #000;
+        font-size: 64px;
+        font-weight: 600;
+        margin-bottom: 10px;
+      }
+      p {
+        color: #999;
+        font-size: 18px;
+        line-height: normal;
+      }
+    }
+    .talent-detail {
+      width: 55%;
+      > div {
+        margin-top: 145px;
+        padding-left: 175px;
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        &:first-child {
+          margin-top: 0;
+        }
+        &:nth-child(1) {
+          background-image: url("/images/common/sub/passionate-icon.svg");
+        }
+        &:nth-child(2) {
+          background-image: url("/images/common/sub/communication-icon.svg");
+        }
+        &:nth-child(3) {
+          background-image: url("/images/common/sub/creation-icon.svg");
+        }
+        h4 {
+          padding-top: 10px;
+          color: #333;
+          font-size: 48px;
+          font-weight: 600;
+          margin-bottom: 44px;
+        }
+        > ul {
+          > li {
+            margin-top: 95px;
+            &:first-child {
+              margin-top: 0;
+            }
+            p {
+              margin-top: 20px;
+              line-height: 30px;
+              color: #999;
+              font-size: 18px;
+              &:first-child {
+                margin-top: 0;
+                color: #000;
+                font-size: 22px;
+
+              }
+
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .recruit {
+    .section-01 {
+      gap: 30px 50px;
+    }
+    .section-02 {
+      flex-wrap: wrap;
+      .talent-title {
+        width: 100%;
+        > div {
+          position: static;
+        }
+      }
+      .talent-detail {
+        width: 100%;
+      }
+    }
+  }
+}
+@media screen and (max-width: 767px) {
+  .recruit {
+    .section-01 {
+      gap: 30px 0;
+      flex-wrap: wrap;
+      .recruiter {
+        width: 100%;
+        padding: 50px 0;
+      }
+      .process {
+        width: 100%;
+      }
+    }
+
+    .section-02 {
+      flex-wrap: wrap;
+      .talent-title {
+        width: 100%;
+        > div {
+          position: static;
+        }
+      }
+      .talent-detail {
+        width: 100%;
+        > div {
+          padding-left: 0;
+          padding-top: 130px;
+        }
+      }
+    }
+  }
+}

@@ -1,3 +1,55 @@
 {
-    "header_1": "한글"
+    "header_1": "COMPANY",
+    "header_1_1": "CEO GREETINGS",
+    "header_1_2": "ABOUT US",
+    "header_1_3": "MANAGEMENT PHILOSOPY",
+    "header_1_4": "HISTORY",
+    "header_1_5": "AFFILIATE COMPANIES",
+    "header_1_6": "LOCATIONS",
+    "header_1_7": "CONTACT US",
+    "header_2": "PRODUCTS",
+
+    "header_3": "R&D",
+
+    "header_4": "SUSTAINABILITY",
+    "header_4_1": "윤리경영",
+    "header_4_2": "클린신고",
+    "header_4_3": "ESG 소개",
+    "header_4_4": "환경 경영",
+    "header_4_5": "지속가능경영보고서",
+    "header_4_6": "재무정보",
+
+    "header_5": "CAREER",
+    "header_5_1": "직무소개",
+    "header_5_2": "인사복지제도",
+    "header_5_3": "인재상",
+    "header_5_4": "채용정보",
+
+    "header_6": "NEWS",
+    "header_6_1": "PRESS RELEASE",
+    "header_6_2": "DAEDONG DOOR STORY",
+    "header_6_3": "FAIRS AND EVENTS",
+    "header_6_4": "MEDIA DOWNLOAD",
+
+    "footer_1": "회사소개",
+    "footer_1_1": "기업개요",
+    "footer_1_2": "인사말",
+    "footer_1_3": "연혁",
+    "footer_1_4": "연구개발",
+    "footer_2": "사업분야",
+    "footer_2_1": "그린에너지",
+    "footer_2_2": "플랜트 솔루션",
+    "footer_2_3": "계측기",
+    "footer_2_4": "마린 솔루션",
+    "footer_3": "홍보센터",
+    "footer_3_1": "홍보센터",
+    "footer_3_2": "발맥스 뉴스",
+    "footer_3_3": "고객문의",
+    "footer_4": "인재채용",
+    "footer_5": "개인정보보호방침",
+    "footer_6": "(주)발맥스 기술",
+    "footer_7": "최고의 에너지 솔루션 기업",
+    "footer_8": "주소: 경기도 안양시 동안구 벌말로 66 평촌역하이 필드빌딩 A동 1301~1308",
+
+    "language": "EN"
 }

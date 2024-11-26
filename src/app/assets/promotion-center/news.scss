@@ -1,0 +1,154 @@
+/* 발맥스 뉴스 - 목록 */
+.news {
+  .list {
+    > ul {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 100px 3.5%;
+      > li {
+        width: 31%;
+        > a {
+          display: inline-block;
+          width: 100%;
+          .image-area {
+            img {
+              width: 100%;
+              height: auto;
+              aspect-ratio: 450/277;
+              border-radius: 10px;
+            }
+          }
+          .info-area {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px 0 10px;
+            .type {
+              color: #BD0200;
+              font-weight: 600;
+            }
+            .date {
+              color: #999;
+            }
+          }
+          .title-area {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            color: #333;
+            font-size: 18px;
+            font-weight: 600;
+          }
+        }
+      }
+    }
+    .pagination {
+      margin-top: 120px;
+      > ul {
+        justify-content: center;
+      }
+    }
+  }
+}
+@media screen and (max-width: 767px) {
+  .portfolio {
+    .list {
+      ul {
+        > li {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .news {
+    .list {
+      > ul {
+        > li {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+/* 발맥스 뉴스 - 상세 */
+.news-detail {
+  > .content-detail {
+    max-width: 1000px;
+    margin: 0 auto;
+    .content-detail-header {
+      border-bottom: 1px solid #eee;
+      margin-bottom: 55px;
+      .category {
+        font-size: 18px;
+        margin-bottom: 10px
+      }
+      h3 {
+        font-size: 36px;
+        font-weight: 600;
+        color: #333;
+        line-height: 45px;
+        margin-bottom: 15px;
+      }
+      .date {
+        font-size: 18px;
+        line-height: 24px;
+        color: #999;
+        margin-bottom: 25px;
+        font-weight: 600;
+      }
+    }
+    .detail {
+      padding-bottom: 65px;
+      line-height: 35px;
+    }
+    .title-list {
+      margin-bottom: 25px;
+      > div {
+        padding: 35px 50px;
+        box-sizing: border-box;
+        span {
+          padding-left: 20px;
+          margin-right: 50px;
+        }
+        a {
+          display: block;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          color: #666;
+        }
+        &:first-child {
+          display: flex;
+          border-top: 1px solid #ddd;
+          border-bottom: 1px solid #ddd;
+          span {
+            background: url("/images/common/sub/blog_view_arrow_up.png") no-repeat 0 50%;
+          }
+        }
+        &:last-child {
+          display: flex;
+          border-bottom: 1px solid #666;
+          span {
+            background: url("/images/common/sub/blog_view_arrow_down.png") no-repeat 0 50%;
+          }
+        }
+      }
+    }
+    .btn-box {
+      display: flex;
+      justify-content: center;
+      button {
+        border: none;
+        padding: 10px 25px;
+        font-size: 17px;
+        color: #fff;
+        font-weight: 400;
+        background-color: #444;
+        border-radius: 5px;
+      }
+    }
+  }
+}

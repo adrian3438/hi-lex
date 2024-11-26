@@ -3,9 +3,9 @@ header {
   border-bottom: 1px solid rgba(253, 152, 151, 0.50);
   min-width: 360px;
   > div {
-    width: 1440px;
+    width: 1600px;
     margin: 0 auto;
-    padding: 37px 0;
+    padding: 30px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -122,8 +122,8 @@ header {
       display: flex;
       align-items: center;
       .language-button {
-        color: #E83836;
-        font-size: 20px;
+        color: #0E7DC8;
+        font-size: 18px;
       }
       > div {
         display: none;
@@ -247,7 +247,7 @@ header {
   }
 }
 
-@media screen and (max-width: 1439px) { //1440px 이하
+@media screen and (max-width: 1599px) { //1600px 이하
   header {
     > div {
       width: auto;
@@ -297,7 +297,7 @@ footer {
   min-width: 360px;
   background: #616E7D;
   .footer-area1 {
-    width: 1440px;
+    width: 1600px;
     margin: 0 auto;
     padding: 118px 0;
     display: flex;
@@ -351,7 +351,7 @@ footer {
       flex-wrap: wrap;
       justify-content: space-between;
       align-items: end;
-      width: 1440px;
+      width: 1600px;
       margin: 0 auto;
       .copyright-address {
         display: flex;
@@ -404,7 +404,7 @@ footer {
     }
   }
 }
-@media screen and (max-width: 1439px) { //1440px 이하
+@media screen and (max-width: 1599px) { //1600px 이하
   footer {
     .footer-area1 {
       width: auto;
@@ -420,15 +420,15 @@ footer {
 }
 
 
-/* Container - 1440px 벗어나는 경우가 없을 시 */
+/* Container - 1600px 벗어나는 경우가 없을 시 */
 .container-wrap {
   padding: 120px 0 175px;
   .container {
-    width: 1440px;
+    width: 1600px;
     margin: 0 auto;
   }
 }
-@media screen and (max-width: 1439px) { //1440px 이하
+@media screen and (max-width: 1599px) { //1600px 이하
   .container-wrap {
     padding: 120px 20px 175px;
     .container {

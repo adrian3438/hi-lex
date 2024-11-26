@@ -1,0 +1,384 @@
+/* 마린솔루션 - 선박용 연료 공급시스템 */
+.fuel-gas-supply-system {
+  .section-01 {
+    margin-bottom: 125px;
+    h3 {
+      font-size: 52px;
+      color: #000;
+      font-weight: 600;
+      margin-bottom: 65px;
+    }
+    p {
+      color: #666;
+      line-height: 30px;
+      margin-top: 15px;
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+  }
+  .section-02 {
+    margin-bottom: 125px;
+    > div {
+      > img {
+        width: 48%;
+        height: auto;
+      }
+      ul{
+        width: 48%;
+        li {
+          padding: 0 0 34px 142px;
+          background-repeat: no-repeat;
+          background-position: 0 0;
+          &.composition-01 {
+            background-image: url("/images/business-area/marine-solution/composition-01.png");
+          }
+          &.composition-02 {
+            background-image: url("/images/business-area/marine-solution/composition-02.png");
+          }
+          &.composition-03 {
+            background-image: url("/images/business-area/marine-solution/composition-03.png");
+          }
+          &.composition-04 {
+            background-image: url("/images/business-area/marine-solution/composition-04.png");
+          }
+          > dl {
+            > dt {
+              color: #333;
+              font-size: 18px;
+              margin-bottom: 24px;
+              font-weight: 600;
+            }
+            > dd {
+              padding-left: 22px;
+              background: url("/images/common/sub/bullet-02.svg") no-repeat 0 7px;
+              color: #666;
+              margin-top: 12px;
+              line-height: 23px;
+            }
+          }
+        }
+      }
+      &.section-02-01 {
+        display: flex;
+        gap: 30px 0;
+        margin-bottom: 120px;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+      &.section-02-02 {
+        display: flex;
+        gap: 30px 0;
+        flex-direction: row-reverse;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+    }
+  }
+  .section-03 {
+    > ul {
+      > li {
+        padding: 0 0 34px 142px;
+        margin-top: 59px;
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        &:first-child {
+          margin-top: 0;
+        }
+        &.special-features-01 {
+          background-image: url("/images/business-area/marine-solution/feature-01.png");
+        }
+        &.special-features-02 {
+          background-image: url("/images/business-area/marine-solution/feature-02.png");
+        }
+        &.special-features-03 {
+          background-image: url("/images/business-area/marine-solution/feature-03.png");
+        }
+        > dl {
+          > dt {
+            color: #333;
+            font-size: 18px;
+            margin-bottom: 24px;
+            font-weight: 600;
+          }
+          > dd {
+            > ul {
+              > li {
+                padding-left: 22px;
+                background: url("/images/common/sub/bullet-02.svg") no-repeat 0 7px;
+                color: #666;
+                margin-top: 12px;
+                line-height: 23px;
+                &:first-child {
+                  margin-top: 0;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .section-04 {
+    > ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px 44px;
+      > li {
+        position: relative;
+        flex-shrink: 0;
+        cursor: pointer;
+        &:hover {
+          &:after {
+            display: block;
+          }
+        }
+        &:after {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: rgba(0, 0, 0, 0.30);
+          background-image: url("/images/common/sub/magnifying-glass.svg");
+          background-repeat: no-repeat;
+          background-position: center;
+          display: none;
+          content: "";
+        }
+      }
+    }
+  }
+}
+
+/* 마린솔루션 - LNG 재액화 시스템 */
+.lng-re-liquefaction-system {
+  .section-01 {
+    margin-bottom: 125px;
+    h3 {
+      font-size: 52px;
+      color: #000;
+      font-weight: 600;
+      margin-bottom: 65px;
+    }
+    p {
+      color: #666;
+      line-height: 30px;
+      margin-top: 15px;
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+    img {
+      margin-top: 50px;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .section-02 {
+    margin-bottom: 125px;
+    img {
+      display: block;
+      max-width: 1230px;
+      width: 100%;
+      height: auto;
+      margin: 0 auto;
+    }
+  }
+
+  .section-03 {
+    margin-bottom: 125px;
+    .features {
+      display: flex;
+      justify-content: space-between;
+      ul {
+        background: #eee;
+        border-radius: 10px;
+        width: 49%;
+        padding: 50px;
+        box-sizing: border-box;
+        li {
+          padding-left: 22px;
+          background: url("/images/common/sub/bullet-02.svg") no-repeat 0 7px;
+          color: #666;
+          margin-top: 8px;
+          line-height: 23px;
+          &:first-child {
+            margin-top: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* 마린솔루션 - LNG 카고 핸들링 시스템 */
+.lng-cargo-handling-system {
+  .section-01 {
+    margin-bottom: 125px;
+    h3 {
+      font-size: 52px;
+      color: #000;
+      font-weight: 600;
+      margin-bottom: 65px;
+    }
+    p {
+      color: #666;
+      line-height: 30px;
+      margin-top: 15px;
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+    > div {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      img {
+        max-width: 48%;
+        height: auto;
+      }
+    }
+  }
+
+  .section-02 {
+    .features {
+      display: flex;
+      justify-content: space-between;
+      ul {
+        background: #eee;
+        border-radius: 10px;
+        width: 49%;
+        padding: 50px;
+        box-sizing: border-box;
+        li {
+          padding-left: 22px;
+          background: url("/images/common/sub/bullet-02.svg") no-repeat 0 7px;
+          color: #666;
+          margin-top: 8px;
+          line-height: 23px;
+          &:first-child {
+            margin-top: 0;
+          }
+        }
+      }
+    }
+  }
+  /*.section-02 {
+    .system-info {
+      width: 200%;
+      transform: translateX(-25%);
+      background: url("/images/business-area/marine-solution/cargo-bg.png") no-repeat center 0 #000;
+      height: 751px;
+      > div {
+        width: 50%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        gap: 20px 95px;
+        > ul {
+          width: 478px;
+          border-radius: 5px;
+          box-sizing: border-box;
+          padding: 30px 40px;
+          background: linear-gradient(113deg, rgba(2, 2, 2, 0.45) 0%, rgba(104, 104, 104, 0.45) 111.03%);
+          &:first-child {
+            margin-top: -16%;
+          }
+          &:last-child {
+            margin-top: 16%;
+          }
+          > li {
+            color: #fff;
+            padding-left: 20px;
+            margin-top: 8px;
+            background:url("/images/common/sub/bullet-03.svg") no-repeat 0 3px;
+            &:first-child {
+              margin-top: 0;
+            }
+          }
+        }
+      }
+    }
+  }*/
+}
+
+.container-wrap.no-bottom-padding {
+  padding-bottom: 0 !important;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .fuel-gas-supply-system {
+    .section-02 {
+      margin-bottom: 125px;
+      > div {
+        > img {
+          width: 100%;
+        }
+        ul {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .fuel-gas-supply-system {
+    .section-02 {
+      margin-bottom: 125px;
+      > div {
+        > img {
+          width: 100%;
+        }
+        ul {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .lng-re-liquefaction-system {
+    .section-03 {
+      > div {
+        flex-wrap: wrap;
+        > ul {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .lng-cargo-handling-system {
+    .section-01 {
+      > div {
+        img {
+          max-width: 100%;
+        }
+      }
+    }
+    .section-02 {
+      .system-info {
+        height: 600px;
+        > div {
+          flex-wrap: wrap;
+          > ul {
+            width: 100%;
+            &:first-child {
+              margin-top: 0;
+            }
+            &:last-child {
+              margin-top: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}

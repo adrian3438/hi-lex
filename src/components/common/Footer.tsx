@@ -10,7 +10,7 @@ export default function Footer({language}: Props) {
         <footer>
             <div className="footer-area1">
                 <div className="footer-logo-area">
-                    <p className="footer-logo"><Image src="/images/common/footer-logo.png" alt="Valmax" width={1000} height={272} style={{width: "104px", height: "auto"}}/></p>
+                    <p className="footer-logo"><Image src="/images/common/footer-logo.png" alt="Valmax" width={1000} height={272} style={{width: "150px", height: "auto"}}/></p>
                     <p className="footer-text">{language.footer_7}</p>
                 </div>
                 <div className="footer-menu">

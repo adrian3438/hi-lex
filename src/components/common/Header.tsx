@@ -20,7 +20,7 @@ export default function Header({language}: Props) {
     return (
         <header onMouseLeave={() => handleMouseLeave()} onMouseOver={() => handleMouseOver()}>
             <div>
-                <h1><Link href="/"><Image src="/images/common/logo.png" alt="Technology Corporation Valmax" width={1000} height={272} style={{width: "167px", height: "auto"}}/></Link></h1>
+                <h1><Link href="/"><Image src="/images/common/logo.png" alt="Technology Corporation Valmax" width={216} height={35} style={{width: "216.37px", height: "auto"}}/></Link></h1>
                 <MainMenu headerLeave={headerLeave} language={language}/>{/* 헤더 메뉴 */}
                 <LanguageMenu language={language}/>{/* 언어 선택 및 모바일 메뉴 */}
             </div>

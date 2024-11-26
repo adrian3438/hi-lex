@@ -1,0 +1,701 @@
+/* 계측기 - 고압용 천연가스 유량계 */
+.high-pressure-natural-gas-flow-meter {
+  .section-01 {
+    margin-bottom: 125px;
+    .image-01 {
+      margin-bottom: 25px;
+      img {
+        width: 100px;
+        height: auto;
+      }
+    }
+    .image-02 {
+      margin-bottom: 25px;
+      img {
+        width: 130px;
+        height: auto;
+      }
+    }
+    .title-area {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 50px;
+      gap: 20px 0;
+      .title-area1 {
+        width: 49%;
+        h3 {
+          font-size: 52px;
+          color: #000;
+          font-weight: 600;
+          margin-bottom: 20px;
+        }
+        > p {
+          margin-bottom: 50px;
+        }
+        .image-area {
+          max-width: 356px;
+          text-align: center;
+        }
+        button {
+          padding: 15px 40px 15px 80px;
+          border: none;
+          background:url("/images/business-area/instrumentation/arrow.png") no-repeat 20px 50% #E9EBEC;
+          border-radius: 5px;
+          cursor: pointer;
+          margin-top: 60px;
+          font-size: 18px;
+        }
+      }
+      .title-area2 {
+        width: 51%;
+        .text-area1 {
+          display: flex;
+          align-items: start;
+          gap: 10px;
+          margin-bottom: 100px;
+          > p {
+            padding: 15px 20px;
+            background-color: #C00000;
+            color: #fff;
+            font-size: 18px;
+            border-radius: 6px;
+          }
+        }
+        .text-area2 {
+          p {
+            margin-top: 20px;
+            line-height: 30px;
+            color: #666;
+            em {
+              font-weight: 600;
+            }
+          }
+        }
+      }
+    }
+  }
+  .section-02 {
+    .table-01 {
+      width: 100%;
+      border-top: 1px solid #e00;
+      thead {
+        th {
+          text-align: center;
+          color: #e00;
+          background-color: #FBFBFB;
+          padding: 16px 10px;
+          vertical-align: middle;
+          border-bottom: 1px solid #E0E0E0;
+          border-right: 1px solid #E0E0E0;
+          line-height: 25px;
+          &:last-child {
+            border-right: 0;
+          }
+        }
+      }
+      tbody {
+        th {
+          padding: 16px 10px;
+          color: #666;
+          background-color: #FBFBFB;
+          vertical-align: middle;
+          border-bottom: 1px solid #E0E0E0;
+          border-right: 1px solid #E0E0E0;
+          line-height: 25px;
+        }
+        td {
+          padding: 16px 25px;
+          color: #666;
+          vertical-align: middle;
+          border-bottom: 1px solid #E0E0E0;
+          border-right: 1px solid #E0E0E0;
+          line-height: 25px;
+          &.text-center {
+            text-align: center;
+          }
+          &:last-child {
+            border-right: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+/* 계측기 - 초음파 유량 전송기 */
+.ultrasonic-flow-transmitter {
+  .section-01 {
+    margin-bottom: 125px;
+    h3 {
+      font-size: 52px;
+      color: #000;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+    > div {
+      display: flex;
+      gap: 30px 0;
+      flex-direction: row-reverse;
+      align-items: center;
+      > .text-area {
+        p {
+          margin-top: 20px;
+          line-height: 30px;
+          color: #666;
+          em {
+            font-weight: 600;
+          }
+        }
+        &:first-child {
+          margin-top: 0;
+        }
+      }
+      > .image-area {
+        flex-shrink: 0;
+      }
+    }
+  }
+
+  .section-02 {
+    margin-bottom: 125px;
+    > p {
+      color: #666;
+      text-align: center;
+      line-height: 30px;
+      margin-bottom: 100px;
+    }
+    .mechanism {
+      display: flex;
+      justify-content: space-between;
+      > div {
+        width: 49%;
+        img {
+          margin-bottom: 40px;
+          width: 100%;
+          height: auto;
+        }
+        p {
+          color: #666;
+          line-height: 30px;
+          margin-top: 20px;
+          &.first-text {
+            margin-top: 0;
+          }
+        }
+      }
+    }
+  }
+
+  .section-03 {
+    margin-bottom: 125px;
+    .table-01 {
+      width: 100%;
+      border-top: 1px solid #e00;
+      thead {
+        th {
+          text-align: center;
+          color: #e00;
+          background-color: #FBFBFB;
+          padding: 16px 10px;
+          vertical-align: middle;
+          border-bottom: 1px solid #E0E0E0;
+          border-right: 1px solid #E0E0E0;
+          line-height: 25px;
+          &:last-child {
+            border-right: 0;
+          }
+        }
+      }
+      tbody {
+        th {
+          padding: 16px 10px;
+          color: #666;
+          background-color: #FBFBFB;
+          vertical-align: middle;
+          border-bottom: 1px solid #E0E0E0;
+          border-right: 1px solid #E0E0E0;
+          line-height: 25px;
+        }
+        td {
+          padding: 16px 25px;
+          color: #666;
+          vertical-align: middle;
+          border-bottom: 1px solid #E0E0E0;
+          border-right: 1px solid #E0E0E0;
+          line-height: 25px;
+          &.text-center {
+            text-align: center;
+          }
+          &:last-child {
+            border-right: 0;
+          }
+        }
+      }
+    }
+  }
+
+
+  .section-04 {
+    margin-bottom: 125px;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    .title-area {
+      flex-shrink: 0;
+      > p {
+        color: #BD0200;
+        margin-bottom: 13px;
+      }
+      > h3 {
+        color: #333;
+        font-weight: 600;
+        font-size: 24px;
+      }
+    }
+    .image-area {
+      display: flex;
+      gap: 30px;
+      justify-content: space-between;
+      img {
+        width: 50%;
+        height: auto;
+      }
+    }
+  }
+
+  .section-05 {
+    > ul {
+      > li {
+        padding: 0 0 34px 142px;
+        margin-top: 59px;
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        &:first-child {
+          margin-top: 0;
+        }
+        &.special-features-01 {
+          background-image: url("/images/business-area/plant-solution/transmitter-special-features-01.png");
+        }
+        &.special-features-02 {
+          background-image: url("/images/business-area/plant-solution/transmitter-special-features-02.png");
+        }
+        &.special-features-03 {
+          background-image: url("/images/business-area/plant-solution/transmitter-special-features-03.png");
+        }
+        &.special-features-04 {
+          background-image: url("/images/business-area/plant-solution/transmitter-special-features-04.png");
+        }
+        > dl {
+          > dt {
+            color: #333;
+            font-size: 18px;
+            margin-bottom: 24px;
+            font-weight: 600;
+          }
+          > dd {
+            > ul {
+              > li {
+                padding-left: 22px;
+                background: url("/images/common/sub/bullet-02.svg") no-repeat 0 7px;
+                color: #666;
+                margin-top: 12px;
+                line-height: 23px;
+                &:first-child {
+                  margin-top: 0;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .ultrasonic-flow-transmitter {
+    .section-01 {
+      > div {
+        flex-wrap: wrap;
+        .image-area {
+          width: 100%;
+          img {
+            width: 100%;
+            height: auto;
+          }
+        }
+      }
+    }
+    .section-02 {
+      .mechanism {
+        flex-wrap: wrap;
+        > div {
+          width: 100%;
+        }
+      }
+    }
+
+    .section-04 {
+      flex-wrap: wrap;
+      .image-area {
+        display: flex;
+        gap: 30px;
+        justify-content: space-between;
+        width: 100%;
+        img {
+          width: 50%;
+          height: auto;
+        }
+      }
+    }
+  }
+}
+
+/* 계측기 - 가스감지기 */
+.gas-detector {
+  .section-01 {
+    margin-bottom: 125px;
+    .image-01 {
+      margin-bottom: 25px;
+      img {
+        width: 100px;
+        height: auto;
+      }
+    }
+    .image-02 {
+      margin-bottom: 25px;
+      img {
+        width: 130px;
+        height: auto;
+      }
+    }
+    .title-area {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 50px;
+      gap: 20px 0;
+      .title-area1 {
+        width: 49%;
+        h3 {
+          font-size: 52px;
+          color: #000;
+          font-weight: 600;
+          margin-bottom: 20px;
+        }
+        > p {
+          margin-bottom: 50px;
+        }
+        .image-area {
+          max-width: 356px;
+          text-align: center;
+          img {
+            max-width: 400px;
+            height: auto;
+          }
+        }
+        button {
+          padding: 15px 40px 15px 80px;
+          border: none;
+          background:url("/images/business-area/instrumentation/arrow.png") no-repeat 20px 50% #E9EBEC;
+          border-radius: 5px;
+          cursor: pointer;
+          margin-top: 60px;
+          font-size: 18px;
+        }
+      }
+      .title-area2 {
+        width: 51%;
+        .text-area1 {
+          display: flex;
+          align-items: start;
+          gap: 10px;
+          margin-bottom: 100px;
+          > p {
+            padding: 15px 20px;
+            background-color: #C00000;
+            color: #fff;
+            font-size: 18px;
+            border-radius: 6px;
+          }
+        }
+        .text-area2 {
+          p {
+            margin-top: 20px;
+            line-height: 30px;
+            color: #666;
+            em {
+              font-weight: 600;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .section-02 {
+    margin-bottom: 125px;
+    .table-01 {
+      width: 100%;
+      border-top: 1px solid #e00;
+      thead {
+        th {
+          text-align: center;
+          color: #e00;
+          background-color: #FBFBFB;
+          padding: 16px 10px;
+          vertical-align: middle;
+          border-bottom: 1px solid #E0E0E0;
+          border-right: 1px solid #E0E0E0;
+          line-height: 25px;
+          &:last-child {
+            border-right: 0;
+          }
+        }
+      }
+      tbody {
+        th {
+          padding: 16px 10px;
+          color: #666;
+          background-color: #FBFBFB;
+          vertical-align: middle;
+          border-bottom: 1px solid #E0E0E0;
+          border-right: 1px solid #E0E0E0;
+          line-height: 25px;
+        }
+        td {
+          padding: 16px 25px;
+          color: #666;
+          vertical-align: middle;
+          border-bottom: 1px solid #E0E0E0;
+          border-right: 1px solid #E0E0E0;
+          line-height: 25px;
+          &.text-center {
+            text-align: center;
+          }
+          &:last-child {
+            border-right: 0;
+          }
+        }
+      }
+    }
+  }
+
+  .section-03 {
+    margin-bottom: 125px;
+    .image-01 {
+      margin-bottom: 25px;
+      img {
+        width: 100px;
+        height: auto;
+      }
+    }
+    .image-02 {
+      margin-bottom: 25px;
+      img {
+        width: 130px;
+        height: auto;
+      }
+    }
+    .title-area {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 50px;
+      gap: 20px 0;
+      .title-area1 {
+        width: 49%;
+        h3 {
+          font-size: 52px;
+          color: #000;
+          font-weight: 600;
+          margin-bottom: 20px;
+        }
+        > p {
+          margin-bottom: 50px;
+        }
+        .image-area {
+          max-width: 356px;
+          text-align: center;
+          img {
+            max-width: 400px;
+            height: auto;
+          }
+        }
+        button {
+          padding: 15px 40px 15px 80px;
+          border: none;
+          background:url("/images/business-area/instrumentation/arrow.png") no-repeat 20px 50% #E9EBEC;
+          border-radius: 5px;
+          cursor: pointer;
+          margin-top: 60px;
+          font-size: 18px;
+        }
+      }
+      .title-area2 {
+        width: 51%;
+        .text-area1 {
+          display: flex;
+          align-items: start;
+          gap: 10px;
+          margin-bottom: 100px;
+          > p {
+            padding: 15px 20px;
+            background-color: #C00000;
+            color: #fff;
+            font-size: 18px;
+            border-radius: 6px;
+          }
+        }
+        .text-area2 {
+          p {
+            margin-top: 20px;
+            line-height: 30px;
+            color: #666;
+            em {
+              font-weight: 600;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .gas-detector {
+    .section-01 {
+      .title-area {
+        .title-area1 {
+          width: 100%;
+        }
+        .title-area2 {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .high-pressure-natural-gas-flow-meter {
+    .section-01 {
+      .title-area {
+        .title-area1 {
+          width: 100%;
+        }
+        .title-area2 {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .ultrasonic-flow-transmitter {
+    .section-02 {
+      .mechanism {
+        flex-wrap: wrap;
+        > div {
+          width: 100%;
+        }
+      }
+    }
+
+    .section-04 {
+      flex-wrap: wrap;
+      .image-area {
+        display: flex;
+        gap: 30px;
+        justify-content: space-between;
+        width: 100%;
+        img {
+          width: 50%;
+          height: auto;
+        }
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 767px) {
+  .gas-detector {
+    .section-01 {
+      .title-area {
+        .title-area1 {
+          width: 100%;
+
+        }
+        .title-area2 {
+          width: 100%;
+          .text-area1 {
+            flex-wrap: wrap;
+            > p {
+              width: 100%;
+              text-align: center;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .high-pressure-natural-gas-flow-meter {
+    .section-01 {
+      .title-area {
+        .title-area1 {
+          width: 100%;
+
+        }
+        .title-area2 {
+          width: 100%;
+          .text-area1 {
+            flex-wrap: wrap;
+            > p {
+              width: 100%;
+              text-align: center;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .ultrasonic-flow-transmitter {
+    .section-01 {
+      > div {
+        flex-wrap: wrap;
+        .image-area {
+          width: 100%;
+          img {
+            width: 100%;
+            height: auto;
+          }
+        }
+      }
+    }
+
+    .section-02 {
+      .mechanism {
+        flex-wrap: wrap;
+        > div {
+          width: 100%;
+        }
+      }
+    }
+
+    .section-04 {
+      flex-wrap: wrap;
+      .image-area {
+        display: flex;
+        gap: 30px;
+        justify-content: space-between;
+        width: 100%;
+        flex-wrap: wrap;
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+  }
+}

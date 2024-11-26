@@ -10,8 +10,8 @@ export default function InquiryList ({searchParams : {inquiryType, replyStatus, 
             page={page || 1}
             size={size || 25}
             keyword={keyword || ''}
-            column={column || 'inquiryName'}
-            order={order || 'asc'}
+            column={column || 'date'}
+            order={order || 'desc'}
         />
         </>
     )

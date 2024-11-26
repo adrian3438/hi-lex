@@ -8,7 +8,6 @@ interface Props {
 }
 
 export default function MainMenu({headerLeave, language}: Props): JSX.Element {
-    // const [navOn, setNavOn] = useState(false);
     const [activeMenu, setActiveMenu] = useState<number | null>(null);
     const handleMouseOver = (index: number) => {
         setActiveMenu(index);
@@ -23,60 +22,52 @@ export default function MainMenu({headerLeave, language}: Props): JSX.Element {
             <div className={"nav-bg"}></div>
             <ul>
                 <li className={activeMenu === 0 && !headerLeave ? 'on' : ''}>
-                    <Link href="/company/introduce" onMouseOver={() => handleMouseOver(0)}>{language.header_1}</Link>
+                    <Link href="#" onMouseOver={() => handleMouseOver(0)}>{language.header_1}</Link>
                     <ul>
-                        <li><Link href="/company/introduce">{language.header_1_1}</Link></li>
-                        <li><Link href="/company/greeting">{language.header_1_2}</Link></li>
-                        <li><Link href="/company/history">{language.header_1_3}</Link></li>
-                        <li><Link href="/company/research">{language.header_1_4}</Link></li>
+                        <li><Link href="#">{language.header_1_1}</Link></li>
+                        <li><Link href="#">{language.header_1_2}</Link></li>
+                        <li><Link href="#">{language.header_1_3}</Link></li>
+                        <li><Link href="#">{language.header_1_4}</Link></li>
+                        <li><Link href="#">{language.header_1_5}</Link></li>
+                        <li><Link href="#">{language.header_1_6}</Link></li>
+                        <li><Link href="#">{language.header_1_7}</Link></li>
                     </ul>
                 </li>
                 <li className={`business-area ${activeMenu === 1 && !headerLeave ? 'on' : ''}`}>
                     <Link href="#" onMouseOver={() => handleMouseOver(1)}>{language.header_2}</Link>
-                    <ul>
-                        <li><Link href="/business-area/green-energy/electrolysis">{language.header_2_1}</Link>
-                            <ul>
-                                <li><Link href="/business-area/green-energy/electrolysis">{language.header_2_1_1}</Link></li>
-                                <li><Link href="/business-area/green-energy/hydrogen-refueling-station">{language.header_2_1_2}</Link></li>
-                                <li><Link href="/business-area/green-energy/hydrogen-dispenser">{language.header_2_1_3}</Link></li>
-                            </ul>
-                        </li>
-                        <li><Link href="/business-area/plant-solution/fgss">{language.header_2_2}</Link>
-                            <ul>
-                                <li><Link href="/business-area/plant-solution/fgss">{language.header_2_2_1}</Link></li>
-                                <li><Link href="/business-area/plant-solution/analyzer">{language.header_2_2_2}</Link></li>
-                                <li><Link href="/business-area/plant-solution/metering-system">{language.header_2_2_3}</Link></li>
-                                <li><Link href="/business-area/plant-solution/lng-satellite-station">{language.header_2_2_4}</Link></li>
-                                <li><Link href="/business-area/plant-solution/lng-fueling-station">{language.header_2_2_5}</Link></li>
-                            </ul>
-                        </li>
-                        <li><Link href="/business-area/instrumentation/high-pressure-natural-gas-flow-meter">{language.header_2_3}</Link>
-                            <ul>
-                                <li><Link href="/business-area/instrumentation/high-pressure-natural-gas-flow-meter">{language.header_2_3_1}</Link></li>
-                                <li><Link href="/business-area/instrumentation/ultrasonic-flow-transmitter">{language.header_2_3_2}</Link></li>
-                                <li><Link href="/business-area/instrumentation/gas-detector">{language.header_2_3_3}</Link></li>
-                                <li><Link href="/business-area/instrumentation/low-pressure-natural-gas-flow-meter">{language.header_2_3_4}</Link></li>
-                            </ul>
-                        </li>
-                        <li><Link href="/business-area/marine-solution/fuel-gas-supply-system">{language.header_2_4}</Link>
-                            <ul>
-                                <li><Link href="/business-area/marine-solution/fuel-gas-supply-system">{language.header_2_4_1}</Link></li>
-                                <li><Link href="/business-area/marine-solution/lng-reliquefaction-system">{language.header_2_4_2}</Link></li>
-                                <li><Link href="/business-area/marine-solution/lng-cargo-handling-system">{language.header_2_4_3}</Link></li>
-                            </ul>
-                        </li>
-                    </ul>
                 </li>
-                <li className={activeMenu === 2 && !headerLeave ? 'on' : ''}>
-                    <Link href="/promotion-center/portfolio" onMouseOver={() => handleMouseOver(2)}>{language.header_3}</Link>
-                    <ul>
-                        <li><Link href="/promotion-center/portfolio">{language.header_3_1}</Link></li>
-                        <li><Link href="/promotion-center/news">{language.header_3_2}</Link></li>
-                        <li><Link href="/promotion-center/inquiry">{language.header_3_3}</Link></li>
-                    </ul>
+                <li className={`business-area ${activeMenu === 2 && !headerLeave ? 'on' : ''}`}>
+                    <Link href="#" onMouseOver={() => handleMouseOver(2)}>{language.header_3}</Link>
                 </li>
                 <li className={activeMenu === 3 && !headerLeave ? 'on' : ''}>
-                    <Link href="/recruit" onMouseOver={() => handleMouseOver(3)}>{language.header_4}</Link>
+                    <Link href="/promotion-center/portfolio" onMouseOver={() => handleMouseOver(3)}>{language.header_4}</Link>
+                    <ul>
+                        <li><Link href="/promotion-center/portfolio">{language.header_4_1}</Link></li>
+                        <li><Link href="/promotion-center/news">{language.header_4_2}</Link></li>
+                        <li><Link href="/promotion-center/inquiry">{language.header_4_3}</Link></li>
+                        <li><Link href="/promotion-center/inquiry">{language.header_4_4}</Link></li>
+                        <li><Link href="/promotion-center/inquiry">{language.header_4_5}</Link></li>
+                        <li><Link href="/promotion-center/inquiry">{language.header_4_6}</Link></li>
+                        <li><Link href="/promotion-center/inquiry">{language.header_4_7}</Link></li>
+                    </ul>
+                </li>
+                <li className={activeMenu === 4 && !headerLeave ? 'on' : ''}>
+                    <Link href="/recruit" onMouseOver={() => handleMouseOver(4)}>{language.header_5}</Link>
+                    <ul>
+                        <li><Link href="/promotion-center/portfolio">{language.header_5_1}</Link></li>
+                        <li><Link href="/promotion-center/news">{language.header_5_2}</Link></li>
+                        <li><Link href="/promotion-center/inquiry">{language.header_5_3}</Link></li>
+                        <li><Link href="/promotion-center/inquiry">{language.header_5_4}</Link></li>
+                    </ul>
+                </li>
+                <li className={activeMenu === 5 && !headerLeave ? 'on' : ''}>
+                    <Link href="/recruit" onMouseOver={() => handleMouseOver(5)}>{language.header_6}</Link>
+                    <ul>
+                        <li><Link href="/promotion-center/portfolio">{language.header_5_1}</Link></li>
+                        <li><Link href="/promotion-center/news">{language.header_5_2}</Link></li>
+                        <li><Link href="/promotion-center/inquiry">{language.header_5_3}</Link></li>
+                        <li><Link href="/promotion-center/inquiry">{language.header_5_4}</Link></li>
+                    </ul>
                 </li>
             </ul>
         </nav>
