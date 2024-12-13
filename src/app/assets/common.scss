@@ -1,7 +1,54 @@
+/* Font */
+@font-face {
+  font-family: 'Pretendard-Medium';
+  src: url("../fonts/Pretendard-Medium.woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Pretendard-Bold';
+  src: url("../fonts/Pretendard-Bold.woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Pretendard-SemiBold';
+  src: url("../fonts/Pretendard-SemiBold.woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Pretendard-ExtraBold';
+  src: url("../fonts/Pretendard-ExtraBold.woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Pretendard-Light';
+  src: url("../fonts/Pretendard-Light.woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Pretendard-Regular';
+  src: url("../fonts/Pretendard-Regular.woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
 /* Header */
 header {
-  border-bottom: 1px solid rgba(253, 152, 151, 0.50);
   min-width: 360px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  &.on {
+    background-color: #fff;
+    transition: 0.5s ease-in-out;
+  }
+  z-index: 20;
   > div {
     width: 1600px;
     margin: 0 auto;
@@ -13,10 +60,11 @@ header {
     /* 메인메뉴 */
     > nav {
       > .nav-bg {
+        border-top: 1px solid #ddd;
         border-bottom: 1px solid #ddd;
         background: #fff;
         position: absolute;
-        top: 107px;
+        top: 99px;
         left: 0;
         width: 100%;
         height: 0;
@@ -28,13 +76,13 @@ header {
         .nav-bg {
           visibility: visible;
           opacity: 1;
-          height: 290px;
+          height: 360px;
           transition: opacity 0.5s, height 0.5s;
         }
       }
       > ul {
         display: flex;
-        gap: 65px;
+        gap: 30px;
         > li {
           position: relative;
           > a {
@@ -64,15 +112,15 @@ header {
           }
           &.on {
             > a {
-              color: #BD0200;
+              color: #194795;
               font-weight: 600;
               &:after {
                 position: absolute;
-                bottom: -26px;
+                bottom: -21px;
                 left: 0;
                 width: calc(100% + 20px);
                 height: 5px;
-                background-color: #BD0200;
+                background-color: #194795;
                 display: block;
                 content: "";
                 transform: translateX(-10px);
@@ -294,111 +342,159 @@ header {
 
 /* Footer */
 footer {
-  min-width: 360px;
-  background: #616E7D;
-  .footer-area1 {
-    width: 1600px;
+  min-width: 320px;
+  background: #194795;
+  color: #fff;
+  padding: 83.5px 20px 69px;
+  > .footer-inner {
+    max-width: 1600px;
     margin: 0 auto;
-    padding: 118px 0;
     display: flex;
-    justify-content: space-between;
+    gap: 40px 0;
     flex-wrap: wrap;
-    .footer-logo-area {
-      margin-bottom: 30px;
-      .footer-logo {
-        margin-bottom: 19px;
+    > div {
+      flex: 1 1 auto;
+      padding:0 40px;
+      border-left: 1px solid #D4D0D0;
+      &.footer-area-1 {
+        padding: 0;
+        border-left: none;
+        .footer-logo {
+          margin-bottom: 43.5px;
+          img {
+            vertical-align: top;
+          }
+        }
+        > div {
+          margin-bottom: 48px;
+          > p {
+            color: #fff;
+            font-size: 13px;
+            margin-top: 13px;
+            &:first-child {
+              margin-top: 0;
+            }
+          }
+        }
+        .copyright {
+          font-size: 13px;
+          color: #B9BABF;
+        }
       }
-      .footer-text {
-        font-size: 32px;
-        color: #fff;
-        font-weight: 600;
+      &.footer-area-2 {
+        > dl {
+          dt {
+            color: #fff;
+            font-family: "Pretendard-SemiBold", sans-serif;
+            margin-bottom: 43px;
+          }
+          dd {
+            > ul {
+              > li {
+                margin-top: 15px;
+                &:first-child {
+                  margin-top: 0;
+                }
+                > a {
+                  color: #fff;
+                  font-size: 15px;
+                }
+              }
+            }
+          }
+        }
       }
-    }
-    .footer-menu {
-      > ul {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 50px 85px;
-        > li {
-          > p, > a {
+      &.footer-area-3 {
+        > dl {
+          dt {
+            color: #fff;
+            font-family: "Pretendard-SemiBold", sans-serif;
+            margin-bottom: 43px;
+          }
+          dd {
+            > ul {
+              > li {
+                margin-top: 15px;
+                &:first-child {
+                  margin-top: 0;
+                }
+                > a {
+                  color: #fff;
+                  font-size: 15px;
+                }
+              }
+            }
+          }
+        }
+      }
+      &.footer-area-4 {
+        padding-right: 0;
+        > p {
+          margin-bottom: 33px;
+          color: #fff;
+          font-family: "Pretendard-SemiBold", sans-serif;
+        }
+        .footer-email {
+          margin-bottom: 49px;
+          label {
+            margin-bottom: 14px;
+            display: block;
+            color: #fff;
+            font-family: "Pretendard-SemiBold", sans-serif;
+          }
+          input {
+            display: block;
+            box-sizing: border-box;
+            width: 100%;
+            border: 1px solid #707070;
+            border-radius: 9px;
+            padding: 15px;
+            font-size: 15px;
+            margin-bottom: 17px;
+          }
+          button {
+            padding: 17px 67px;
+            border: none;
+            background: #00B8F5;
             color: #fff;
             font-size: 18px;
-            text-decoration: none;
-            font-weight: 600;
-            margin-bottom: 20px
-          }
-          > ul {
-            > li {
-              margin-top: 16px;
-              &:first-child {
-                margin-top: 0;
-              }
-              > a {
-                color: #fff;
-                text-decoration: none;
-              }
-            }
+            font-family: "Pretendard-SemiBold", sans-serif;
+            border-radius: 28px;
           }
         }
-      }
-    }
-  }
-  .footer-area2 {
-    border-top: 1px solid #A1A1A1;
-    padding: 0 0 50px;
-    > div {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      align-items: end;
-      width: 1600px;
-      margin: 0 auto;
-      .copyright-address {
-        display: flex;
-        flex-wrap: wrap;
-        .copyright {
-          margin:50px 60px 0 0;
-          .copyright1 {
-            color: #fff;
-            font-size: 20px;
-            font-weight: 600;
-            margin-bottom: 15px;
-          }
-          .copyright2 {
-            color: #fff;
-          }
-        }
-        .address {
-          margin-top: 50px;
-          address {
-            color: #fff;
-            margin-bottom:16px;
-          }
-          .tel {
+        .footer-link {
+          display: flex;
+          gap: 20px;
+          flex-wrap: wrap;
+          > dl {
             display: flex;
-            color: #fff;
-            line-height: 20px;
-            flex-wrap: wrap;
-            .tel-number {
-              padding-left: 32px;
-              background: url("/images/common/tel-icon.svg") no-repeat 0 50%;
-              margin-right: 72px;
+            font-size: 13px;
+            gap: 20px;
+            &:first-child {
+              padding-right: 20px;
+              border-right: 1px solid #fff;
             }
-            .email {
-              padding-left: 32px;
-              background: url("/images/common/email-icon.svg") no-repeat 0 50%;
-              margin-right: 72px;
+            > dt {
+              color: #fff;
+            }
+            > dd {
+              > ul {
+                display: flex;
+                gap: 20px;
+                flex-wrap: wrap;
+                > li {
+                  > a {
+                    color: #fff;
+                  }
+                }
+              }
+            }
+            &.sitemap {
+              a {
+                color: #FFFF0C;
+              }
             }
           }
-        }
-      }
-      .policy {
-        margin-top:50px;
-        a {
-          color: #fff;
-          text-decoration: none;
-          font-weight: 600;
-
         }
       }
     }
@@ -415,24 +511,6 @@ footer {
         width: auto;
         padding: 0 20px;
       }
-    }
-  }
-}
-
-
-/* Container - 1600px 벗어나는 경우가 없을 시 */
-.container-wrap {
-  padding: 120px 0 175px;
-  .container {
-    width: 1600px;
-    margin: 0 auto;
-  }
-}
-@media screen and (max-width: 1599px) { //1600px 이하
-  .container-wrap {
-    padding: 120px 20px 175px;
-    .container {
-      width: auto;
     }
   }
 }

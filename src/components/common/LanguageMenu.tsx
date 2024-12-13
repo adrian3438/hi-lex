@@ -25,7 +25,6 @@ export default function LanguageMenu({language}: Props) {
         }
     }
 
-
     const router = useRouter();
     const query = useSearchParams();
     const currentRoute = usePathname();
@@ -46,7 +45,7 @@ export default function LanguageMenu({language}: Props) {
 
     return (
         <div className="language">
-            <Link href="#" className="language-button" onClick={(e) => handleLang(e, lang === 'kr' ? 'en' : 'kr')}>{language.language}</Link>
+            <Link href="#" className="language-button" onClick={(e) => handleLang(e, lang === 'en' ? 'kr' : 'en')}>{lang === 'en' ? 'KR' : "EN"}</Link>
             <div>
                 <button className="menu-button" onClick={openMobileMenu}>
                     <div className="bar"></div>

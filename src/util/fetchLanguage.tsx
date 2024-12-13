@@ -3,10 +3,10 @@ import { cookies, headers } from "next/headers";
 
 export async function fetchLanguage (searchLang : string) {
     const cookie = cookies();
-    const cookieLang = cookie.get('LANG') || { value: 'kr' }; // 기본값을 객체 형태로 설정
-    const langValue = searchLang || cookieLang?.value || 'kr';
+    const cookieLang = cookie.get('LANG') || { value: 'en' }; // 기본값을 객체 형태로 설정
+    const langValue = searchLang || cookieLang?.value || 'en';
     const host = headers().get('host');
-    const protocol = 'http://'
+    const protocol = 'http://';
     try {
         const response = await axios.get(`${protocol}${host}/api/lang?lang=${langValue}`);
         return response?.data;
