@@ -61,31 +61,49 @@ export default function LanguageMenu({language}: Props) {
                         <li className={menuNumber === 1 ? 'on' : ''}>
                             <button onClick={() => handleMobileMenu(1)}>{language.header_1}</button>
                             <ul>
-                                <li><Link href="/company/introduce">- {language.header_1_1}</Link></li>
-                                <li><Link href="/company/greeting">- {language.header_1_2}</Link></li>
-                                <li><Link href="/company/history">- {language.header_1_3}</Link></li>
-                                <li><Link href="/company/research">- {language.header_1_4}</Link></li>
+                                <li><Link href="#">- {language.header_1_1}</Link></li>
+                                <li><Link href="#">- {language.header_1_2}</Link></li>
+                                <li><Link href="#">- {language.header_1_3}</Link></li>
+                                <li><Link href="/company/history">- {language.header_1_4}</Link></li>
+                                <li><Link href="#">- {language.header_1_5}</Link></li>
+                                <li><Link href="/company/location">- {language.header_1_6}</Link></li>
+                                <li><Link href="/company/contact-us">- {language.header_1_7}</Link></li>
                             </ul>
                         </li>
                         <li className={menuNumber === 2 ? 'on' : ''}>
                             <button onClick={() => handleMobileMenu(2)}>{language.header_2}</button>
-                            <ul>
-                                <li><Link href="/business-area/green-energy/electrolysis">- {language.header_2_1}</Link></li>
-                                <li><Link href="/business-area/plant-solution/fgss">- {language.header_2_2}</Link></li>
-                                <li><Link href="/business-area/instrumentation/high-pressure-natural-gas-flow-meter">- {language.header_2_3}</Link></li>
-                                <li><Link href="/business-area/marine-solution/fuel-gas-supply-system">- {language.header_2_4}</Link></li>
-                            </ul>
-                        </li>
-                        <li className={menuNumber === 3 ? 'on' : ''}>
-                            <button onClick={() => handleMobileMenu(3)}>{language.header_3}</button>
-                            <ul>
-                                <li><Link href="/promotion-center/portfolio">- {language.header_3_1}</Link></li>
-                                <li><Link href="/promotion-center/news">- {language.header_3_2}</Link></li>
-                                <li><Link href="/promotion-center/inquiry">- {language.header_3_3}</Link></li>
-                            </ul>
                         </li>
                         <li>
-                            <Link href="/recruit">{language.header_4}</Link>
+                            <Link href="#">{language.header_3}</Link>
+                        </li>
+                        <li className={menuNumber === 3 ? 'on' : ''}>
+                            <button onClick={() => handleMobileMenu(3)}>{language.header_4}</button>
+                            <ul>
+                                <li><Link href="#">- {language.header_4_1}</Link></li>
+                                <li><Link href="#">- {language.header_4_2}</Link></li>
+                                <li><Link href="#">- {language.header_4_3}</Link></li>
+                                <li><Link href="#">- {language.header_4_4}</Link></li>
+                                <li><Link href="#">- {language.header_4_5}</Link></li>
+                                <li><Link href="#">- {language.header_4_6}</Link></li>
+                            </ul>
+                        </li>
+                        <li className={menuNumber === 4 ? 'on' : ''}>
+                            <button onClick={() => handleMobileMenu(4)}>{language.header_5}</button>
+                            <ul>
+                                <li><Link href="#">- {language.header_5_1}</Link></li>
+                                <li><Link href="#">- {language.header_5_2}</Link></li>
+                                <li><Link href="#">- {language.header_5_3}</Link></li>
+                                <li><Link href="#">- {language.header_5_4}</Link></li>
+                            </ul>
+                        </li>
+                        <li className={menuNumber === 5 ? 'on' : ''}>
+                            <button onClick={() => handleMobileMenu(5)}>{language.header_6}</button>
+                            <ul>
+                                <li><Link href="/news/press-release">- {language.header_6_1}</Link></li>
+                                <li><Link href="/news/story">- {language.header_6_2}</Link></li>
+                                <li><Link href="/news/events">- {language.header_6_3}</Link></li>
+                                <li><Link href="/news/media">- {language.header_6_4}</Link></li>
+                            </ul>
                         </li>
                     </ul>
                 </nav>

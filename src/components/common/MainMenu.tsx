@@ -27,10 +27,10 @@ export default function MainMenu({headerLeave, language}: Props): JSX.Element {
                         <li><Link href="#">{language.header_1_1}</Link></li>
                         <li><Link href="#">{language.header_1_2}</Link></li>
                         <li><Link href="#">{language.header_1_3}</Link></li>
-                        <li><Link href="#">{language.header_1_4}</Link></li>
+                        <li><Link href="/company/history">{language.header_1_4}</Link></li>
                         <li><Link href="#">{language.header_1_5}</Link></li>
-                        <li><Link href="#">{language.header_1_6}</Link></li>
-                        <li><Link href="#">{language.header_1_7}</Link></li>
+                        <li><Link href="/company/location">{language.header_1_6}</Link></li>
+                        <li><Link href="/company/contact-us">{language.header_1_7}</Link></li>
                     </ul>
                 </li>
                 <li className={`business-area ${activeMenu === 1 && !headerLeave ? 'on' : ''}`}>
@@ -62,10 +62,10 @@ export default function MainMenu({headerLeave, language}: Props): JSX.Element {
                 <li className={activeMenu === 5 && !headerLeave ? 'on' : ''}>
                     <Link href="#" onMouseOver={() => handleMouseOver(5)}>{language.header_6}</Link>
                     <ul>
-                        <li><Link href="#">{language.header_6_1}</Link></li>
-                        <li><Link href="#">{language.header_6_2}</Link></li>
-                        <li><Link href="#">{language.header_6_3}</Link></li>
-                        <li><Link href="#">{language.header_6_4}</Link></li>
+                        <li><Link href="/news/press-release">{language.header_6_1}</Link></li>
+                        <li><Link href="/news/story">{language.header_6_2}</Link></li>
+                        <li><Link href="/news/events">{language.header_6_3}</Link></li>
+                        <li><Link href="/news/media">{language.header_6_4}</Link></li>
                     </ul>
                 </li>
             </ul>

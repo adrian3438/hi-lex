@@ -1,182 +1,182 @@
-/* 연혁 Banner */
-.history-banner {
-  width: 1440px;
-  margin: 50px auto 0;
-  position: relative;
-  height: 365px;
-  background-size: cover !important;
-  background-position: 50% 50% !important;
-  //margin-bottom: 156px;
-  .swiper {
-    overflow: visible;
-    .swiper-slide {
-      position: relative;
-      height: 365px;
-      background-size: cover;
-      background-position: 50% 50%;
-      background-repeat: no-repeat;
-      border-radius: 15px;
-      &:after {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        display: block;
-        content: "";
-        background: rgba(33, 33, 33, 0.34);
-        border-radius: 15px;
-      }
-      &.history-01 {
-        background-image: url('/images/introduce/history-bg-01.png');
-      }
-      &.history-02 {
-        background-image: url('/images/introduce/history-bg-01.png');
-      }
-      &.history-03 {
-        background-image: url('/images/introduce/history-bg-01.png');
-      }
-      &.history-04 {
-        background-image: url('/images/introduce/history-bg-01.png');
-      }
-      &.history-05 {
-        background-image: url('/images/introduce/history-bg-01.png');
-      }
-    }
-  }
-  .swiper-button-prev {
-    left: -50px;
-    color: #F81918;
-  }
-  .swiper-button-next {
-    right: -50px;
-    color: #F81918;
-  }
-
-  .banner-text {
-    position: relative;
-    z-index: 1;
-    display: flex;
-    height: calc(100% - 70px);
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    > div {
-      > h2 {
-        color: #fff;
-        font-size: 24px;
-        font-weight: 600;
-        line-height: normal;
-      }
-      > p {
-        color: #fff;
-        font-size: 24px;
-        line-height: normal;
-      }
-    }
-  }
-  .sub-menu {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    border-top: 1px solid #E0E0E0;
-    z-index: 2;
+.history {
+  .history-list {
     > ul {
       display: flex;
-      justify-content: center;
-      gap: 0 50px;
-
+      flex-wrap: wrap;
       > li {
-        > a {
-          position: relative;
-          display: inline-block;
-          color: #fff;
-          font-size: 18px;
-          padding: 27px 20px;
+        width: 50%;
+        aspect-ratio: 960/640;
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        background-size: 100% 100%;
+        position: relative;
+        &:nth-child(1) {
+          background-image: url("/images/sub/company/history/history-bg-01.png");
         }
-
-        &.on {
-          > a {
-            font-weight: 600;
-
-            &:before {
-              position: absolute;
-              top: -2px;
-              left: 0;
-              width: 100%;
-              height: 3px;
-              background: #fff;
-              display: block;
-              content: "";
-            }
+        &:nth-child(2) {
+          background-image: url("/images/sub/company/history/history-bg-02.png");
+        }
+        &:nth-child(3) {
+          background-image: url("/images/sub/company/history/history-bg-03.png");
+        }
+        &:nth-child(4) {
+          background-image: url("/images/sub/company/history/history-bg-04.png");
+        }
+        &:nth-child(5) {
+          background-image: url("/images/sub/company/history/history-bg-05.png");
+        }
+        &:nth-child(6) {
+          background-image: url("/images/sub/company/history/history-bg-06.png");
+        }
+        > div {
+          position: absolute;
+          bottom: 70px;
+          left: 43px;
+          > p {
+            color: #fff;
+            font-size: 45px;
+            margin-bottom: 15px;
+          }
+          > button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 200px;
+            height: 55px;
+            line-height: 55px;
+            color: #000000;
+            font-size: 18px;
+            text-align: center;
+            border: none;
+            background: #fff;
+            border-radius: 8px;
+            cursor: pointer;
           }
         }
       }
     }
   }
-}
-
-
-/* 연혁 상세 */
-.history-detail {
-  > div {
-    display: none;
-    &.active {
-      display: block;
-    }
-    > ul {
-      > li {
-        margin-top: 54px;
-        &:first-child {
-          margin-top: 0;
-        }
-        > dl {
-          > dt {
-            margin-bottom: 24px;
-            color: #BD0200;
-            font-weight: 600;
-            font-size: 20px;
+  .history-detail {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 30;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    > div {
+      position: relative;
+      background-color: rgba(255,255,255,0.88);
+      height: 80vh;
+      max-width: 1050px;
+      padding: 65px 135px;
+      width: 100%;
+      box-sizing: border-box;
+      > div {
+        display: flex;
+        gap: 20px 40px;
+        margin-bottom: 80px;
+        > button {
+          background: #fff;
+          border: 1px solid #CBCBCB;
+          color: #D5D6D6;
+          font-size: 25px;
+          padding: 0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 175px;
+          height: 47px;
+          cursor: pointer;
+          &.active {
+            background-color: #EBEBEB;
+            color: #52575E;
+            border-color: #707070;
           }
-          > dd {
-            > ul {
-              > li {
-                padding-left: 43px;
-                background: url("/images/introduce/bullet.svg") no-repeat 21px 50%;
-                color: #666;
-                margin-top: 10px;
-                &:first-child {
-                  margin-top: 0;
+        }
+      }
+      > .list {
+        overflow-y: auto;
+        height: 50vh;
+        > li {
+          margin-top: 150px;
+          &:first-child {
+            margin-top: 0;
+          }
+          > dl {
+            display: flex;
+            gap: 20px 75px;
+            dt {
+              color: #52575E;
+              font-size: 30px;
+              font-family: "Pretendard-Medium", sans-serif;
+            }
+            dd {
+              font-size: 18px;
+              font-family: "Pretendard-Medium", sans-serif;
+              line-height: 35px;
+              > ul {
+                > li {
+                  margin-top: 50px;
+                  &:first-child {
+                    margin-top: 0;
+                  }
                 }
               }
             }
           }
         }
       }
+      .award-list {
+        overflow-y: auto;
+        height: 50vh;
+        > li {
+          margin-top: 25px;
+          display: flex;
+          align-items: center;
+          gap: 20px 37px;
+          &:first-child {
+            margin-top: 0;
+          }
+          > img {
+            margin-left: -85px;
+          }
+          > div {
+            font-size: 18px;
+          }
+        }
+      }
+      > button {
+        position: absolute;
+        top: 16px;
+        right: 19px;
+        padding: 0;
+        border: none;
+        background: none;
+        cursor: pointer;
+        img {
+          vertical-align: top;
+        }
+      }
     }
   }
 }
 
-@media screen and (max-width: 1439px) {
-  .history-banner {
-    width: calc(100% - 130px);
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-
-}
-
 @media screen and (max-width: 767px) {
-  .history-banner {
-    .sub-menu {
+  .history {
+    .history-list {
       > ul {
-        gap: 0;
         > li {
-          > a {
-            padding: 27px 5px
-          }
+          width: 100%;
         }
+      }
+    }
+    .history-detail {
+      > div {
+        padding: 65px 20px;
       }
     }
   }

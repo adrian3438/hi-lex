@@ -38,7 +38,7 @@ export default function AdminLoginPage () {
     }
     return(<>
     <div className="admin_loginBox">
-        <h2>Valmax ADMIN</h2>
+        <h2>Daedong ADMIN</h2>
         <p>로그인 후 더욱 다양한 서비스를 이용해 보세요.</p>
         <div>
                 <div className="inputList">
