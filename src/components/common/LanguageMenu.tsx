@@ -81,7 +81,7 @@ export default function LanguageMenu({language}: Props) {
                             <ul>
                                 <li><Link href="#">- {language.header_4_1}</Link></li>
                                 <li><Link href="#">- {language.header_4_2}</Link></li>
-                                <li><Link href="#">- {language.header_4_3}</Link></li>
+                                <li><Link href="/sustainability/esg">- {language.header_4_3}</Link></li>
                                 <li><Link href="#">- {language.header_4_4}</Link></li>
                                 <li><Link href="#">- {language.header_4_5}</Link></li>
                                 <li><Link href="#">- {language.header_4_6}</Link></li>
