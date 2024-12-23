@@ -21,13 +21,15 @@ export default async function ELatchPage({searchParams : {lang}} : any) {
                     </div>
                 </div>
                 <div className="modeling-area">
-                    <div></div>
+                    <div>
+
+                    </div>
                     <ul>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
+                        <li>test</li>
+                        <li>test</li>
+                        <li>test</li>
+                        <li>test</li>
+                        <li>test</li>
                     </ul>
                 </div>
             </div>
