@@ -3,6 +3,7 @@ import Header from "@/components/common/Header";
 import Footer from "@/components/common/Footer";
 import {fetchLanguage} from "@/util/fetchLanguage";
 import Link from "next/link";
+import Modeling1 from "@/components/Modeling/ModelViewer1";
 
 export default async function ELatchPage({searchParams : {lang}} : any) {
     const language = await fetchLanguage(lang);
@@ -22,15 +23,8 @@ export default async function ELatchPage({searchParams : {lang}} : any) {
                 </div>
                 <div className="modeling-area">
                     <div>
-
+                        <Modeling1/>
                     </div>
-                    <ul>
-                        <li>test</li>
-                        <li>test</li>
-                        <li>test</li>
-                        <li>test</li>
-                        <li>test</li>
-                    </ul>
                 </div>
             </div>
             <Footer language={language}/>

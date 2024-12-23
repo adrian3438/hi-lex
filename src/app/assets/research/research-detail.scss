@@ -1,5 +1,4 @@
 .research-modeling {
-  padding-bottom: 250px;
   .go-btn {
     max-width: 1600px;
     margin: 0 auto;
@@ -16,4 +15,15 @@
       border-radius: 11px;
     }
   }
+
+  .modeling-area {
+    max-width: 1600px;
+    margin: -60px auto 0;
+    .model-canvas {
+      height: 80vh !important;
+    }
+  }
 }
+
+
+
