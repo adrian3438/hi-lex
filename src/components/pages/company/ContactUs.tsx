@@ -26,6 +26,7 @@ export default function ContactUs({language}: Props) {
     })
     const [isCheck, setCheck] = useState<boolean>(false)
     // const [isAdCheck, setAdCheck] = useState<boolean>(false)
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     const [fileName, setFileName] = useState<string>('')
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
     const [preview, setPreview] = useState<any>(null);
