@@ -61,9 +61,9 @@ export default function LanguageMenu({language}: Props) {
                         <li className={menuNumber === 1 ? 'on' : ''}>
                             <button onClick={() => handleMobileMenu(1)}>{language.header_1}</button>
                             <ul>
-                                <li><Link href="#">- {language.header_1_1}</Link></li>
-                                <li><Link href="#">- {language.header_1_2}</Link></li>
-                                <li><Link href="#">- {language.header_1_3}</Link></li>
+                                <li><Link href="/company/greeting">- {language.header_1_1}</Link></li>
+                                <li><Link href="/company/about-us">- {language.header_1_2}</Link></li>
+                                <li><Link href="/company/management-philosopy">- {language.header_1_3}</Link></li>
                                 <li><Link href="/company/history">- {language.header_1_4}</Link></li>
                                 <li><Link href="#">- {language.header_1_5}</Link></li>
                                 <li><Link href="/company/location">- {language.header_1_6}</Link></li>
@@ -73,8 +73,14 @@ export default function LanguageMenu({language}: Props) {
                         <li className={menuNumber === 2 ? 'on' : ''}>
                             <button onClick={() => handleMobileMenu(2)}>{language.header_2}</button>
                         </li>
-                        <li>
-                            <Link href="#">{language.header_3}</Link>
+                        <li className={menuNumber === 6 ? 'on' : ''}>
+                            <button onClick={() => handleMobileMenu(6)}>{language.header_3}</button>
+                            <ul>
+                                <li><Link href="#">- {language.header_3_1}</Link></li>
+                                <li><Link href="#">- {language.header_3_2}</Link></li>
+                                <li><Link href="#">- {language.header_3_3}</Link></li>
+                                <li><Link href="#">- {language.header_3_4}</Link></li>
+                            </ul>
                         </li>
                         <li className={menuNumber === 3 ? 'on' : ''}>
                             <button onClick={() => handleMobileMenu(3)}>{language.header_4}</button>
@@ -90,10 +96,10 @@ export default function LanguageMenu({language}: Props) {
                         <li className={menuNumber === 4 ? 'on' : ''}>
                             <button onClick={() => handleMobileMenu(4)}>{language.header_5}</button>
                             <ul>
-                                <li><Link href="#">- {language.header_5_1}</Link></li>
-                                <li><Link href="#">- {language.header_5_2}</Link></li>
-                                <li><Link href="#">- {language.header_5_3}</Link></li>
-                                <li><Link href="#">- {language.header_5_4}</Link></li>
+                                <li><Link href="/career/position/quality">{language.header_5_1}</Link></li>
+                                <li><Link href="/career/welfare">{language.header_5_2}</Link></li>
+                                <li><Link href="/career/candidate">{language.header_5_3}</Link></li>
+                                {language?.language === 'kr' && <li><Link href="/career/application">{language.header_5_4}</Link></li>}
                             </ul>
                         </li>
                         <li className={menuNumber === 5 ? 'on' : ''}>

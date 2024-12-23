@@ -1,0 +1,217 @@
+.career-content-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 90px;
+  > h3 {
+    color: #023A8E;
+    font-size: 50px;
+    font-family: "Pretendard-Bold", sans-serif;
+  }
+  > ul {
+    > li {
+      margin-top: 13px;
+      > a {
+        display: flex;
+        width: 240px;
+        justify-content: center;
+        align-items: center;
+        height: 49px;
+        font-size: 20px;
+        font-family: "Pretendard-Medium", sans-serif;
+        text-align: center;
+        box-sizing: border-box;
+        border-radius: 25px;
+        box-shadow: 0 3px 6px rgba(0,0,0,0.16);
+      }
+      &.introduce {
+        margin-top: 0;
+        > a {
+          color: #fff;
+          border: 1px solid #707070;
+          background-color: #0041B1;
+        }
+        &.factory {
+          > a {
+            background-color: #046B64
+          }
+        }
+      }
+      &.go {
+        > a {
+          color: #000;
+          background-color: #D0E5E8;
+        }
+      }
+    }
+  }
+}
+.position-list {
+  margin-bottom: 55px;
+  > ul {
+    display: flex;
+    > li {
+      flex: 1 1 0;
+      border: 1px solid #8E8E8E;
+      border-left: none;
+      box-sizing: border-box;
+      text-align: center;
+      &:first-child {
+        border-left: 1px solid #8E8E8E;
+      }
+      > a {
+        display: flex;
+        height: 63px;
+        justify-content: center;
+        align-items: center;
+        color: #52575E;
+        font-size: 18px;
+        font-family: "Pretendard-Medium", sans-serif;
+      }
+      &.active {
+        > a {
+          background-color: #04156B;
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+.position-content {
+  > p {
+    img {
+      vertical-align: top;
+      width: 100%;
+      height: auto;
+    }
+  }
+  > dl {
+    margin-top: 80px;
+    &.quality-01 {
+      > dt {
+        background: url("/images/sub/career/position/position-01-01.png") no-repeat 0 50%;
+      }
+    }
+    &.quality-02 {
+      > dt {
+        background: url("/images/sub/career/position/position-01-02.png") no-repeat 0 50%;
+      }
+    }
+    &.quality-03 {
+      > dt {
+        background: url("/images/sub/career/position/position-01-03.png") no-repeat 0 50%;
+      }
+    }
+    &.quality-04 {
+      > dt {
+        background: url("/images/sub/career/position/position-01-04.png") no-repeat 0 50%;
+      }
+    }
+    &.sales-01 {
+      > dt {
+        background: url("/images/sub/career/position/position-02-01.png") no-repeat 0 50%;
+      }
+    }
+    &.research-01 {
+      > dt {
+        background: url("/images/sub/career/position/position-03-01.png") no-repeat 0 50%;
+      }
+    }
+    &.research-02 {
+      > dt {
+        background: url("/images/sub/career/position/position-03-02.png") no-repeat 0 50%;
+      }
+    }
+    &.research-03 {
+      > dt {
+        background: url("/images/sub/career/position/position-03-03.png") no-repeat 0 50%;
+      }
+    }
+    &.production-01 {
+      > dt {
+        background: url("/images/sub/career/position/position-04-01.png") no-repeat 0 50%;
+      }
+    }
+    &.production-02 {
+      > dt {
+        background: url("/images/sub/career/position/position-04-02.png") no-repeat 0 50%;
+      }
+    }
+    &.procurement-01 {
+      > dt {
+        background: url("/images/sub/career/position/position-05-01.png") no-repeat 0 50%;
+      }
+    }
+    &.procurement-02 {
+      > dt {
+        background: url("/images/sub/career/position/position-05-02.png") no-repeat 0 50%;
+      }
+    }
+    &.management-01 {
+      > dt {
+        background: url("/images/sub/career/position/position-06-01.png") no-repeat 0 50%;
+      }
+    }
+    &.management-02 {
+      > dt {
+        background: url("/images/sub/career/position/position-06-02.png") no-repeat 0 50%;
+      }
+    }
+    &.management-03 {
+      > dt {
+        background: url("/images/sub/career/position/position-06-03.png") no-repeat 0 50%;
+      }
+    }
+    &.management-04 {
+      > dt {
+        background: url("/images/sub/career/position/position-06-04.png") no-repeat 0 50%;
+      }
+    }
+    &.factory-01 {
+      > dt {
+        background: url("/images/sub/career/position/position-07-01.png") no-repeat 0 50%;
+      }
+    }
+    > dt {
+      padding: 9px 0 9px 63px;
+      font-size: 25px;
+      font-family: "Pretendard-Bold", sans-serif;
+      color: #52575E;
+      span {
+        color: #036CFF;
+        font-size: 18px;
+        font-family: "Pretendard-Light", sans-serif;
+        display: inline-block;
+        margin-left: 25px;
+      }
+    }
+    > dd {
+      margin-top: 30px;
+      > p {
+        font-size: 20px;
+        font-family: "Pretendard-Medium", sans-serif;
+        color: #52575E;
+        line-height: 35px;
+      }
+      > ul {
+        margin-top: 34px;
+        padding-left: 29px;
+        > li {
+          position: relative;
+          padding-left: 10px;
+          margin-top: 10px;
+          &:first-child {
+            margin-top: 0;
+          }
+          &:before {
+            position: absolute;
+            top: 0;
+            left: 0;
+            content: "·";
+          }
+        }
+
+      }
+    }
+  }
+}

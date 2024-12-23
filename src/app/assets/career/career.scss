@@ -1,0 +1,33 @@
+.career {
+  padding-bottom: 135px;
+  .container-header-01 {
+    margin-bottom: 105px;
+  }
+  .career-link {
+    display: inline-flex;
+    gap: 20px 28px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+    > a {
+      display: inline-block;
+      border-radius: 11px;
+      background-color: #ECECEC;
+      font-size: 15px;
+      font-family: "Pretendard-Bold", sans-serif;
+      padding: 17px;
+      width: 225px;
+      color: #BDC1C8;
+      &.active {
+        background-color: #023A8E;
+        color: #fff;
+      }
+    }
+  }
+  .career-container {
+    max-width: 1420px;
+    margin: 0 auto;
+  }
+}
+
+

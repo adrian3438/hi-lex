@@ -1,0 +1,19 @@
+.research-modeling {
+  padding-bottom: 250px;
+  .go-btn {
+    max-width: 1600px;
+    margin: 0 auto;
+    text-align: right;
+    > a {
+      display: inline-flex;
+      height: 55px;
+      align-items: center;
+      color: #fff;
+      background-color: #1B4D99;
+      font-size: 15px;
+      font-family: "Pretendard-Bold", sans-serif;
+      padding: 0 50px;
+      border-radius: 11px;
+    }
+  }
+}
