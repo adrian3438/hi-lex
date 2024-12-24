@@ -132,7 +132,17 @@ export const map = [
         moveCode : {},
         storeCount : 0,
         zoom : 0,
-        currentZoom : 8
+        currentZoom : 8,
+        info: {
+            title: "Daedong Hi-Lex Inc. (Ulsan Plant)",
+            address2: "",
+            address: "236, Modulehwa Saneop-ro, Buk-gu, Ulsan, 44246 Korea",
+            tel: "82(52)287-7635",
+            fax: "82(52)287-7636",
+            established: "",
+            netSales: "",
+            employee: "",
+        },
     },
     {
         countryCode : 2,
@@ -141,7 +151,17 @@ export const map = [
         moveCode : {},
         storeCount : 0,
         zoom : 0,
-        currentZoom : 8
+        currentZoom : 8,
+        info: {
+            title: "Daedong Hi-Lex Inc. (Gwangju Plant)",
+            address2: "",
+            address: "111, Pyeongdongsandan 6beon-ro, Gwangsan-gu, Gwangju, 62453 Korea",
+            tel: "82(62)945-7635",
+            fax: "-",
+            established: "",
+            netSales: "",
+            employee: "",
+        },
     },
     {
         countryCode : 2,
@@ -150,7 +170,17 @@ export const map = [
         moveCode : {},
         storeCount : 0,
         zoom : 0,
-        currentZoom : 8
+        currentZoom : 8,
+        info: {
+            title: "TSK(Korea)Co., Ltd.",
+            address2: "",
+            address: "89, Jayumuyeok 3-gil, Masanhoewon-gu, Changwon-si, Gyeongsangnam-do, 51338 Korea",
+            tel: "82(55)293-1473",
+            fax: "82(32)813-763",
+            established: "Now., 1972",
+            netSales: "42 million US $",
+            employee: "154",
+        },
     },
 
     // 중국
@@ -172,7 +202,17 @@ export const map = [
         moveCode : {},
         storeCount : 0,
         zoom : 0,
-        currentZoom : 5
+        currentZoom : 5,
+        info: {
+            title: "Daedong Hi-Lex Of America, Inc.",
+            address2: "",
+            address: "1195 Cr177, Cusseta, Alabama, 36852, U.S.A.",
+            tel: "1-334-756-5300",
+            fax: "1-334-756-5301",
+            established: "Jun., 2008",
+            netSales: "90 million US $",
+            employee: "106",
+        },
     },
     {
         countryCode : 3,
@@ -181,7 +221,17 @@ export const map = [
         moveCode : { lat: 42.034833, lng: -84.766488 },
         storeCount : 3,
         zoom : 8,
-        currentZoom : 5
+        currentZoom : 5,
+        info: {
+            title: "Hi-Lex Controls Inc.",
+            address2: "",
+            address: "152 Simpson Drive, Litchfield, Michigan 49252 U.S.A.",
+            tel: "1(517)542-2955",
+            fax: "1(517)542-2594",
+            established: "May, 1989",
+            netSales: "323million US $",
+            employee: "589",
+        },
     },
 
     // 헝가리
@@ -382,7 +432,17 @@ export const map = [
         moveCode : {},
         storeCount : 0,
         zoom : 0,
-        currentZoom : 14
+        currentZoom : 14,
+        info: {
+            title: "Daedong Door Hi-Lex Inc.",
+            address2: "{3LT,3BL,NAMDONG COMPLEX}",
+            address: "21, Pyeongtaekhang-ro 184beon-gil, Poseung-eup, Pyeongtaek-si, Gyeonggi-do, 17959 Korea",
+            tel: "82(31)680-8200",
+            fax: "FAX: 82(32)499-4155",
+            established: "",
+            netSales: "",
+            employee: "",
+        },
     },
     {
         countryCode : 2,
@@ -391,7 +451,17 @@ export const map = [
         moveCode : {},
         storeCount : 0,
         zoom : 0,
-        currentZoom : 14
+        currentZoom : 14,
+        info: {
+            title: "Daedong Hi-Lex Inc. (Poseung Plant)",
+            address2: "",
+            address: "169, Poseunggongdansunhwan-ro, Poseung-eup, Pyeongtaek-si, Gyeonggi-do, 17960 Korea",
+            tel: "82(31)686-7674",
+            fax: "82(31)686-7674",
+            established: "",
+            netSales: "",
+            employee: "",
+        },
     },
     // 일본 - 오사카 (5)
     {
@@ -447,7 +517,8 @@ export const map = [
         moveCode : {},
         storeCount : 0,
         zoom : 0,
-        currentZoom : 8
+        currentZoom : 8,
+
     },
     {
         countryCode : 3,

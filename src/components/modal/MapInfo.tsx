@@ -9,7 +9,7 @@ const customStyles = {
         right: 'auto',
         bottom: 'auto',
         width: '100%',
-        maxWidth: "1538px",
+        maxWidth: "calc(1538px - 80px)",
         height: 'auto',
         transform: 'translate(-50%, -50%)',
         zIndex : '9999',
@@ -24,7 +24,6 @@ interface Props {
 }
 
 export default function MapInfo({isOpen, onRequestClose, mapInfo}: Props) {
-    console.log('mapInfo : ', mapInfo);
     return (
         <Modal
             isOpen={isOpen}
@@ -37,26 +36,25 @@ export default function MapInfo({isOpen, onRequestClose, mapInfo}: Props) {
                     <button onClick={onRequestClose} className="modal-close-button">Close</button>
                 </div>
                 <div className="modal-content">
-                    <div>
-                    <div>
-                        <h3>{mapInfo?.title}</h3>
-                        <div className="address">
-                            <p></p>
-                            <address>{mapInfo?.address}</address>
+                    <div className="info-detail">
+                        <div className="info-detail-text">
+                            <h3>{mapInfo?.title}</h3>
+                            <div className="address">
+                                {mapInfo?.address2 !== "" && <p>{mapInfo?.address2}</p>}
+                                <address>{mapInfo?.address}</address>
+                            </div>
+                            <div className="contact">
+                                <p className="tel">{mapInfo?.tel}</p>
+                                <p className="fax">{mapInfo?.fax}</p>
+                            </div>
+                            {mapInfo?.established !== "" && mapInfo?.netSales !== "" && mapInfo?.employee !== "" && (
+                                <div className="etc-info">
+                                    {mapInfo?.established !== "" && <p>Established: {mapInfo?.established}</p>}
+                                    {mapInfo?.netSales !== "" && <p>Net Sales: {mapInfo?.netSales}</p>}
+                                    {mapInfo?.employee !== "" && <p>Employee: {mapInfo?.employee}</p>}
+                                </div>
+                            )}
                         </div>
-                        <div className="contact">
-                            <p className="tel"></p>
-                            <p className="fax"></p>
-                        </div>
-                        <div className="etc-info">
-                            <p>Established: </p>
-                            <p>Net Sales:</p>
-                            <p>Employee</p>
-                        </div>
-                    </div>
-                    <div>
-                        <Image src={mapInfo?.imgSrc} alt={mapInfo?.title} width={768} height={377}/>
-                    </div>
                     </div>
                 </div>
             </div>
