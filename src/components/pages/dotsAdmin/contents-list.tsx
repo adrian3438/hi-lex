@@ -116,7 +116,7 @@ export default function ContentsListPage ({
 
                     <div className="right">
                         <div className="btnBox">
-                            <button className="blueBtn" onClick={()=>router.push(`/dotsAdmin/contents-management/contents`)}>신규등록</button>
+                            <button className="blueBtn" onClick={()=>router.push(`/admin/contents-management/contents`)}>신규등록</button>
                         </div>
                     </div>
                 </div>
@@ -132,20 +132,20 @@ export default function ContentsListPage ({
                             <tbody>
                             {data?.map((list:any, index:number) => (
                                 <tr key={index}>
-                                    <td onClick={()=>router.push(`/dotsAdmin/contents-management/contents?c=${contentsType}&id=${list?.contentDetailKrId}&lang=${'KR'}`)}>
+                                    <td onClick={()=>router.push(`/admin/contents-management/contents?c=${contentsType}&id=${list?.contentDetailKrId}&lang=${'KR'}`)}>
                                     <span className="readOnly">
                                         {calculateIndex(page , size , totalCount , index)}
                                     </span>
                                     </td>
-                                    <td onClick={()=>router.push(`/dotsAdmin/contents-management/contents?c=${contentsType}&id=${list?.contentDetailKrId}&lang=${'KR'}`)}>
+                                    <td onClick={()=>router.push(`/admin/contents-management/contents?c=${contentsType}&id=${list?.contentDetailKrId}&lang=${'KR'}`)}>
                                         <span className="readOnly">{list?.contentTypeNameKr}</span>
                                     </td>
-                                    <td onClick={()=>router.push(`/dotsAdmin/contents-management/contents?c=${contentsType}&id=${list?.contentDetailKrId}&lang=${'KR'}`)}>
+                                    <td onClick={()=>router.push(`/admin/contents-management/contents?c=${contentsType}&id=${list?.contentDetailKrId}&lang=${'KR'}`)}>
                                         <div className="imgBox">
                                             <Image src={list?.thumnailImage ? list?.thumnailImage : '/images/admin/DK-LOK-no-images.png'} alt="thumbmail" width={100} height={50}/>
                                         </div>
                                     </td>
-                                    <td onClick={()=>router.push(`/dotsAdmin/contents-management/contents?c=${contentsType}&id=${list?.contentDetailKrId}&lang=${'KR'}`)}>
+                                    <td onClick={()=>router.push(`/admin/contents-management/contents?c=${contentsType}&id=${list?.contentDetailKrId}&lang=${'KR'}`)}>
                                         <span className="readOnly">{list?.contentName}</span>
                                     </td>
                                     <td>

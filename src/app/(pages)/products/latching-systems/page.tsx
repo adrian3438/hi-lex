@@ -1,8 +1,9 @@
 import Header from "@/components/common/Header";
 import Footer from "@/components/common/Footer";
 import {fetchLanguage} from "@/util/fetchLanguage";
+import LatchingSystems from "@/components/products/LatchingSystems";
 
-export default async function ContactUsPage({searchParams : {lang}} : any) {
+export default async function LatchingSystemsPage({searchParams : {lang}} : any) {
     const language = await fetchLanguage(lang);
     return (
         <>
@@ -15,6 +16,7 @@ export default async function ContactUsPage({searchParams : {lang}} : any) {
                         <li>{language?.header_2_2}</li>
                     </ul>
                 </div>
+                <LatchingSystems/>
             </div>
             <Footer language={language}/>
         </>

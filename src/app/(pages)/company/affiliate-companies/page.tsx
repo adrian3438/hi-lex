@@ -11,6 +11,7 @@ export default async function AffiliateCompaniesPage({searchParams : {lang}} : a
             <Header language={language}/>
             <div className="affiliate">
                 <Map/>
+                <div>test</div>
             </div>
             <Footer language={language}/>
             <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC087DFe7YereRkKUwqUIXnQrMUf_1yA7M&libraries=places" async></script>

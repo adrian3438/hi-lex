@@ -57,7 +57,7 @@ export default function AdminAccountPage ({
                 const response = await api.post(`/admin/manager/setManager.php`, formData)
                 if(response?.data?.result === true) {
                     alert(response?.data?.resultMsg);
-                    router.push(`/dotsAdmin/admin-account-management/admin-account-list`)
+                    router.push(`/admin/admin-account-management/admin-account-list`)
                 }
                 else{alert(response?.data?.resultMsg);}
             }

@@ -9,10 +9,10 @@ export default function ListFilter () {
     const [filter , setFilter] = useState<any[]>([])
     useEffect(()=>{
         switch(pathname){
-            case '/dotsAdmin/common-code-management/common-code-list' : setFilter(CommonCodeFilter); break;
-            case '/dotsAdmin/contents-management/contents-list' : setFilter(ContentFilter); break;
-            case '/dotsAdmin/inquiry-management/inquiry-list' : setFilter(InquiryFilter); break;
-            case '/dotsAdmin/admin-account-management/admin-account-list' : setFilter(SettingFilter); break;
+            case '/admin/common-code-management/common-code-list' : setFilter(CommonCodeFilter); break;
+            case '/admin/contents-management/contents-list' : setFilter(ContentFilter); break;
+            case '/admin/inquiry-management/inquiry-list' : setFilter(InquiryFilter); break;
+            case '/admin/admin-account-management/admin-account-list' : setFilter(SettingFilter); break;
         }
     }, [pathname])
     return(

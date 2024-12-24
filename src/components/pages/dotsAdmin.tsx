@@ -25,7 +25,7 @@ export default function AdminLoginPage () {
             const res = await api.get(`/admin/manager/adminLogin.php?managerLoginId=${login?.id}&managerPass=${login?.password}`)
             if(res?.data?.result === true) {
                 dispatch(setUser({users : res.data}));
-                router.push(`/dotsAdmin/common-code-management/common-code-list`);
+                router.push(`/admin/common-code-management/common-code-list`);
             }else{
                 alert(res.data.resultMsg);
             }

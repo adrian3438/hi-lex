@@ -66,7 +66,7 @@ export default function AdminAccountListPage ({
 
                 <div className="right">
                     <div className="btnBox">
-                        <button className="blueBtn" onClick={()=>router.push(`/dotsAdmin/admin-account-management/admin-account`)}>신규등록</button>
+                        <button className="blueBtn" onClick={()=>router.push(`/admin/admin-account-management/admin-account`)}>신규등록</button>
                     </div>
                 </div>
             </div>
@@ -117,7 +117,7 @@ export default function AdminAccountListPage ({
                                 </td>
                                 <td>
                                     <div className="management_btnBox">
-                                        <button className="edit" onClick={()=>router.push(`/dotsAdmin/admin-account-management/admin-account?id=${list?.ID}`)}>수정</button>
+                                        <button className="edit" onClick={()=>router.push(`/admin/admin-account-management/admin-account?id=${list?.ID}`)}>수정</button>
                                     </div>
                                 </td>
                             </tr>

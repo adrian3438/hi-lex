@@ -72,16 +72,16 @@ export default function CommonCodeListPage () {
                         <tbody>
                             {data?.map((list:any) => (
                                 <tr key={list?.codeId} style={{cursor : 'pointer'}}>
-                                    <td onClick={()=>router.push(`/dotsAdmin/common-code-management/common-code?id=${list?.codeId}`)}>
+                                    <td onClick={()=>router.push(`/admin/common-code-management/common-code?id=${list?.codeId}`)}>
                                         <span className="readOnly">{1}</span>
                                     </td>
-                                    <td onClick={()=>router.push(`/dotsAdmin/common-code-management/common-code?id=${list?.codeId}`)}>
+                                    <td onClick={()=>router.push(`/admin/common-code-management/common-code?id=${list?.codeId}`)}>
                                         <span className="readOnly">{list?.codeName}</span>
                                     </td>
-                                    <td onClick={()=>router.push(`/dotsAdmin/common-code-management/common-code?id=${list?.codeId}`)}>
+                                    <td onClick={()=>router.push(`/admin/common-code-management/common-code?id=${list?.codeId}`)}>
                                         <span className="readOnly">{list?.codeId}</span>
                                     </td>
-                                    <td onClick={()=>router.push(`/dotsAdmin/common-code-management/common-code?id=${list?.codeId}`)}>
+                                    <td onClick={()=>router.push(`/admin/common-code-management/common-code?id=${list?.codeId}`)}>
                                         <span className="readOnly">{list?.createDate}</span>
                                     </td>
                                     <td>
