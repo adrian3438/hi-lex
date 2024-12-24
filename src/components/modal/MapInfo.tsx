@@ -1,6 +1,5 @@
 import Modal from 'react-modal';
 import '@/app/assets/modal.scss';
-import Image from "next/image";
 
 const customStyles = {
     content: {
