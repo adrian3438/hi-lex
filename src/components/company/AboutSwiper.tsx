@@ -26,8 +26,8 @@ export default function AboutSwiper({language}: Props) {
                 <Image src="/images/sub/company/about/about-01.png" alt="" width={2000} height={1121}/>
                 <div>
                     <div>
-                        <p>{language?.about_01}</p>
-                        <p>{language?.about_02}</p>
+                        <p>{language?.about_08}</p>
+                        <p>{language?.about_09}<br/>{language?.about_10}</p>
                     </div>
                 </div>
             </SwiperSlide>
@@ -45,7 +45,7 @@ export default function AboutSwiper({language}: Props) {
                 <div>
                     <div>
                         <p>{language?.about_06}</p>
-                        <p>{language?.about_07}</p>
+                        <p>{language?.about_07}<br/>{language?.about_07_02}</p>
                     </div>
                 </div>
             </SwiperSlide>

@@ -28,13 +28,18 @@ export default function MainMenu({headerLeave, language}: Props): JSX.Element {
                         <li><Link href="/company/about-us">{language.header_1_2}</Link></li>
                         <li><Link href="/company/management-philosopy">{language.header_1_3}</Link></li>
                         <li><Link href="/company/history">{language.header_1_4}</Link></li>
-                        <li><Link href="#">{language.header_1_5}</Link></li>
+                        <li><Link href="/company/affiliate-companies">{language.header_1_5}</Link></li>
                         <li><Link href="/company/location">{language.header_1_6}</Link></li>
                         <li><Link href="/company/contact-us">{language.header_1_7}</Link></li>
                     </ul>
                 </li>
-                <li className={`business-area ${activeMenu === 1 && !headerLeave ? 'on' : ''}`}>
+                <li className={activeMenu === 1 && !headerLeave ? 'on' : ''}>
                     <Link href="#" onMouseOver={() => handleMouseOver(1)}>{language.header_2}</Link>
+                    <ul>
+                        <li><Link href="/products/latching-systems">{language.header_2_1}</Link></li>
+                        <li><Link href="/products/power-closures">{language.header_2_2}</Link></li>
+                        <li><Link href="/products/door-checks">{language.header_2_3}</Link></li>
+                    </ul>
                 </li>
                 <li className={activeMenu === 2 && !headerLeave ? 'on' : ''}>
                     <Link href="/research" onMouseOver={() => handleMouseOver(2)}>{language.header_3}</Link>

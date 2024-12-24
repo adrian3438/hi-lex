@@ -65,7 +65,7 @@ export default function LanguageMenu({language}: Props) {
                                 <li><Link href="/company/about-us">- {language.header_1_2}</Link></li>
                                 <li><Link href="/company/management-philosopy">- {language.header_1_3}</Link></li>
                                 <li><Link href="/company/history">- {language.header_1_4}</Link></li>
-                                <li><Link href="#">- {language.header_1_5}</Link></li>
+                                <li><Link href="/company/affiliate-companies">- {language.header_1_5}</Link></li>
                                 <li><Link href="/company/location">- {language.header_1_6}</Link></li>
                                 <li><Link href="/company/contact-us">- {language.header_1_7}</Link></li>
                             </ul>
