@@ -17,6 +17,7 @@ export default function ContactUs({language}: Props) {
         position: '',
         phone: '',
         email: '',
+        fax: '',
         type: '',
         title: '',
         message: '',
@@ -72,6 +73,10 @@ export default function ContactUs({language}: Props) {
             alert('이메일을 입력해 주시기 바랍니다.');
             return;
         }
+        if (!data?.fax) {
+            alert('팩스번호를 입력해 주시기 바랍니다.');
+            return;
+        }
         if (!data?.type) {
             alert('사업분야를 선택해주시기 바랍니다.');
             return;
@@ -96,6 +101,7 @@ export default function ContactUs({language}: Props) {
             formData.append('inquiryPosition', data?.position)
             formData.append('inquiryEmail', data?.email)
             formData.append('inquiryPhone', data?.phone)
+            formData.append('inquiryFax', data?.fax)
             formData.append('inquiryType', data?.type)
             formData.append('inquirySubject', data?.title)
             formData.append('inquiryContents', data?.message)
@@ -182,19 +188,19 @@ export default function ContactUs({language}: Props) {
                     <legend><span>7</span> {language.inquiry_text_08} <i>*</i></legend>
                     <div>
                         <label>
-                            <input type="radio" id="serviceInfo01" name="type" value="" onChange={handleChange}/>
+                            <input type="radio" id="serviceInfo01" name="type" value="SO" onChange={handleChange}/>
                             <span>{language.inquiry_text_09}</span>
                         </label>
                         <label>
-                            <input type="radio" id="serviceInfo02" name="type" value="" onChange={handleChange}/>
+                            <input type="radio" id="serviceInfo02" name="type" value="RT" onChange={handleChange}/>
                             <span>{language.inquiry_text_10}</span>
                         </label>
                         <label>
-                            <input type="radio" id="serviceInfo03" name="type" value="" onChange={handleChange}/>
+                            <input type="radio" id="serviceInfo03" name="type" value="EO" onChange={handleChange}/>
                             <span>{language.inquiry_text_11}</span>
                         </label>
                         <label>
-                            <input type="radio" id="serviceInfo04" name="type" value="" onChange={handleChange}/>
+                            <input type="radio" id="serviceInfo04" name="type" value="OO" onChange={handleChange}/>
                             <span>{language.inquiry_text_12}</span>
                         </label>
                     </div>

@@ -101,6 +101,36 @@
       }
     }
   }
+  .ethical-tab {
+    max-width: 1600px;
+    margin: 20px auto 0;
+    > div {
+      max-width: 950px;
+      margin: 0 auto;
+      display: flex;
+      gap: 20px 34px;
+      flex-wrap: wrap;
+      align-items: center;
+      button {
+        background: none;
+        border: none;
+        padding: 0;
+        font-size: 20px;
+        color: #52575E;
+        cursor: pointer;
+        &.active {
+          border-bottom: 2px solid #1A4D99;
+        }
+      }
+      a {
+        align-items: center;
+        display: flex;
+        font-size: 20px;
+        color: #52575E;
+        gap: 0 5px;
+      }
+    }
+  }
 
 
   /* ESG 경영 */
@@ -628,9 +658,60 @@
     max-width: 1600px;
     margin: 0 auto;
     padding: 145px 20px 260px;
+    .button {
+      text-align: center;
+      > a {
+        display: inline-block;
+        width: 315px;
+        padding: 19px 0;
+        color: #fff;
+        background-color: #1B4D99;
+        border-radius: 11px;
+        font-size: 15px;
+        font-family: "Pretendard-Bold", sans-serif;
+      }
+    }
     .ethical-01 {
       margin-bottom: 220px;
+      text-align: center;
+      h2 {
+        display: inline-block;
+        border-bottom: 1px solid #023A8E;
+        position: relative;
+        padding-bottom: 46px;
+        font-family: "Pretendard-Bold", sans-serif;
+        font-size: 50px;
+        width: 100%;
+        max-width: 580px;
+        color: #023A8E;
+        margin-bottom: 120px;
+      }
+      > .text {
+        text-align: left;
+        font-size: 18px;
+        line-height: 35px;
+      }
+      > .image-01 {
+        margin-top: 158px;
+        text-align: center;
+        > img {
+          max-width: 648px;
+          width: 100%;
+          height: auto;
+          vertical-align: top;
+        }
+      }
+      > .image-02 {
+        text-align: center;
+        > img {
+          max-width: 1402px;
+          width: 100%;
+          height: auto;
+          vertical-align: top;
+        }
+      }
       > ul {
+        text-align: left;
         > li {
           margin-top: 100px;
           &:first-child {

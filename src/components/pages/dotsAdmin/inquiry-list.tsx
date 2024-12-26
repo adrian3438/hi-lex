@@ -96,10 +96,10 @@ export default function InquiryListPage ({
                                 </td>
                                 <td>
                                     <span className="readOnly">
-                                    {list?.inquiryType === 'GE' && '그린에너지'}
-                                    {list?.inquiryType === 'PS' && '플랜트솔루션'}
-                                    {list?.inquiryType === 'MM' && '계측기'}
-                                    {list?.inquiryType === 'MS' && '마린솔루션'}
+                                    {list?.inquiryType === 'SO' && '판매 및 기타'}
+                                    {list?.inquiryType === 'RT' && '연구개발 및 기술 관련'}
+                                    {list?.inquiryType === 'EO' && '채용'}
+                                    {list?.inquiryType === 'OO' && '기타'}
                                     </span>
                                 </td>
                                 <td>
