@@ -1,20 +1,19 @@
 import "@/app/assets/sustainability/esg.scss";
 import Link from "next/link";
-import Image from "next/image";
 
 interface Props {
     language?: any;
 }
 
-export default function EHS({ language }: Props) {
+export default function SustainabilityReport({ language }: Props) {
     return (
         <div className="esg">
             <div className="esg-banner">
                 <div className="banner-area1">
-                    <h2>{language?.header_4_4}</h2>
+                    <h2>{language?.header_4_7}</h2>
                     <ul className="location">
                         <li>{language?.header_4}</li>
-                        <li>{language?.header_4_4}</li>
+                        <li>{language?.header_4_7}</li>
                     </ul>
                 </div>
                 <div className="banner-area2">
@@ -47,7 +46,7 @@ export default function EHS({ language }: Props) {
                                 </div>
                             </Link>
                         </li>
-                        <li className="active">
+                        <li>
                             <Link href="/sustainability/ehs">
                                 <div>
                                     {language.language !== 'en' && <p>{language?.esg_text_09}</p>}
@@ -71,7 +70,7 @@ export default function EHS({ language }: Props) {
                                 </div>
                             </Link>
                         </li>
-                        <li>
+                        <li className="active">
                             <Link href="/sustainability/sustainability-report">
                                 <div>
                                     {language.language !== 'en' && <p>{language?.esg_text_15}</p>}
@@ -90,75 +89,66 @@ export default function EHS({ language }: Props) {
                     </ul>
                 </div>
             </div>
-            <div className="ehs-container">
+            <div className="esg-container">
                 <section className="esg-section-01">
-                    <h3>{language?.esg_text_03_60}</h3>
-                    <p>{language?.esg_text_03_61}</p>
-                </section>
-                <section className="esg-section-02">
-                    <Image src="/images/sub/sustainability/esg/ehs-02.png" alt="" width={1600} height={2133}/>
-                    <div className="top">
-                        <div className="image-area1">
-                            <p>
-                                {language?.esg_text_03_62}<br/>
-                                {language?.esg_text_03_63}
-                            </p>
-                        </div>
-                        <div className="image-area2">
-                            <div>
-                                <h3>{language?.esg_text_03_64}</h3>
-                                <p>{language?.esg_text_03_65}</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="bottom">
-                        <p>{language?.esg_text_03_66}</p>
-                        <Link href="#">{language?.esg_text_03_67}</Link>
-                    </div>
-                </section>
-                <section className="esg-section-02">
-                    <Image src="/images/sub/sustainability/esg/ehs-04.png" alt="" width={1600} height={1067}/>
-                    <div className="top">
-                        <div className="image-area1">
-                            <p>
-                                {language?.esg_text_03_68}<br/>
-                                {language?.esg_text_03_69}
-                            </p>
-                        </div>
-                        <div className="image-area2">
-                            <div>
-                                <h3>{language?.esg_text_03_70}</h3>
-                                <p>{language?.esg_text_03_71}</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="bottom">
-                        <p>{language?.esg_text_03_72}</p>
-                        <p>{language?.esg_text_03_73}</p>
-                        <Link href="#">{language?.esg_text_03_74}</Link>
+                    <h3>{language?.esg_text_07_01}</h3>
+                    <div className="sustainability-download">
+                        <h4>{language?.esg_text_07_02}</h4>
+                        <table>
+                            <tbody>
+                            <tr>
+                                <th scope="row">{language?.esg_text_07_03}</th>
+                                <td>
+                                    <a href="#" download>{language?.esg_text_07_10}</a>
+                                    <a href="#" download>{language?.esg_text_07_11}</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">{language?.esg_text_07_04}</th>
+                                <td>
+                                    <a href="#" download>{language?.esg_text_07_10}</a>
+                                    <a href="#" download>{language?.esg_text_07_11}</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">{language?.esg_text_07_05}</th>
+                                <td>
+                                    <a href="#" download>{language?.esg_text_07_10}</a>
+                                    <a href="#" download>{language?.esg_text_07_11}</a>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </section>
-
                 <section className="esg-section-02">
-                    <Image src="/images/sub/sustainability/esg/ehs-06.png" alt="" width={1600} height={1600}/>
-                    <div className="top">
-                        <div className="image-area1">
-                            <p>
-                                {language?.esg_text_03_75}<br/>
-                                {language?.esg_text_03_76}
-                            </p>
-                        </div>
-                        <div className="image-area2">
-                            <div>
-                                <h3>{language?.esg_text_03_77}</h3>
-                                <p>{language?.esg_text_03_78}</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="bottom">
-                        <p>{language?.esg_text_03_79}</p>
-                        <p>{language?.esg_text_03_80}</p>
-                        <Link href="#">{language?.esg_text_03_81}</Link>
+                    <div className="sustainability-download">
+                        <h4>{language?.esg_text_07_06}</h4>
+                        <table>
+                            <tbody>
+                            <tr>
+                                <th scope="row">{language?.esg_text_07_07}</th>
+                                <td>
+                                    <a href="#" download>{language?.esg_text_07_10}</a>
+                                    <a href="#" download>{language?.esg_text_07_11}</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">{language?.esg_text_07_08}</th>
+                                <td>
+                                    <a href="#" download>{language?.esg_text_07_10}</a>
+                                    <a href="#" download>{language?.esg_text_07_11}</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">{language?.esg_text_07_09}</th>
+                                <td>
+                                    <a href="#" download>{language?.esg_text_07_10}</a>
+                                    <a href="#" download>{language?.esg_text_07_11}</a>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </section>
             </div>

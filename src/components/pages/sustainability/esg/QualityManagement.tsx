@@ -6,15 +6,15 @@ interface Props {
     language?: any;
 }
 
-export default function EHS({ language }: Props) {
+export default function QualityManagement({ language }: Props) {
     return (
         <div className="esg">
             <div className="esg-banner">
                 <div className="banner-area1">
-                    <h2>{language?.header_4_4}</h2>
+                    <h2>{language?.header_4_6}</h2>
                     <ul className="location">
                         <li>{language?.header_4}</li>
-                        <li>{language?.header_4_4}</li>
+                        <li>{language?.header_4_6}</li>
                     </ul>
                 </div>
                 <div className="banner-area2">
@@ -47,7 +47,7 @@ export default function EHS({ language }: Props) {
                                 </div>
                             </Link>
                         </li>
-                        <li className="active">
+                        <li>
                             <Link href="/sustainability/ehs">
                                 <div>
                                     {language.language !== 'en' && <p>{language?.esg_text_09}</p>}
@@ -63,7 +63,7 @@ export default function EHS({ language }: Props) {
                                 </div>
                             </Link>
                         </li>
-                        <li>
+                        <li className="active">
                             <Link href="/sustainability/quality-management">
                                 <div>
                                     {language.language !== 'en' && <p>{language?.esg_text_13}</p>}
@@ -90,75 +90,54 @@ export default function EHS({ language }: Props) {
                     </ul>
                 </div>
             </div>
-            <div className="ehs-container">
+            <div className="esg-container">
                 <section className="esg-section-01">
-                    <h3>{language?.esg_text_03_60}</h3>
-                    <p>{language?.esg_text_03_61}</p>
-                </section>
-                <section className="esg-section-02">
-                    <Image src="/images/sub/sustainability/esg/ehs-02.png" alt="" width={1600} height={2133}/>
-                    <div className="top">
-                        <div className="image-area1">
-                            <p>
-                                {language?.esg_text_03_62}<br/>
-                                {language?.esg_text_03_63}
-                            </p>
-                        </div>
-                        <div className="image-area2">
-                            <div>
-                                <h3>{language?.esg_text_03_64}</h3>
-                                <p>{language?.esg_text_03_65}</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="bottom">
-                        <p>{language?.esg_text_03_66}</p>
-                        <Link href="#">{language?.esg_text_03_67}</Link>
-                    </div>
-                </section>
-                <section className="esg-section-02">
-                    <Image src="/images/sub/sustainability/esg/ehs-04.png" alt="" width={1600} height={1067}/>
-                    <div className="top">
-                        <div className="image-area1">
-                            <p>
-                                {language?.esg_text_03_68}<br/>
-                                {language?.esg_text_03_69}
-                            </p>
-                        </div>
-                        <div className="image-area2">
-                            <div>
-                                <h3>{language?.esg_text_03_70}</h3>
-                                <p>{language?.esg_text_03_71}</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="bottom">
-                        <p>{language?.esg_text_03_72}</p>
-                        <p>{language?.esg_text_03_73}</p>
-                        <Link href="#">{language?.esg_text_03_74}</Link>
-                    </div>
-                </section>
-
-                <section className="esg-section-02">
-                    <Image src="/images/sub/sustainability/esg/ehs-06.png" alt="" width={1600} height={1600}/>
-                    <div className="top">
-                        <div className="image-area1">
-                            <p>
-                                {language?.esg_text_03_75}<br/>
-                                {language?.esg_text_03_76}
-                            </p>
-                        </div>
-                        <div className="image-area2">
-                            <div>
-                                <h3>{language?.esg_text_03_77}</h3>
-                                <p>{language?.esg_text_03_78}</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="bottom">
-                        <p>{language?.esg_text_03_79}</p>
-                        <p>{language?.esg_text_03_80}</p>
-                        <Link href="#">{language?.esg_text_03_81}</Link>
+                    <h3>{language?.esg_text_06_01}</h3>
+                    <p>{language?.esg_text_06_02}<br/>{language?.esg_text_06_03}</p>
+                    <p className="image-area">
+                        <Image src={`/images/sub/sustainability/esg/quality-01-${language.language}.png`} alt="" width={1028} height={1028} style={{maxWidth: "1028px", width:"100%", height:"auto"}}/>
+                    </p>
+                    <div className="quality-management">
+                        <dl className="quality-01">
+                            <dt>{language?.esg_text_06_04}</dt>
+                            <dd>
+                                <p>{language?.esg_text_06_05}</p>
+                                <ul>
+                                    <li>{language?.esg_text_06_06}</li>
+                                    <li>{language?.esg_text_06_07}</li>
+                                </ul>
+                            </dd>
+                        </dl>
+                        <dl className="quality-02">
+                            <dt>{language?.esg_text_06_08}</dt>
+                            <dd>
+                                <p>{language?.esg_text_06_09}</p>
+                                <ul>
+                                    <li>{language?.esg_text_06_10}</li>
+                                    <li>{language?.esg_text_06_11}</li>
+                                </ul>
+                            </dd>
+                        </dl>
+                        <dl className="quality-03">
+                            <dt>{language?.esg_text_06_12}</dt>
+                            <dd>
+                                <p>{language?.esg_text_06_13}</p>
+                                <ul>
+                                    <li>{language?.esg_text_06_14}</li>
+                                    <li>{language?.esg_text_06_15}</li>
+                                </ul>
+                            </dd>
+                        </dl>
+                        <dl className="quality-04">
+                            <dt>{language?.esg_text_06_16}</dt>
+                            <dd>
+                                <p>{language?.esg_text_06_17}</p>
+                                <ul>
+                                    <li>{language?.esg_text_06_18}</li>
+                                    <li>{language?.esg_text_06_19}</li>
+                                </ul>
+                            </dd>
+                        </dl>
                     </div>
                 </section>
             </div>

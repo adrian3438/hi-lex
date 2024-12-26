@@ -11,10 +11,10 @@ export default function ClimateChange({ language }: Props) {
         <div className="esg">
             <div className="esg-banner">
                 <div className="banner-area1">
-                    <h2>{language?.header_4_3}</h2>
+                    <h2>{language?.header_4_2}</h2>
                     <ul className="location">
                         <li>{language?.header_4}</li>
-                        <li>{language?.header_4_3}</li>
+                        <li>{language?.header_4_2}</li>
                     </ul>
                 </div>
                 <div className="banner-area2">
@@ -24,7 +24,7 @@ export default function ClimateChange({ language }: Props) {
                 <div className="esg-menu">
                     <ul>
                         <li>
-                            <Link href="/sustainability/esg/esg-management">
+                            <Link href="/sustainability/esg-management">
                                 <div>
                                     {language.language !== 'en' && <p>{language?.esg_text_03}</p>}
                                     <p>{language?.esg_text_04}</p>
@@ -32,7 +32,7 @@ export default function ClimateChange({ language }: Props) {
                             </Link>
                         </li>
                         <li className="active">
-                            <Link href="/sustainability/esg/climate-change">
+                            <Link href="/sustainability/climate-change">
                                 <div>
                                     {language.language !== 'en' && <p>{language?.esg_text_05}</p>}
                                     <p>{language?.esg_text_06}</p>
@@ -40,7 +40,7 @@ export default function ClimateChange({ language }: Props) {
                             </Link>
                         </li>
                         <li>
-                            <Link href="/sustainability/esg/ethical-business">
+                            <Link href="/sustainability/ethical-business">
                                 <div>
                                     {language.language !== 'en' && <p>{language?.esg_text_07}</p>}
                                     <p>{language?.esg_text_08}</p>
@@ -48,7 +48,7 @@ export default function ClimateChange({ language }: Props) {
                             </Link>
                         </li>
                         <li>
-                            <Link href="/sustainability/esg/ehs">
+                            <Link href="/sustainability/ehs">
                                 <div>
                                     {language.language !== 'en' && <p>{language?.esg_text_09}</p>}
                                     <p>{language?.esg_text_10}</p>
@@ -56,10 +56,34 @@ export default function ClimateChange({ language }: Props) {
                             </Link>
                         </li>
                         <li>
-                            <Link href="/sustainability/esg/supply-chain">
+                            <Link href="/sustainability/supply-chain">
                                 <div>
                                     {language.language !== 'en' && <p>{language?.esg_text_11}</p>}
                                     <p>{language?.esg_text_12}</p>
+                                </div>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link href="/sustainability/quality-management">
+                                <div>
+                                    {language.language !== 'en' && <p>{language?.esg_text_13}</p>}
+                                    <p>{language?.esg_text_14}</p>
+                                </div>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link href="/sustainability/sustainability-report">
+                                <div>
+                                    {language.language !== 'en' && <p>{language?.esg_text_15}</p>}
+                                    <p>{language?.esg_text_16}</p>
+                                </div>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link href="/sustainability/whistleblower-complaint">
+                                <div>
+                                    {language.language !== 'en' && <p>{language?.esg_text_17}</p>}
+                                    <p>{language?.esg_text_18}</p>
                                 </div>
                             </Link>
                         </li>
@@ -131,7 +155,7 @@ export default function ClimateChange({ language }: Props) {
                             </p>
                         </div>
                         <div className="image-area2">
-                            <div>
+                        <div>
                                 <h3>{language?.esg_text_02_22}</h3>
                                 <p>{language?.esg_text_02_23}</p>
                             </div>

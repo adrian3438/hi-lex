@@ -53,12 +53,14 @@ export default function MainMenu({headerLeave, language}: Props): JSX.Element {
                 <li className={activeMenu === 3 && !headerLeave ? 'on' : ''}>
                     <Link href="#" onMouseOver={() => handleMouseOver(3)}>{language.header_4}</Link>
                     <ul>
-                        <li><Link href="#">{language.header_4_1}</Link></li>
-                        <li><Link href="#">{language.header_4_2}</Link></li>
-                        <li><Link href="/sustainability/esg/esg-management">{language.header_4_3}</Link></li>
-                        <li><Link href="#">{language.header_4_4}</Link></li>
-                        <li><Link href="#">{language.header_4_5}</Link></li>
-                        <li><Link href="#">{language.header_4_6}</Link></li>
+                        <li><Link href="/sustainability/esg-management">{language.header_4_1}</Link></li>
+                        <li><Link href="/sustainability/climate-change">{language.header_4_2}</Link></li>
+                        <li><Link href="/sustainability/ethical-business">{language.header_4_3}</Link></li>
+                        <li><Link href="/sustainability/ehs">{language.header_4_4}</Link></li>
+                        <li><Link href="/sustainability/supply-chain">{language.header_4_5}</Link></li>
+                        <li><Link href="/sustainability/quality-management">{language.header_4_6}</Link></li>
+                        <li><Link href="/sustainability/sustainability-report">{language.header_4_7}</Link></li>
+                        <li><Link href="/sustainability/whistleblower-complaint">{language.header_4_8}</Link></li>
                     </ul>
                 </li>
                 <li className={activeMenu === 4 && !headerLeave ? 'on' : ''}>

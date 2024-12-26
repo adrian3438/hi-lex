@@ -52,18 +52,20 @@
     }
     .esg-menu {
       position: absolute;
-      left: 0;
-      bottom: 8px;
+      left: 50%;
+      bottom: 0;
+      max-width: 1600px;
       width: 100%;
+      transform: translateX(-50%);
       > ul {
         display: flex;
         justify-content: center;
-        gap: 25px;
+        gap: 25px 1px;
         > li {
           display: flex;
           max-width: 300px;
           width: 100%;
-          height: 110px;
+          height: 74px;
           align-items: center;
           justify-content: center;
           &.active {
@@ -72,7 +74,7 @@
             }
           }
           > a {
-            border-radius: 9px;
+            //border-radius: 9px;
             background-color: rgba(183, 183, 183, 0.46);
             display: flex;
             width: 100%;
@@ -1283,6 +1285,208 @@
           }
         }
       }
+    }
+  }
+
+  /* 품질 경영 */
+  .quality-management {
+    text-align: left;
+    > p {
+      img {
+        vertical-align: top;
+        width: 100%;
+        height: auto;
+      }
+    }
+    > dl {
+      margin-top: 80px;
+      > dt {
+        background: url("/images/sub/career/position/position-01-01.png") no-repeat 0 50%;
+        padding: 9px 0 9px 63px;
+        font-size: 25px;
+        font-family: "Pretendard-Bold", sans-serif;
+        color: #52575E;
+      }
+      > dd {
+        margin-top: 30px;
+        > p {
+          font-size: 20px;
+          font-family: "Pretendard-Medium", sans-serif;
+          color: #52575E;
+          line-height: 35px;
+        }
+        > ul {
+          margin-top: 34px;
+          > li {
+            position: relative;
+            padding-left: 10px;
+            margin-top: 10px;
+            &:first-child {
+              margin-top: 0;
+            }
+            &:before {
+              position: absolute;
+              top: 0;
+              left: 0;
+              content: "·";
+            }
+          }
+        }
+      }
+    }
+  }
+
+  /* 지속가능경영보고서 */
+  .sustainability-download {
+    text-align: left;
+    > h4 {
+      line-height: 34px;
+      font-size: 28px;
+      font-family: "Pretendard-Bold", sans-serif;
+      color: #0F3553;
+      margin-bottom: 30px;
+    }
+    > table {
+      border-top: 1px solid #0A68F6;
+      width: 100%;
+      tbody {
+        th {
+          background-color: #F2F9FF;
+          color: #52575E;
+          vertical-align: middle;
+          width: 262px;
+          text-align: center;
+          border-bottom: 1px solid #707070;
+          padding: 21.5px 0;
+        }
+        td {
+          padding: 21.5px 20px;
+          border-bottom: 1px solid #707070;
+          text-align: right;
+          vertical-align: middle;
+          > a {
+            &:first-child {
+              margin-right: 26px;
+            }
+            display: inline-block;
+            border: 1px solid #D6D5D5;
+            border-radius: 8px;
+            color: #A7ADB5;
+            font-size: 18px;
+            padding: 10px 42px 10px 17px;
+            background: url("/images/sub/sustainability/esg/download.png") no-repeat calc(100% - 19px) 50%;
+          }
+        }
+      }
+    }
+  }
+
+  /* 사이버신문고 */
+  .whistleblower-table {
+    > h4 {
+      display: flex;
+      align-items: center;
+      line-height: 34px;
+      font-size: 28px;
+      font-family: "Pretendard-Bold", sans-serif;
+      color: #0F3553;
+      margin-bottom: 30px;
+      justify-content: space-between;
+      > a {
+        display: inline-block;
+        padding: 18px 55px;
+        color: #fff;
+        font-size: 15px;
+        background-color: #023A8E;
+        border-radius: 11px;
+        line-height: 100%;
+      }
+    }
+    table {
+      width: 100%;
+      border-top: 1px solid #0A68F6;
+      thead {
+        th {
+          text-align: center;
+          font-family: "Pretendard-Bold", sans-serif;
+          font-size: 18px;
+          padding: 20px 0;
+          background-color: #F2F9FF;
+          border-bottom: 1px solid #707070;
+          &:first-child {
+            border-right: 1px solid #707070;
+          }
+        }
+      }
+      tbody {
+        th {
+          padding: 30px 20px;
+          background-color: #F2F9FF;
+          border-bottom: 1px solid #707070;
+          text-align: left;
+        }
+        td {
+          text-align: left;
+          border-bottom: 1px solid #707070;
+          padding: 30px 20px;
+          &:first-child {
+            border-right: 1px solid #707070;
+          }
+        }
+      }
+      input[type="text"] {
+        height: 33px;
+      }
+      textarea {
+        resize: none;
+        width: 100%;
+        box-sizing: border-box;
+        height: 329px;
+      }
+      input[type="text"], textarea {
+        border: 1px solid #D2D2D2;
+        font-size: 18px;
+      }
+      .for_whistleblow_pdsFiles {
+        font-size: 14px;
+        font-weight: 600;
+        color: #999;
+        padding: 5px 10px;
+        border: 1px solid #999;
+        border-radius: 3px;
+        background-color: #f6f6f6;
+        cursor: pointer;
+      }
+      .upload-name {
+        padding: 0 10px;
+        border:none !important;
+        border-radius: 3px;
+        box-sizing: border-box;
+        outline: none;
+        background-color: transparent;
+        width: calc(100% - 80px);
+      }
+      #whistleblow_pdsFile {
+        display: none;
+      }
+    }
+    .agree {
+      display: flex;
+      margin-top: 25px;
+      justify-content: space-between;
+    }
+  }
+  .whistleblow-btn {
+    text-align: center;
+    margin-top: 140px;
+    button {
+      background: #023A8E;
+      border-radius: 11px;
+      padding: 18px 60px;
+      color: #fff;
+      font-size: 15px;
+      font-family: "Pretendard-Bold", sans-serif;
+      border: none;
     }
   }
 }

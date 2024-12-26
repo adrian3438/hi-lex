@@ -24,7 +24,7 @@ export default function DoorChecks() {
                     </dl>
                 </div>
                 <div className="products-detail-image">
-                    <Image src="/images/sub/products/products-01.png" alt="" width={992} height={499}/>
+                    <Image src="/images/sub/products/products-01-001.png" alt="" width={992} height={499}/>
                     <span className={activeIndex === 1 ? 'products-03-01 active' : 'products-03-01'}></span>
                 </div>
             </div>

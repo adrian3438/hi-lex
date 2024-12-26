@@ -37,14 +37,17 @@ export default function AdminSideBar () {
                 <li className={splitPath[2] === 'inquiry-management' ? 'inquiry active' : 'inquiry'}>
                     <span onClick={()=>router.push(`/admin/inquiry-management/inquiry-list/`)}>문의관리</span>
                     <ul className="subMenu">
-                        <li className={splitPath[3]==='inquiry-list' || splitPath[3]==='inquiry'? 'active' : ''} onClick={()=>router.push(`/admin/inquiry-management/inquiry-list/`)}>
+                        <li className={splitPath[3] === 'inquiry-list' || splitPath[3] === 'inquiry' ? 'active' : ''} onClick={() => router.push(`/admin/inquiry-management/inquiry-list/`)}>
                             <span>문의접수</span>
+                        </li>
+                        <li className={splitPath[3] === 'whistleblow-list' || splitPath[3] === 'whistleblow' ? 'active' : ''} onClick={() => router.push('/admin/inquiry-management/whistleblow-list')}>
+                            <span>클린신고 관리</span>
                         </li>
                     </ul>
                 </li>
 
                 <li className={splitPath[2] === 'admin-account-management' ? 'settings active' : 'settings'}>
-                    <span onClick={()=>router.push(`/admin/admin-account-management/admin-account-list/`)}>관리자 계정관리</span>
+                    <span onClick={() => router.push(`/admin/admin-account-management/admin-account-list/`)}>관리자 계정관리</span>
                     <ul className="subMenu">
                         <li className={splitPath[3]==='admin-account-list' || splitPath[3]==='admin-account'? 'active' : ''} onClick={()=>router.push(`/admin/admin-account-management/admin-account-list/`)}>
                             <span>관리자 계정</span>

@@ -3,50 +3,230 @@
 import "@/app/assets/products/products.scss";
 import Image from "next/image";
 import {useState} from "react";
+import Link from "next/link";
 
-export default function PowerClusures() {
+export default function LatchingSystems() {
     const [activeIndex, setActiveIndex] = useState<number>(0);
 
     return (
         <div className="products-detail">
-            <h3>DOOR CHECKS</h3>
+            <h3>POWER CLOSURES</h3>
             <div className="products-detail-top">
                 <div className="products-detail-list">
                     <dl>
-                        <dt>DOOR CHECKS</dt>
+                        <dt>Power Door System</dt>
                         <dd>
                             <ul>
                                 <li>
-                                    <button className={activeIndex === 1 ? 'active' : ''} onClick={() => setActiveIndex(1)}>DOOR CHECKS</button>
+                                    <button className={activeIndex === 1 ? 'active' : ''} onClick={() => setActiveIndex(1)}>Power Door System</button>
+                                    <Link href="#"><Image src="/images/sub/products/3d-link.png" alt="R&D 3D Configurator" width={170} height={20} /></Link>
+                                </li>
+                            </ul>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>Power Lift Gate System <Link href="#"><Image src="/images/sub/products/3d-link.png" alt="R&D 3D Configurator" width={170} height={20} /></Link></dt>
+                        <dd>
+                            <ul>
+                                <li>
+                                    <button className={activeIndex === 2 ? 'active' : ''} onClick={() => setActiveIndex(2)}>Spindle Drive Unit</button>
+                                </li>
+                                <li>
+                                    <button className={activeIndex === 3 ? 'active' : ''} onClick={() => setActiveIndex(3)}>Anti-Pinch Sensor</button>
+                                </li>
+                                <li>
+                                    <button className={activeIndex === 4 ? 'active' : ''} onClick={() => setActiveIndex(4)}>Power Cinching Latch</button>
+                                </li>
+                            </ul>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>Power Sliding Door System</dt>
+                        <dd>
+                            <ul>
+                                <li>
+                                    <button className={activeIndex === 5 ? 'active' : ''} onClick={() => setActiveIndex(5)}>Sliding Door Latch (with Cinching Actuator)</button>
+                                </li>
+                                <li>
+                                    <button className={activeIndex === 6 ? 'active' : ''} onClick={() => setActiveIndex(6)}>Drive Unit</button>
+                                </li>
+                            </ul>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>Power Hood System</dt>
+                        <dd>
+                            <ul>
+                                <li>
+                                    <button className={activeIndex === 7 ? 'active' : ''} onClick={() => setActiveIndex(7)}>Power Cinching Latch</button>
+                                    <Link href="#"><Image src="/images/sub/products/3d-link.png" alt="R&D 3D Configurator" width={170} height={20} /></Link>
+                                </li>
+                                <li>
+                                    <button className={activeIndex === 8 ? 'active' : ''} onClick={() => setActiveIndex(8)}>Spindle Drive Unit</button>
                                 </li>
                             </ul>
                         </dd>
                     </dl>
                 </div>
                 <div className="products-detail-image">
-                    <Image src="/images/sub/products/products-01.png" alt="" width={992} height={499}/>
-                    <span className={activeIndex === 1 ? 'products-03-01 active' : 'products-03-01'}></span>
+                    {(activeIndex === 0 || activeIndex === 1) && (
+                        <>
+                            <Image src="/images/sub/products/products-01-24.png" alt="" width={992} height={499}/>
+                            <span className={activeIndex === 1 ? 'products-02-01 active' : 'products-02-01'}></span>
+                        </>
+                    )}
+                    {(activeIndex === 2 || activeIndex === 3 || activeIndex === 4) && (
+                        <>
+                            <Image src="/images/sub/products/products-02.png" alt="" width={992} height={499}/>
+                            <span className={activeIndex === 2 ? 'products-02-02 active' : 'products-02-02'}></span>
+                            <span className={activeIndex === 2 ? 'products-02-03 active' : 'products-02-03'}></span>
+                            <span className={activeIndex === 3 ? 'products-02-04 active' : 'products-02-04'}></span>
+                            <span className={activeIndex === 3 ? 'products-02-05 active' : 'products-02-05'}></span>
+                            <span className={activeIndex === 4 ? 'products-02-06 active' : 'products-02-06'}></span>
+                        </>
+                    )}
+                    {(activeIndex === 5) && (
+                        <>
+                            <Image src="/images/sub/products/products-01-001.png" alt="" width={992} height={499}/>
+                            <span className={activeIndex === 5 ? 'products-02-07 active' : 'products-02-07'}></span>
+                        </>
+                    )}
+
+                    {(activeIndex === 7) && (
+                        <>
+                            <Image src="/images/sub/products/products-01-25.png" alt="" width={992} height={499}/>
+                            <span className={activeIndex === 7 ? 'products-02-08 active' : 'products-02-08'}></span>
+                        </>
+                    )}
+                    {(activeIndex === 8) && (
+                        <>
+                            <Image src="/images/sub/products/products-01-25.png" alt="" width={992} height={499}/>
+                            <span className={activeIndex === 8 ? 'products-02-09 active' : 'products-02-09'}></span>
+                        </>
+                    )}
                 </div>
             </div>
             {activeIndex === 1 && (
                 <>
                     <div className="products-detail-middle">
-                        <h4>Door Checks</h4>
+                        <h4>Power Door System</h4>
                         <div className="products-area">
                             <div className="products-image-area">
-                                <Image src="/images/sub/products/products-03-01.png" alt="Plastic (Case) Type" width={361} height={545}/>
-                                <p>Plastic (Case) Type</p>
+                                <Image src="/images/sub/products/products-02-01.png" alt="Plastic (Case) Type" width={361} height={545}/>
+                                <p>STANDARD TYPE</p>
                             </div>
                             <div className="products-text-area">
-                                The convenience and safety auxiliary device that controls
-                                the full opening of an automobile door and provides step-
-                                by-step operating force during door opening and closing.
-                                A device installed on both the car&#39;s body and the inside of
-                                the door, which is connected and imparts operating force
-                                during door open/close actions to control the angle of
-                                opening and closing. (Prevents unintended angles caused
-                                by slopes, wind, etc., enhancing safety and convenience
-                                and preventing accidents.)
+                                The Power Door System (PDS) maximizes convenience with its automatic vehicle door opening and closing functionality, offering effortless and smart door operation.<br/>
+                                It ensures safety and convenience by providing support at any position during door opening or closing.<br/>
+                                The system suppresses vibrations and shaking during door movement, achieving smooth and stable operation while delivering a premium vehicle experience through precise position control.<br/>
+                                With rigorous durability testing and environmental testing under extreme conditions, including temperature, humidity, and dust, it ensures consistent performance over prolonged use.
+                            </div>
+                        </div>
+                    </div>
+                </>
+            )}
+
+            {activeIndex === 2 && (
+                <>
+                    <div className="products-detail-middle">
+                        <h4>Spindle Drive Unit</h4>
+                        <div className="products-area">
+                            <div className="products-image-area">
+                                <Image src="/images/sub/products/products-02-02.png" alt="Plastic (Case) Type" width={361} height={545}/>
+                                <p>Spindle Drive Unit</p>
+                            </div>
+                            <div className="products-text-area">
+                                New generation Drive Unit/ECU. The Spindle Drive Unit and
+                                Control Unit are components that transmit power to open and
+                                close the tailgate, and control this process. As indoor noise is
+                                reduced, the Drive Unit should operate in a progressively
+                                quieter manner.
+
+
+                                <dl>
+                                    <dt>Features</dt>
+                                    <dd>
+                                        <ul>
+                                            <li>Optimized structure applicable to various automatic opening and closing mechanisms such as tailgates and hoods.</li>
+                                            <li>Long-lasting performance through environmental testing under extreme temperatures, humidity, dust, and other conditions.</li>
+                                            <li>Optimal mechanism structure designed to minimize operating noise.</li>
+                                            <li>Passive selection applied according to the vehicle type<br/>Luxury vehicles: 2-way spindle type / Mid-range and economy vehicles: 1-way gas spring type</li>
+                                            <li>Application examples<br/>Power tailgate system / Power trunk & frunk system</li>
+                                        </ul>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                </>
+            )}
+
+            {activeIndex === 3 && (
+                <>
+                    <div className="products-detail-middle">
+                        <h4>Anti-Pinch Sensor</h4>
+
+                    </div>
+                </>
+            )}
+
+            {activeIndex === 4 && (
+                <>
+                    <div className="products-detail-middle">
+                        <h4>Power Cinching Latch</h4>
+                        <div className="products-area">
+                            <div className="products-image-area">
+                                <Image src="/images/sub/products/products-02-03.png" alt="Plastic (Case) Type" width={361} height={545}/>
+                                <p>Power Hood Latch</p>
+                            </div>
+                            <div className="products-text-area">
+                                <dl>
+                                    <dt>Features</dt>
+                                    <dd>
+                                        <ul>
+                                            <li>Dual Operation with One Motor</li>
+                                            <li>Power Cinching and Power Release/Manual Release</li>
+                                            <li>Enough Cinching Travel for Smoothly Closing</li>
+                                            <li>Good Sound Quality</li>
+                                        </ul>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                </>
+            )}
+
+            {activeIndex === 5 && (
+                <>
+                    <div className="products-detail-middle">
+                        <h4>Sliding Door Latch (with Cinching Actuator)</h4>
+                        <div className="products-area">
+                            <div className="products-image-area">
+                                <Image src="/images/sub/products/products-02-04.png" alt="Plastic (Case) Type" width={361} height={545}/>
+                                <p>Sliding Door Latch Cinching Type</p>
+                            </div>
+                            <div className="products-text-area">
+                                The side door panel of an automobile is installed internally
+                                and is responsible for maintaining the locked state of the
+                                door when connected to the striker attached to the vehicle&#39;s
+                                body. The door can be opened using the door handle (inner
+                                /outer) and the cable (rod) that connects to it. On the inner
+                                handle side, there is a knob, and the door&#39;s lock/unlock
+                                status can be controlled from the outside using a key, or
+                                electronically (via trim buttons or a remote control).
+                                <dl>
+                                    <dt>Features</dt>
+                                    <dd>
+                                        <ul>
+                                            <li>The release force at stages 1 and 2 when disengaging the striker in the locked state</li>
+                                            <li>Required functionalities</li>
+                                            <li>Regulation of operating force</li>
+                                            <li>Durability and environmental resistance</li>
+                                            <li>Theft prevention and waterproofing, among other aspects</li>
+                                        </ul>
+                                    </dd>
+                                </dl>
                             </div>
                         </div>
                     </div>
@@ -54,23 +234,74 @@ export default function PowerClusures() {
                         <ul>
                             <li>
                                 <p className="image-area">
-                                    <Image src="/images/sub/products/products-03-02.png" alt="LUXURY TYPE" width={259} height={318}/>
+                                    <Image src="/images/sub/products/products-02-05.png" alt="LUXURY TYPE" width={259} height={318}/>
                                 </p>
-                                <p className="text-area">LUXURY TYPE</p>
+                                <p className="text-area">REMOTE CONTROLLER</p>
                             </li>
                             <li>
                                 <p className="image-area">
-                                    <Image src="/images/sub/products/products-03-03.png" alt="LUXURY TYPE" width={284} height={316}/>
+                                    <Image src="/images/sub/products/products-01-16.png" alt="LUXURY TYPE" width={284} height={316}/>
                                 </p>
-                                <p className="text-area">SLIDE TYPE</p>
+                                <p className="text-area">FRONT LATCH</p>
                             </li>
                             <li>
                                 <p className="image-area">
-                                    <Image src="/images/sub/products/products-03-04.png" alt="LUXURY TYPE" width={266} height={315}/>
+                                    <Image src="/images/sub/products/products-01-17.png" alt="LUXURY TYPE" width={284} height={316}/>
                                 </p>
-                                <p className="text-area">ROLLER TYPE</p>
+                                <p className="text-area">HOLD OPEN LOCK</p>
                             </li>
                         </ul>
+                    </div>
+                </>
+            )}
+
+            {activeIndex === 6 && (
+                <>
+                    <div className="products-detail-middle">
+                        <h4>Drive Unit</h4>
+                    </div>
+                </>
+            )}
+
+            {activeIndex === 7 && (
+                <>
+                    <div className="products-detail-middle">
+                        <h4>Power Cinching Latch (R&amp;D)</h4>
+                    </div>
+                </>
+            )}
+
+            {activeIndex === 8 && (
+                <>
+                    <div className="products-detail-middle">
+                        <h4>Spindle Drive Unit</h4>
+                        <div className="products-area">
+                            <div className="products-image-area">
+                                <Image src="/images/sub/products/products-02-02.png" alt="Plastic (Case) Type" width={361} height={545}/>
+                                <p>Spindle Drive Unit</p>
+                            </div>
+                            <div className="products-text-area">
+                                New generation Drive Unit/ECU. The Spindle Drive Unit and
+                                Control Unit are components that transmit power to open and
+                                close the tailgate, and control this process. As indoor noise is
+                                reduced, the Drive Unit should operate in a progressively
+                                quieter manner.
+
+
+                                <dl>
+                                    <dt>Features</dt>
+                                    <dd>
+                                        <ul>
+                                            <li>Optimized structure applicable to various automatic opening and closing mechanisms such as tailgates and hoods.</li>
+                                            <li>Long-lasting performance through environmental testing under extreme temperatures, humidity, dust, and other conditions.</li>
+                                            <li>Optimal mechanism structure designed to minimize operating noise.</li>
+                                            <li>Passive selection applied according to the vehicle type<br/>Luxury vehicles: 2-way spindle type / Mid-range and economy vehicles: 1-way gas spring type</li>
+                                            <li>Application examples<br/>Power tailgate system / Power trunk & frunk system</li>
+                                        </ul>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
                     </div>
                 </>
             )}

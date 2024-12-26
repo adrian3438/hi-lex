@@ -85,12 +85,14 @@ export default function LanguageMenu({language}: Props) {
                         <li className={menuNumber === 3 ? 'on' : ''}>
                             <button onClick={() => handleMobileMenu(3)}>{language.header_4}</button>
                             <ul>
-                                <li><Link href="#">- {language.header_4_1}</Link></li>
-                                <li><Link href="#">- {language.header_4_2}</Link></li>
-                                <li><Link href="/sustainability/esg">- {language.header_4_3}</Link></li>
-                                <li><Link href="#">- {language.header_4_4}</Link></li>
-                                <li><Link href="#">- {language.header_4_5}</Link></li>
-                                <li><Link href="#">- {language.header_4_6}</Link></li>
+                                <li><Link href="/sustainability/esg-management">- {language.header_4_1}</Link></li>
+                                <li><Link href="/sustainability/climate-change">- {language.header_4_2}</Link></li>
+                                <li><Link href="/sustainability/ethical-business">- {language.header_4_3}</Link></li>
+                                <li><Link href="/sustainability/ehs">- {language.header_4_4}</Link></li>
+                                <li><Link href="/sustainability/supply-chain">- {language.header_4_5}</Link></li>
+                                <li><Link href="/sustainability/quality-management">- {language.header_4_6}</Link></li>
+                                <li><Link href="/sustainability/sustainability-report">- {language.header_4_7}</Link></li>
+                                <li><Link href="/sustainability/whistleblower-complaint">- {language.header_4_8}</Link></li>
                             </ul>
                         </li>
                         <li className={menuNumber === 4 ? 'on' : ''}>

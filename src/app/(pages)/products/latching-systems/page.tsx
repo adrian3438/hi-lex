@@ -13,7 +13,7 @@ export default async function LatchingSystemsPage({searchParams : {lang}} : any)
                     <h2>{language?.header_2}</h2>
                     <ul className="location">
                         <li>{language?.header_2}</li>
-                        <li>{language?.header_2_2}</li>
+                        <li>{language?.header_2_1}</li>
                     </ul>
                 </div>
                 <LatchingSystems/>
