@@ -10,7 +10,6 @@ interface Props {
 }
 
 export default function WhistleblowerComplaint({ language }: Props) {
-    // const [state ,setState] = useState<number>(1)
     const [data, setData] = useState<any>({
         privateAgree : '',
         isRealName : 'R',
@@ -157,7 +156,7 @@ export default function WhistleblowerComplaint({ language }: Props) {
                 <section className="esg-section-01">
                     <h3>{language?.esg_text_08_01}</h3>
                     <div className="whistleblower-table">
-                        <h4>{language?.esg_text_08_02} <Link href="#">{language?.esg_text_08_16}</Link></h4>
+                        <h4>{language?.esg_text_08_02} <Link href="/sustainability/whistleblower-complaint/guide">{language?.esg_text_08_16}</Link></h4>
                         <table>
                             <thead>
                             <tr>
