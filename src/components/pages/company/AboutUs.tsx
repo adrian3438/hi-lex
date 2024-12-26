@@ -223,8 +223,8 @@ export default function AboutUs({language}: Props) {
                             <dt>{language?.about_72}</dt>
                             <dd>
                                 <ul>
-                                    <li><a href="#" download>{language?.about_74}</a></li>
-                                    <li><a href="#" download>{language?.about_75}</a></li>
+                                    <li><a href="/download/대동도어_CI_세로형.ai" download>{language?.about_74}</a></li>
+                                    <li><a href="/download/대동도어_CI_세로형.png" download>{language?.about_75}</a></li>
                                 </ul>
                             </dd>
                         </dl>
@@ -232,8 +232,8 @@ export default function AboutUs({language}: Props) {
                             <dt>{language?.about_73}</dt>
                             <dd>
                                 <ul>
-                                    <li><a href="#" download>{language?.about_74}</a></li>
-                                    <li><a href="#" download>{language?.about_75}</a></li>
+                                    <li><a href="/download/대동도어_CI_가로형.ai" download>{language?.about_74}</a></li>
+                                    <li><a href="/download/대동도어_CI_가로형.png" download>{language?.about_75}</a></li>
                                 </ul>
                             </dd>
                         </dl>

@@ -73,8 +73,6 @@ export default function Main({ language }: Props) {
                         <p className="main-section-text-01">{language?.main_05}</p>
                         <p className="main-section-text-02">
                             {language?.main_06}
-                            <br />
-                            {language?.main_07}
                         </p>
                         <Link href="#">{language?.main_08}</Link>
                     </div>

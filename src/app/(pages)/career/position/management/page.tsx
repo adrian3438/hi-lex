@@ -58,6 +58,21 @@ export default async function QualityPage({searchParams : {lang}} : any) {
                                 </ul>
                             </dd>
                         </dl>
+                        <dl className="management-05">
+                            <dt>{language?.position_01_130}<span>{language?.position_01_131}</span></dt>
+                            <dd>
+                                <p>{language?.position_01_132}</p>
+                                <ul>
+                                    <li>{language?.position_01_133}</li>
+                                    <li>{language?.position_01_134}</li>
+                                    <li>{language?.position_01_135}</li>
+                                    <li>{language?.position_01_136}</li>
+                                    <li>{language?.position_01_137}</li>
+                                    <li>{language?.position_01_138}</li>
+                                </ul>
+                            </dd>
+                        </dl>
+
                         <dl className="management-03">
                             <dt>{language?.position_01_109}<span>{language?.position_01_109_02}</span></dt>
                             <dd>

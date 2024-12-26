@@ -57,75 +57,74 @@ export default async function WelfarePage({searchParams : {lang}} : any) {
                                 </dd>
                             </dl>
                             <dl>
-                                <dt>{language?.welfare_19}</dt>
+                                <dt>{language?.welfare_19_01}</dt>
                                 <dd>
                                     <ul>
-                                        <li style={{background: "url(/images/sub/career/welfare/welfare-11.png) no-repeat 50% 0"}}>{language?.welfare_20}</li>
-                                        <li style={{background: "url(/images/sub/career/welfare/welfare-12.png) no-repeat 50% 0"}}>{language?.welfare_21}</li>
+                                        <li style={{background: "url(/images/sub/career/welfare/welfare-11.png) no-repeat 50% 0"}}>{language?.welfare_24}</li>
+                                        <li style={{background: "url(/images/sub/career/welfare/welfare-12.png) no-repeat 50% 0"}}>{language?.welfare_25}</li>
                                     </ul>
                                 </dd>
                             </dl>
                         </div>
                     </section>
                     <section className="welfare-02">
-                        <h4>{language?.welfare_05}</h4>
+                        <h4>{language?.welfare_26}</h4>
                         <div>
                             <dl>
-                                <dt>{language?.welfare_06}</dt>
+                                <dt>{language?.welfare_27}</dt>
                                 <dd>
                                     <ul>
-                                        <li style={{background: "url(/images/sub/career/welfare/welfare-13.png) no-repeat 50% 0"}}>{language?.welfare_07}</li>
+                                        <li style={{background: "url(/images/sub/career/welfare/welfare-13.png) no-repeat 50% 0"}}>{language?.welfare_28}</li>
                                     </ul>
                                 </dd>
                             </dl>
                             <dl>
-                                <dt>{language?.welfare_10}</dt>
+                                <dt>{language?.welfare_29}</dt>
                                 <dd>
                                     <ul>
-                                        <li style={{background: "url(/images/sub/career/welfare/welfare-14.png) no-repeat 50% 0"}}>{language?.welfare_11}</li>
-                                        <li style={{background: "url(/images/sub/career/welfare/welfare-15.png) no-repeat 50% 0"}}>{language?.welfare_12}</li>
-                                        <li style={{background: "url(/images/sub/career/welfare/welfare-16.png) no-repeat 50% 0"}}>{language?.welfare_13}</li>
+                                        <li style={{background: "url(/images/sub/career/welfare/welfare-14.png) no-repeat 50% 0"}}>{language?.welfare_30}</li>
+                                        <li style={{background: "url(/images/sub/career/welfare/welfare-15.png) no-repeat 50% 0"}}>{language?.welfare_31}</li>
+                                        <li style={{background: "url(/images/sub/career/welfare/welfare-16.png) no-repeat 50% 0"}}>{language?.welfare_32}</li>
                                     </ul>
                                 </dd>
                             </dl>
                             <dl>
-                                <dt>{language?.welfare_14}</dt>
+                                <dt>{language?.welfare_33}</dt>
                                 <dd>
                                     <ul>
-                                        <li style={{background: "url(/images/sub/career/welfare/welfare-17.png) no-repeat 50% 0"}}>{language?.welfare_15}</li>
-                                        <li style={{background: "url(/images/sub/career/welfare/welfare-18.png) no-repeat 50% 0"}}>{language?.welfare_16}</li>
+                                        <li style={{background: "url(/images/sub/career/welfare/welfare-17.png) no-repeat 50% 0"}}>{language?.welfare_34}</li>
+                                        <li style={{background: "url(/images/sub/career/welfare/welfare-18.png) no-repeat 50% 0"}}>{language?.welfare_35}</li>
                                     </ul>
                                 </dd>
                             </dl>
                             <dl>
-                                <dt>{language?.welfare_19}</dt>
+                                <dt>{language?.welfare_21}</dt>
                                 <dd>
                                     <ul>
-                                        <li style={{background: "url(/images/sub/career/welfare/welfare-19.png) no-repeat 50% 0"}}>{language?.welfare_20}</li>
+                                        <li style={{background: "url(/images/sub/career/welfare/welfare-19.png) no-repeat 50% 0"}}>{language?.welfare_22}</li>
                                     </ul>
                                 </dd>
                             </dl>
                         </div>
                     </section>
                     <section className="welfare-03">
-                        <h4>{language?.welfare_05}</h4>
+                        <h4>{language?.welfare_36}</h4>
                         <div>
                             <dl>
-                                <dt>{language?.welfare_06}</dt>
+                                <dt>{language?.welfare_37}</dt>
                                 <dd>
                                     <ul>
-                                        <li style={{background: "url(/images/sub/career/welfare/welfare-20.png) no-repeat 50% 0"}}>{language?.welfare_07}</li>
-                                        <li style={{background: "url(/images/sub/career/welfare/welfare-21.png) no-repeat 50% 0"}}>{language?.welfare_08}</li>
+                                        <li style={{background: "url(/images/sub/career/welfare/welfare-20.png) no-repeat 50% 0"}}>{language?.welfare_38}</li>
+                                        <li style={{background: "url(/images/sub/career/welfare/welfare-21.png) no-repeat 50% 0"}}>{language?.welfare_39}</li>
                                     </ul>
                                 </dd>
                             </dl>
                             <dl>
-                                <dt>{language?.welfare_10}</dt>
+                                <dt>{language?.welfare_40}</dt>
                                 <dd>
                                     <ul>
-                                        <li style={{background: "url(/images/sub/career/welfare/welfare-22.png) no-repeat 50% 0"}}>{language?.welfare_11}</li>
-                                        <li style={{background: "url(/images/sub/career/welfare/welfare-23.png) no-repeat 50% 0"}}>{language?.welfare_12}</li>
-                                        <li style={{background: "url(/images/sub/career/welfare/welfare-24.png) no-repeat 50% 0"}}>{language?.welfare_12}</li>
+                                        <li style={{background: "url(/images/sub/career/welfare/welfare-22.png) no-repeat 50% 0"}}>{language?.welfare_41}</li>
+                                        <li style={{background: "url(/images/sub/career/welfare/welfare-24.png) no-repeat 50% 0"}}>{language?.welfare_43}</li>
                                     </ul>
                                 </dd>
                             </dl>

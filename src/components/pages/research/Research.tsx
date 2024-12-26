@@ -1,12 +1,17 @@
+'use client';
+
 import "@/app/assets/research/research.scss";
 import Image from "next/image";
 import Link from "next/link";
+import {useState} from "react";
 
 interface Props {
     language: any
 }
 
 export default function Research({language}: Props) {
+    const [imageIndex, setImageInex] = useState<number>(0);
+
     return (
         <div className="research">
             <div className="research-banner">
@@ -21,10 +26,12 @@ export default function Research({language}: Props) {
             <div className="title-area">
                 <Image src="/images/sub/research/research-title.png" alt="Discover Our Technologies" width={1249.08} height={93.75} />
             </div>
-            <div className="link-area">
+            <div className={`link-area ${imageIndex === 0 ? 'link-area1' :  ''} ${imageIndex === 1 ? 'link-area2' :  ''} ${imageIndex === 2 ? 'link-area3' :  ''} ${imageIndex === 3 ? 'link-area4' :  ''}`}
+
+            >
                 <ul>
                     <li>
-                        <Link href="/research/e-latch">
+                        <Link href="/research/e-latch" onMouseOver={() => setImageInex(0)}>
                             <p>{language?.research_06}<span>{language?.research_07}</span></p>
                             <div>
                                 <dl>
@@ -36,7 +43,7 @@ export default function Research({language}: Props) {
                         </Link>
                     </li>
                     <li>
-                        <Link href="/research/pds">
+                        <Link href="/research/pds" onMouseOver={() => setImageInex(1)}>
                             <p>{language?.research_10}</p>
                             <div>
                                 <dl>
@@ -48,7 +55,7 @@ export default function Research({language}: Props) {
                         </Link>
                     </li>
                     <li>
-                        <Link href="/research/power-lift-gate">
+                        <Link href="/research/power-lift-gate" onMouseOver={() => setImageInex(2)}>
                             <p>{language?.research_12}</p>
                             <div>
                                 <dl>
@@ -60,7 +67,7 @@ export default function Research({language}: Props) {
                         </Link>
                     </li>
                     <li>
-                        <Link href="/research/power-hood">
+                        <Link href="/research/power-hood" onMouseOver={() => setImageInex(3)}>
                             <p>{language?.research_14}</p>
                             <div>
                                 <dl>

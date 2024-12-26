@@ -43,7 +43,20 @@
   }
   .link-area {
     height: 812px;
-    background: url("/images/sub/research/research-list-bg.png") no-repeat 50% 0;
+    background: url("/images/sub/research/research-list-bg-01.png") no-repeat 50% 0;
+    transition: all 0.3s ease-in-out;
+    &.link-area1 {
+      background-image: url("/images/sub/research/research-list-bg-01.png");
+    }
+    &.link-area2 {
+      background-image: url("/images/sub/research/research-list-bg-02.png");
+    }
+    &.link-area3 {
+      background-image: url("/images/sub/research/research-list-bg-03.png");
+    }
+    &.link-area4 {
+      background-image: url("/images/sub/research/research-list-bg-04.png");
+    }
     margin-bottom: 140px;
     > ul {
       display: flex;
@@ -79,7 +92,6 @@
               transition: all 0.5s ease-in-out;
             }
             > div {
-
               opacity: 1;
               transition: all 0.7s ease-in-out;
             }
