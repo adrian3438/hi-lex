@@ -1,6 +1,7 @@
 'use client'
 
-import { usePathname, useRouter } from "next/navigation"
+// import { usePathname, useRouter } from "next/navigation"
+import { usePathname } from "next/navigation"
 import { useEffect } from "react"
 import { useCookies } from "react-cookie"
 import AdminSideBar from "./DotsAdmin/SideBar"
@@ -10,7 +11,7 @@ import AdminHeader from "./DotsAdmin/AdminHeader"
 // import {useAppDispatch} from "@/store/hooks";
 
 export default function Container ({children} : any) {
-    const router = useRouter()
+    // const router = useRouter()
     const pathname = usePathname()
     const splitPath = pathname.split('/')
     // const dispatch = useAppDispatch()
