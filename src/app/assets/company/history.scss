@@ -1,164 +1,84 @@
 .history {
-  .history-list {
-    > ul {
+  padding-bottom: 250px;
+  .history-container {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 20px;
+    .history-link {
       display: flex;
       flex-wrap: wrap;
-      > li {
-        width: 50%;
-        aspect-ratio: 960/640;
-        background-repeat: no-repeat;
-        background-position: 0 0;
-        background-size: 100% 100%;
-        position: relative;
-        &:nth-child(1) {
-          background-image: url("/images/sub/company/history/history-bg-01.png");
-        }
-        &:nth-child(2) {
-          background-image: url("/images/sub/company/history/history-bg-02.png");
-        }
-        &:nth-child(3) {
-          background-image: url("/images/sub/company/history/history-bg-03.png");
-        }
-        &:nth-child(4) {
-          background-image: url("/images/sub/company/history/history-bg-04.png");
-        }
-        &:nth-child(5) {
-          background-image: url("/images/sub/company/history/history-bg-05.png");
-        }
-        &:nth-child(6) {
-          background-image: url("/images/sub/company/history/history-bg-06.png");
-        }
-        > div {
-          position: absolute;
-          bottom: 70px;
-          left: 43px;
-          > p {
-            color: #fff;
-            font-size: 45px;
-            margin-bottom: 15px;
-          }
-          > button {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 200px;
-            height: 55px;
-            line-height: 55px;
-            color: #000000;
-            font-size: 18px;
-            text-align: center;
-            border: none;
-            background: #fff;
-            border-radius: 8px;
-            cursor: pointer;
-          }
+      justify-content: center;
+      gap: 20px 28px;
+      margin-bottom: 100px;
+      > button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 0;
+        border: none;
+        background: #ECECEC;
+        color: #BDC1C8;
+        font-size: 15px;
+        font-family: "Pretendard-Bold", sans-serif;
+        height: 55px;
+        border-radius: 11px;
+        width: 222px;
+        cursor: pointer;
+        &.active {
+          background: #023A8E;
+          color: #fff;
         }
       }
     }
-  }
-  .history-detail {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 30;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    > div {
-      position: relative;
-      background-color: rgba(255,255,255,0.88);
-      height: 80vh;
-      max-width: 1050px;
-      padding: 65px 135px;
-      width: 100%;
-      box-sizing: border-box;
-      > div {
-        display: flex;
-        gap: 20px 40px;
-        margin-bottom: 80px;
-        > button {
-          background: #fff;
-          border: 1px solid #CBCBCB;
-          color: #D5D6D6;
-          font-size: 25px;
-          padding: 0;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          width: 175px;
-          height: 47px;
-          cursor: pointer;
-          &.active {
-            background-color: #EBEBEB;
-            color: #52575E;
-            border-color: #707070;
-          }
-        }
-      }
-      > .list {
-        overflow-y: auto;
-        height: 50vh;
-        > li {
-          margin-top: 150px;
-          &:first-child {
-            margin-top: 0;
-          }
-          > dl {
+    .history-list {
+      display: flex;
+      justify-content: space-between;
+      .list {
+        > ul {
+          > li {
             display: flex;
-            gap: 20px 75px;
-            dt {
-              color: #52575E;
-              font-size: 30px;
-              font-family: "Pretendard-Medium", sans-serif;
+            gap: 20px 65px;
+            margin-top: 45px;
+            &:first-child {
+              margin-top: 0;
             }
-            dd {
-              font-size: 18px;
-              font-family: "Pretendard-Medium", sans-serif;
-              line-height: 35px;
-              > ul {
-                > li {
-                  margin-top: 50px;
-                  &:first-child {
-                    margin-top: 0;
-                  }
+            > p.year {
+              color: #0F3553;
+              font-size: 28px;
+              font-family: "Pretendard-Bold", sans-serif;
+              min-width: 72px;
+            }
+            > ul {
+              > li {
+                display: flex;
+                gap: 20px 62px;
+                margin-top: 45px;
+                &:first-child {
+                  margin-top: 0;
+                }
+                .month {
+                  color: #0F3553;
+                  font-size: 28px;
+                  font-family: "Pretendard-Bold", sans-serif;
+                  min-width: 60px;
+                }
+                .history-detail {
+                  flex-basis: 650px;
+                  font-size: 18px;
+                  font-family: "Pretendard-Medium", sans-serif;
+                  color: #52575E;
+                  line-height: 30px;
                 }
               }
             }
           }
         }
       }
-      .award-list {
-        overflow-y: auto;
-        height: 50vh;
-        > li {
-          margin-top: 25px;
-          display: flex;
-          align-items: center;
-          gap: 20px 37px;
-          &:first-child {
-            margin-top: 0;
-          }
-          > img {
-            margin-left: -85px;
-          }
-          > div {
-            font-size: 18px;
-          }
-        }
-      }
-      > button {
-        position: absolute;
-        top: 16px;
-        right: 19px;
-        padding: 0;
-        border: none;
-        background: none;
-        cursor: pointer;
+      .history-image {
         img {
-          vertical-align: top;
+          width: auto;
+          height: auto;
         }
       }
     }
@@ -166,18 +86,5 @@
 }
 
 @media screen and (max-width: 767px) {
-  .history {
-    .history-list {
-      > ul {
-        > li {
-          width: 100%;
-        }
-      }
-    }
-    .history-detail {
-      > div {
-        padding: 65px 20px;
-      }
-    }
-  }
+
 }
