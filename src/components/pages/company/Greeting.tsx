@@ -16,7 +16,10 @@ export default function Greeting({language}: Props) {
                 </ul>
             </div>
             <div className="greeting-text">
-                <Image src="/images/sub/company/greeting/ceo-greeting-car-1.png" alt="" width={954} height={1142} />
+                <section>
+                    <Image src="/images/sub/company/greeting/ceo-greeting-car-1.png" alt="" width={954} height={1142} />
+                    <Image src="/images/sub/company/greeting/ceo-greeting-car-2.png" alt="" width={954} height={1142} />
+                </section>
                 <div>
                     <h3>{language?.greeting_02}</h3>
                     <p>{language?.greeting_03}</p>
@@ -24,6 +27,9 @@ export default function Greeting({language}: Props) {
                         <p>{language?.greeting_03}</p>
                         <p>{language?.greeting_04}</p>
                         <p>{language?.greeting_05}</p>
+                    </div>
+                    <div className="sign">
+                        <Image src="/images/sub/company/greeting/songhaksung-signature.png" alt="Sign" width={174} height={94}/>
                     </div>
                 </div>
             </div>
