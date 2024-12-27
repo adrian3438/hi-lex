@@ -153,11 +153,6 @@ export default function LatchingSystems() {
                                 <p className="text-area">STANDARD Gen3 LATCH</p>
                             </li>
                         </ul>
-                        <div>
-                            <div>
-                                As a Quality Assurance Specialist, you will be responsible for ensuring the highest product standards by developing and implementing quality control procedures. This role involves inspecting materials, monitoring production processes, conducting audits, and resolving quality issues to maintain compliance with industry standards and customer expectations.
-                            </div>
-                        </div>
                     </div>
                 </>
             )}
@@ -184,15 +179,6 @@ export default function LatchingSystems() {
                                         </ul>
                                     </dd>
                                 </dl>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="products-detail-bottom">
-                        <div>
-                            <div>
-                                As an OEM Sales Specialist, you will be the key liaison between our company and original equipment manufacturers (OEMs),
-                                driving business growth and building strong relationships. This role focuses on identifying new opportunities, managing client accounts,
-                                and delivering tailored solutions to meet customer needs and market demands.
                             </div>
                         </div>
                     </div>
@@ -246,12 +232,6 @@ export default function LatchingSystems() {
                                 <p className="text-area">EV TYPE</p>
                             </li>
                         </ul>
-                        <div>
-                            <div>
-                                This position focuses on developing cutting-edge solutions, improving existing products,
-                                and ensuring the company stays ahead in an ever-evolving market.
-                            </div>
-                        </div>
                     </div>
                 </>
             )}
@@ -299,13 +279,6 @@ export default function LatchingSystems() {
                                 <p className="text-area">TRUNK LID LATCH</p>
                             </li>
                         </ul>
-                        <div>
-                            <div>
-                                This position ensures smooth and efficient manufacturing processes while maintaining the highest standards of quality
-                                and productivity. This role is essential in translating design and innovation into tangible, high-quality products that meet
-                                customer expectations.
-                            </div>
-                        </div>
                     </div>
                 </>
             )}
@@ -331,15 +304,6 @@ export default function LatchingSystems() {
                                         </ul>
                                     </dd>
                                 </dl>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="products-detail-bottom">
-                        <div>
-                            <div>
-                                The Purchasing and Logistics position plays a critical role in ensuring the seamless flow of materials and products across
-                                the supply chain. This position focuses on optimizing procurement strategies, maintaining inventory levels, and managing
-                                logistics to support timely production and delivery.
                             </div>
                         </div>
                     </div>
@@ -391,13 +355,6 @@ export default function LatchingSystems() {
                                 <p className="text-area">HOLD OPEN LOCK</p>
                             </li>
                         </ul>
-                        <div>
-                            <div>
-                                The Management Support position ensures the smooth operation and strategic alignment of the company&#39;s administrative
-                                and operational processes. This role involves collaborating with various departments to enhance efficiency, monitor performance,
-                                and support leadership in achieving organizational goals.
-                            </div>
-                        </div>
                     </div>
                 </>
             )}
@@ -443,13 +400,6 @@ export default function LatchingSystems() {
                                 <p className="text-area">SIDE DOOR STRIKER</p>
                             </li>
                         </ul>
-                        <div>
-                            <div>
-                                The Management Support position ensures the smooth operation and strategic alignment of the company&#39;s administrative
-                                and operational processes. This role involves collaborating with various departments to enhance efficiency, monitor performance,
-                                and support leadership in achieving organizational goals.
-                            </div>
-                        </div>
                     </div>
                 </>
             )}
