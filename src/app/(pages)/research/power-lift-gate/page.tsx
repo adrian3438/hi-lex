@@ -18,7 +18,7 @@ export default async function PowerLiftGatePage({searchParams : {lang}} : any) {
                         <li>{language?.header_3_3}</li>
                     </ul>
                     <div className="go-btn">
-                        <Link href="#">Go to Products</Link>
+                        <Link href="/products/power-closures">Go to Products</Link>
                     </div>
                 </div>
                 <div className="modeling-area">

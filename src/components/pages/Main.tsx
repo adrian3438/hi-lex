@@ -64,7 +64,7 @@ export default function Main({ language }: Props) {
                     <div>
                         <p className="main-section-text-01">{language?.main_01}</p>
                         <p className="main-section-text-02">{language?.main_02}</p>
-                        <Link href="#">{language?.main_03}</Link>
+                        <Link href="/company/contact-us">{language?.main_03}</Link>
                     </div>
                     <p>{language?.main_04}</p>
                 </div>
@@ -74,7 +74,7 @@ export default function Main({ language }: Props) {
                         <p className="main-section-text-02">
                             {language?.main_06}
                         </p>
-                        <Link href="#">{language?.main_08}</Link>
+                        <Link href="/products/latching-systems">{language?.main_08}</Link>
                     </div>
                 </div>
                 <div className="main-section-03">
@@ -85,14 +85,14 @@ export default function Main({ language }: Props) {
                             <br />
                             {language?.main_11}
                         </p>
-                        <Link href="#">{language?.main_12}</Link>
+                        <Link href="/research">{language?.main_12}</Link>
                     </div>
                 </div>
                 <div className="main-section-04">
                     <div>
                         <p className="main-section-text-01">{language?.main_13}</p>
                         <p className="main-section-text-02">{language?.main_14}</p>
-                        <Link href="#">{language?.main_15}</Link>
+                        <Link href="/news/story">{language?.main_15}</Link>
                     </div>
                 </div>
                 <div className="main-section-05">
@@ -103,7 +103,7 @@ export default function Main({ language }: Props) {
                             <br />
                             {language?.main_18}
                         </p>
-                        <Link href="#">{language?.main_19}</Link>
+                        <Link href="/career/position/quality">{language?.main_19}</Link>
                     </div>
                 </div>
             </main>

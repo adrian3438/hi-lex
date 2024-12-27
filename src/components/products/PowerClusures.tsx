@@ -19,13 +19,13 @@ export default function LatchingSystems() {
                             <ul>
                                 <li>
                                     <button className={activeIndex === 1 ? 'active' : ''} onClick={() => setActiveIndex(1)}>Power Door System</button>
-                                    <Link href="#"><Image src="/images/sub/products/3d-link.png" alt="R&D 3D Configurator" width={170} height={20} /></Link>
+                                    <Link href="/research/pds"><Image src="/images/sub/products/3d-link.png" alt="R&D 3D Configurator" width={170} height={20} /></Link>
                                 </li>
                             </ul>
                         </dd>
                     </dl>
                     <dl>
-                        <dt>Power Lift Gate System <Link href="#"><Image src="/images/sub/products/3d-link.png" alt="R&D 3D Configurator" width={170} height={20} /></Link></dt>
+                        <dt>Power Lift Gate System <Link href="/research/power-lift-gate"><Image src="/images/sub/products/3d-link.png" alt="R&D 3D Configurator" width={170} height={20} /></Link></dt>
                         <dd>
                             <ul>
                                 <li>
@@ -59,7 +59,7 @@ export default function LatchingSystems() {
                             <ul>
                                 <li>
                                     <button className={activeIndex === 7 ? 'active' : ''} onClick={() => setActiveIndex(7)}>Power Cinching Latch</button>
-                                    <Link href="#"><Image src="/images/sub/products/3d-link.png" alt="R&D 3D Configurator" width={170} height={20} /></Link>
+                                    <Link href="/research/power-hood"><Image src="/images/sub/products/3d-link.png" alt="R&D 3D Configurator" width={170} height={20} /></Link>
                                 </li>
                                 <li>
                                     <button className={activeIndex === 8 ? 'active' : ''} onClick={() => setActiveIndex(8)}>Spindle Drive Unit</button>

@@ -3,13 +3,20 @@
 import "@/app/assets/sustainability/esg.scss";
 import Link from "next/link";
 import api from "@/lib/api";
-import {useState} from "react";
+import {useEffect, useState} from "react";
 
 interface Props {
     language?: any;
 }
 
 export default function WhistleblowerComplaint({ language }: Props) {
+    useEffect(() => {
+        const element = document.querySelector('#esgMenus');
+        if (element) {
+            element.scrollIntoView({ behavior: 'smooth' });
+        }
+    }, []);
+
     const [data, setData] = useState<any>({
         privateAgree : '',
         isRealName : 'R',
@@ -83,7 +90,7 @@ export default function WhistleblowerComplaint({ language }: Props) {
                     <p>{language?.esg_text_01}</p>
                     <p>{language?.esg_text_02}</p>
                 </div>
-                <div className="esg-menu">
+                {/*<div className="esg-menu">
                     <ul>
                         <li>
                             <Link href="/sustainability/esg-management">
@@ -150,7 +157,75 @@ export default function WhistleblowerComplaint({ language }: Props) {
                             </Link>
                         </li>
                     </ul>
-                </div>
+                </div>*/}
+            </div>
+            <div className="esg-menus" id="esgMenus">
+                <ul>
+                    <li>
+                        <Link href="/sustainability/esg-management">
+                            <div>
+                                {language.language !== 'en' && <p>{language?.esg_text_03}</p>}
+                                <p>{language?.esg_text_04}</p>
+                            </div>
+                        </Link>
+                    </li>
+                    <li>
+                        <Link href="/sustainability/climate-change">
+                            <div>
+                                {language.language !== 'en' && <p>{language?.esg_text_05}</p>}
+                                <p>{language?.esg_text_06}</p>
+                            </div>
+                        </Link>
+                    </li>
+                    <li>
+                        <Link href="/sustainability/ethical-business">
+                            <div>
+                                {language.language !== 'en' && <p>{language?.esg_text_07}</p>}
+                                <p>{language?.esg_text_08}</p>
+                            </div>
+                        </Link>
+                    </li>
+                    <li>
+                        <Link href="/sustainability/ehs">
+                            <div>
+                                {language.language !== 'en' && <p>{language?.esg_text_09}</p>}
+                                <p>{language?.esg_text_10}</p>
+                            </div>
+                        </Link>
+                    </li>
+                    <li>
+                        <Link href="/sustainability/supply-chain">
+                            <div>
+                                {language.language !== 'en' && <p>{language?.esg_text_11}</p>}
+                                <p>{language?.esg_text_12}</p>
+                            </div>
+                        </Link>
+                    </li>
+                    <li>
+                        <Link href="/sustainability/quality-management">
+                            <div>
+                                {language.language !== 'en' && <p>{language?.esg_text_13}</p>}
+                                <p>{language?.esg_text_14}</p>
+                            </div>
+                        </Link>
+                    </li>
+                    <li>
+                        <Link href="/sustainability/sustainability-report">
+                            <div>
+                                {language.language !== 'en' && <p>{language?.esg_text_15}</p>}
+                                <p>{language?.esg_text_16}</p>
+                            </div>
+                        </Link>
+                    </li>
+                    <li className="active">
+                        <Link href="/sustainability/whistleblower-complaint">
+                            <div>
+                                {language.language !== 'en' && <p>{language?.esg_text_17}</p>}
+                                <p>{language?.esg_text_18}</p>
+                            </div>
+                        </Link>
+                    </li>
+                </ul>
             </div>
             <div className="esg-container">
                 <section className="esg-section-01">
@@ -183,8 +258,8 @@ export default function WhistleblowerComplaint({ language }: Props) {
                         <div className="agree">
                             <p>{language?.esg_text_08_13}</p>
                             <div>
-                                <label><input type="radio" name="privateAgree" onChange={()=>setData((prev:any)=>({...prev, privateAgree : 'Y'}))} checked={data?.privateAgree === 'Y'}/> {language?.esg_text_08_14}</label>
-                                <label><input type="radio" name="privateAgree" onChange={()=>setData((prev:any)=>({...prev, privateAgree : 'N'}))} checked={data?.privateAgree === 'N'}/> {language?.esg_text_08_15}</label>
+                                <label><input type="radio" name="privateAgree" onChange={() => setData((prev: any) => ({...prev, privateAgree: 'Y'}))} checked={data?.privateAgree === 'Y'}/> {language?.esg_text_08_14}</label>
+                                <label><input type="radio" name="privateAgree" onChange={() => setData((prev: any) => ({...prev, privateAgree: 'N'}))} checked={data?.privateAgree === 'N'}/> {language?.esg_text_08_15}</label>
                             </div>
                         </div>
                     </div>
@@ -197,8 +272,8 @@ export default function WhistleblowerComplaint({ language }: Props) {
                             <tr>
                                 <th scope="row">{language?.esg_text_08_18}</th>
                                 <td>
-                                    <label><input type="radio" name="whistleblow" value="Y" onChange={()=>setData((prev:any)=>({...prev, isRealName : 'R'}))} checked={data?.isRealName === 'R'}/> {language?.esg_text_08_19} <input type="text" name="name"/></label>
-                                    <label><input type="radio" name="whistleblow" value="N" onChange={()=>setData((prev:any)=>({...prev, isRealName : 'A'}))} checked={data?.isRealName === 'A'}/> {language?.esg_text_08_20}</label>
+                                    <label><input type="radio" name="whistleblow" value="Y" onChange={() => setData((prev: any) => ({...prev, isRealName: 'R'}))} checked={data?.isRealName === 'R'}/> {language?.esg_text_08_19} <input type="text" name="name"/></label>
+                                    <label><input type="radio" name="whistleblow" value="N" onChange={() => setData((prev: any) => ({...prev, isRealName: 'A'}))} checked={data?.isRealName === 'A'}/> {language?.esg_text_08_20}</label>
                                 </td>
                             </tr>
                             <tr>

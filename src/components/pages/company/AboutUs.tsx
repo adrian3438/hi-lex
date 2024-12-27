@@ -28,10 +28,10 @@ export default function AboutUs({language}: Props) {
                                         <dt>{language?.about_26}</dt>
                                         <dd>
                                             <ul>
-                                                <li><Link href="#">{language?.about_27}</Link></li>
-                                                <li><Link href="#">{language?.about_28}</Link></li>
-                                                <li><Link href="#">{language?.about_29}</Link></li>
-                                                <li><Link href="#">{language?.about_30}</Link></li>
+                                                <li><Link href="/products/latching-systems">{language?.about_27}</Link></li>
+                                                <li><Link href="/products/latching-systems">{language?.about_28}</Link></li>
+                                                <li><Link href="/products/latching-systems">{language?.about_29}</Link></li>
+                                                <li><Link href="/products/latching-systems">{language?.about_30}</Link></li>
                                             </ul>
                                         </dd>
                                     </dl>
@@ -41,10 +41,10 @@ export default function AboutUs({language}: Props) {
                                         <dt>{language?.about_31}</dt>
                                         <dd>
                                             <ul>
-                                                <li><Link href="#">{language?.about_32}</Link></li>
-                                                <li><Link href="#">{language?.about_33}</Link></li>
-                                                <li><Link href="#">{language?.about_34}</Link></li>
-                                                <li><Link href="#">{language?.about_35}</Link></li>
+                                                <li><Link href="/products/power-closures">{language?.about_32}</Link></li>
+                                                <li><Link href="/products/power-closures">{language?.about_33}</Link></li>
+                                                <li><Link href="/products/power-closures">{language?.about_34}</Link></li>
+                                                <li><Link href="/products/power-closures">{language?.about_35}</Link></li>
                                             </ul>
                                         </dd>
                                     </dl>
@@ -57,7 +57,7 @@ export default function AboutUs({language}: Props) {
                                 </li>
                             </ul>
                             <div className="button">
-                                <Link href="#">{language?.about_37}</Link>
+                                <Link href="/products/latching-systems">{language?.about_37}</Link>
                             </div>
                         </div>
                     </div>

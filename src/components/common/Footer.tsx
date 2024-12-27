@@ -23,10 +23,10 @@ export default function Footer({language}: Props) {
                         <dt>{language?.footer_5}</dt>
                         <dd>
                             <ul>
-                                <li><Link href="">{language?.footer_6}</Link></li>
-                                <li><Link href="">{language?.footer_7}</Link></li>
-                                <li><Link href="">{language?.footer_8}</Link></li>
-                                <li><Link href="">{language?.footer_9}</Link></li>
+                                <li><Link href="http://www.hi-lex.co.kr/" target="_blank">{language?.footer_6}</Link></li>
+                                {/*<li><Link href="" target="_blank">{language?.footer_7}</Link></li>*/}
+                                <li><Link href="https://www.dds.co.kr/main/main.php" target="_blank">{language?.footer_8}</Link></li>
+                                <li><Link href="https://www.hi-lex.co.jp/e/" target="_blank">{language?.footer_9}</Link></li>
                             </ul>
                         </dd>
                     </dl>
@@ -36,10 +36,10 @@ export default function Footer({language}: Props) {
                         <dt>{language?.footer_10}</dt>
                         <dd>
                             <ul>
-                                <li><Link href="">{language?.footer_11}</Link></li>
-                                <li><Link href="">{language?.footer_12}</Link></li>
-                                <li><Link href="">{language?.footer_13}</Link></li>
-                                <li><Link href="">{language?.footer_14}</Link></li>
+                                <li><Link href="/company/contact-us">{language?.footer_11}</Link></li>
+                                <li><Link href="/career/position/quality">{language?.footer_12}</Link></li>
+                                <li><Link href="/company/about-us">{language?.footer_13}</Link></li>
+                                <li><Link href="/privacy">{language?.footer_14}</Link></li>
                             </ul>
                         </dd>
                     </dl>

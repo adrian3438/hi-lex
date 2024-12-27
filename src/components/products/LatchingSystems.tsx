@@ -23,7 +23,7 @@ export default function LatchingSystems() {
                                 </li>
                                 <li>
                                     <button className={activeIndex === 2 ? 'active' : ''} onClick={() => setActiveIndex(2)}>E-Latch, E-Latch (with Cinching)</button>
-                                    <Link href="#"><Image src="/images/sub/products/3d-link.png" alt="R&D 3D Configurator" width={170} height={20} /></Link>
+                                    <Link href="/research/e-latch"><Image src="/images/sub/products/3d-link.png" alt="R&D 3D Configurator" width={170} height={20} /></Link>
                                 </li>
                             </ul>
                         </dd>

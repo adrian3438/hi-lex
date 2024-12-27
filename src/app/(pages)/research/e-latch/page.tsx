@@ -18,7 +18,7 @@ export default async function ELatchPage({searchParams : {lang}} : any) {
                         <li>{language?.header_3_1}</li>
                     </ul>
                     <div className="go-btn">
-                        <Link href="#">Go to Products</Link>
+                        <Link href="/products/latching-systems">Go to Products</Link>
                     </div>
                 </div>
                 <div className="modeling-area">

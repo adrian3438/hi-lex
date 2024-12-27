@@ -1,4 +1,4 @@
-'use client';
+'use client'
 
 import "@/app/assets/sustainability/esg.scss";
 import Link from "next/link";
@@ -8,7 +8,7 @@ interface Props {
     language?: any;
 }
 
-export default function SustainabilityReport({ language }: Props) {
+export default function WhistleblowerComplaintGuide({ language }: Props) {
     useEffect(() => {
         const element = document.querySelector('#esgMenus');
         if (element) {
@@ -20,10 +20,10 @@ export default function SustainabilityReport({ language }: Props) {
         <div className="esg">
             <div className="esg-banner">
                 <div className="banner-area1">
-                    <h2>{language?.header_4_7}</h2>
+                    <h2>{language?.esg_text_08_39_01}</h2>
                     <ul className="location">
                         <li>{language?.header_4}</li>
-                        <li>{language?.header_4_7}</li>
+                        <li>{language?.esg_text_08_39_01}</li>
                     </ul>
                 </div>
                 <div className="banner-area2">
@@ -80,7 +80,7 @@ export default function SustainabilityReport({ language }: Props) {
                                 </div>
                             </Link>
                         </li>
-                        <li className="active">
+                        <li>
                             <Link href="/sustainability/sustainability-report">
                                 <div>
                                     {language.language !== 'en' && <p>{language?.esg_text_15}</p>}
@@ -88,7 +88,7 @@ export default function SustainabilityReport({ language }: Props) {
                                 </div>
                             </Link>
                         </li>
-                        <li>
+                        <li className="active">
                             <Link href="/sustainability/whistleblower-complaint">
                                 <div>
                                     {language.language !== 'en' && <p>{language?.esg_text_17}</p>}
@@ -149,7 +149,7 @@ export default function SustainabilityReport({ language }: Props) {
                             </div>
                         </Link>
                     </li>
-                    <li className="active">
+                    <li>
                         <Link href="/sustainability/sustainability-report">
                             <div>
                                 {language.language !== 'en' && <p>{language?.esg_text_15}</p>}
@@ -157,7 +157,7 @@ export default function SustainabilityReport({ language }: Props) {
                             </div>
                         </Link>
                     </li>
-                    <li>
+                    <li className="active">
                         <Link href="/sustainability/whistleblower-complaint">
                             <div>
                                 {language.language !== 'en' && <p>{language?.esg_text_17}</p>}
@@ -169,60 +169,61 @@ export default function SustainabilityReport({ language }: Props) {
             </div>
             <div className="esg-container">
                 <section className="esg-section-01">
-                    <h3>{language?.esg_text_07_01}</h3>
-                    <div className="sustainability-download">
-                        <h4>{language?.esg_text_07_02}</h4>
+                    <h3>{language?.esg_text_08_39_01}</h3>
+                    <div className="whistleblower-table">
+                        <h4>{language?.esg_text_08_39} <Link href="/sustainability/whistleblower-complaint">{language?.esg_text_08_40}</Link></h4>
                         <table>
                             <tbody>
                             <tr>
-                                <th scope="row">{language?.esg_text_07_03}</th>
-                                <td>
-                                    <a href="#" download>{language?.esg_text_07_10}</a>
-                                    <a href="#" download>{language?.esg_text_07_11}</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">{language?.esg_text_07_04}</th>
-                                <td>
-                                    <a href="#" download>{language?.esg_text_07_10}</a>
-                                    <a href="#" download>{language?.esg_text_07_11}</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">{language?.esg_text_07_05}</th>
-                                <td>
-                                    <a href="#" download>{language?.esg_text_07_10}</a>
-                                    <a href="#" download>{language?.esg_text_07_11}</a>
+                                <td style={{border: "none", padding: "30px 0"}}>
+                                    <ul>
+                                        <li>{language?.esg_text_08_41}</li>
+                                        <li>{language?.esg_text_08_42}</li>
+                                        <li>{language?.esg_text_08_43}</li>
+                                        <li>{language?.esg_text_08_44}</li>
+                                        <li>{language?.esg_text_08_45}</li>
+                                    </ul>
                                 </td>
                             </tr>
                             </tbody>
                         </table>
                     </div>
                 </section>
-                <section className="esg-section-02">
-                    <div className="sustainability-download">
-                        <h4>{language?.esg_text_07_06}</h4>
+                <section className="esg-section-01">
+                    <div className="whistleblower-table">
+                        <h4>{language?.esg_text_08_46}</h4>
                         <table>
                             <tbody>
                             <tr>
-                                <th scope="row">{language?.esg_text_07_07}</th>
-                                <td>
-                                    <a href="#" download>{language?.esg_text_07_10}</a>
-                                    <a href="#" download>{language?.esg_text_07_11}</a>
-                                </td>
+                                <th scope="row">{language?.esg_text_08_47}</th>
+                                <td>{language?.esg_text_08_48}</td>
                             </tr>
                             <tr>
-                                <th scope="row">{language?.esg_text_07_08}</th>
-                                <td>
-                                    <a href="#" download>{language?.esg_text_07_10}</a>
-                                    <a href="#" download>{language?.esg_text_07_11}</a>
-                                </td>
+                                <th scope="row">{language?.esg_text_08_49}</th>
+                                <td><span style={{color: "#FE0416"}}>{language?.esg_text_08_50}</span></td>
                             </tr>
                             <tr>
-                                <th scope="row">{language?.esg_text_07_09}</th>
-                                <td>
-                                    <a href="#" download>{language?.esg_text_07_10}</a>
-                                    <a href="#" download>{language?.esg_text_07_11}</a>
+                                <th scope="row">{language?.esg_text_08_51}</th>
+                                <td>{language?.esg_text_08_52}</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+
+                <section className="esg-section-05">
+                    <div className="whistleblower-table">
+                        <h4>{language?.esg_text_08_53}</h4>
+                        <table>
+                            <tbody>
+                            <tr>
+                                <td style={{border: "none", padding: "30px 0"}}>
+                                    <ul>
+                                        <li>{language?.esg_text_08_54}</li>
+                                        <li>{language?.esg_text_08_55}</li>
+                                        <li>{language?.esg_text_08_56}</li>
+                                        <li>{language?.esg_text_08_57}</li>
+                                    </ul>
                                 </td>
                             </tr>
                             </tbody>
