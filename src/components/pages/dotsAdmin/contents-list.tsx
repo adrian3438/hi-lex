@@ -1,6 +1,5 @@
 'use client'
 import SelectContentsModifyBox from "@/components/DotsAdmin/Contents/SelectEditBox";
-import ListBusinessTypeBox from "@/components/DotsAdmin/List/ListBusinessTypeBox";
 import ListContentsTypeBox from "@/components/DotsAdmin/List/ListContentsTypeBox";
 import ListFilter from "@/components/DotsAdmin/List/ListFilter";
 import ListSearchBox from "@/components/DotsAdmin/List/ListSearchBox";
@@ -9,7 +8,8 @@ import api from "@/lib/api";
 import { useRouter } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
-import calculateIndex from "@/components/calculateIndex";
+import calCulateIndex from "@/components/calculateIndex";
+import Paginate from "@/components/DotsAdmin/Paginate/paginate";
 
 interface Props {
     contentsType : any,
@@ -22,8 +22,8 @@ interface Props {
 }
 
 export default function ContentsListPage ({
-  contentsType , businessType , page , size , keyword , column , order
-} : Props) {
+                                              contentsType , businessType , page , size , keyword , column , order
+                                          } : Props) {
     const router = useRouter()
     const langWrapRef = useRef<any>(null)
     // const query = useParams()
@@ -104,10 +104,6 @@ export default function ContentsListPage ({
                                 contentsTypeId={contentsType}
                             />
 
-                            <ListBusinessTypeBox
-                                businessTypeId={businessType}
-                            />
-
                             <ListSearchBox
                                 keyword={keyword}
                             />
@@ -134,7 +130,7 @@ export default function ContentsListPage ({
                                 <tr key={index}>
                                     <td onClick={()=>router.push(`/admin/contents-management/contents?c=${contentsType}&id=${list?.contentDetailKrId}&lang=${'KR'}`)}>
                                     <span className="readOnly">
-                                        {calculateIndex(page , size , totalCount , index)}
+                                        {calCulateIndex(page , size , totalCount , index)}
                                     </span>
                                     </td>
                                     <td onClick={()=>router.push(`/admin/contents-management/contents?c=${contentsType}&id=${list?.contentDetailKrId}&lang=${'KR'}`)}>
@@ -170,37 +166,37 @@ export default function ContentsListPage ({
                                                     : ''
 
                                                 }
-                                                 {list?.contentDetailEnId ?
-                                            <>
-                                                <button
-                                                className={list?.publishStatusEn === 'Y' ? 'lang_en' : 'lang_en none'}
-                                                onClick={()=>selectContents(list?.contentDetailEnId, 'en', list?.contentType, list?.publishStatusEn, list?.contentMasterId)}
-                                                >
-                                                </button>
-                                                {list?.contentDetailEnId === popup?.id && popup?.lang === 'en' ?
+                                                {list?.contentDetailEnId ?
+                                                    <>
+                                                        <button
+                                                            className={list?.publishStatusEn === 'Y' ? 'lang_en' : 'lang_en none'}
+                                                            onClick={()=>selectContents(list?.contentDetailEnId, 'en', list?.contentType, list?.publishStatusEn, list?.contentMasterId)}
+                                                        >
+                                                        </button>
+                                                        {list?.contentDetailEnId === popup?.id && popup?.lang === 'en' ?
 
-                                                <SelectContentsModifyBox
-                                                    id={popup?.id}
-                                                    contentType={popup?.contentType}
-                                                    status={popup?.status}
-                                                    lang={'EN'}
-                                                    setPopup={setPopup}
-                                                    masterId={popup?.masterId}
-                                                    refetch={getList}
-                                                />
+                                                            <SelectContentsModifyBox
+                                                                id={popup?.id}
+                                                                contentType={popup?.contentType}
+                                                                status={popup?.status}
+                                                                lang={'EN'}
+                                                                setPopup={setPopup}
+                                                                masterId={popup?.masterId}
+                                                                refetch={getList}
+                                                            />
 
-                                                : ''
+                                                            : ''
 
+                                                        }
+                                                    </> : ''
                                                 }
-                                            </> : ''
-                                            }
 
-                                            {!list?.contentDetailEnId &&
-                                                // 복제할 때는 한국어 게시글 아이디 들고 복제
-                                                <div className="langBox">
-                                                   <button className="lang_add en" onClick={()=>handleContentsCopy(list?.contentDetailKrId)}></button>
-                                                </div>
-                                            }
+                                                {!list?.contentDetailEnId &&
+                                                    // 복제할 때는 한국어 게시글 아이디 들고 복제
+                                                    <div className="langBox">
+                                                        <button className="lang_add en" onClick={()=>handleContentsCopy(list?.contentDetailKrId)}></button>
+                                                    </div>
+                                                }
                                             </div>
                                         </div>
                                     </td>
@@ -235,8 +231,11 @@ export default function ContentsListPage ({
 
 
                 <div className="pagerBox">
-                    <p>Showing 1 to 10 of 98 entries</p>
-
+                    <Paginate
+                        page={page}
+                        size={size}
+                        totalCount={totalCount}
+                    />
                 </div>
 
             </div>

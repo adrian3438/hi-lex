@@ -1,15 +1,17 @@
 'use client'
 
 import api from "@/lib/api"
-import { useAppDispatch } from "@/store/hooks"
-import { setUser } from "@/store/Slices/adminInfoSlice"
 import { useRouter } from "next/navigation"
 import { useState } from "react"
+// import { useAppDispatch } from "@/store/hooks"
+import { useCookies } from 'react-cookie'
 import Image from "next/image";
 
 export default function AdminLoginPage () {
     const router = useRouter()
-    const dispatch = useAppDispatch()
+    // const dispatch = useAppDispatch()
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
+    const [cookies , setCookie] = useCookies(['hessid']);
     const [login, setLogin] = useState<{id :string, password : string}>({
         id : '', password : ''
     })
@@ -19,12 +21,9 @@ export default function AdminLoginPage () {
     }
     async function handleLogin () {
         try{
-            const formData = new FormData()
-            formData.append('managerLoginId', login?.id)
-            formData.append('managerPass', login?.password)
             const res = await api.get(`/admin/manager/adminLogin.php?managerLoginId=${login?.id}&managerPass=${login?.password}`)
             if(res?.data?.result === true) {
-                dispatch(setUser({users : res.data}));
+                setCookie('hessid', res.data.uuid, { path: '/' }); // You can adjust the options as needed
                 router.push(`/admin/common-code-management/common-code-list`);
             }else{
                 alert(res.data.resultMsg);
@@ -37,10 +36,10 @@ export default function AdminLoginPage () {
         if(e.key==='Enter') handleLogin()
     }
     return(<>
-    <div className="admin_loginBox">
-        <h2>Daedong ADMIN</h2>
-        <p>로그인 후 더욱 다양한 서비스를 이용해 보세요.</p>
-        <div>
+        <div className="admin_loginBox">
+            <h2>Daedong ADMIN</h2>
+            <p>로그인 후 더욱 다양한 서비스를 이용해 보세요.</p>
+            <div>
                 <div className="inputList">
                     <label htmlFor="">
                         <Image src="/images/dotsAdmin/form_id.png" alt="login" width={16} height={16}/>
@@ -77,6 +76,6 @@ export default function AdminLoginPage () {
                     onClick={handleLogin}
                 >로그인</button>
             </div>
-    </div>
+        </div>
     </>)
 }

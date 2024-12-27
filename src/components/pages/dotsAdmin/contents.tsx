@@ -29,7 +29,8 @@ export default function ContentsPage ({
         // 전시기간 , 전시장소 , 전시 사업분야 , 전시 웹사이트 , 발췌내용
         excerpt : '',
         // 컨텐츠 내용 , 썸네일 이미지 , 첨부 파일
-        description : '', thumnailImage : null, attachedFile : null
+        description : '', thumnailImage : null, attachedFile : null,
+        date: '',
         // facebook : '', linkedIn : '', youtube : '', twitter : '', prirorityNews : 'N', noticePrirority : 'N', pressCenter : '', pressUrl : '',
     })
     const [previewImage, setPreviewImage] = useState<any>({thumnailImage : null})
@@ -41,6 +42,7 @@ export default function ContentsPage ({
     async function save () {
         try {
             if(!data?.description) {alert('컨텐츠 내용은 필수 입력입니다.'); return;}
+            if(!data?.date) {alert('보도일자 선택은 필수입니다.'); return;}
             const formData = new FormData()
             if(id){
                 formData.append('ID', id)
@@ -61,6 +63,7 @@ export default function ContentsPage ({
             formData.append('searchKeywords', data?.searchKeyword ? data?.searchKeyword : '');
             formData.append('excerpt', data?.excerpt ? data?.excerpt : '');
             formData.append('description', data?.description ? data?.description :'');
+            formData.append('promInsertDate', data?.date ? data?.date :'');
 
             if(id) {
                 const response = await api.post(`/admin/contents/updContent.php`, formData)
@@ -72,7 +75,7 @@ export default function ContentsPage ({
             }else{
                 const response = await api.post(`/admin/contents/setContent.php`, formData)
                 if(response?.data?.result === true) {
-                    alert(response?.data?.resultMsg); router.push(`/admin/contents-management/contents-list/`)
+                    alert(response?.data?.resultMsg); router.push(`/dotsAdmin/contents-management/contents-list/`)
                 }else{
                     alert(response?.data?.resultMsg);
                 }
@@ -92,7 +95,7 @@ export default function ContentsPage ({
                         setData((prev:any) => ({...prev, contentType : data?.contentType, subject : data?.contentName,
                             facebook : data?.facebookUrl, linkedIn : data?.linkedinUrl, youtube : data?.youtubeUrl, twitter : data?.twitterUrl,
                             searchKeyword : fomatSearchKeyword, excerpt : data?.promExcerpt, description : data?.promDescription,
-                            businessType : data?.businessDivisionType
+                            businessType : data?.businessDivisionType, date: data?.mdate,
                         }))
                         setPreviewImage((prev:any) => ({...prev, thumnailImage : data?.thumnailImage}))
                     }else {
@@ -179,7 +182,7 @@ export default function ContentsPage ({
                                 </div>
                             </td>
                         </tr>
-                        <tr>
+                        {/*<tr>
                             <th>사업영역 유형 <span className="star">*</span></th>
                             <td>
                                 <div className="selectContainer">
@@ -194,7 +197,7 @@ export default function ContentsPage ({
                                     </div>
                                 </div>
                             </td>
-                        </tr>
+                        </tr>*/}
                         <ImageUploadBox
                             title={'썸네일 이미지'}
                             name={'thumnailImage'}
@@ -278,7 +281,8 @@ export default function ContentsPage ({
                         </tr>
 
                         <AdminDateBox
-
+                            data={data}
+                            onChange={handleSelect}
                         />
 
                         </tbody>

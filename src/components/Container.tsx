@@ -1,24 +1,23 @@
 'use client'
 
-// import { usePathname, useRouter } from "next/navigation"
-import { usePathname } from "next/navigation"
+import { usePathname, useRouter } from "next/navigation"
 import { useEffect } from "react"
 import { useCookies } from "react-cookie"
 import AdminSideBar from "./DotsAdmin/SideBar"
 import AdminHeader from "./DotsAdmin/AdminHeader"
-// import api from "@/lib/api"
-// import { setUser } from "@/store/Slices/adminInfoSlice"
-// import {useAppDispatch} from "@/store/hooks";
+import api from "@/lib/api"
+import { setUser } from "@/store/Slices/adminInfoSlice"
+import {useAppDispatch} from "@/store/hooks";
 
 export default function Container ({children} : any) {
-    // const router = useRouter()
+    const router = useRouter()
     const pathname = usePathname()
     const splitPath = pathname.split('/')
-    // const dispatch = useAppDispatch()
+    const dispatch = useAppDispatch()
     const [cookie, setCookie] = useCookies(['LANG', 'hessid']);
-    /*async function getAdminInfo () {
+    async function getAdminInfo () {
         const formData : any = new FormData()
-        formData.append('uuid' , cookie.hessid || '')
+        formData.append('managerUuid' , cookie.hessid || '')
         const response = await api.post(`/admin/manager/getManagerInfo.php` , formData)
         if(response?.data?.result === true) {
             if(response?.data?.list?.length > 0) {
@@ -32,10 +31,10 @@ export default function Container ({children} : any) {
                 alert('로그인이 필요합니다.'); router.push('/admin')
             }
         }
-    }*/
+    }
     useEffect(() => {
         if(splitPath[1] === 'admin'){
-            // getAdminInfo()
+            getAdminInfo()
         }
     } , [splitPath])
     useEffect(() => {

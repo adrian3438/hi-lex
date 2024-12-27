@@ -14,7 +14,6 @@ export default function ListBusinessTypeBox ({businessTypeId} : Props) {
     const [businessType, setbusinessType] = useState<any>([])
 
     function Change (e:React.ChangeEvent<HTMLSelectElement>) {
-        console.log(e.target.value)
         const newParams = new URLSearchParams(query.toString())
         newParams.set('businessType', e.target.value)
         router.push(`${path}?${newParams?.toString()}`)

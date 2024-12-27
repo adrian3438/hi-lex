@@ -1,7 +1,7 @@
 
-function calculateIndex(currentPage:number, pageSize:number, totalCount:number, itemIndex:number) {
+function calCulateIndex(currentPage:number, pageSize:number, totalCount:number, itemIndex:number) {
     const lastIndex = totalCount - (currentPage -1) * pageSize;
     return lastIndex - itemIndex;
 }
 
-export default calculateIndex;
+export default calCulateIndex;

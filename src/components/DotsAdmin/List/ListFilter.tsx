@@ -13,6 +13,7 @@ export default function ListFilter () {
             case '/admin/contents-management/contents-list' : setFilter(ContentFilter); break;
             case '/admin/inquiry-management/inquiry-list' : setFilter(InquiryFilter); break;
             case '/admin/admin-account-management/admin-account-list' : setFilter(SettingFilter); break;
+            case '/admin/inquiry-management/whistleblower-list' : setFilter(WhistleBlowListFilter); break;
         }
     }, [pathname])
     return(
@@ -89,4 +90,15 @@ export const SettingFilter = [
     {title : '직원여부', column : ''},
     {title : '관리', column : ''},
     // {title : '', column : ''},
+]
+
+export const WhistleBlowListFilter = [
+    {title : '신고유형', column : ''},
+    {title : '이름', column : ''},
+    {title : '이메일', column : ''},
+    {title : '연락처', column : ''},
+    {title : '신고제목', column : ''},
+    {title : '첨부파일', column : ''},
+    {title : '접수일자', column : ''},
+    {title : '처리상태', column : ''},
 ]

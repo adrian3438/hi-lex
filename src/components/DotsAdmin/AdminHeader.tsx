@@ -2,7 +2,7 @@
 
 import { useRouter } from "next/navigation";
 import { useAppSelector } from "@/store/hooks";
-import Cookies from 'js-cookie';
+import Cookies from 'js-cookie'
 export default function AdminHeader () {
     const router = useRouter()
     const adminInfo = useAppSelector((state) => state.userData.users.users)

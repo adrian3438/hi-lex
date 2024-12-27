@@ -12,7 +12,7 @@ export default function AdminSideBar () {
         {/* members. product. content. pr_video. certificate. inquiry. settings */}
         <aside>
             <h2>
-                <Image src="/images/common/footer-logo.png" alt="Valmax" width={1000} height={272} style={{width: "104px", height: "auto"}}/>
+                <Image src="/images/common/footer-logo.png" alt="Daedong door" width={1000} height={272} style={{width: "104px", height: "auto"}}/>
             </h2>
             <ul className="mainMenu">
 
@@ -40,7 +40,7 @@ export default function AdminSideBar () {
                         <li className={splitPath[3] === 'inquiry-list' || splitPath[3] === 'inquiry' ? 'active' : ''} onClick={() => router.push(`/admin/inquiry-management/inquiry-list/`)}>
                             <span>문의접수</span>
                         </li>
-                        <li className={splitPath[3] === 'whistleblow-list' || splitPath[3] === 'whistleblow' ? 'active' : ''} onClick={() => router.push('/admin/inquiry-management/whistleblow-list')}>
+                        <li className={splitPath[3] === 'whistleblower-list' || splitPath[3] === 'whistleblower' ? 'active' : ''} onClick={() => router.push(`/admin/inquiry-management/whistleblower-list/`)}>
                             <span>클린신고 관리</span>
                         </li>
                     </ul>
