@@ -22,7 +22,7 @@ export default function ContentsPage ({
     const managerInfo = useAppSelector((state) => state.userData.users.users)
 
     const [contentsType , setContentsType] = useState<[]>([])
-    const [businessType , setbusinessType] = useState<[]>([])
+    // const [businessType , setbusinessType] = useState<[]>([])
     const [data, setData] = useState<any>({
         // 컨텐츠 유형 , 사업영역 유형  , 검색키워드 , 제목
         contentType : '1', businessType : '3', searchKeyword : [], subject : '',
@@ -109,9 +109,9 @@ export default function ContentsPage ({
     useEffect(() => {
         async function fetchTypeList () {
             const res1 = await api.get(`/admin/code/getContentsTypeList.php`);
-            const res2 = await api.get(`/admin/code/getBusinessDivisionTypeList.php`);
+            // const res2 = await api.get(`/admin/code/getBusinessDivisionTypeList.php`);
             if(res1?.data?.result === true) {setContentsType(res1?.data?.List)}
-            if(res2?.data?.result === true) {setbusinessType(res2?.data?.List)}
+            // if(res2?.data?.result === true) {setbusinessType(res2?.data?.List)}
         }
         fetchTypeList()
     }, [])
