@@ -1,13 +1,13 @@
 'use client'
 
 // import Summernote from "@/components/DotsAdmin/Editor/Summernote"
-import api from "@/lib/api"
+/*import api from "@/lib/api"
 import {useRouter, useSearchParams} from "next/navigation"
 import {useEffect, useState} from "react"
-import fileDownLoad from "@/components/useFileDownload";
+import fileDownLoad from "@/components/useFileDownload";*/
 
 export default function WhistleblowerPage () {
-    const router = useRouter()
+    /*const router = useRouter()
     const searchParams = useSearchParams();
     const type : any = searchParams.get('t');
     console.log('type : ', type, typeof(type));
@@ -31,11 +31,12 @@ export default function WhistleblowerPage () {
     }
     useEffect(()=>{
         if(type && type) getDetail()
-    }, [type]);
+    }, [type]);*/
 
     return(
         <>
-            <div className="contentBox inquiry_common">
+            test
+            {/*<div className="contentBox inquiry_common">
                 <h3>Inquiry</h3>
                 <div className="flexBox">
                     <div>
@@ -43,7 +44,7 @@ export default function WhistleblowerPage () {
                     </div>
                     <div className="btnBox">
                         <button className="blackBtn" onClick={()=>router.back()}>목록으로</button>
-                        {/* <button className="blueBtn">저장하기</button> */}
+                         <button className="blueBtn">저장하기</button>
                     </div>
                 </div>
 
@@ -118,7 +119,7 @@ export default function WhistleblowerPage () {
                         }
                     </div>
                 </div>
-            </div>
+            </div>*/}
         </>
     )
 }
