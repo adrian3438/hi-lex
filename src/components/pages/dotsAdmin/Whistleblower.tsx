@@ -2,14 +2,16 @@
 
 // import Summernote from "@/components/DotsAdmin/Editor/Summernote"
 import api from "@/lib/api"
-import {useRouter, useSearchParams} from "next/navigation"
+import {useRouter} from "next/navigation"
 import {useEffect, useState} from "react"
 import fileDownLoad from "@/components/useFileDownload";
 
-export default function WhistleblowerPage () {
-    const router = useRouter()
-    const searchParams = useSearchParams();
-    const type : any = searchParams.get('t');
+interface Props {
+    type: any
+}
+
+export default function WhistleblowerPage({type}: Props) {
+    const router = useRouter();
     const [isActive, setActive] = useState<boolean>(false)
     const [data, setData] = useState<any>([])
     async function getDetail () {
@@ -18,7 +20,7 @@ export default function WhistleblowerPage () {
     }
     async function handleChangeStatus (status : string) {
         const formData = new FormData()
-        formData.append('ID', type)
+        formData.append('ID', type);
         formData.append('wbStatus', status)
         const res = await api.post(`/admin/inquiry/updWhistleBlowStatus.php`, formData)
         if(res.data.result === true) {

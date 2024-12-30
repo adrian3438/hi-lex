@@ -3,12 +3,11 @@ import ListFilter from "@/components/DotsAdmin/List/ListFilter";
 import ListSearchBox from "@/components/DotsAdmin/List/ListSearchBox";
 import ListSizeBox from "@/components/DotsAdmin/List/ListSizeBox";
 import api from "@/lib/api";
-import { useRouter, useSearchParams } from "next/navigation";
 import { useEffect, useState } from "react";
 import calculateIndex from "@/components/calculateIndex";
 import Paginate from "@/components/DotsAdmin/Paginate/paginate";
 import fileDownLoad from "@/components/useFileDownload";
-
+import {useRouter} from "next/navigation";
 
 interface Props {
     page : number
@@ -23,7 +22,7 @@ interface Props {
 export default function WhistleblowerListPage ({
    page, size, keyword, order, column , wbtype, status
 }: Props) {
-    const searchParams = useSearchParams();
+    // const searchParams = useSearchParams();
     const router = useRouter()
     const [data, setData] = useState<any>([])
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
@@ -46,15 +45,11 @@ export default function WhistleblowerListPage ({
 
 
     const handleType = (e: React.ChangeEvent<HTMLSelectElement>) => {
-        const newSearchParams = new URLSearchParams(searchParams.toString());
-        newSearchParams.set("wbtype", e.target.value || "");
-        router.push(`?${newSearchParams.toString()}`);
+        router.push(`?wbtype=${e.target.value}&status=${status}`);
     };
 
     const handleStatus = (e: React.ChangeEvent<HTMLSelectElement>) => {
-        const newSearchParams = new URLSearchParams(searchParams.toString());
-        newSearchParams.set("status", e.target.value || "");
-        router.push(`?${newSearchParams.toString()}`);
+        router.push(`?wbtype=${wbtype}&status=${e.target.value}`);
     };
     return(
         <>
@@ -77,7 +72,7 @@ export default function WhistleblowerListPage ({
                         <div>
 
                             <div className="selectBox">
-                                <select onChange={handleType} value={searchParams.get("wbtype") || ""} name="" id="">
+                                <select onChange={handleType} value={wbtype || ""} name="" id="">
                                     <option value="" selected>- 전체신고유형 -</option>
                                     <option value="M">금품, 향응수수</option>
                                     <option value="S">횡령 / 유용</option>
@@ -90,7 +85,7 @@ export default function WhistleblowerListPage ({
                             </div>
 
                             <div className="selectBox">
-                                <select onChange={handleStatus} value={searchParams.get("status") || ""} name="" id="">
+                                <select onChange={handleStatus} value={status || ""} name="" id="">
                                     <option value="" selected>- 전체처리상태 -</option>
                                     <option value="R">접수대기</option>
                                     <option value="P">처리중</option>
