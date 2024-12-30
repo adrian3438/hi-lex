@@ -75,7 +75,7 @@ export default function ContentsPage ({
             }else{
                 const response = await api.post(`/admin/contents/setContent.php`, formData)
                 if(response?.data?.result === true) {
-                    alert(response?.data?.resultMsg); router.push(`/dotsAdmin/contents-management/contents-list/`)
+                    alert(response?.data?.resultMsg); router.push(`/admin/contents-management/contents-list/`)
                 }else{
                     alert(response?.data?.resultMsg);
                 }

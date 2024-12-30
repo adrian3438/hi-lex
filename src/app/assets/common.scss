@@ -457,6 +457,15 @@ footer {
   }
 }
 
+/* Paging */
+.paging {
+  text-align: center;
+  margin-top: 50px;
+  > div {
+    display: inline-flex;
+  }
+}
+
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   header {
     > div {

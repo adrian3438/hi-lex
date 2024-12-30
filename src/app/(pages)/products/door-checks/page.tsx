@@ -2,6 +2,8 @@ import Header from "@/components/common/Header";
 import Footer from "@/components/common/Footer";
 import {fetchLanguage} from "@/util/fetchLanguage";
 import DoorChecks from "@/components/products/DoorChecks";
+import ClientSlide from "@/components/products/ClientSlide";
+import ClientSlideR from "@/components/products/ClientSlideR";
 
 export default async function DoorChecksPage({searchParams : {lang}} : any) {
     const language = await fetchLanguage(lang);
@@ -17,6 +19,11 @@ export default async function DoorChecksPage({searchParams : {lang}} : any) {
                     </ul>
                 </div>
                 <DoorChecks/>
+                <div className="client-slide">
+                    <h2>Our Clients</h2>
+                    <ClientSlide/>
+                    <ClientSlideR/>
+                </div>
             </div>
             <Footer language={language}/>
         </>

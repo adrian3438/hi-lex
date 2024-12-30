@@ -269,3 +269,25 @@
     }
   }
 }
+
+.client-slide {
+  text-align: center;
+  padding-bottom: 250px;
+  h2 {
+    display: inline-block;
+    border-bottom: 1px solid #023A8E;
+    position: relative;
+    padding-bottom: 46px;
+    font-family: "Pretendard-Bold", sans-serif;
+    font-size: 50px;
+    width: 100%;
+    max-width: 580px;
+    color: #023A8E;
+    margin-bottom: 45px;
+  }
+  img {
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+  }
+}

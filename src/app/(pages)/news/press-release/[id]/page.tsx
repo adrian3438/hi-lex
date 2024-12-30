@@ -5,7 +5,12 @@ import Link from "next/link";
 import PressReleaseDetail from "@/components/pages/news/PressReleaseDetail";
 import "@/app/assets/news/news.scss";
 
-export default async function PressReleaseDetailPage({searchParams : {lang}} : any) {
+interface ParamsType {
+    params: { id: string | undefined };
+    searchParams: { lang: any };
+}
+
+export default async function PressReleaseDetailPage({ searchParams: { lang }, params: { id } }: ParamsType) {
     const language = await fetchLanguage(lang);
     return (
         <>
@@ -25,7 +30,7 @@ export default async function PressReleaseDetailPage({searchParams : {lang}} : a
                     <li><Link href="/news/events">{language.news_btn_03}</Link></li>
                     <li><Link href="/news/media">{language.news_btn_04}</Link></li>
                 </ul>
-                <PressReleaseDetail/>
+                <PressReleaseDetail language={language} id={id}/>
             </div>
             <Footer language={language}/>
         </>

@@ -5,7 +5,7 @@ import Link from "next/link";
 import Story from "@/components/pages/news/Story";
 import "@/app/assets/news/news.scss";
 
-export default async function StoryPage({searchParams : {lang}} : any) {
+export default async function StoryPage({searchParams : {lang, page}} : any) {
     const language = await fetchLanguage(lang);
     return (
         <>
@@ -25,7 +25,7 @@ export default async function StoryPage({searchParams : {lang}} : any) {
                     <li><Link href="/news/events">{language.news_btn_03}</Link></li>
                     <li><Link href="/news/media">{language.news_btn_04}</Link></li>
                 </ul>
-                <Story language={language}/>
+                <Story language={language} page={page || 1}/>
             </div>
             <Footer language={language}/>
         </>

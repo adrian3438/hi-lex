@@ -101,7 +101,7 @@ export default function LatchingSystems() {
                     {(activeIndex === 8) && (
                         <>
                             <Image src="/images/sub/products/products-01-25.png" alt="" width={992} height={499}/>
-                            <span className={activeIndex === 8 ? 'products-02-09 active' : 'products-02-09'}></span>
+                            {/*<span className={activeIndex === 8 ? 'products-02-09 active' : 'products-02-09'}></span>*/}
                         </>
                     )}
                 </div>
@@ -130,33 +130,28 @@ export default function LatchingSystems() {
                 <>
                     <div className="products-detail-middle">
                         <h4>Spindle Drive Unit</h4>
-                        <div className="products-area">
-                            <div className="products-image-area">
-                                <Image src="/images/sub/products/products-02-02.png" alt="Plastic (Case) Type" width={361} height={545}/>
-                                <p>Spindle Drive Unit</p>
-                            </div>
-                            <div className="products-text-area">
-                                New generation Drive Unit/ECU. The Spindle Drive Unit and
-                                Control Unit are components that transmit power to open and
-                                close the tailgate, and control this process. As indoor noise is
-                                reduced, the Drive Unit should operate in a progressively
-                                quieter manner.
-
-
-                                <dl>
-                                    <dt>Features</dt>
-                                    <dd>
-                                        <ul>
-                                            <li>Optimized structure applicable to various automatic opening and closing mechanisms such as tailgates and hoods.</li>
-                                            <li>Long-lasting performance through environmental testing under extreme temperatures, humidity, dust, and other conditions.</li>
-                                            <li>Optimal mechanism structure designed to minimize operating noise.</li>
-                                            <li>Passive selection applied according to the vehicle type<br/>Luxury vehicles: 2-way spindle type / Mid-range and economy vehicles: 1-way gas spring type</li>
-                                            <li>Application examples<br/>Power tailgate system / Power trunk & frunk system</li>
-                                        </ul>
-                                    </dd>
-                                </dl>
-                            </div>
-                        </div>
+                    </div>
+                    <div className="products-detail-bottom">
+                        <ul>
+                            <li>
+                                <p className="image-area">
+                                    <Image src="/images/sub/products/products-02-06.png" alt="LUXURY TYPE" width={259} height={318}/>
+                                </p>
+                                <p className="text-area">APS ASSEMBLY</p>
+                            </li>
+                            <li>
+                                <p className="image-area">
+                                    <Image src="/images/sub/products/products-02-07.png" alt="LUXURY TYPE" width={284} height={316}/>
+                                </p>
+                                <p className="text-area">POWER TRAILGATE LATCH<br/>SEPERATED TYPE &amp; ACTUATOR</p>
+                            </li>
+                            <li>
+                                <p className="image-area">
+                                    <Image src="/images/sub/products/products-02-08.png" alt="LUXURY TYPE" width={284} height={316}/>
+                                </p>
+                                <p className="text-area">TRUNK LID LATCH</p>
+                            </li>
+                        </ul>
                     </div>
                 </>
             )}
@@ -165,7 +160,28 @@ export default function LatchingSystems() {
                 <>
                     <div className="products-detail-middle">
                         <h4>Anti-Pinch Sensor</h4>
-
+                    </div>
+                    <div className="products-detail-bottom">
+                        <ul>
+                            <li>
+                                <p className="image-area">
+                                    <Image src="/images/sub/products/products-02-06.png" alt="LUXURY TYPE" width={259} height={318}/>
+                                </p>
+                                <p className="text-area">APS ASSEMBLY</p>
+                            </li>
+                            <li>
+                                <p className="image-area">
+                                    <Image src="/images/sub/products/products-02-07.png" alt="LUXURY TYPE" width={284} height={316}/>
+                                </p>
+                                <p className="text-area">POWER TRAILGATE LATCH<br/>SEPERATED TYPE &amp; ACTUATOR</p>
+                            </li>
+                            <li>
+                                <p className="image-area">
+                                    <Image src="/images/sub/products/products-02-08.png" alt="LUXURY TYPE" width={284} height={316}/>
+                                </p>
+                                <p className="text-area">TRUNK LID LATCH</p>
+                            </li>
+                        </ul>
                     </div>
                 </>
             )}
@@ -174,25 +190,28 @@ export default function LatchingSystems() {
                 <>
                     <div className="products-detail-middle">
                         <h4>Power Cinching Latch</h4>
-                        <div className="products-area">
-                            <div className="products-image-area">
-                                <Image src="/images/sub/products/products-02-03.png" alt="Plastic (Case) Type" width={361} height={545}/>
-                                <p>Power Hood Latch</p>
-                            </div>
-                            <div className="products-text-area">
-                                <dl>
-                                    <dt>Features</dt>
-                                    <dd>
-                                        <ul>
-                                            <li>Dual Operation with One Motor</li>
-                                            <li>Power Cinching and Power Release/Manual Release</li>
-                                            <li>Enough Cinching Travel for Smoothly Closing</li>
-                                            <li>Good Sound Quality</li>
-                                        </ul>
-                                    </dd>
-                                </dl>
-                            </div>
-                        </div>
+                    </div>
+                    <div className="products-detail-bottom">
+                        <ul>
+                            <li>
+                                <p className="image-area">
+                                    <Image src="/images/sub/products/products-02-06.png" alt="LUXURY TYPE" width={259} height={318}/>
+                                </p>
+                                <p className="text-area">APS ASSEMBLY</p>
+                            </li>
+                            <li>
+                                <p className="image-area">
+                                    <Image src="/images/sub/products/products-02-07.png" alt="LUXURY TYPE" width={284} height={316}/>
+                                </p>
+                                <p className="text-area">POWER TRAILGATE LATCH<br/>SEPERATED TYPE &amp; ACTUATOR</p>
+                            </li>
+                            <li>
+                                <p className="image-area">
+                                    <Image src="/images/sub/products/products-02-08.png" alt="LUXURY TYPE" width={284} height={316}/>
+                                </p>
+                                <p className="text-area">TRUNK LID LATCH</p>
+                            </li>
+                        </ul>
                     </div>
                 </>
             )}
@@ -259,6 +278,9 @@ export default function LatchingSystems() {
                 <>
                     <div className="products-detail-middle">
                         <h4>Drive Unit</h4>
+                        <div className="products-area">
+                            <p style={{fontSize: "25px", fontWeight: 600, padding: "0 20px"}}>Coming Soon</p>
+                        </div>
                     </div>
                 </>
             )}
@@ -267,6 +289,26 @@ export default function LatchingSystems() {
                 <>
                     <div className="products-detail-middle">
                         <h4>Power Cinching Latch (R&amp;D)</h4>
+
+                        <div className="products-area">
+                            <div className="products-image-area">
+                                <Image src="/images/sub/products/products-02-03.png" alt="Plastic (Case) Type" width={361} height={545}/>
+                                <p>Power Cinching Latch</p>
+                            </div>
+                            <div className="products-text-area">
+                                <dl>
+                                    <dt>Features</dt>
+                                    <dd>
+                                        <ul>
+                                            <li>Dual Operation with One Motor</li>
+                                            <li>Power Cinching and Power Release/Manual Release</li>
+                                            <li>Enough Cinching Travel for Smoothly Closing</li>
+                                            <li>Good Sound Quality</li>
+                                        </ul>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
                     </div>
                 </>
             )}
@@ -286,13 +328,11 @@ export default function LatchingSystems() {
                                 close the tailgate, and control this process. As indoor noise is
                                 reduced, the Drive Unit should operate in a progressively
                                 quieter manner.
-
-
                                 <dl>
                                     <dt>Features</dt>
                                     <dd>
                                         <ul>
-                                            <li>Optimized structure applicable to various automatic opening and closing mechanisms such as tailgates and hoods.</li>
+                                        <li>Optimized structure applicable to various automatic opening and closing mechanisms such as tailgates and hoods.</li>
                                             <li>Long-lasting performance through environmental testing under extreme temperatures, humidity, dust, and other conditions.</li>
                                             <li>Optimal mechanism structure designed to minimize operating noise.</li>
                                             <li>Passive selection applied according to the vehicle type<br/>Luxury vehicles: 2-way spindle type / Mid-range and economy vehicles: 1-way gas spring type</li>

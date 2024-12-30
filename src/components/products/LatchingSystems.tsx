@@ -52,7 +52,7 @@ export default function LatchingSystems() {
                                     <button className={activeIndex === 6 ? 'active' : ''} onClick={() => setActiveIndex(6)}>Remote Controller</button>
                                 </li>
                                 <li>
-                                    <button className={activeIndex === 7 ? 'active' : ''} onClick={() => setActiveIndex(7)}>Front Latch / Rear Latch (with Cinching Actuator)</button>
+                                    <button className={activeIndex === 7 ? 'active' : ''} onClick={() => setActiveIndex(7)}>Front Latch / Rear Latch</button>
                                 </li>
                                 <li>
                                     <button className={activeIndex === 8 ? 'active' : ''} onClick={() => setActiveIndex(8)}>Hold Open Lock</button>
@@ -313,11 +313,11 @@ export default function LatchingSystems() {
             {activeIndex === 6 && (
                 <>
                     <div className="products-detail-middle">
-                        <h4>Pick-up Latch/ Quarter Storage Latch</h4>
+                        <h4>Remote Controller</h4>
                         <div className="products-area">
                             <div className="products-image-area">
                                 <Image src="/images/sub/products/products-01-15.png" alt="Plastic (Case) Type" width={361} height={545}/>
-                                <p>Quarter Storage Latch</p>
+                                <p>REMOTE CONTROLLER</p>
                             </div>
                             <div className="products-text-area">
                                 <dl>
@@ -353,6 +353,104 @@ export default function LatchingSystems() {
                                     <Image src="/images/sub/products/products-01-17.png" alt="LUXURY TYPE" width={284} height={316}/>
                                 </p>
                                 <p className="text-area">HOLD OPEN LOCK</p>
+                            </li>
+                        </ul>
+                    </div>
+                </>
+            )}
+
+            {activeIndex === 7 && (
+                <>
+                    <div className="products-detail-middle">
+                        <h4>Front Latch / Rear Latch</h4>
+                        <div className="products-area">
+                            <div className="products-image-area">
+                                <Image src="/images/sub/products/products-01-16.png" alt="Plastic (Case) Type" width={361} height={545}/>
+                                <p>FRONT LATCH</p>
+                            </div>
+                            <div className="products-text-area">
+                                <dl>
+                                    <dt>Features</dt>
+                                    <dd>
+                                        <ul>
+                                            <li>Development of a latching structure for the storage space of a pickup truck quarter panel (anti-theft).</li>
+                                            <li>Improved user convenience with an electric opening feature.</li>
+                                            <li>Enhanced safety through the application of an open detection switch.</li>
+                                            <li>Increased storage space by reducing the size.</li>
+                                        </ul>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="products-detail-bottom">
+                        <ul>
+                            <li>
+                                <p className="image-area">
+                                    <Image src="/images/sub/products/products-01-14.png" alt="LUXURY TYPE" width={259} height={318}/>
+                                </p>
+                                <p className="text-area">CINCHING LATCH</p>
+                            </li>
+                            <li>
+                                <p className="image-area">
+                                    <Image src="/images/sub/products/products-01-15.png" alt="LUXURY TYPE" width={284} height={316}/>
+                                </p>
+                                <p className="text-area">REMOTE CONTROLLER</p>
+                            </li>
+                            <li>
+                                <p className="image-area">
+                                    <Image src="/images/sub/products/products-01-17.png" alt="LUXURY TYPE" width={284} height={316}/>
+                                </p>
+                                <p className="text-area">HOLD OPEN LOCK</p>
+                            </li>
+                        </ul>
+                    </div>
+                </>
+            )}
+
+            {activeIndex === 8 && (
+                <>
+                    <div className="products-detail-middle">
+                        <h4>Hold Open Lock</h4>
+                        <div className="products-area">
+                            <div className="products-image-area">
+                                <Image src="/images/sub/products/products-01-17.png" alt="Plastic (Case) Type" width={361} height={545}/>
+                                <p>HOLD OPEN LOCK</p>
+                            </div>
+                            <div className="products-text-area">
+                                <dl>
+                                    <dt>Features</dt>
+                                    <dd>
+                                        <ul>
+                                            <li>Development of a latching structure for the storage space of a pickup truck quarter panel (anti-theft).</li>
+                                            <li>Improved user convenience with an electric opening feature.</li>
+                                            <li>Enhanced safety through the application of an open detection switch.</li>
+                                            <li>Increased storage space by reducing the size.</li>
+                                        </ul>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="products-detail-bottom">
+                        <ul>
+                            <li>
+                                <p className="image-area">
+                                    <Image src="/images/sub/products/products-01-14.png" alt="LUXURY TYPE" width={259} height={318}/>
+                                </p>
+                                <p className="text-area">CINCHING LATCH</p>
+                            </li>
+                            <li>
+                                <p className="image-area">
+                                    <Image src="/images/sub/products/products-01-15.png" alt="LUXURY TYPE" width={284} height={316}/>
+                                </p>
+                                <p className="text-area">REMOTE CONTROLLER</p>
+                            </li>
+                            <li>
+                                <p className="image-area">
+                                    <Image src="/images/sub/products/products-01-16.png" alt="LUXURY TYPE" width={284} height={316}/>
+                                </p>
+                                <p className="text-area">FRONT LATCH</p>
                             </li>
                         </ul>
                     </div>

@@ -5,7 +5,12 @@ import Link from "next/link";
 import StoryDetail from "@/components/pages/news/StoryDetail";
 import "@/app/assets/news/news.scss";
 
-export default async function StoryDetailPage({searchParams : {lang}} : any) {
+interface ParamsType {
+    params: { id: string | undefined };
+    searchParams: { lang: any };
+}
+
+export default async function StoryDetailPage({ searchParams: { lang }, params: { id } }: ParamsType) {
     const language = await fetchLanguage(lang);
     return (
         <>
@@ -25,7 +30,7 @@ export default async function StoryDetailPage({searchParams : {lang}} : any) {
                     <li><Link href="/news/events">{language.news_btn_03}</Link></li>
                     <li><Link href="/news/media">{language.news_btn_04}</Link></li>
                 </ul>
-                <StoryDetail/>
+                <StoryDetail language={language} id={id}/>
             </div>
             <Footer language={language}/>
         </>
