@@ -58,7 +58,7 @@ export const map = [
       moveCode : { lat: 15.39683, lng: 100.92706 },
       storeCount : 1,
       zoom : 7,
-      currentZoom : 2
+      currentZoom : 2,
     },
     // 인도네시아
     {
@@ -180,6 +180,7 @@ export const map = [
             established: "Now., 1972",
             netSales: "42 million US $",
             employee: "154",
+            image: "/images/sub/company/affiliate/TSK(KOREA)CO., LTD..webp"
         },
     },
 
@@ -191,7 +192,18 @@ export const map = [
         moveCode : {},
         storeCount : 0,
         zoom : 0,
-        currentZoom : 5
+        currentZoom : 5,
+        info: {
+            title: "Chongqing Hi-Lex Control Cable System Co., Ltd.",
+            address2: "",
+            address: "No.C29 Economy Development Yard Yubei District Chongqing, 400020 China",
+            tel: "86(23)67463128",
+            fax: "86(23)67463288",
+            established: "Sep., 2002",
+            netSales: "34 million US $",
+            employee: "219",
+            image: "/images/sub/company/affiliate/CHONGQING HI-LEX CONTROL CABLE SYSTEM CO., LTD..webp"
+        },
     },
 
     // 미국
@@ -222,16 +234,6 @@ export const map = [
         storeCount : 3,
         zoom : 8,
         currentZoom : 5,
-        info: {
-            title: "Hi-Lex Controls Inc.",
-            address2: "",
-            address: "152 Simpson Drive, Litchfield, Michigan 49252 U.S.A.",
-            tel: "1(517)542-2955",
-            fax: "1(517)542-2594",
-            established: "May, 1989",
-            netSales: "323million US $",
-            employee: "589",
-        },
     },
 
     // 헝가리
@@ -242,7 +244,18 @@ export const map = [
         moveCode : {},
         storeCount : 0,
         zoom : 0,
-        currentZoom : 8
+        currentZoom : 8,
+        info: {
+            title: "Hi-Lex Hungary Kft",
+            address2: "",
+            address: "Ipari Park 3 Retsag 2651 Hungary",
+            tel: "+36-35-551-200",
+            fax: "+36-35-551-201",
+            established: "Jul., 2006",
+            netSales: "16 million US $",
+            employee: "156",
+            image: "/images/sub/company/affiliate/HI-LEX HUNGARY CABLE SYSTEM MANUFACTURING LLC.webp"
+        },
     },
 
     // 인도
@@ -253,7 +266,17 @@ export const map = [
         moveCode : { },
         storeCount : 0,
         zoom : 0,
-        currentZoom : 5
+        currentZoom : 5,
+        info: {
+            title: "Hi-Lex India(P)Ltd.",
+            address2: "",
+            address: "Plot No.398 Sector-8, Imt Manesar, Gurgaon-122050, Haryana, India",
+            tel: "91(124)4565000",
+            fax: "91(124)4565004",
+            established: "Nov., 1998",
+            netSales: "39 million US $",
+            employee: "456",
+        },
     },
     {
         countryCode : 5,
@@ -262,7 +285,17 @@ export const map = [
         moveCode : { },
         storeCount : 0,
         zoom : 0,
-        currentZoom : 5
+        currentZoom : 5,
+        info: {
+            title: "Hi-Lex Door India Pvt Ltd.",
+            address2: "",
+            address: "Plot No.398 Sector-8, Imt Manesar, Gurgaon-122050, Haryana, India",
+            tel: "",
+            fax: "",
+            established: "",
+            netSales: "",
+            employee: "",
+        },
     },
 
     // 태국
@@ -273,7 +306,18 @@ export const map = [
         moveCode : { },
         storeCount : 0,
         zoom : 0,
-        currentZoom : 7
+        currentZoom : 7,
+        info: {
+            title: "Thai Steel Cable Public Company Limited",
+            address2: "",
+            address: "Amata Industrial Estate, 700/737 Moo 1, Tambol Panthong, Amphur Panthong, Chonburi 20160 Thailand",
+            tel: "66(2)738-9460/76",
+            fax: "66(2)738-9482",
+            established: "Nov., 1981",
+            netSales: "85 million US $",
+            employee: "1,140",
+            image: "/images/sub/company/affiliate/THAI STEEL CABLE PUBLIC COMPANY LIMITED.webp"
+        },
     },
 
     // 인도네시아
@@ -284,7 +328,18 @@ export const map = [
         moveCode : { },
         storeCount : 0,
         zoom : 0,
-        currentZoom : 8
+        currentZoom : 8,
+        info: {
+            title: "PT.Hi-Lex Indonesia",
+            address2: "",
+            address: "Jl., Bouraq No.35 Ds.Karanganyar Kec.Neglasari Tangerang, Indonesia",
+            tel: "62(21)-552-2325",
+            fax: "62(21)-552-2324",
+            established: "Nov., 1978",
+            netSales: "85 million US $",
+            employee: "1,219",
+            image: "/images/sub/company/affiliate/THAI STEEL CABLE PUBLIC COMPANY LIMITED.webp"
+        },
     },
     {
         countryCode : 7,
@@ -293,7 +348,18 @@ export const map = [
         moveCode : { },
         storeCount : 0,
         zoom : 0,
-        currentZoom : 8
+        currentZoom : 8,
+        info: {
+            title: "PT.Hi-Lex Parts Indonesia",
+            address2: "",
+            address: "Rjpx+W5r, Jl. Pembangunan 2, Rt.001/Rw.002, Karang Anyar, Kec. Neglasari, Kota Tangerang, Banten 15121 Indonesia",
+            tel: "62(21)-552-2325",
+            fax: "62(21)-399-8307",
+            established: "Dec., 1988",
+            netSales: "12 million US $",
+            employee: "433",
+            image: "/images/sub/company/affiliate/PT.HI-LEX PARTS INDONESIA.webp"
+        },
     },
 
     // 베트남
@@ -304,7 +370,18 @@ export const map = [
         moveCode : { },
         storeCount : 0,
         zoom : 0,
-        currentZoom : 6
+        currentZoom : 6,
+        info: {
+            title: "Hi-Lex Vietnam Co., Ltd.",
+            address2: "",
+            address: "Management Bldg, Nomura, Haiphong Iz Km 13, Anduong, Haiphong City, Vietnam",
+            tel: "84(31)-3743058",
+            fax: "84(31)-3743059",
+            established: "Mar., 1999",
+            netSales: "20 million US $",
+            employee: "405",
+            image: "/images/sub/company/affiliate/HI-LEX VIETNAM CO., LTD. (VIETNAM).webp"
+        },
     },
 
     // 일본
@@ -325,7 +402,17 @@ export const map = [
         moveCode : { },
         storeCount : 0,
         zoom : 0,
-        currentZoom : 6
+        currentZoom : 6,
+        info: {
+            title: "Hi-Lex Mikkabi Plant (Hamamatsu Office)",
+            address2: "",
+            address: "310 Mikkabicho Ushi, Hamana Ward, Hamamatsu, Shizuoka 431-1404, Japan.",
+            tel: "(053)525-2111",
+            fax: "(053)525-0427",
+            established: "",
+            netSales: "",
+            employee: "",
+        },
     },
     {
         countryCode : 9,
@@ -334,7 +421,17 @@ export const map = [
         moveCode : { },
         storeCount : 0,
         zoom : 0,
-        currentZoom : 6
+        currentZoom : 6,
+        info: {
+            title: "Hi-Lex Utsunomiya Technical Center(Utsunomiya Office)",
+            address2: "",
+            address: "145-6 Shimohiraide-machi, Utsunomiya, Tochigi 321-0903, Japan.",
+            tel: "(028)663-4062",
+            fax: "(028)663-4065",
+            established: "",
+            netSales: "",
+            employee: "",
+        },
     },
     {
         countryCode : 9,
@@ -343,7 +440,17 @@ export const map = [
         moveCode : { },
         storeCount : 0,
         zoom : 0,
-        currentZoom : 6
+        currentZoom : 6,
+        info: {
+            title: "Hi-Lex Shimane, Inc.",
+            address2: "",
+            address: "1820-16 Shimokoucho, Hamada, Shimane 697-0006, Japan.",
+            tel: "(0855)23-5855",
+            fax: "(0855)23-5890",
+            established: "",
+            netSales: "",
+            employee: "",
+        },
     },
     {
         countryCode : 9,
@@ -352,7 +459,17 @@ export const map = [
         moveCode : { },
         storeCount : 0,
         zoom : 0,
-        currentZoom : 6
+        currentZoom : 6,
+        info: {
+            title: "Hi-Lex Saitama, Inc.",
+            address2: "",
+            address: "100 Kyōei, Honjo, Saitama 367-0037, Japan.",
+            tel: "(0495)21-2611",
+            fax: "(0495)24-0410",
+            established: "",
+            netSales: "",
+            employee: "",
+        },
     },
     {
         countryCode : 9,
@@ -361,7 +478,17 @@ export const map = [
         moveCode : { },
         storeCount : 0,
         zoom : 0,
-        currentZoom : 6
+        currentZoom : 6,
+        info: {
+            title: "Hi-Lex Kanto, Inc.",
+            address2: "",
+            address: "1520-4 Kobayashi, Mobara, Chiba 297-0074, Japan.",
+            tel: "(0475)24-5155",
+            fax: "(0475)23-2828",
+            established: "",
+            netSales: "",
+            employee: "",
+        },
     },
 
     // 멕시코
@@ -372,7 +499,18 @@ export const map = [
         moveCode : { },
         storeCount : 0,
         zoom : 0,
-        currentZoom : 6
+        currentZoom : 6,
+        info: {
+            title: "Hi-Lex Mexicana Planta El Marqués",
+            address2: "",
+            address: "Circuito El Marqués Sur No. 18, Fracc. Parque Industrial El Marqués Ampliación, 76246 Querétaro, Qro., Mexico",
+            tel: "",
+            fax: "",
+            established: "",
+            netSales: "",
+            employee: "",
+            image: "/images/sub/company/affiliate/HI-LEX MEXICANA S.A. DE C.V. PLANTA EL MARQUÉS.webp"
+        },
     },
     {
         countryCode : 10,
@@ -381,7 +519,18 @@ export const map = [
         moveCode : { },
         storeCount : 0,
         zoom : 0,
-        currentZoom : 6
+        currentZoom : 6,
+        info: {
+            title: "Hi-Lex Mexicana Planta Queretaro",
+            address2: "",
+            address: "Av. Peñuelas 9, Carlos María De Bustamante, 76140 Santiago De Querétaro, Qro., Mexico",
+            tel: "",
+            fax: "",
+            established: "",
+            netSales: "",
+            employee: "",
+            image: "/images/sub/company/affiliate/HI-LEX MEXICANA S.A. DE C.V..webp"
+        },
     },
 
     // 3차 ------------------------------------------------------------------
@@ -403,6 +552,7 @@ export const map = [
             established: " Jul., 2003",
             netSales: "111 million US $",
             employee: "214",
+            image: "/images/sub/company/affiliate/DAEDONG HI-LEX INC..webp"
         },
     },
     {
@@ -480,7 +630,17 @@ export const map = [
         moveCode : { },
         storeCount : 0,
         zoom : 0,
-        currentZoom : 11
+        currentZoom : 11,
+        info: {
+            title: "Hi-Lex Kaibara Plant",
+            address2: "",
+            address: "1700 Kaibaracho Kaibara, Tamba, Hyogo 669-3309, Japan",
+            tel: "(0795)72-2130",
+            fax: "(0795)72-3549",
+            established: "",
+            netSales: "",
+            employee: "",
+        },
     },
     {
         countryCode : 9,
@@ -489,7 +649,17 @@ export const map = [
         moveCode : { },
         storeCount : 0,
         zoom : 0,
-        currentZoom : 11
+        currentZoom : 11,
+        info: {
+            title: "Hi-Lex Sanda Plant",
+            address2: "",
+            address: "4-3-9 Miwa, Sanda, Hyogo 669-1513, Japan.",
+            tel: "(079)563-3001",
+            fax: "(079)563-7264",
+            established: "",
+            netSales: "",
+            employee: "",
+        },
     },
     {
         countryCode : 9,
@@ -498,7 +668,17 @@ export const map = [
         moveCode : { },
         storeCount : 0,
         zoom : 0,
-        currentZoom : 11
+        currentZoom : 11,
+        info: {
+            title: "Hi-Lex Sanda-Nishi Plant",
+            address2: "",
+            address: "14-4 Technopark, Sanda, Hyogo, 669-1339, Japan.",
+            tel: "(079)568-2480",
+            fax: "(079)568-2482",
+            established: "",
+            netSales: "",
+            employee: "",
+        },
     },
     // 미국
     {
@@ -508,7 +688,17 @@ export const map = [
         moveCode : {},
         storeCount : 0,
         zoom : 0,
-        currentZoom : 8
+        currentZoom : 8,
+        info: {
+            title: "Hi-Lex Controls Inc.",
+            address2: "",
+            address: "152 Simpson Drive, Litchfield, Michigan 49252 U.S.A.",
+            tel: "",
+            fax: "",
+            established: "May., 1989",
+            netSales: "323million US $",
+            employee: "589",
+        },
     },
     {
         countryCode : 3,
@@ -518,6 +708,16 @@ export const map = [
         storeCount : 0,
         zoom : 0,
         currentZoom : 8,
+        info: {
+            title: "Hi-Lex America Inc.",
+            address2: "",
+            address: "5200 Wayne Road, Battle Creek, Michigan 49037 U.S.A.",
+            tel: "1(269)968-0781",
+            fax: "1(269)968-0885",
+            established: "Apr., 1975",
+            netSales: "151 million US $",
+            employee: "274",
+        },
 
     },
     {
@@ -527,7 +727,17 @@ export const map = [
         moveCode : {},
         storeCount : 0,
         zoom : 0,
-        currentZoom : 8
+        currentZoom : 8,
+        info: {
+            title: "Hi-Lex Automotive Center",
+            address2: "",
+            address: "2911 Research Dr, Rochester Hills, Mi 48309 U.S.A.",
+            tel: "1(248)-267-3800",
+            fax: "1(267)-756-3889",
+            established: "",
+            netSales: "",
+            employee: "",
+        },
     },
 
     // 4차 -------------------------------------------------------------------
@@ -539,7 +749,17 @@ export const map = [
         moveCode : { },
         storeCount : 0,
         zoom : 0,
-        currentZoom : 17
+        currentZoom : 17,
+        info: {
+            title: "Hi-Lex Corporation",
+            address2: "",
+            address: "1-12-28 Sakaemachi, Takarazuka City, Hyogo 665-0845, Japan.",
+            tel: "(0797)85-2500",
+            fax: "(0797)83-2474",
+            established: "",
+            netSales: "",
+            employee: "",
+        },
     },
     {
         countryCode : 9,
@@ -548,6 +768,16 @@ export const map = [
         moveCode : { },
         storeCount : 0,
         zoom : 0,
-        currentZoom : 17
+        currentZoom : 17,
+        info: {
+            title: "Hi-Lex Medical",
+            address2: "",
+            address: "1-chōme-13-25 Sakaemachi, Takarazuka, Hyogo 665-0845, Japan",
+            tel: "(0797)85-2571",
+            fax: "(0797)85-2990",
+            established: "",
+            netSales: "",
+            employee: "",
+        },
     },
 ]

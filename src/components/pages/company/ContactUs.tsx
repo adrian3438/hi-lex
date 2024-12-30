@@ -54,43 +54,43 @@ export default function ContactUs({language}: Props) {
 
     async function save() {
         if (!data?.company) {
-            alert('회사명을 입력해 주시기 바랍니다.');
+            alert('회Please enter your company name.');
             return;
         }
         if (!data?.name) {
-            alert('이름을 입력해 주시기 바랍니다.');
+            alert('Please enter your name.');
             return;
         }
         if (!data?.position) {
-            alert('직급을 입력해 주시기 바랍니다.');
+            alert('Please enter your department name.');
             return;
         }
         if (!data?.phone) {
-            alert('연락처를 입력해 주시기 바랍니다.');
+            alert('Please enter your phone number.');
             return;
         }
         if (!data?.email) {
-            alert('이메일을 입력해 주시기 바랍니다.');
+            alert('Please enter your email address.');
             return;
         }
         if (!data?.fax) {
-            alert('팩스번호를 입력해 주시기 바랍니다.');
+            alert('Please enter your fax number.');
             return;
         }
         if (!data?.type) {
-            alert('사업분야를 선택해주시기 바랍니다.');
+            alert('Please select contact category.');
             return;
         }
         if (!data?.title) {
-            alert('문의 제목을 입력해주시기 바랍니다.');
+            alert('Please enter your inquiry.');
             return;
         }
         if (!data?.message) {
-            alert('문의 내용을 입력해 주시기 바랍니다.');
+            alert('Please enter your inquiry.');
             return;
         }
         if (!isCheck) {
-            alert('개인정보 수집 및 이용동의를 체크해주시기 바랍니다.');
+            alert('Please check the box to agree to the collection and use of personal information.');
             return;
         }
 

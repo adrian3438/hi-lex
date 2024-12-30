@@ -24,6 +24,8 @@
 }
 .ReactModalPortal{
   .info-detail {
+    display: flex;
+    justify-content: space-between;
     .info-detail-text {
       h3 {
         font-size: 30px;

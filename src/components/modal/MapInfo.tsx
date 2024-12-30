@@ -1,5 +1,6 @@
 import Modal from 'react-modal';
 import '@/app/assets/modal.scss';
+import Image from "next/image";
 
 const customStyles = {
     content: {
@@ -54,6 +55,7 @@ export default function MapInfo({isOpen, onRequestClose, mapInfo}: Props) {
                                 </div>
                             )}
                         </div>
+                        {mapInfo?.image && <Image src={mapInfo?.image} alt={mapInfo?.title} width={480} height={300}/>}
                     </div>
                 </div>
             </div>

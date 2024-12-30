@@ -31,7 +31,6 @@ export default function WhistleblowerListPage ({
     async function getList () {
         try {
             const response = await api.get(`/admin/inquiry/getWhistleblowList.php?page=${page}&size=${size}&keyword=${keyword}&sortColumn=${column}&sortOrder=${order}&wbClass=${wbtype}&wbStatus=${status}`);
-            console.log('response : ', response.data);
             if(response?.data?.Result === "true") {
                 setData(response?.data?.List); setTotalCount(response?.data?.totalCnt)
             }else{

@@ -1,20 +1,19 @@
 'use client'
 
 // import Summernote from "@/components/DotsAdmin/Editor/Summernote"
-/*import api from "@/lib/api"
+import api from "@/lib/api"
 import {useRouter, useSearchParams} from "next/navigation"
 import {useEffect, useState} from "react"
-import fileDownLoad from "@/components/useFileDownload";*/
+import fileDownLoad from "@/components/useFileDownload";
 
 export default function WhistleblowerPage () {
-    /*const router = useRouter()
+    const router = useRouter()
     const searchParams = useSearchParams();
     const type : any = searchParams.get('t');
-    console.log('type : ', type, typeof(type));
     const [isActive, setActive] = useState<boolean>(false)
     const [data, setData] = useState<any>([])
     async function getDetail () {
-        const res = await api.get(`/admin/inquiry/getWhistleblowDetail.php?whistleId=${type}`)
+        const res = await api.get(`/admin/inquiry/getWhistleblowDetail.php?ID=${type}`)
         if(res.data.Result === 'true') setData(res.data.List[0])
     }
     async function handleChangeStatus (status : string) {
@@ -31,12 +30,11 @@ export default function WhistleblowerPage () {
     }
     useEffect(()=>{
         if(type && type) getDetail()
-    }, [type]);*/
+    }, [type]);
 
     return(
         <>
-            test
-            {/*<div className="contentBox inquiry_common">
+            <div className="contentBox inquiry_common">
                 <h3>Inquiry</h3>
                 <div className="flexBox">
                     <div>
@@ -71,11 +69,17 @@ export default function WhistleblowerPage () {
                             <span onClick={()=>handleChangeStatus('C')}>처리완료</span>
                         </div>
                     </div>
-                    <h5>{data?.whistleblowSubject}</h5>
+                    {/*<h5>{data?.whistleblowSubject}</h5>*/}
                 </div>
 
                 <div className="inquiry_table">
-                    <ul>
+                    <ul style={{marginTop: 0}}>
+                        <li>
+                            <div>
+                                <span>제보제목</span>
+                                <span>{data?.whistleblowSubject}</span>
+                            </div>
+                        </li>
                         <li>
                             <div>
                                 <span>신고유형</span>
@@ -119,7 +123,7 @@ export default function WhistleblowerPage () {
                         }
                     </div>
                 </div>
-            </div>*/}
+            </div>
         </>
     )
 }

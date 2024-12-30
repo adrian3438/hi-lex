@@ -419,8 +419,7 @@ export default function History({language}: Props) {
                     </div>
                     <div className="history-image">
                         <ul>
-                            <li><Image src="/images/sub/company/history/history-07.png" alt="" width={602} height={401}/></li>
-                            <li><Image src="/images/sub/company/history/history-08.png" alt="" width={602} height={401}/></li>
+                            <li><Image src="/images/sub/company/history/history-09.png" alt="" width={603} height={451}/></li>
                         </ul>
                     </div>
                 </div>
