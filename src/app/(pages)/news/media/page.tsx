@@ -31,24 +31,20 @@ export default async function PressReleasePage({searchParams : {lang}} : any) {
                             <ul>
                                 <li>
                                     <p>{language?.news_05_01}</p>
-                                    <a href="#" download>{language?.news_btn_05}</a>
-                                </li>
-                                <li>
-                                    <p>{language?.news_05_01}</p>
-                                    <a href="#" download>{language?.news_btn_05}</a>
+                                    <a href="/download/대동도어 회사소개서_20240401-compressed.pdf" download>{language?.news_btn_05}</a>
                                 </li>
                             </ul>
                         </dd>
                     </dl>
-                    <dl>
+                    <dl className="video">
                         <dt>{language?.news_06}</dt>
                         <dd>
-                            <ul>
-                                <li>
-                                    <p>{language?.news_06_01}</p>
-                                    <a href="#" download>{language?.news_btn_05}</a>
-                                </li>
-                            </ul>
+                            <div style={{background: "black"}}>
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/3vizeSa7xXA?si=wgPVSI5xVQGmyKgN" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+                            </div>
+                            <div style={{background: "black"}}>
+                                <iframe width="560" height="315" title="vimeo-player" src="https://player.vimeo.com/video/1043028069?h=6bf77c6da2" allowFullScreen></iframe>
+                            </div>
                         </dd>
                     </dl>
                 </div>

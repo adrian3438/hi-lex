@@ -13,7 +13,12 @@ export default function WhistleblowerComplaint({ language }: Props) {
     useEffect(() => {
         const element = document.querySelector('#esgMenus');
         if (element) {
-            element.scrollIntoView({ behavior: 'smooth' });
+            const rect = element.getBoundingClientRect();
+            const offset = 100; // 100px 덜 스크롤
+            window.scrollTo({
+                top: window.scrollY + rect.top - offset,
+                behavior: 'smooth',
+            });
         }
     }, []);
 
@@ -295,7 +300,7 @@ export default function WhistleblowerComplaint({ language }: Props) {
                         <table>
                             <tbody>
                             <tr>
-                                <td>
+                                <td style={{borderRight: 0}}>
                                     <div>
                                         <label>
                                             <input type="radio" name="wbType" onChange={handleChange} value="M"/>
@@ -313,10 +318,10 @@ export default function WhistleblowerComplaint({ language }: Props) {
                                             <input type="radio" name="wbType" onChange={handleChange} value="A"/>
                                             {language?.esg_text_08_27}
                                         </label>
-                                        <label>
+                                        {/*<label>
                                             <input type="radio" name="wbType" onChange={handleChange} value="T"/>
                                             {language?.esg_text_08_29}
-                                        </label>
+                                        </label>*/}
                                         <label>
                                             <input type="radio" name="wbType" onChange={handleChange} value="H"/>
                                             {language?.esg_text_08_30}

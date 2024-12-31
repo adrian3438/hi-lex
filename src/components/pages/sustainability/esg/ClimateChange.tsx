@@ -13,7 +13,12 @@ export default function ClimateChange({ language }: Props) {
     useEffect(() => {
         const element = document.querySelector('#esgMenus');
         if (element) {
-            element.scrollIntoView({ behavior: 'smooth' });
+            const rect = element.getBoundingClientRect();
+            const offset = 100; // 100px 덜 스크롤
+            window.scrollTo({
+                top: window.scrollY + rect.top - offset,
+                behavior: 'smooth',
+            });
         }
     }, []);
 
@@ -210,7 +215,7 @@ export default function ClimateChange({ language }: Props) {
                         <div className="image-area2">
                             <div>
                                 <h3>{language?.esg_text_02_14}</h3>
-                                <p>{language?.esg_text_02_15}</p>
+                                {/*<p>{language?.esg_text_02_15}</p>*/}
                             </div>
                         </div>
                     </div>
@@ -235,7 +240,7 @@ export default function ClimateChange({ language }: Props) {
                         <div className="image-area2">
                             <div>
                                 <h3>{language?.esg_text_02_22}</h3>
-                                <p>{language?.esg_text_02_23}</p>
+                                {/*<p>{language?.esg_text_02_23}</p>*/}
                             </div>
                         </div>
                     </div>

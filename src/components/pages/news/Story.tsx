@@ -41,11 +41,11 @@ export default function Story({language, page}: Props) {
     return (
         <div className="news-list-container">
             <div className="list-search">
-                <select>
+                {/*<select>
                     <option>{language?.news_option_01}</option>
                     <option>{language?.news_option_02}</option>
                     <option>{language?.news_option_03}</option>
-                </select>
+                </select>*/}
                 <div>
                     <input type="text"
                            onChange={(e) => setKeyword(e.target.value)}

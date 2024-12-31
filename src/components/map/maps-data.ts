@@ -20,7 +20,7 @@ export const map = [
       zoom : 8,
       currentZoom : 2
     },
-    
+
     // USA
     {
       countryCode : 3,
@@ -102,7 +102,7 @@ export const map = [
       currentZoom : 2
     },
     // 브라질
-    { 
+    {
       countryCode : 11,
       name : 'Brazil',
       currentCode : { lat: -15.761084, lng: -47.956530 },
@@ -113,7 +113,7 @@ export const map = [
     },
 
     // 독일 51.453923535122065, 10.328473880718235
-    { 
+    {
       countryCode : 12,
       name : 'Germany',
       currentCode : { lat: 51.453923, lng: 10.328473 },
@@ -124,7 +124,7 @@ export const map = [
     },
 
     // 체코 50.43843039152793, 13.592473339677305
-    { 
+    {
         countryCode : 13,
         name : 'Czech',
         currentCode : { lat: 50.438430, lng: 13.592473 },
@@ -135,7 +135,7 @@ export const map = [
     },
 
     // 이탈리아 42.23624339212944, 13.581514221160813
-    { 
+    {
         countryCode : 14,
         name : 'Italy',
         currentCode : { lat: 42.23624, lng: 13.581514 },
@@ -146,7 +146,7 @@ export const map = [
     },
 
     // 스페인 40.51327198726031, -3.774368942991154
-    { 
+    {
         countryCode : 15,
         name : 'Spain',
         currentCode : { lat: 40.513271, lng: -3.774368 },
@@ -157,7 +157,7 @@ export const map = [
     },
 
     // 세르비아 44.29845757098702, 20.743300878099987
-    { 
+    {
         countryCode : 16,
         name : 'Serbia',
         currentCode : { lat: 44.29845, lng: 20.743300 },
@@ -165,7 +165,7 @@ export const map = [
         storeCount : 1,
         zoom : 6,
         currentZoom : 2
-    },    
+    },
 
 
     // 2차 map -------------------------------------------
@@ -280,7 +280,7 @@ export const map = [
     {
         countryCode : 1,
         name : 'China',
-        currentCode : { lat: 22.309313, lng: 114.226436 }, 
+        currentCode : { lat: 22.309313, lng: 114.226436 },
         moveCode : {},
         storeCount : 0,
         zoom : 0,
@@ -301,7 +301,7 @@ export const map = [
     {
         countryCode : 1,
         name : 'China',
-        currentCode : { lat: 23.076111, lng: 113.528750 }, 
+        currentCode : { lat: 23.076111, lng: 113.528750 },
         moveCode : {},
         storeCount : 0,
         zoom : 0,
@@ -401,7 +401,7 @@ export const map = [
             established: "",
             netSales: "",
             employee: "",
-            image: "/images/sub/company/affiliate/"
+            // image: "/images/sub/company/affiliate/"
         },
     },
 
@@ -422,7 +422,7 @@ export const map = [
             established: "",
             netSales: "",
             employee: "",
-            image: "/images/sub/company/affiliate/"
+            // image: "/images/sub/company/affiliate/"
         },
     },
 
@@ -448,7 +448,7 @@ export const map = [
         },
     },
 
-    
+
     {
         countryCode : 1,
         name : 'China',
@@ -456,7 +456,7 @@ export const map = [
         moveCode : {lat: 29.57313584910001, lng: 106.54885497656208},
         storeCount : 2,
         zoom : 8,
-        currentZoom : 5  
+        currentZoom : 5
     },
 
     // 미국 2차
@@ -481,7 +481,7 @@ export const map = [
         },
     },
 
-      
+
     {
         countryCode : 3,
         name : 'U.S.A',
@@ -501,10 +501,10 @@ export const map = [
             employee: "",
             image: "/images/sub/company/affiliate/HI-LEX CONTROLS INC., WARREN PLANT USA.webp"
         },
-        
+
     },
 
-    
+
     // 미국 2차 미시건
     {
         countryCode : 3,
@@ -548,7 +548,7 @@ export const map = [
         zoom : 11,
         currentZoom : 5,
     },
-   
+
     {
         countryCode : 5,
         name : 'India',
@@ -785,7 +785,7 @@ export const map = [
             established: "",
             netSales: "",
             employee: "",
-            image: "/images/sub/company/affiliate/Hi-Lex Kanto, Inc..png" 
+            image: "/images/sub/company/affiliate/Hi-Lex Kanto, Inc..png"
         },
     },
 
@@ -811,7 +811,7 @@ export const map = [
             image: "/images/sub/company/affiliate/HI-LEX CONTROLS DE MÉXICO.webp"
         },
     },
-    
+
     {
         countryCode : 10,
         name : 'Mexico',
@@ -822,9 +822,9 @@ export const map = [
         currentZoom : 6,
     },
 
-      
+
     // 브라질 2차
-    { 
+    {
         countryCode : 11,
         name : 'Brazil',
         currentCode : { lat: -23.252807, lng: -47.34812},
@@ -844,9 +844,9 @@ export const map = [
             image: "/images/sub/company/affiliate/HI-LEX DO BRAZIL LTDA..webp"
         },
     },
-      
+
     // 독일 2차 50.01899050011059, 10.218708072285365
-    { 
+    {
         countryCode : 12,
         name : 'Germary',
         currentCode : { lat: 50.01899, lng: 10.2187080 },
@@ -868,7 +868,7 @@ export const map = [
     },
 
     // 체코 2차
-    { 
+    {
         countryCode : 13,
         name : 'Czech',
         currentCode : { lat: 50.438430, lng: 13.592473 },
@@ -890,7 +890,7 @@ export const map = [
     },
 
     // 이탈리아 2차 44.33207918397638, 9.322674054854172
-    { 
+    {
         countryCode : 14,
         name : 'Italy',
         currentCode : { lat: 44.332079, lng: 9.322674 },
@@ -912,7 +912,7 @@ export const map = [
     },
 
     // 스페인 2차
-    { 
+    {
         countryCode : 15,
         name : 'Spain',
         currentCode : { lat: 40.513271, lng: -3.774368 },
@@ -934,7 +934,7 @@ export const map = [
     },
 
     // 세르비아 2차 45.00038325927374, 19.61628044323637
-    { 
+    {
         countryCode : 16,
         name : 'Serbia',
         currentCode : { lat: 45.000383, lng: 19.616280 },
@@ -953,10 +953,10 @@ export const map = [
             employee: "",
             image: "/images/sub/company/affiliate/HHI-LEX SERBIA D.O.O..webp"
         },
-    },    
+    },
 
 
-  
+
     // 3차 ------------------------------------------------------------------
     // 한국 - 인천 (2)
     {
@@ -999,7 +999,7 @@ export const map = [
             image: "/images/sub/company/affiliate/Daedong Systam Namdong.png"
         },
     },
-    
+
     {
         countryCode : 2,
         name : 'Korea',
@@ -1044,7 +1044,7 @@ export const map = [
 
 
 
-    // 한국 - 평택(2) 
+    // 한국 - 평택(2)
     {
         countryCode : 2,
         name : 'Korea',
@@ -1153,7 +1153,7 @@ export const map = [
             netSales: "",
             employee: "",
             image: "/images/sub/company/affiliate/Hi-Lex Sanda-Nishi Plant.png"
-            
+
         },
     },
     // 미국
@@ -1237,7 +1237,7 @@ export const map = [
         employee: "",
         image: "/images/sub/company/affiliate/HI-LEX AMERICA INC USA.webp"
     },
-    
+
 },
 
 {
@@ -1259,7 +1259,7 @@ export const map = [
         employee: "",
         image: "/images/sub/company/affiliate/HI-LEX AUTOMOTIVE CENTER USA.webp"
     },
-    
+
 },
 
 {
@@ -1281,7 +1281,7 @@ export const map = [
         employee: "",
         image: "/images/sub/company/affiliate/HI-LEX CONTROLS INC USA.webp"
     },
-    
+
 },
 {
     countryCode : 3,
@@ -1302,8 +1302,8 @@ export const map = [
         employee: "",
         image: "/images/sub/company/affiliate/HI-LEX CONTROLS INC. HUDSON USA.webp"
     },
-    
-},    
+
+},
 
 
 {
@@ -1325,7 +1325,7 @@ export const map = [
         employee: "",
         image: "/images/sub/company/affiliate/HI-LEX CONTROLS INC., WARREN PLANT USA.webp"
     },
-    
+
 },
 
 
@@ -1367,7 +1367,7 @@ export const map = [
             established: "",
             netSales: "",
             employee: "",
-           
+
         },
     },
 
@@ -1392,7 +1392,7 @@ export const map = [
             employee: "",
              image: "/images/sub/company/affiliate/Hi-Lex Corporation Japan 1-12-28 Sakaemachi.png"
 
-            
+
         },
     },
     {
@@ -1412,7 +1412,7 @@ export const map = [
             established: "",
             netSales: "",
             employee: "",
-            image: "/images/sub/company/affiliate/Hi-Lex Medical.png"   
+            image: "/images/sub/company/affiliate/Hi-Lex Medical.png"
         },
     },
 
@@ -1480,7 +1480,7 @@ export const map = [
             image: "/images/sub/company/affiliate/CHONGQING HI-LEX CONTROL CABLE SYSTEM CO., LTD..webp"
         },
     },
-    
+
     {
         countryCode : 1,
         name : 'China',

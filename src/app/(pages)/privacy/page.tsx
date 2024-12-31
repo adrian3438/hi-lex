@@ -1,3 +1,4 @@
+import "@/app/assets/privacy/privacy.scss";
 import { fetchLanguage } from "@/util/fetchLanguage";
 import Header from "@/components/common/Header";
 import Footer from "@/components/common/Footer";
@@ -8,132 +9,78 @@ export default async function Home({searchParams : {lang}} : any) {
     return (
         <>
             <Header language={language}/>
-            <div className="priavacy">
-                {/*<h2>개인정보처리방침</h2>
+            <div className="privacy">
+                <h2>{language?.privacy_01}</h2>
                 <section>
-                    <h3>1. (주)대동도어 개인정보 처리방침</h3>
-                    <p>“개인정보 처리방침”이란 이용자가 안심하고 서비스를 이용할 수 있도록 회사가 준수해야 할 지침을 의미하며, (주)대동도어는 개인정보처리자가 준수하여야 하는 대한민국의 관계 법령 및 개인정보보호 규정, 가이드라인을 준수하여 개인정보 처리방침을 제공합니다.</p>
-                    <p>(주)대동도어는 이용자의 동의를 기반으로 개인정보를 수집·이용 및 제공하고 있습니다. 이용자의 권리(개인정보 자기결정권)를 적극적으로 보장하기 위해 개인정보 처리방침을 알기 쉽게 제공할 수 있도록 다양한 노력을 기울이고 있으며, 이러한 노력의 일환으로 (주)대동도어의 주요 개인정보 처리 관련 정보를 라벨링으로 제공합니다.</p>
-                    <p><strong>개인정보 처리대상 : 개인정보, 처리목적, 제3자 제공, 처리위탁, 정보주체의 권리의무, 고충처리 부서</strong></p>
-                    <p>(주)대동도어 개인정보 처리방침은 회사가 제공하는 (주)대동도어 문의하기 상담(이하 &#39;서비스&#39;라 함)에 적용됩니다.</p>
+                    <h3>{language?.privacy_02}</h3>
+                    <p>{language?.privacy_03}</p>
                 </section>
                 <section>
-                    <h3>2. 개인정보 수집</h3>
-                    <p>서비스 제공을 위한 필요 최소한의 개인정보를 수집합니다.</p>
-                    <p>서비스 이용 과정에서 홈페이지 또는 개별 어플리케이션이나 프로그램 등을 통해 서비스 제공을 위해 필요 최소한의 개인정보를 수집하고 있습니다.</p>
-                    <p>서비스 제공을 위해 반드시 필요한 최소한의 정보를 필수항목으로, 그 외 특화된 서비스를 제공하기 위해 추가 수집하는 정보는 선택항목으로 동의를 받고 있으며, 선택항목에 동의하지 않은 경우에도 서비스 이용 제한은 없습니다.</p>
-                    <p><strong>[문의하기 시]</strong></p>
-                    <p>[필수] 회사명, 고객명, 직급, 연락처, 이메일, 주소 그외 명함에 표시되는 항목을 수집할 수 있습니다.</p>
-                    <p><strong>[고객상담 시]</strong></p>
-                    <p>고객센터로 문의 및 상담 시 상담 처리를 위한 추가적인 정보를 수집할 수 있습니다.</p>
-                    <p>일부 서비스에서는 특화된 여러 기능을 제공하기 위해 이용자에게 동의를 받고 추가적인 개인정보를 수집할 수 있습니다.</p>
-                    <p>개인정보를 수집하는 경우에는 원칙적으로 사전에 이용자에게 해당 사실을 알리고 동의를 구하고 있으며, 아래와 같은 방법을 통해 개인정보를 수집합니다. 고유식별번호인 주민등록번호를 수집하지 않습니다.</p>
+                    <h3>{language?.privacy_04}</h3>
+                    <p>{language?.privacy_05}</p>
                 </section>
                 <section>
-                    <h3>3. 개인정보 이용</h3>
-                    <p>문의사항 또는 불만처리, 공지사항 전달</p>
-                    <p>서비스의 원활한 운영에 지장을 주는 행위(계정 도용 및 부정 이용 행위 등 포함)에 대한 방지 및 제재</p>
-                    <p>수집 목적과 합리적으로 관련된 범위에서는 법령에 따라 이용자의 동의 없이 개인정보를 이용하거나 제3자에게 제공할 수 있습니다. 이때 ‘당초 수집 목적과 관련성이 있는지, 수집한 정황 또는 처리 관행에 비추어 볼 때 개인정보의 추가적인 이용 또는 제공에 대한 예측 가능성이 있는지, 이용자의 이익을 부당하게 침해하는지, 가명처리 또는 암호화 등 안전성 확보에 필요한 조치를 하였는지’를 종합적으로 고려합니다.</p>
-                    <p>(주)대동도어는 수집한 개인정보를 특정 개인을 알아볼 수 없도록 가명처리하여 통계작성, 과학적 연구, 공익적 기록보존 등을 위하여 처리할 수 있습니다. 이 때 가명정보는 재식별되지 않도록 추가정보와 분리하여 별도 저장・관리하고 필요한 기술적・관리적 보호조치를 취합니다.</p>
-                    <p>먼저, 가명정보에 접근할 수 있는 권한은 최소한의 인원으로 제한하며, 접근 권한을 관리하고 있습니다. 가명정보를 보호하기 위해 보안 시스템을 운영하며, 정기적인 내부 감사를 통해 가명처리 및 보호조치가 적절하게 이행되고 있는지 확인하고 개선 사항을 지속적으로 반영합니다. 또한, 가명정보를 취급하는 직원들에게 정기적으로 교육을 실시하고 있습니다.</p>
-                    <p><strong>[처리항목 및 처리목적]</strong></p>
-                    <p>이용자의 동의를 받아 수집한 개인정보 항목은 회원 관리 등 서비스 제공을 위해 필요한 목적으로 처리합니다. (주)대동도어에서 처리하는 개인정보 항목 및 이용 목적은 개인정보 처리방침을 통해 상시 공개하고 있습니다.</p>
-                    <p><strong>[추가적 이용]</strong></p>
-                    <p>당초 수집 목적과 관련성, 수집한 정황 또는 처리 관행 등을 종합적으로 고려하여 수집 목적과 합리적으로 관련된 범위에서 추가적으로 개인정보를 이용 및 제공할 수 있습니다.</p>
-                    <p><strong>[가명정보 처리]</strong></p>
-                    <p>수집한 개인정보를 특정 개인을 알아볼 수 없도록 가명처리하여 통계작성, 과학적 연구, 공익적 기록보존 등을 위해 처리할 수 있습니다.</p>
+                    <h3>{language?.privacy_06}</h3>
+                    <p>{language?.privacy_07}</p>
+                    <p>{language?.privacy_08}</p>
                 </section>
                 <section>
-                    <h3>4. 개인정보 제공</h3>
-                    <p>(주)대동도어는 이용자의 별도 동의가 있거나 법령에 규정된 경우를 제외하고는 이용자의 개인정보를 제3자에게 제공하지 않습니다. (주)대동도어는 이용자의 사전 동의 없이 개인정보를 제3자에게 제공하지 않습니다.</p>
-                    <p>(주)대동도어는 재난, 감염병, 급박한 생명・신체 위험을 초래하는 사건사고, 급박한 재산 손실 등의 긴급상황이 발생하는 경우 정보주체의 동의 없이 관계기관에 개인정보를 제공할 수 있습니다.</p>
+                    <h3>{language?.privacy_09}</h3>
+                    <p>{language?.privacy_10}</p>
                 </section>
                 <section>
-                    <h3>5. 개인정보 파기</h3>
-                    <p>수집 및 이용목적이 달성된 경우 수집한 개인정보는 지체없이 파기하며, 절차 및 방법은 아래와 같습니다.</p>
-                    <p>수집 및 이용 목적의 달성 또는 회원 탈퇴 등 파기 사유가 발생한 경우 개인정보의 형태를 고려하여 파기방법을 정합니다. 전자적 파일 형태인 경우 복구 및 재생되지 않도록 안전하게 삭제하고, 그 밖에 기록물, 인쇄물, 서면 등의 경우 분쇄하거나 소각하여 파기합니다.</p>
-                    <p>내부 방침에 따라 일정 기간 보관 후 파기하는 정보는 아래와 같습니다.</p>
+                    <h3>{language?.privacy_11}</h3>
+                    <p>{language?.privacy_12}</p>
+                    <p>{language?.privacy_13}</p>
+                    <p>{language?.privacy_14}</p>
+                </section>
+                <section>
+                    <h3>{language?.privacy_15}</h3>
+                    <p>{language?.privacy_16}</p>
+                </section>
+                <section>
+                    <h3>{language?.privacy_17}</h3>
+                    <p>{language?.privacy_18}</p>
+                </section>
+                <section>
+                    <h3>{language?.privacy_19}</h3>
+                    <p>{language?.privacy_20}</p>
+                </section>
+                <section>
+                    <h3>{language?.privacy_21}</h3>
+                    <p>{language?.privacy_22}</p>
+                    <p>{language?.privacy_23}</p>
+                    <p>{language?.privacy_24}</p>
+                    <p>{language?.privacy_25}</p>
+                    <p>{language?.privacy_26}</p>
+                </section>
+                <section>
+                    <h3>{language?.privacy_27}</h3>
+                    <p>{language?.privacy_28}</p>
+                </section>
+                <section>
+                    <h3>{language?.privacy_29}</h3>
+                    <p>{language?.privacy_30}</p>
+                    <p>{language?.privacy_31}</p>
+                </section>
+                <section>
+                    <h3>{language?.privacy_32}</h3>
+                    <p>{language?.privacy_33}</p>
                     <div>
-                        1) 아래 정보는 탈퇴일부터 최대 1년간 보관 후 파기합니다.
-                        <ul>
-                            <li>안내메일 발송 및 CS문의 대응을 위해 이메일 주소를 암호화하여 보관</li>
-                            <li>서비스 부정이용 기록</li>
-                        </ul>
+                        <p>{language?.privacy_34}</p>
+                        <p>{language?.privacy_35}</p>
+                        <p>{language?.privacy_36}</p>
                     </div>
                     <div>
-                        2)권리침해 신고 및 유해정보 신고 이력은 5년간 보관 후 파기합니다.
-                        <ul>
-                            <li>지원대상 선정 시 수집한 증빙서류</li>
-                        </ul>
+                        <p>{language?.privacy_37}</p>
+                        <p>{language?.privacy_38}</p>
+                        <p>{language?.privacy_39}</p>
                     </div>
-                    <p>또한, (주)대동도어는 운영정책에 따라 1년간 서비스를 이용하지 않은 이용자의 개인정보를 별도로 분리 보관 또는 삭제하고 있으며, 분리 보관된 개인정보는 4년간 보관 후 지체없이 파기합니다.</p>
                 </section>
                 <section>
-                    <h3></h3>
-                    <p></p>
-                    <p></p>
-                    <p></p>
+                    <h3>{language?.privacy_40}</h3>
+                    <p>{language?.privacy_41}</p>
                 </section>
-                <section>
-                    <h3></h3>
-                    <p></p>
-                    <p></p>
-                    <p></p>
-                </section>
-                <section>
-                    <h3></h3>
-                    <p></p>
-                    <p></p>
-                    <p></p>
-                </section>
-                <section>
-                    <h3></h3>
-                    <p></p>
-                    <p></p>
-                    <p></p>
-                </section>
-                <section>
-                    <h3></h3>
-                    <p></p>
-                    <p></p>
-                    <p></p>
-                </section>
-                <section>
-                    <h3></h3>
-                    <p></p>
-                    <p></p>
-                    <p></p>
-                </section>
-                <section>
-                    <h3></h3>
-                    <p></p>
-                    <p></p>
-                    <p></p>
-                </section>
-                <section>
-                    <h3></h3>
-                    <p></p>
-                    <p></p>
-                    <p></p>
-                </section>
-                <section>
-                    <h3></h3>
-                    <p></p>
-                    <p></p>
-                    <p></p>
-                </section>
-                <section>
-                    <h3></h3>
-                    <p></p>
-                    <p></p>
-                    <p></p>
-                </section>
-                <section>
-                    <h3></h3>
-                    <p></p>
-                    <p></p>
-                    <p></p>
-                </section>*/}
             </div>
             <Footer language={language}/>
         </>

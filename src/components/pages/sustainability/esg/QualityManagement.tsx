@@ -13,7 +13,12 @@ export default function QualityManagement({ language }: Props) {
     useEffect(() => {
         const element = document.querySelector('#esgMenus');
         if (element) {
-            element.scrollIntoView({ behavior: 'smooth' });
+            const rect = element.getBoundingClientRect();
+            const offset = 100; // 100px 덜 스크롤
+            window.scrollTo({
+                top: window.scrollY + rect.top - offset,
+                behavior: 'smooth',
+            });
         }
     }, []);
 

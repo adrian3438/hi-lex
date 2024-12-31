@@ -63,6 +63,24 @@
           left: 0;
         }
       }
+      &.video {
+        > dd {
+          max-width: 1000px;
+          margin: 0 auto;
+          padding: 0 20px;
+          display: flex;
+          justify-content: space-between;
+          gap: 20px 0;
+          flex-wrap: wrap;
+          > div {
+            flex-basis: 49%;
+            iframe {
+              width: 100%;
+              aspect-ratio: 16 / 9;
+            }
+          }
+        }
+      }
       > dd {
         text-align: left;
         > ul {
@@ -94,6 +112,8 @@
         }
       }
     }
+
+
   }
 
   /* List 공통 */
@@ -263,6 +283,17 @@
       .event-lists {
         > li {
           max-width: 100%;
+        }
+      }
+    }
+    .download-lists {
+      > dl {
+        &.video {
+          > dd {
+            > div {
+              flex-basis: 100%;
+            }
+          }
         }
       }
     }
