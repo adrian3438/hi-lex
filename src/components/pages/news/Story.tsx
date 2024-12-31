@@ -29,7 +29,7 @@ export default function Story({language, page}: Props) {
 
     useEffect(() => {
         fetchNews('');
-    }, []);
+    }, [language?.language]);
 
     // Enter 키 이벤트 핸들러
     const handleKeyDown = async (event: React.KeyboardEvent<HTMLInputElement>) => {

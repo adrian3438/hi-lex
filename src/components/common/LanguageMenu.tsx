@@ -41,11 +41,11 @@ export default function LanguageMenu({language}: Props) {
         router.push(`${currentRoute}?${newParams?.toString()}`);
     }
 
-    useEffect(()=>{setLang(cookie.LANG)} , [setCookie, cookie]);
+    useEffect(()=>{setLang(cookie.LANG)} , [setCookie, cookie, lang]);
 
     return (
         <div className="language">
-            <Link href="#" className="language-button" onClick={(e) => handleLang(e, lang === 'en' ? 'kr' : 'en')}>{lang === 'en' ? 'KR' : "EN"}</Link>
+            <Link href="#" className="language-button" onClick={(e) => handleLang(e, lang === 'kr' ? 'en' : 'kr')}>{language.language === 'kr' ? 'EN' : 'KR'}</Link>
             <div>
                 <button className="menu-button" onClick={openMobileMenu}>
                     <div className="bar"></div>
