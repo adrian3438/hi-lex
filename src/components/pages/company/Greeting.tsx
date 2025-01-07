@@ -24,9 +24,9 @@ export default function Greeting({language}: Props) {
                     <h3>{language?.greeting_02}</h3>
                     <p>{language?.greeting_03}</p>
                     <div>
-                        <p>{language?.greeting_03}</p>
                         <p>{language?.greeting_04}</p>
                         <p>{language?.greeting_05}</p>
+                        <p>{language?.greeting_06}</p>
                     </div>
                     <div className="sign">
                         <Image src="/images/sub/company/greeting/songhaksung-signature.png" alt="Sign" width={174} height={94}/>
