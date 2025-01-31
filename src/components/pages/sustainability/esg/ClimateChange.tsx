@@ -3,7 +3,7 @@
 import "@/app/assets/sustainability/esg.scss";
 import Link from "next/link";
 import Image from "next/image";
-import {useEffect} from "react";
+import {useEffect, useState} from "react";
 
 interface Props {
     language?: any;
@@ -21,6 +21,13 @@ export default function ClimateChange({ language }: Props) {
             });
         }
     }, []);
+
+const [imageSrc, setImageSrc] = useState(`/images/sub/sustainability/esg/esg-02-img-01-${language?.language}.png`);
+
+useEffect(() => {
+  setImageSrc(`/images/sub/sustainability/esg/esg-02-img-01-${language?.language}.png`);
+}, [language?.language])
+
 
     return (
         <div className="esg">
@@ -177,6 +184,7 @@ export default function ClimateChange({ language }: Props) {
                 <section className="esg-section-01">
                     <h3>{language?.esg_text_02_01}</h3>
                     <p>{language?.esg_text_02_02}</p>
+                    <p>{language?.esg_text_02_02_01}</p>
                     <p><Image src={`/images/sub/sustainability/esg/esg-02-img-01-${language?.language}.png`} alt="" width={1562} height={917}/></p>
                 </section>
                 <section className="esg-section-02">

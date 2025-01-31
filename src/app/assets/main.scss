@@ -32,7 +32,7 @@ main {
       width: 100%;
       max-width: 1600px;
       margin: 0 auto;
-      background-color: rgba(0, 0, 0, 0.27);
+      background-color: rgba(0, 0, 0, 0.01);
       border-radius: 20px;
       padding: 150px 80px;
       .main-section-text-01 {
@@ -58,22 +58,22 @@ main {
       }
     }
     &.main-section-01 {
-      background: url("/images/main/main-section-bg-01.png") no-repeat center center;
+      background: url("/images/main/main-section-bg-01.jpg") no-repeat center center;
       > div {
         position: absolute;
         top: 223px;
         left: 50%;
         width: calc(100% - 40px);
-        padding: 0 20px;
+        padding: 10 20px;
         transform: translateX(-50%);
         background: none;
         .main-section-text-01 {
-          color: #3A9CC1;
+          color: #fff;
           font-size: 40px;
           font-family: "Pretendard-ExtraBold", sans-serif;
         }
         .main-section-text-02 {
-          color: #3A9CC1;
+          color: #fff;
           font-size: 40px;
         }
       }
@@ -87,16 +87,16 @@ main {
       }
     }
     &.main-section-02 {
-      background: url("/images/main/main-section-bg-02.png") no-repeat center center;
+      background: url("/images/main/main-section-bg-02.jpg") no-repeat center center;
     }
     &.main-section-03 {
-      background: url("/images/main/main-section-bg-03.png") no-repeat center center;
+      background: url("/images/main/main-section-bg-03.jpg") no-repeat center center;
     }
     &.main-section-04 {
-      background: url("/images/main/main-section-bg-04.png") no-repeat center center;
+      background: url("/images/main/main-section-bg-04.jpg") no-repeat center center;
     }
     &.main-section-05 {
-      background: url("/images/main/main-section-bg-05.png") no-repeat center center;
+      background: url("/images/main/main-section-bg-05.jpg") no-repeat center center;
     }
   }
 }

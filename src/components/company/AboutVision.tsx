@@ -41,10 +41,10 @@ export default function AboutVision({ language }: Props) {
                         <Image src="/images/sub/company/about/about-05.png" alt="" width={1600} height={797} style={{ verticalAlign: 'top' }} />
                     </SwiperSlide>
                     <SwiperSlide>
-                        <Image src="/images/sub/company/about/about-06.png" alt="" width={1600} height={797} style={{ verticalAlign: 'top' }} />
+                        <Image src="/images/sub/company/about/about-06.jpg" alt="" width={1600} height={797} style={{ verticalAlign: 'top' }} />
                     </SwiperSlide>
                     <SwiperSlide>
-                        <Image src="/images/sub/company/about/about-07.png" alt="" width={1600} height={797} style={{ verticalAlign: 'top' }} />
+                        <Image src="/images/sub/company/about/about-07.jpg" alt="" width={1600} height={797} style={{ verticalAlign: 'top' }} />
                     </SwiperSlide>
                     <SwiperSlide>
                         <Image src="/images/sub/company/about/about-08.png" alt="" width={1600} height={797} style={{ verticalAlign: 'top' }} />

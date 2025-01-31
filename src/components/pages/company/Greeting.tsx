@@ -15,24 +15,39 @@ export default function Greeting({language}: Props) {
                     <li>{language?.header_1_1}</li>
                 </ul>
             </div>
-            <div className="greeting-text">
-                <section>
-                    <Image src="/images/sub/company/greeting/ceo-greeting-car-1.png" alt="" width={954} height={1142} />
-                    <Image src="/images/sub/company/greeting/ceo-greeting-car-2.png" alt="" width={954} height={1142} />
-                </section>
-                <div>
-                    <h3>{language?.greeting_02}</h3>
-                    <p>{language?.greeting_03}</p>
+            <div className="greeting-background-color">
+                <div className="greeting-text-01">
                     <div>
-                        <p>{language?.greeting_04}</p>
-                        <p>{language?.greeting_05}</p>
+                    <h3>{language?.greeting_02}</h3><br/>
+                    <p>{language?.greeting_03}</p>
+                    <p>{language?.greeting_03_01}</p>
+                    </div>
+                    <section className="greeting-text-image-01">
+                    <Image src="/images/sub/company/greeting/ceo-greeting-car-1.png" alt="" width={954} height={700} />
+                    </section>
+                </div>
+
+                <div className="greeting-text-02">
+                    <div>
+                        <p>{language?.greeting_04}</p><br/>
+                        <p>{language?.greeting_05}</p><br/>
                         <p>{language?.greeting_06}</p>
                     </div>
+
                     <div className="sign">
-                        <Image src="/images/sub/company/greeting/songhaksung-signature.png" alt="Sign" width={174} height={94}/>
+                        <Image src="/images/sub/company/greeting/songhaksung-signature-01.png" alt="Sign" width={174} height={94}/>
                     </div>
+
+                    <section className="greeting-text-image-02">
+                    <Image src="/images/sub/company/greeting/ceo-greeting-car-2.jpg" alt="" width={1920} height={1195} />
+                    </section>
                 </div>
             </div>
         </div>
     )
 }
+
+{/* <section>
+<Image src="/images/sub/company/greeting/ceo-greeting-car-1.png" alt="" width={954} height={1142} />
+<Image src="/images/sub/company/greeting/ceo-greeting-car-2.png" alt="" width={954} height={1142} />
+</section> */}

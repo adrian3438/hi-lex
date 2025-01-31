@@ -28,7 +28,7 @@ export default async function FactoryPage({searchParams : {lang}} : any) {
                         </ul>
                     </div>
                     <div className="position-content factory">
-                        <p><Image src="/images/sub/career/position/position-07.png" alt="" width={1420} height={430}/></p>
+                        <p><Image src="/images/sub/career/position/position-07.jpg" alt="" width={1420} height={430}/></p>
                         <dl className="factory-01">
                             <dt>{language?.position_01_122}<span>{language?.position_01_123}</span></dt>
                             <dd>

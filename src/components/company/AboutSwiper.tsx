@@ -13,7 +13,7 @@ export default function AboutSwiper({language}: Props) {
     return (
         <Swiper
             autoplay={{
-                delay: 6000,
+                delay: 3000,
                 disableOnInteraction: false,
             }}
             pagination={{
