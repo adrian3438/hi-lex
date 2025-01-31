@@ -3,7 +3,7 @@
 import "@/app/assets/sustainability/esg.scss";
 import Link from "next/link";
 import Image from "next/image";
-import {useEffect, useState} from "react";
+import {useEffect} from "react";
 
 interface Props {
     language?: any;
@@ -22,11 +22,6 @@ export default function ClimateChange({ language }: Props) {
         }
     }, []);
 
-const [imageSrc, setImageSrc] = useState(`/images/sub/sustainability/esg/esg-02-img-01-${language?.language}.png`);
-
-useEffect(() => {
-  setImageSrc(`/images/sub/sustainability/esg/esg-02-img-01-${language?.language}.png`);
-}, [language?.language])
 
 
     return (
