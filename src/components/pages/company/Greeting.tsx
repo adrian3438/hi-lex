@@ -23,7 +23,7 @@ export default function Greeting({language}: Props) {
                     <p>{language?.greeting_03_01}</p>
                     </div>
                     <section className="greeting-text-image-01">
-                    <Image src="/images/sub/company/greeting/ceo-greeting-car-1.png" alt="" width={954} height={700} />
+                    <Image src="/images/sub/company/greeting/ceo-greeting-flags.jpg" alt="" width={954} height={615} />
                     </section>
                 </div>
 
@@ -34,12 +34,11 @@ export default function Greeting({language}: Props) {
                         <p>{language?.greeting_06}</p>
                     </div>
 
+                    <section className="greeting-text-image-02">
+                    <Image src="/images/sub/company/greeting/ceo-greeting-car-2.jpg" alt="" width={1920} height={1195} />
                     <div className="sign">
                         <Image src="/images/sub/company/greeting/songhaksung-signature-01.png" alt="Sign" width={174} height={94}/>
                     </div>
-
-                    <section className="greeting-text-image-02">
-                    <Image src="/images/sub/company/greeting/ceo-greeting-car-2.jpg" alt="" width={1920} height={1195} />
                     </section>
                 </div>
             </div>

@@ -22,7 +22,7 @@ export default function MainMenu({headerLeave, language}: Props): JSX.Element {
             <div className={"nav-bg"}></div>
             <ul>
                 <li className={activeMenu === 0 && !headerLeave ? 'on' : ''}>
-                    <Link href="#" onMouseOver={() => handleMouseOver(0)}>{language.header_1}</Link>
+                    <Link href="/company/greeting" onMouseOver={() => handleMouseOver(0)}>{language.header_1}</Link>
                     <ul>
                         <li><Link href="/company/greeting">{language.header_1_1}</Link></li>
                         <li><Link href="/company/about-us">{language.header_1_2}</Link></li>
@@ -34,7 +34,7 @@ export default function MainMenu({headerLeave, language}: Props): JSX.Element {
                     </ul>
                 </li>
                 <li className={activeMenu === 1 && !headerLeave ? 'on' : ''}>
-                    <Link href="#" onMouseOver={() => handleMouseOver(1)}>{language.header_2}</Link>
+                    <Link href="/products/latching-systems" onMouseOver={() => handleMouseOver(1)}>{language.header_2}</Link>
                     <ul>
                         <li><Link href="/products/latching-systems">{language.header_2_1}</Link></li>
                         <li><Link href="/products/power-closures">{language.header_2_2}</Link></li>
@@ -51,7 +51,7 @@ export default function MainMenu({headerLeave, language}: Props): JSX.Element {
                     </ul>
                 </li>
                 <li className={activeMenu === 3 && !headerLeave ? 'on' : ''}>
-                    <Link href="#" onMouseOver={() => handleMouseOver(3)}>{language.header_4}</Link>
+                    <Link href="/sustainability/esg-management" onMouseOver={() => handleMouseOver(3)}>{language.header_4}</Link>
                     <ul>
                         <li><Link href="/sustainability/esg-management">{language.header_4_1}</Link></li>
                         <li><Link href="/sustainability/climate-change">{language.header_4_2}</Link></li>
@@ -64,7 +64,7 @@ export default function MainMenu({headerLeave, language}: Props): JSX.Element {
                     </ul>
                 </li>
                 <li className={activeMenu === 4 && !headerLeave ? 'on' : ''}>
-                    <Link href="#" onMouseOver={() => handleMouseOver(4)}>{language.header_5}</Link>
+                    <Link href="/career/position/quality" onMouseOver={() => handleMouseOver(4)}>{language.header_5}</Link>
                     <ul>
                         <li><Link href="/career/position/quality">{language.header_5_1}</Link></li>
                         <li><Link href="/career/welfare">{language.header_5_2}</Link></li>
@@ -73,7 +73,7 @@ export default function MainMenu({headerLeave, language}: Props): JSX.Element {
                     </ul>
                 </li>
                 <li className={activeMenu === 5 && !headerLeave ? 'on' : ''}>
-                    <Link href="#" onMouseOver={() => handleMouseOver(5)}>{language.header_6}</Link>
+                    <Link href="/news/press-release" onMouseOver={() => handleMouseOver(5)}>{language.header_6}</Link>
                     <ul>
                         <li><Link href="/news/press-release">{language.header_6_1}</Link></li>
                         <li><Link href="/news/story">{language.header_6_2}</Link></li>
