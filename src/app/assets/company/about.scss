@@ -214,7 +214,7 @@
     }
     .financial {
       text-align: center;
-      margin-bottom: 340px;
+      margin-bottom: 140px;
       .table {
         margin-bottom: 30px;
         > p {
@@ -475,6 +475,14 @@
   }
 }
 
+  /* 투자정보 / 전자공시 */
+  #wrap .dart_wrapper iframe {width: 100%; height: 900px; padding: 30px 0;}
+  
+  /* 전자공시 */
+.dart_wrapper {width: 1200px; height: auto; text-align: center; margin:0 auto;}
+.dart_wrapper iframe {margin: 0 auto; width: 750px; height:900px; padding: 30px 0;}
+
+
 @media screen and (max-width: 767px) {
   .about-us .about-container .business > div > div > ul {
     flex-wrap: wrap;
@@ -482,4 +490,14 @@
       flex-basis: 100%;
     }
   }
+}
+
+
+@media screen and (max-width: 767px) {
+  /* 투자정보 / 전자공시 */
+  #wrap .dart_wrapper iframe {width: 100%; height: 750px; padding: 30px 0;}
+  
+  /* 전자공시 */
+.dart_wrapper {width: 1200px; height: 300px; text-align: center; margin:0 auto;}
+.dart_wrapper iframe {margin: 0 auto; width: 100%; height: 750px; padding: 30px 0;}
 }
