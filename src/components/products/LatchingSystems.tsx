@@ -22,7 +22,7 @@ export default function LatchingSystems() {
                                     <button className={activeIndex === 1 ? 'active' : ''} onClick={() => setActiveIndex(1)}>Standard Latch</button>
                                 </li>
                                 <li>
-                                    <button className={activeIndex === 2 ? 'active' : ''} onClick={() => setActiveIndex(2)}>E-Latch, E-Latch (with Cinching)</button>
+                                    <button className={activeIndex === 2 ? 'active' : ''} onClick={() => setActiveIndex(2)}>E-Latch</button>
                                     <Link href="/research/e-latch"><Image src="/images/sub/products/3d-link.png" alt="R&D 3D Configurator" width={170} height={20} /></Link>
                                 </li>
                             </ul>
@@ -105,7 +105,7 @@ export default function LatchingSystems() {
                         <div className="products-area">
                             <div className="products-image-area">
                                 <Image src="/images/sub/products/products-01-01.png" alt="Plastic (Case) Type" width={361} height={545}/>
-                                <p>STANDARD Gen3 LATCH<br/>Pop-up Handle & Flush Handle</p>
+                                <p>STANDARD Gen3 LATCH</p>
                             </div>
                             <div className="products-text-area">
                                 The panel installed inside the car&#39;s side door, when connected
@@ -270,7 +270,7 @@ export default function LatchingSystems() {
                                 <p className="image-area">
                                     <Image src="/images/sub/products/products-01-11.png" alt="LUXURY TYPE" width={284} height={316}/>
                                 </p>
-                                <p className="text-area">POWER TRAILGATE LATCH<br/>SEPARATED TYPE & ACTUATOR</p>
+                                <p className="text-area">POWER TAILGATE LATCH<br/>SEPARATED TYPE & ACTUATOR</p>
                             </li>
                             <li>
                                 <p className="image-area">

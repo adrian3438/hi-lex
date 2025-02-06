@@ -13,8 +13,8 @@ export default function ClientSlideR() {
         slidesToShow: 5,
         slidesToScroll: 1,
         autoplay: true,
-        speed: 2000,
-        autoplaySpeed: 2000,
+        speed: 3000,
+        autoplaySpeed: 3000,
         cssEase: "linear",
         rtl: true,
     };
@@ -23,22 +23,22 @@ export default function ClientSlideR() {
         <div className="slider-container">
             <Slider {...settings}>
                 <div>
-                    <Image src="/images/sub/products/clients/client-slide-07.png" alt="" width={335} height={186}/>
+                    <Image src="/images/sub/products/clients/client-slide-07.png" alt="" width={442} height={189}/>
                 </div>
                 <div>
-                    <Image src="/images/sub/products/clients/client-slide-08.png" alt="" width={335} height={186}/>
+                    <Image src="/images/sub/products/clients/client-slide-08.png" alt="" width={442} height={189}/>
                 </div>
                 <div>
-                    <Image src="/images/sub/products/clients/client-slide-09.png" alt="" width={335} height={186}/>
+                    <Image src="/images/sub/products/clients/client-slide-11.png" alt="" width={442} height={189}/>
                 </div>
                 <div>
-                    <Image src="/images/sub/products/clients/client-slide-10.png" alt="" width={335} height={186}/>
+                    <Image src="/images/sub/products/clients/client-slide-10.png" alt="" width={442} height={189}/>
                 </div>
                 <div>
-                    <Image src="/images/sub/products/clients/client-slide-11.png" alt="" width={335} height={186}/>
+                    <Image src="/images/sub/products/clients/client-slide-09.png" alt="" width={442} height={189}/>
                 </div>
                 <div>
-                    <Image src="/images/sub/products/clients/client-slide-12.png" alt="" width={335} height={186}/>
+                    <Image src="/images/sub/products/clients/client-slide-12.png" alt="" width={442} height={189}/>
                 </div>
             </Slider>
         </div>

@@ -33,7 +33,7 @@ export default async function ProcurementPage({searchParams : {lang}} : any) {
                         </ul>
                     </div>
                     <div className="position-content procurement">
-                        <p><Image src="/images/sub/career/position/position-05.png" alt="" width={1420} height={430}/></p>
+                        <p><Image src="/images/sub/career/position/position-05.jpg" alt="" width={1420} height={430}/></p>
                         <dl className="procurement-01">
                             <dt>{language?.position_01_70}<span>{language?.position_01_71}</span></dt>
                             <dd>
