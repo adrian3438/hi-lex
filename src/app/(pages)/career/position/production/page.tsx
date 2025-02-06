@@ -33,7 +33,7 @@ export default async function ProductionPage({searchParams : {lang}} : any) {
                         </ul>
                     </div>
                     <div className="position-content production">
-                        <p><Image src="/images/sub/career/position/position-04-01.JPG" alt="" width={1420} height={430}/></p>
+                        <p><Image src="/images/sub/career/position/position-04-01.jpg" alt="" width={1420} height={430}/></p>
                         <dl className="production-01">
                             <dt>{language?.position_01_70}<span>{language?.position_01_71}</span></dt>
                             <dd>
