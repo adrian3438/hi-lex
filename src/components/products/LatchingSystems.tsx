@@ -33,7 +33,7 @@ export default function LatchingSystems() {
                         <dd>
                             <ul>
                                 <li>
-                                    <button className={activeIndex === 3 ? 'active' : ''} onClick={() => setActiveIndex(3)}>Hood (Frunk) Latch</button>
+                                    <button className={activeIndex === 3 ? 'active' : ''} onClick={() => setActiveIndex(3)}>Hood Latch / Frunk Latch</button>
                                 </li>
                                 <li>
                                     <button className={activeIndex === 4 ? 'active' : ''} onClick={() => setActiveIndex(4)}>Trunk / Tailgate Latch</button>
@@ -52,11 +52,11 @@ export default function LatchingSystems() {
                                     <button className={activeIndex === 6 ? 'active' : ''} onClick={() => setActiveIndex(6)}>Remote Controller</button>
                                 </li>
                                 <li>
-                                    <button className={activeIndex === 7 ? 'active' : ''} onClick={() => setActiveIndex(7)}>Front Latch / Rear Latch</button>
+                                    <button className={activeIndex === 7 ? 'active' : ''} onClick={() => setActiveIndex(7)}>Sliding Door Latch</button>
                                 </li>
-                                <li>
+                                {/* <li>
                                     <button className={activeIndex === 8 ? 'active' : ''} onClick={() => setActiveIndex(8)}>Hold Open Lock</button>
-                                </li>
+                                </li> */}
                             </ul>
                         </dd>
                     </dl>
@@ -74,7 +74,7 @@ export default function LatchingSystems() {
                 <div className="products-detail-image">
                     {(activeIndex === 0 || activeIndex === 1 || activeIndex === 2 || activeIndex === 3 || activeIndex === 4) && (
                         <>
-                            <Image src="/images/sub/products/products-01-001.png" alt="" width={992} height={499}/>
+                            <Image src="/images/sub/products/daedong-ionic-products.jpg" alt="" width={992} height={499}/>
                             <span className={activeIndex === 1 || activeIndex === 2 ? 'products-01-01 active' : 'products-01-01'}></span>
                             <span className={activeIndex === 1 || activeIndex === 2 ? 'products-01-02 active' : 'products-01-02'}></span>
                             <span className={activeIndex === 3 ? 'products-01-03 active' : 'products-01-03'}></span>
@@ -82,10 +82,19 @@ export default function LatchingSystems() {
                             {/*<Image src="/images/sub/products/products-01-001.png" alt="" width={992} height={499}/>*/}
                         </>
                     )}
-                    {(activeIndex === 5 || activeIndex === 6 || activeIndex === 7 || activeIndex === 8) && (
+                    {(activeIndex === 5) && (
                         <>
-                            <Image src="/images/sub/products/products-01-18.png" alt="" width={992} height={499}/>
+                            <Image src="/images/sub/products/daedong-tasman-products.jpg" alt="" width={992} height={499}/>
                             <span className={activeIndex === 5 ? 'products-01-05 active' : 'products-01-05'}></span>
+                            {/* <span className={activeIndex === 6 ? 'products-01-06 active' : 'products-01-06'}></span>
+                            <span className={activeIndex === 7 ? 'products-01-07 active' : 'products-01-07'}></span>
+                            <span className={activeIndex === 8 ? 'products-01-08 active' : 'products-01-08'}></span> */}
+                        </>
+                    )}
+                    {(activeIndex === 6 || activeIndex === 7 || activeIndex === 8) && (
+                        <>
+                            <Image src="/images/sub/products/daedong-canival-products.jpg" alt="" width={992} height={499}/>
+                            {/* <span className={activeIndex === 5 ? 'products-01-05 active' : 'products-01-05'}></span> */}
                             <span className={activeIndex === 6 ? 'products-01-06 active' : 'products-01-06'}></span>
                             <span className={activeIndex === 7 ? 'products-01-07 active' : 'products-01-07'}></span>
                             <span className={activeIndex === 8 ? 'products-01-08 active' : 'products-01-08'}></span>
@@ -136,19 +145,19 @@ export default function LatchingSystems() {
                         <ul>
                             <li>
                                 <p className="image-area">
-                                    <Image src="/images/sub/products/products-01-02.png" alt="LUXURY TYPE" width={259} height={318}/>
+                                    <Image src="/images/sub/products/products-01-03.png" alt="LUXURY TYPE" width={259} height={318}/>
                                 </p>
                                 <p className="text-area">COMPACT LATCH</p>
                             </li>
                             <li>
                                 <p className="image-area">
-                                    <Image src="/images/sub/products/products-01-03.png" alt="LUXURY TYPE" width={284} height={316}/>
+                                    <Image src="/images/sub/products/products-01-04.png" alt="LUXURY TYPE" width={284} height={316}/>
                                 </p>
                                 <p className="text-area">STANDARD Gen2 LATCH</p>
                             </li>
                             <li>
                                 <p className="image-area">
-                                    <Image src="/images/sub/products/products-01-04.png" alt="LUXURY TYPE" width={266} height={315}/>
+                                    <Image src="/images/sub/products/products-01-02.png" alt="LUXURY TYPE" width={266} height={315}/>
                                 </p>
                                 <p className="text-area">STANDARD Gen3 LATCH</p>
                             </li>
@@ -160,11 +169,11 @@ export default function LatchingSystems() {
             {activeIndex === 2 && (
                 <>
                     <div className="products-detail-middle">
-                        <h4>E-Latch, E-Latch (with Cinching) (R&D)</h4>
+                        <h4>E-Latch (R&D)</h4>
                         <div className="products-area">
                             <div className="products-image-area">
                                 <Image src="/images/sub/products/products-01-05.png" alt="Plastic (Case) Type" width={361} height={545}/>
-                                <p>e-Latch, e-Latch with Cinching</p>
+                                <p>e-Latch</p>
                             </div>
                             <div className="products-text-area">
                                 <dl>
@@ -188,7 +197,7 @@ export default function LatchingSystems() {
             {activeIndex === 3 && (
                 <>
                     <div className="products-detail-middle">
-                        <h4>Hood (Frunk) Latch</h4>
+                        <h4>Hood Latch/Frunk Latch</h4>
                         <div className="products-area">
                             <div className="products-image-area">
                                 <Image src="/images/sub/products/products-01-06.png" alt="Plastic (Case) Type" width={361} height={545}/>
@@ -221,7 +230,7 @@ export default function LatchingSystems() {
                         <ul>
                             <li>
                                 <p className="image-area">
-                                    <Image src="/images/sub/products/products-01-07.png" alt="LUXURY TYPE" width={259} height={318}/>
+                                    <Image src="/images/sub/products/products-01-07.png" alt="LUXURY TYPE" width={651} height={212}/>
                                 </p>
                                 <p className="text-area">HOOD LATCH RELEASE ACTUATOR</p>
                             </li>
@@ -260,17 +269,17 @@ export default function LatchingSystems() {
                     </div>
                     <div className="products-detail-bottom">
                         <ul>
-                            <li>
+                            {/* <li>
                                 <p className="image-area">
                                     <Image src="/images/sub/products/products-01-10.png" alt="LUXURY TYPE" width={259} height={318}/>
                                 </p>
                                 <p className="text-area">APS ASSEMBLY</p>
-                            </li>
+                            </li> */}
                             <li>
                                 <p className="image-area">
                                     <Image src="/images/sub/products/products-01-11.png" alt="LUXURY TYPE" width={284} height={316}/>
                                 </p>
-                                <p className="text-area">POWER TAILGATE LATCH<br/>SEPARATED TYPE & ACTUATOR</p>
+                                <p className="text-area">POWER TAILGATE LATCH - SEPARATED TYPE & ACTUATOR</p>
                             </li>
                             <li>
                                 <p className="image-area">
@@ -286,7 +295,7 @@ export default function LatchingSystems() {
             {activeIndex === 5 && (
                 <>
                     <div className="products-detail-middle">
-                        <h4>Pick-up Latch/ Quarter Storage Latch</h4>
+                        <h4>Pick-up Latch / Quarter Storage Latch</h4>
                         <div className="products-area">
                             <div className="products-image-area">
                                 <Image src="/images/sub/products/products-01-13.png" alt="Plastic (Case) Type" width={361} height={545}/>
@@ -306,6 +315,22 @@ export default function LatchingSystems() {
                                 </dl>
                             </div>
                         </div>
+                    </div>
+                    <div className="products-detail-bottom">
+                        <ul>
+                            <li>
+                                <p className="image-area">
+                                    <Image src="/images/sub/products/new-image-comming.png" alt="LUXURY TYPE" width={651} height={212}/>
+                                </p>
+                                <p className="text-area">PICKUP LATCH</p>
+                            </li>
+                            <li>
+                                <p className="image-area">
+                                    <Image src="/images/sub/products/products-01-13.png" alt="LUXURY TYPE" width={284} height={316}/>
+                                </p>
+                                <p className="text-area">QUARTER STORAGE LATCH</p>
+                            </li>
+                        </ul>
                     </div>
                 </>
             )}
@@ -335,7 +360,7 @@ export default function LatchingSystems() {
                         </div>
                     </div>
                     <div className="products-detail-bottom">
-                        <ul>
+                        {/* <ul>
                             <li>
                                 <p className="image-area">
                                     <Image src="/images/sub/products/products-01-14.png" alt="LUXURY TYPE" width={259} height={318}/>
@@ -354,7 +379,7 @@ export default function LatchingSystems() {
                                 </p>
                                 <p className="text-area">HOLD OPEN LOCK</p>
                             </li>
-                        </ul>
+                        </ul> */}
                     </div>
                 </>
             )}
@@ -362,7 +387,7 @@ export default function LatchingSystems() {
             {activeIndex === 7 && (
                 <>
                     <div className="products-detail-middle">
-                        <h4>Front Latch / Rear Latch</h4>
+                        <h4>Sliding Door Latch</h4>
                         <div className="products-area">
                             <div className="products-image-area">
                                 <Image src="/images/sub/products/products-01-16.png" alt="Plastic (Case) Type" width={361} height={545}/>
@@ -387,15 +412,15 @@ export default function LatchingSystems() {
                         <ul>
                             <li>
                                 <p className="image-area">
-                                    <Image src="/images/sub/products/products-01-14.png" alt="LUXURY TYPE" width={259} height={318}/>
+                                    <Image src="/images/sub/products/products-01-16.png" alt="LUXURY TYPE" width={259} height={318}/>
                                 </p>
-                                <p className="text-area">CINCHING LATCH</p>
+                                <p className="text-area">FRONT LATCH</p>
                             </li>
                             <li>
                                 <p className="image-area">
-                                    <Image src="/images/sub/products/products-01-15.png" alt="LUXURY TYPE" width={284} height={316}/>
+                                    <Image src="/images/sub/products/new-image-comming.png" alt="LUXURY TYPE" width={284} height={316}/>
                                 </p>
-                                <p className="text-area">REMOTE CONTROLLER</p>
+                                <p className="text-area">REAR LATCH</p>
                             </li>
                             <li>
                                 <p className="image-area">
@@ -481,21 +506,21 @@ export default function LatchingSystems() {
                         <ul>
                             <li>
                                 <p className="image-area">
-                                    <Image src="/images/sub/products/products-01-21.png" alt="LUXURY TYPE" width={259} height={318}/>
+                                    <Image src="/images/sub/products/products-01-23.png" alt="LUXURY TYPE" width={259} height={318}/>
                                 </p>
-                                <p className="text-area">TAILGATE STRIKER</p>
+                                <p className="text-area">SIDE DOOR STRIKER</p>
+                            </li>
+                            <li>
+                                <p className="image-area">
+                                    <Image src="/images/sub/products/products-01-21.png" alt="LUXURY TYPE" width={284} height={316}/>
+                                </p>
+                                <p className="text-area">TAILGATE STRIKER </p>
                             </li>
                             <li>
                                 <p className="image-area">
                                     <Image src="/images/sub/products/products-01-22.png" alt="LUXURY TYPE" width={284} height={316}/>
                                 </p>
                                 <p className="text-area">PICKUP TAILGATE STRIKER</p>
-                            </li>
-                            <li>
-                                <p className="image-area">
-                                    <Image src="/images/sub/products/products-01-23.png" alt="LUXURY TYPE" width={284} height={316}/>
-                                </p>
-                                <p className="text-area">SIDE DOOR STRIKER</p>
                             </li>
                         </ul>
                     </div>

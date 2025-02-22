@@ -9,7 +9,7 @@ export default function ProductsSwiper() {
     return (
         <Swiper
             autoplay={{
-                delay: 6000,
+                delay: 2000,
                 disableOnInteraction: false,
             }}
             pagination={{
@@ -20,7 +20,7 @@ export default function ProductsSwiper() {
         >
             <SwiperSlide>
                 <div>
-                    <Image src="/images/sub/products/products-01-001.png" alt="" width={2000} height={1121}/>
+                    <Image src="/images/sub/products/daedong-ionic-products.jpg" alt="" width={1136} height={520}/>
                     <span className="products-01-01"></span>
                     <span className="products-01-02"></span>
                     <span className="products-01-03"></span>
@@ -29,13 +29,13 @@ export default function ProductsSwiper() {
             </SwiperSlide>
             <SwiperSlide>
                 <div>
-                    <Image src="/images/sub/products/products-01-25.png" alt="" width={2000} height={1121}/>
+                    <Image src="/images/sub/products/daedong-canival-products.jpg" alt="" width={1136} height={520}/>
                     <span className="products-01-09"></span>
                 </div>
             </SwiperSlide>
             <SwiperSlide>
                 <div>
-                    <Image src="/images/sub/products/products-01-26.png" alt="" width={2000} height={1121}/>
+                    <Image src="/images/sub/products/daedong-tasman-products.jpg" alt="" width={1136} height={520}/>
                     <span className="products-01-10"></span>
                     <span className="products-01-11"></span>
                 </div>

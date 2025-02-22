@@ -84,20 +84,20 @@
           transition: all 0.5s ease-in-out;
         }
         &.products-01-01 {
-          top: 50%;
-          left: 27.7%;
+          top: 43%;
+          left: 23%;
         }
         &.products-01-02 {
-          top: 50.5%;
-          left: 48%;
+          top: 47%;
+          left: 44%;
         }
         &.products-01-03 {
-          top: 52%;
-          left: 85%;
+          top: 40%;
+          left: 87%;
         }
         &.products-01-04 {
-          top: 59%;
-          left: 11.7%;
+          top: 45%;
+          left: 5%;
         }
         &.products-01-05 {
           top: 40%;
@@ -128,37 +128,41 @@
           left: 17%;
         }
         &.products-02-01 {
-          top: 40%;
+          top: 54%;
           left: 28.5%;
         }
         &.products-02-02 {
-          top: 29%;
-          left: 36%;
+          top: 22%;
+          left: 15%;
         }
         &.products-02-03 {
-          top: 26%;
-          right: 16.5%;
+          top: 25%;
+          left: 40%;
         }
 
         &.products-02-04 {
           top: 47%;
-          left: 39%;
+          left: 12%;
         }
         &.products-02-05 {
-          top: 45%;
-          right: 13.5%;
+          top: 53%;
+          left: 37%;
         }
         &.products-02-06 {
           top: 64.5%;
-          right: 32.5%;
+          left: 20%;
         }
         &.products-02-07 {
-          top: 75.5%;
-          left: 40.5%;
+          top: 50%;
+          left: 76%;
         }
         &.products-02-08 {
-          top: 49.5%;
-          right: 33%;
+          top: 36%;
+          left: 16%;
+        }
+        &.products-02-09 {
+          top: 27%;
+          left: 46%;
         }
 
         &.products-03-01 {
@@ -184,6 +188,7 @@
       .products-image-area {
         width: 50%;
         text-align: center;
+        
         img {
           vertical-align: top;
         }
@@ -192,7 +197,12 @@
           font-size: 20px;
           margin-top: 30px;
           color: #023A8E;
-          line-height: 40px;
+          line-height: 30px;
+          background-color: #eeeeee; /* 아주 연한 회색 */
+          padding: 15px;
+          border-radius: 8px;
+          width: 50%; /* 또는 max-width: 400px; */
+          margin: 0 auto; /* 가운데 정렬 */
         }
       }
       .products-text-area {
@@ -245,7 +255,7 @@
           align-items: center;
           justify-content: center;
           img {
-            max-width: 400px;
+            max-width: 500px;
             vertical-align: top;
           }
         }
