@@ -73,8 +73,8 @@ export default function LanguageMenu({language}: Props) {
                         <li className={menuNumber === 2 ? 'on' : ''}>
                             <button onClick={() => handleMobileMenu(2)}>{language.header_2}</button>
                         </li>
-                        <li className={menuNumber === 6 ? 'on' : ''}>
-                            <button onClick={() => handleMobileMenu(6)}>{language.header_3}</button>
+                        <li className={menuNumber === 3 ? 'on' : ''}>
+                            <button onClick={() => handleMobileMenu(3)}>{language.header_3}</button>
                             <ul>
                                 <li><Link href="#">- {language.header_3_1}</Link></li>
                                 <li><Link href="#">- {language.header_3_2}</Link></li>
@@ -82,8 +82,8 @@ export default function LanguageMenu({language}: Props) {
                                 <li><Link href="#">- {language.header_3_4}</Link></li>
                             </ul>
                         </li>
-                        <li className={menuNumber === 3 ? 'on' : ''}>
-                            <button onClick={() => handleMobileMenu(3)}>{language.header_4}</button>
+                        <li className={menuNumber === 4 ? 'on' : ''}>
+                            <button onClick={() => handleMobileMenu(4)}>{language.header_4}</button>
                             <ul>
                                 <li><Link href="/sustainability/esg-management">- {language.header_4_1}</Link></li>
                                 <li><Link href="/sustainability/climate-change">- {language.header_4_2}</Link></li>
@@ -95,8 +95,8 @@ export default function LanguageMenu({language}: Props) {
                                 <li><Link href="/sustainability/whistleblower-complaint">- {language.header_4_8}</Link></li>
                             </ul>
                         </li>
-                        <li className={menuNumber === 4 ? 'on' : ''}>
-                            <button onClick={() => handleMobileMenu(4)}>{language.header_5}</button>
+                        <li className={menuNumber === 5 ? 'on' : ''}>
+                            <button onClick={() => handleMobileMenu(5)}>{language.header_5}</button>
                             <ul>
                                 <li><Link href="/career/position/quality">{language.header_5_1}</Link></li>
                                 <li><Link href="/career/welfare">{language.header_5_2}</Link></li>
@@ -104,8 +104,15 @@ export default function LanguageMenu({language}: Props) {
                                 {language?.language === 'kr' && <li><Link href="/career/application">{language.header_5_4}</Link></li>}
                             </ul>
                         </li>
-                        <li className={menuNumber === 5 ? 'on' : ''}>
-                            <button onClick={() => handleMobileMenu(5)}>{language.header_6}</button>
+                        <li className={menuNumber === 6 ? 'on' : ''}>
+                            <button onClick={() => handleMobileMenu(6)}>{language.header_7}</button>
+                            <ul>
+                                <li><Link href="/investment/financial">- {language.header_7_1}</Link></li>
+                                <li><Link href="/invement/dart">- {language.header_7_2}</Link></li>
+                            </ul>
+                        </li>
+                        <li className={menuNumber === 7 ? 'on' : ''}>
+                            <button onClick={() => handleMobileMenu(7)}>{language.header_6}</button>
                             <ul>
                                 <li><Link href="/news/press-release">- {language.header_6_1}</Link></li>
                                 <li><Link href="/news/story">- {language.header_6_2}</Link></li>

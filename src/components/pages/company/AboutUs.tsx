@@ -63,9 +63,9 @@ export default function AboutUs({language}: Props) {
                     </div>
                 </div>
 
-                <div className="financial">
+                {/* <div className="financial">
                     <h2>{language?.about_38}</h2>
-                    {/* <div className="table">
+                    <div className="table">
                         <p>{language?.about_47}</p>
                         <table>
                             <thead>
@@ -160,13 +160,13 @@ export default function AboutUs({language}: Props) {
                                 </ul>
                             </dd>
                         </dl> 
-                    </div>*/}
+                    </div>
 
                         <div className="dart_wrapper">
                         <p><iframe loading="lazy" src="https://dart.fss.or.kr/html/search/SearchCompanyIR3_M.html?textCrpNM=%EB%8C%80%EB%8F%99%EB%8F%84%EC%96%B4" name="IR"  frameBorder="0" scrolling="yes"></iframe></p>
                         </div>
 
-                </div>
+                </div> */}
 
                 <div className="ci">
                     <h2>{language?.about_51}</h2>

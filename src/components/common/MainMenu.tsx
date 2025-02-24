@@ -73,7 +73,14 @@ export default function MainMenu({headerLeave, language}: Props): JSX.Element {
                     </ul>
                 </li>
                 <li className={activeMenu === 5 && !headerLeave ? 'on' : ''}>
-                    <Link href="/news/press-release" onMouseOver={() => handleMouseOver(5)}>{language.header_6}</Link>
+                    <Link href="/investment/financial" onMouseOver={() => handleMouseOver(5)}>{language.header_7}</Link>
+                    <ul>
+                        <li><Link href="/investment/financial">{language.header_7_1}</Link></li>
+                        <li><Link href="/investment/dart">{language.header_7_2}</Link></li>
+                    </ul>
+                </li>
+                <li className={activeMenu === 6 && !headerLeave ? 'on' : ''}>
+                    <Link href="/news/press-release" onMouseOver={() => handleMouseOver(6)}>{language.header_6}</Link>
                     <ul>
                         <li><Link href="/news/press-release">{language.header_6_1}</Link></li>
                         <li><Link href="/news/story">{language.header_6_2}</Link></li>

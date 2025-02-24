@@ -31,7 +31,8 @@ export default function Greeting({language}: Props) {
                     <div>
                         <p>{language?.greeting_04}</p><br/>
                         <p>{language?.greeting_05}</p><br/>
-                        <p>{language?.greeting_06}</p>
+                        <p>{language?.greeting_06}</p><br/>
+                        <p>{language?.greeting_07}</p>
                     </div>
 
                     <section className="greeting-text-image-02">

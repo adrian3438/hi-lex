@@ -35,6 +35,10 @@
     "header_6_2": "DAEDONG DOOR STORY",
     "header_6_3": "FAIRS AND EVENTS",
     "header_6_4": "MEDIA DOWNLOAD",
+    "header_7": "INVESTMENT",
+    "header_7_1": "FINANCIAL INFORMATION",
+    "header_7_2": "PUBLIC ANNOUNCEMENT",
+   
 
     "main_01": "DAEDONG DOOR,",
     "main_02": "the trusted automotive closure system solutions",
@@ -62,6 +66,7 @@
     "greeting_04": "Since its establishment in 1979, Daedong Door has continuously pursued technological innovation and investment to become a global leader in the automotive parts industry. Through unmatched quality and cutting-edge technology, the company has grown to represent Korea's automotive parts industry and is now focusing its capabilities on shaping the future of mobility.\n",
     "greeting_05": "In particular, Daedong Door is advancing electrification and connectivity as core elements of its door closure systems to realize enhanced safety and convenience. Alongside these efforts, the company is also taking concrete steps toward achieving carbon neutrality, contributing to a more sustainable future for humanity.",
     "greeting_06": "All employees at Daedong Door are committed to pursuing customer value management while continuously embracing change and innovation, ensuring the company remains a dynamic and forward-thinking organization.",
+    "greeting_07": "CEO Song, Hak Seong",
 
     "about_01": "text",
     "about_02": "text2",
@@ -140,6 +145,11 @@
     "about_73": "CI Horizontal Type",
     "about_74": "AI Download",
     "about_75": "PNG Download",
+
+
+    "financial_01": "Financial Information",
+    "financial_02": "Unit : in thousands USD",
+    "dart_01": "Corporate Disclosure",
 
 
     "research_01": "INNOVATION",
