@@ -101,10 +101,15 @@ main {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
 
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .main-section-navigation {
+    display: none; /* 전체 네비게이션 숨김 */
+  }
 }
 
 @media screen and (max-width: 767px) {
-
+  .main-section-navigation {
+    display: none; /* 전체 네비게이션 숨김 */
+  }
 }
