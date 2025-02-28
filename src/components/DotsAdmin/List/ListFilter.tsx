@@ -14,6 +14,8 @@ export default function ListFilter () {
             case '/admin/inquiry-management/inquiry-list' : setFilter(InquiryFilter); break;
             case '/admin/admin-account-management/admin-account-list' : setFilter(SettingFilter); break;
             case '/admin/inquiry-management/whistleblower-list' : setFilter(WhistleBlowListFilter); break;
+            case '/admin/employee-management/employee-list' : setFilter(EmployeeListFilter); break;
+            case '/admin/employee-management/applicant-list' : setFilter(ApplicantListFilter); break;
         }
     }, [pathname])
     return(
@@ -101,4 +103,22 @@ export const WhistleBlowListFilter = [
     {title : '첨부파일', column : ''},
     {title : '접수일자', column : ''},
     {title : '처리상태', column : ''},
+]
+
+export const EmployeeListFilter = [
+    {title : '계열사', column : ''},
+    {title : '경력사항', column : ''},
+    {title : '직군', column : ''},
+    {title : '고용형태', column : ''},
+    {title : '진행상태', column : ''},
+    {title : '채용공고명', column : ''},
+    {title : '채용기간', column : ''},
+    {title : '사용여부', column : ''},
+]
+
+export const ApplicantListFilter = [
+    {title : '채용공고명', column : ''},
+    {title : '이름', column : ''},
+    {title : '전화번호', column : ''},
+    {title : '업로드 파일', column : ''},
 ]

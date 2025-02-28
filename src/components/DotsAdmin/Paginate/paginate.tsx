@@ -19,7 +19,7 @@ export default function Paginate ({
     function handleChange (e:React.ChangeEvent<unknown>, pageNumber : number){
         const newParams : number | any = new URLSearchParams(query.toString())
         newParams.set('page', pageNumber)
-        router.push(`${path}?${newParams?.toString()}`)
+        router.push(`${path}?${newParams?.toString()}`, { scroll: false });
     }
 
     return(

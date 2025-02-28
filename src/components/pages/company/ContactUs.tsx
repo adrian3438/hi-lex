@@ -54,7 +54,7 @@ export default function ContactUs({language}: Props) {
 
     async function save() {
         if (!data?.company) {
-            alert('회Please enter your company name.');
+            alert('Please enter your company name.');
             return;
         }
         if (!data?.name) {
