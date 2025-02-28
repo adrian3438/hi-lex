@@ -239,7 +239,7 @@
   }
   .products-detail-bottom {
     > ul {
-      margin-bottom: 450px;
+      margin-bottom: 150px;
       display: flex;
       justify-content: space-between;
       gap: 38px;
@@ -299,5 +299,6 @@
     width: auto;
     height: auto;
     margin: 0 auto;
+    gap: 10px;
   }
 }
