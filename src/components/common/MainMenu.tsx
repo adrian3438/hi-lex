@@ -76,7 +76,7 @@ export default function MainMenu({headerLeave, language}: Props): JSX.Element {
                     <Link href="/investment/financial" onMouseOver={() => handleMouseOver(5)}>{language.header_7}</Link>
                     <ul>
                         <li><Link href="/investment/financial">{language.header_7_1}</Link></li>
-                        <li><Link href="/investment/dart">{language.header_7_2}</Link></li>
+                        {/* <li><Link href="/investment/dart">{language.header_7_2}</Link></li> */}
                     </ul>
                 </li>
                 <li className={activeMenu === 6 && !headerLeave ? 'on' : ''}>
