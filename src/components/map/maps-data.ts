@@ -6,7 +6,7 @@ export const map = [
       name : 'China',
       currentCode : { lat: 32.251631, lng: 104.418742},
       moveCode : { lat: 32.251631, lng: 104.418742 },
-      storeCount : 10,
+      storeCount : 11,
       zoom : 5,
       currentZoom : 2
     },
@@ -45,9 +45,9 @@ export const map = [
     {
       countryCode : 5,
       name : 'India',
-      currentCode : { lat: 18.098829, lng: 79.600836  },
-      moveCode : { lat: 19.498829, lng: 78.700836 },
-      storeCount : 4,
+      currentCode : { lat: 18.098829, lng: 79.600836},
+      moveCode : { lat: 19.498829, lng: 78.700836},
+      storeCount : 5,
       zoom : 5,
       currentZoom : 2
     },
@@ -97,7 +97,7 @@ export const map = [
       name : 'Mexico',
       currentCode : { lat: 18.59909, lng: -102.53742 },
       moveCode : { lat: 24.01235, lng: -100.11249 },
-      storeCount : 3,
+      storeCount : 4,
       zoom : 6,
       currentZoom : 2
     },
@@ -276,7 +276,7 @@ export const map = [
         },
     },
 
-
+   
     {
         countryCode : 1,
         name : 'China',
@@ -409,21 +409,10 @@ export const map = [
         countryCode : 1,
         name : 'China',
         currentCode : { lat: 32.07474270587764, lng: 120.69247708141562 },
-        moveCode : {},
-        storeCount : 0,
-        zoom : 0,
+        moveCode : { lat: 32.07474270587764, lng: 120.69247708141562 },
+        storeCount : 2,
+        zoom : 8,
         currentZoom : 5,
-        info: {
-            title: "JIANGSU DAEDONG DOOR INC. (CHINA)",
-            address2: "",
-            address: "No. 12, Yuefeng Road, Zhangjiagang City, Jiansu, 215600 China",
-            tel: "86(515)89598786",
-            fax: "86(515)89598796",
-            established: "",
-            netSales: "",
-            employee: "",
-            // image: "/images/sub/company/affiliate/"
-        },
     },
 
 
@@ -548,26 +537,15 @@ export const map = [
         zoom : 11,
         currentZoom : 5,
     },
-
+    
     {
         countryCode : 5,
         name : 'India',
-        currentCode : {lat: 12.959420, lng: 79.979062},
-        moveCode : {lat: 12.959420, lng: 79.979062},
-        storeCount : 0,
-        zoom : 0,
+        currentCode : {lat: 12.906778485502226,  lng: 79.91931206042831},
+        moveCode : {lat: 12.906778485502226,  lng: 79.91931206042831},
+        storeCount : 2,
+        zoom : 11,
         currentZoom : 5,
-        info: {
-            title: "Hi-Lex India (P) Ltd. Chennai Unit-III.",
-            address2: "",
-            address: "Plot No. B-1, SIPCOT Industrial Park, Pillaipakkam, R&N Suppliers Park, Phase-Ⅱ, Vengadu, Sriperumbudur Kanchipuram District, Tamil Nadu, India-602105",
-            tel: "91(44)67180000",
-            fax: "",
-            established: "",
-            netSales: "",
-            employee: "",
-            image: "/images/sub/company/affiliate/HI-LEX INDIA(P)LTD. (INDIA) CHENNAI.webp"
-        },
     },
 
     {
@@ -809,6 +787,28 @@ export const map = [
             netSales: "",
             employee: "",
             image: "/images/sub/company/affiliate/HI-LEX CONTROLS DE MÉXICO.webp"
+        },
+    },
+
+
+    { 
+        countryCode : 10,
+        name : 'Mexico',
+        currentCode : { lat: 25.704638, lng: -100.134274 },
+        moveCode : { lat: 25.704638, lng: -100.134274 },
+        storeCount : 0,
+        zoom : 0,
+        currentZoom : 6,
+        info: {
+            title: "HI-LEX DAEDONG DOOR MÉXICO (MEXICO)",
+            address2: "Carretera Apodaca a Villa Juárez 8456, interior 7 y 8,",
+            address: "Dulces Nombres Industrial Park, Apodaca, N.L, C.P 66647, Mexico",
+            tel: "",
+            fax: "",
+            established: "",
+            netSales: "",
+            employee: "",
+            image: "/images/sub/company/affiliate/daedong-door-mexico-factory.jpg"
         },
     },
 
@@ -1333,6 +1333,48 @@ export const map = [
     {
         countryCode : 5,
         name : 'India',
+        currentCode : {lat: 12.959420, lng: 79.979062},
+        moveCode : {},
+        storeCount : 0,
+        zoom : 0,
+        currentZoom : 11,
+        info: {
+            title: "Hi-Lex India (P) Ltd. Chennai Unit-III.",
+            address2: "",
+            address: "Plot No. B-1, SIPCOT Industrial Park, Pillaipakkam, R&N Suppliers Park, Phase-Ⅱ, Vengadu, Sriperumbudur Kanchipuram District, Tamil Nadu, India-602105",
+            tel: "91(44)67180000",
+            fax: "",
+            established: "",
+            netSales: "",
+            employee: "",
+            image: "/images/sub/company/affiliate/HI-LEX INDIA(P)LTD. (INDIA) CHENNAI.webp"
+        },
+    },
+
+    { 
+        countryCode : 5,
+        name : 'India',
+        currentCode : {lat: 12.910675513662706, lng: 79.91931206042831},
+        moveCode : {},
+        storeCount : 0,
+        zoom : 0,
+        currentZoom : 11,
+        info: {
+            title: "Hi-Lex Door India.",
+            address2: "",
+            address: " - B400 Block ‘B’, Panrutti Village, Oragadam – Wallajabad Road, Sriperumbudur Taluk, Kanchipuram District, Kanchipuram, Tamil Nadu 631604 India",
+            tel: "",
+            fax: "",
+            established: "",
+            netSales: "",
+            employee: "",
+            image: "/images/sub/company/affiliate/daeddong-door-india-factory.png"
+        },
+    },
+
+    {
+        countryCode : 5,
+        name : 'India',
         currentCode : {lat: 28.379173, lng: 76.895214},
         moveCode : {},
         storeCount : 0,
@@ -1478,6 +1520,48 @@ export const map = [
             netSales: "34 million US $",
             employee: "219",
             image: "/images/sub/company/affiliate/CHONGQING HI-LEX CONTROL CABLE SYSTEM CO., LTD..webp"
+        },
+    },
+
+    {
+        countryCode : 1,
+        name : 'China',
+        currentCode : { lat: 31.90239124731206, lng: 120.53522562373948 },
+        moveCode : {},
+        storeCount : 0,
+        zoom : 0,
+        currentZoom : 8,
+        info: {
+            title: "江蘇大同多沃汽車配件有限公司 (DAEDOOG DOOR CHINA)",
+            address2: "",
+            address: "No.68, Yuefeng Road, Zhangjjangang City, Jiangsu Province, China",
+            tel: "",
+            fax: "",
+            established: "",
+            netSales: "",
+            employee: "",
+            image: "/images/sub/company/affiliate/daedong-door-china-factory.jpg"
+        },
+    },
+
+        {
+        countryCode : 1,
+        name : 'China',
+        currentCode : { lat: 32.07474270587764, lng: 120.69247708141562 },
+        moveCode : {},
+        storeCount : 0,
+        zoom : 0,
+        currentZoom : 8,
+        info: {
+            title: "JIANGSU DAEDONG DOOR INC. (CHINA)",
+            address2: "",
+            address: "No. 12, Yuefeng Road, Zhangjiagang City, Jiansu, 215600 China",
+            tel: "86(515)89598786",
+            fax: "86(515)89598796",
+            established: "",
+            netSales: "",
+            employee: "",
+            // image: "/images/sub/company/affiliate/"
         },
     },
 

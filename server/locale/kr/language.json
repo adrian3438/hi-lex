@@ -419,6 +419,9 @@
 
     "location_btn_01": "송도 본사",
     "location_btn_02": "송도 사출공장 (제2공장)",
+    "location_btn_03": "북미 법인",
+    "location_btn_04": "인도 법인",
+    "location_btn_05": "중국 법인",
     "location_01": "오시는 길",
     "location_02": "대동도어 본사를 방문하셔서 최첨단 제조 시설을 직접 확인하시고 자동차 부품에 대해 더 자세히 알아보세요.",
     "location_03": "고객님의 편의를 위해 전략적으로 위치한 당사는 접근하기 편리한 위치에 있습니다.",
@@ -428,6 +431,18 @@
     "location_07": "대한민국 인천광역시 연수구 송도동 11-63",
     "location_08": "TEL. +82-32-716-9480~2",
     "location_09": "FAX. +82-32-716-9484",
+
+    "location_10": "Carretera Apodaca a Villa Juárez 8456, interior 7 y 8 , Dulces Nombres Industrial Park, Apodaca, N.L, C.P 66647, Mexico",
+    "location_11": "",
+    "location_12": "",
+
+    "location_13": "B400 Block ‘B’, Panrutti Village, Oragadam – Wallajabad Road, Sriperumbudur Taluk, Kanchipuram District, Kanchipuram, Tamil Nadu 631604 INDIA",
+    "location_14": "",
+    "location_15": "",
+
+    "location_16": "No.68, Yuefeng Road, Zhangjjagang City, Jinagsu Province, China",
+    "location_17": "",
+    "location_18": "",
 
     "esg_text_01": "대동도어의 ESG 전략의 핵심은 환경 지속 가능성에 대한 강력한 의지입니다. 기후 변화, 자원 고갈, 환경 파괴에 대한 글로벌 우려가 커지는 가운데,",
     "esg_text_02": "대동도어는 환경 발자국을 최소화하고 더 건강한 지구를 위해 기여하기 위해 적극적인 조치를 취하고 있습니다.",

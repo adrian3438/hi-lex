@@ -420,15 +420,36 @@
 
     "location_btn_01": "SONGDO HQ",
     "location_btn_02": "SONGDO 2ND FACTORY",
+    "location_btn_03": "MEXICO FACTORY",
+    "location_btn_04": "INDIA FACTORY",
+    "location_btn_05": "CHINA FACTORY",
     "location_01": "LOCATION",
     "location_02": "Visit our headquarters to explore our state-of-the-art manufacturing facilities and learn more about our automotive components.",
     "location_03": "Strategically located for your convenience, our headquarters offers easy accessibility.",
+    
     "location_04": "64, Cheomdan-daero 124beon-gil, Yeonsu-gu, Incheon, South Korea",
     "location_05": "TEL. +82-32-716-9480~2",
     "location_06": "FAX. +82-32-716-9484",
+    
     "location_07": "11-63, Songdo-dong, Yeonsu-gu, Incheon, South Korea",
     "location_08": "TEL. +82-32-716-9480~2",
     "location_09": "FAX. +82-32-716-9484",
+
+    "location_10": "Carretera Apodaca a Villa Juárez 8456, interior 7 y 8 , Dulces Nombres Industrial Park, Apodaca, N.L, C.P 66647, Mexico",
+    "location_11": "",
+    "location_12": "",
+
+    "location_13": "B400 Block ‘B’, Panrutti Village, Oragadam – Wallajabad Road, Sriperumbudur Taluk, Kanchipuram District, Kanchipuram, Tamil Nadu 631604 INDIA",
+    "location_14": "",
+    "location_15": "",
+
+    "location_16": "No.68, Yuefeng Road, Zhangjjagang City, Jinagsu Province, China",
+    "location_17": "",
+    "location_18": "",
+
+
+
+
 
     "esg_text_01": "At the heart of our ESG strategy is a strong commitment to environmental sustainability. As global concerns around climate change, resource depletion,",
     "esg_text_02": "and environmental degradation grow, we are taking proactive steps to minimize our environmental footprint and contribute to a healthier planet.",
