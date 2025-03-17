@@ -201,7 +201,7 @@ export default function LatchingSystems() {
                         <div className="products-area">
                             <div className="products-image-area">
                                 <Image src="/images/sub/products/products-01-06.png" alt="Plastic (Case) Type" width={361} height={545}/>
-                                <p>STANDARD TYPE</p>
+                                <p>HOOD LATCH</p>
                             </div>
                             <div className="products-text-area">
                                 The Front End Module (FEM) is installed on the vehicle&#39;s
@@ -298,8 +298,8 @@ export default function LatchingSystems() {
                         <h4>Pick-up Latch / Quarter Storage Latch</h4>
                         <div className="products-area">
                             <div className="products-image-area">
-                                <Image src="/images/sub/products/products-01-13.png" alt="Plastic (Case) Type" width={361} height={545}/>
-                                <p>Quarter Storage Latch</p>
+                                <Image src="/images/sub/products/products-01-13-01.png" alt="Plastic (Case) Type" width={361} height={545}/>
+                                <p>Pick-up Latch</p>
                             </div>
                             <div className="products-text-area">
                                 <dl>
@@ -320,9 +320,9 @@ export default function LatchingSystems() {
                         <ul>
                             <li>
                                 <p className="image-area">
-                                    <Image src="/images/sub/products/new-image-comming.png" alt="LUXURY TYPE" width={651} height={212}/>
+                                    <Image src="/images/sub/products/products-01-13-02.png" alt="LUXURY TYPE" width={701} height={312}/>
                                 </p>
-                                <p className="text-area">PICKUP LATCH</p>
+                                <p className="text-area">PICK-UP LATCH</p>
                             </li>
                             <li>
                                 <p className="image-area">
