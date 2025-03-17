@@ -18,7 +18,7 @@ const Model: FC<ModelProps> = ({ url }) => {
         scene.position.sub(center);
     }, [scene]);
 
-    return <primitive object={scene} scale={20} />;
+    return <primitive object={scene} scale={27} />;
 };
 
 const Modeling4: FC = () => {

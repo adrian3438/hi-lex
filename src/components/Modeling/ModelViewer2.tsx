@@ -2,7 +2,7 @@
 
 import { Canvas } from '@react-three/fiber';
 import { OrbitControls, useGLTF } from '@react-three/drei';
-import { FC, useEffect } from 'react';
+import { FC, useEffect, useRef } from 'react';
 import * as THREE from 'three';
 
 interface ModelProps {
@@ -18,10 +18,19 @@ const Model: FC<ModelProps> = ({ url }) => {
         scene.position.sub(center);
     }, [scene]);
 
-    return <primitive object={scene} scale={15} />;
+    return <primitive object={scene} scale={20} />;
 };
 
 const Modeling2: FC = () => {
+    const controlsRef = useRef<any>(null);
+
+    useEffect(() => {
+        if (controlsRef.current) {
+            controlsRef.current.target.set(0, 0, 0); // 모델 중심을 바라보게 설정
+            controlsRef.current.update();
+        }
+    }, []);
+
     return (
         <>
             <Canvas className="model-canvas">
@@ -33,7 +42,7 @@ const Modeling2: FC = () => {
                 <directionalLight position={[-30, 10, -40]} intensity={0.7} />
                 <directionalLight position={[50, -50, 30]} intensity={0.6} />
                 <directionalLight position={[-50, 50, -30]} intensity={0.6} />
-                <OrbitControls enableZoom={true} />
+                <OrbitControls ref={controlsRef} enableZoom={true} />
                 <Model url={`/modeling/pds.glb`} />
             </Canvas>
         </>
