@@ -159,52 +159,103 @@ export default function EHS({ language }: Props) {
                             </div>
                         </div>
                     </div>
+                    <Image 
+                    src="/images/sub/sustainability/esg/daedong-door-ehs-01.svg" 
+                    alt="" 
+                    width={900} 
+                    height={700} 
+                    style={{ display: "block", margin: "0 auto", marginTop: "200px"}} 
+                    />
                 </section>
-                {/*<section className="esg-section-02">
-                    <Image src="/images/sub/sustainability/esg/ehs-04.png" alt="" width={501} height={334}/>
-                    <div className="top">
-                        <div className="image-area1">
-                            <p>
-                                {language?.esg_text_03_68}<br/>
-                                {language?.esg_text_03_69}
-                            </p>
-                        </div>
-                        <div className="image-area2">
-                            <div>
-                                <h3>{language?.esg_text_03_70}</h3>
-                                <p>{language?.esg_text_03_71}</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="bottom">
-                        <p>{language?.esg_text_03_72}</p>
-                        <p>{language?.esg_text_03_73}</p>
-                        <Link href="#">{language?.esg_text_03_74}</Link>
-                    </div>
-                </section>*/}
 
-                {/*<section className="esg-section-02">
-                    <Image src="/images/sub/sustainability/esg/ehs-06.png" alt="" width={501} height={334}/>
-                    <div className="top">
-                        <div className="image-area1">
-                            <p>
-                                {language?.esg_text_03_75}<br/>
-                                {language?.esg_text_03_76}
-                            </p>
-                        </div>
-                        <div className="image-area2">
-                            <div>
-                                <h3>{language?.esg_text_03_77}</h3>
-                                <p>{language?.esg_text_03_78}</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="bottom">
-                        <p>{language?.esg_text_03_79}</p>
-                        <p>{language?.esg_text_03_80}</p>
-                        <Link href="#">{language?.esg_text_03_81}</Link>
-                    </div>
-                </section>*/}
+                <section className="esg-section-03">
+                    <h3>ACTION PLAN</h3>
+
+                    <Image 
+                    src="/images/sub/sustainability/esg/daedong-door-ehs-02.svg" 
+                    alt="" 
+                    width={1000} 
+                    height={400} 
+                    style={{ display: "block", margin: "0 auto", marginBottom: "100px"  }} 
+                    />
+                    <ul>
+                        <li>
+                            <dl>
+                                <dt>{language?.esg_text_09_01}</dt>
+                                <dd>
+                                    <ul>
+                                        <li>{language?.esg_text_09_02}</li>
+                                        <li>{language?.esg_text_09_03}</li>
+                                        <li>{language?.esg_text_09_04}</li>
+                                        <li>{language?.esg_text_09_05}</li>
+                                        <li>{language?.esg_text_09_06}</li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>{language?.esg_text_09_07}</dt>
+                                <dd>
+                                    <ul>
+                                        <li>{language?.esg_text_09_08}</li>
+                                        <li>{language?.esg_text_09_09}</li>
+                                        <li>{language?.esg_text_09_10}</li>
+                                        <li>{language?.esg_text_09_11}</li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>{language?.esg_text_09_12}</dt>
+                                <dd>
+                                    <ul>
+                                    <li>{language?.esg_text_09_13}</li>
+                                    <li>{language?.esg_text_09_14}</li>
+                                    <li>{language?.esg_text_09_15}</li>
+                                    <li>{language?.esg_text_09_16}</li>
+                                    <li>{language?.esg_text_09_17}</li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>{language?.esg_text_09_18}</dt>
+                                <dd>
+                                    <ul>
+                                        <li>{language?.esg_text_09_19}</li>
+                                        <li>{language?.esg_text_09_20}</li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>{language?.esg_text_09_21}</dt>
+                                <dd>
+                                    <ul>
+                                        <li>{language?.esg_text_09_22}</li>
+                                        <li>{language?.esg_text_09_23}</li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>{language?.esg_text_09_24}</dt>
+                                <dd>
+                                    <ul>
+                                        <li>{language?.esg_text_09_25}</li>
+                                        <li>{language?.esg_text_09_26}</li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                        </li>
+                    </ul>
+                </section>
+
             </div>
         </div>
     )
