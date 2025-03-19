@@ -1,144 +1,132 @@
 .greeting {
-  padding-bottom: 500px;
+  //padding-bottom: 500px;
   .greeting-text-01 {
-    max-width: 100%;
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-bottom: 0;
     display: flex;
-    gap: 30px 0;
-   > section {
-      margin-left: -160px;
-      max-width: 100%;
-      > img {
+    align-items: center;
+    flex-direction: row-reverse;
+    background-color: #ebebeb;
+
+    > section {
+      width: 50%;
+
+      img {
+        width: 100%;
+        height: auto;
         vertical-align: top;
-        &:first-child {
-          margin-bottom: 0px;
-        }
       }
     }
 
     > div {
-      position: top;
-      top: 100px;
-      padding-left: 0px;
-      height: 100%;
-      z-index: 1;
-      > h3 {
-        font-size: 25px;
-        font-family: "Pretendard-Bold", sans-serif;
-        color: #707070;
-        margin-bottom: 25px;
-        margin-left: 150px;
-        padding-top: 100px;
-      }
-      > p {
-        color: #000;
-        font-size: 40px;
-        font-family: "Pretendard-SemiBold", sans-serif;
-        line-height: 48px;
-        margin-left: 150px;
-      }
+      width: 50%;
+      display: flex;
+      justify-content: center;
+
       > div {
-        > p {
-          color: #707070;
+        max-width: 581px;
+
+        > h3 {
           font-size: 25px;
-          line-height: 30px;
-          margin-top: 30px;
+          font-family: "Pretendard-Bold", sans-serif;
+          color: #707070;
+          margin-bottom: 25px;
+        }
+
+        > p {
+          color: #000;
+          font-size: 40px;
+          font-family: "Pretendard-SemiBold", sans-serif;
+          line-height: 48px;
+        }
+
+        > div {
+          > p {
+            color: #707070;
+            font-size: 25px;
+            line-height: 30px;
+            margin-top: 30px;
+          }
         }
       }
     }
   }
 }
-
-.greeting-text-image-01 {
-  margin-right: 0;
-  padding-left: 380px;
-  padding-bottom: 0;
-  z-index: 0;
-}
-
-.greeting-background-color {
-  background-color: #ebebeb;
-  margin-right: 0px;
-  padding-right: 0px;
-  z-index: -1;
-}
-
-.greeting-text-image-02 {
-  margin-bottom: 0;
-  z-index: 0;
-  position: absolute;
-  .sign {
-    text-align: center;
-    position: relative;
-    right: -700px;
-    top: -200px;
-  }  
-}
-
 
 .greeting-text-02 {
-  max-width: 100%;
-  margin: 0 auto;
+  background: url("/images/sub/company/greeting/ceo-greeting-car-2.jpg") no-repeat center center;
+  background-size: cover;
+  min-height: 100vh;
   display: flex;
-  flex-direction: column; /* 세로 배치를 위한 설정 */
-  gap: 30px 0;
-  z-index: 1;
-  position: relative;
+
   > div {
-    position: relative;
-    padding-left: 0px;
-    height: 100%;
-    z-index: 1;
-    > p {
-      color: #ffffff;
-      font-size: 25px;
-      font-family: "Pretendard-SemiBold", sans-serif;
-      line-height: 34px;
-      padding-top: 90px;
-      margin-left: 1100px;
-      margin-right: 150px;
-      position: relative; /* absolute 대신 relative 사용 */
-      padding-top: 50px;
-    }
+    max-width: 1600px;
+    padding: 100px 20px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
     > div {
+      width: 50%;
+      background: url("/images/sub/company/greeting/songhaksung-signature-01.png") no-repeat 100% 100%;
+      box-sizing: border-box;
+      padding: 0 40px 150px;
+
       > p {
-        color: #707070;
+        color: #fff;
         font-size: 25px;
-        line-height: 30px;
-        margin-top: 20px;
+        font-family: "Pretendard-SemiBold", sans-serif;
+        line-height: 34px;
+        margin-top: 50px;
+
+        &:first-child {
+          margin-top: 0;
+        }
       }
     }
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .greeting {
+    .greeting-text-01 {
+      flex-wrap: wrap;
+      > section {
+        width: 100%;
+      }
+      > div {
+        padding: 30px 0;
+        width: 100%;
+      }
+    }
+    .greeting-text-02 {
+      > div {
+        > div {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
 
-
-
-// @media screen and (min-width: 768px) and (max-width: 1024px) {
-//   .greeting {
-//     .greeting-text {
-//       flex-wrap: wrap;
-//       > img {
-//         margin-left: 0;
-//       }
-//       > div {
-//         padding: 0 20px;
-//       }
-//     }
-//   }
-// }
-// @media screen and (max-width: 767px) {
-//   .greeting {
-//     .greeting-text {
-//       flex-wrap: wrap;
-//       > img {
-//         margin-left: 0;
-//       }
-//       > div {
-//         padding: 0 20px;
-//       }
-//     }
-//   }
-// }
+@media screen and (max-width: 767px) {
+  .greeting {
+    .greeting-text-01 {
+      flex-wrap: wrap;
+      > section {
+        width: 100%;
+      }
+      > div {
+        padding: 0 0 150px;
+        width: 100%;
+      }
+    }
+    .greeting-text-02 {
+      > div {
+        > div {
+          width: 100%;
+          padding: 0 0 150px;
+        }
+      }
+    }
+  }
+}
