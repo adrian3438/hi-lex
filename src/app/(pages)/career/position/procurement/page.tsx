@@ -18,7 +18,7 @@ export default async function ProcurementPage({searchParams : {lang}} : any) {
                         <h3>{language?.position_01_01}</h3>
                         <ul>
                             <li className="introduce"><Link href="/career/position/factory">{language?.position_01_02}</Link></li>
-                            {language.language === 'kr' && <li className="go"><Link href="#">{language?.position_01_03}</Link></li>}
+                            {language.language === 'kr' && <li className="go"><Link href="/career/application#job-application-list">{language?.position_01_03}</Link></li>}
 
                         </ul>
                     </div>

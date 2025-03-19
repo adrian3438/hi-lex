@@ -15,10 +15,10 @@ export default async function FactoryPage({searchParams : {lang}} : any) {
                 <CareerHeader language={language} activeIndex={0}/>
                 <div className="career-container">
                     <div className="career-content-header">
-                        <h3>{language?.position_01_01}</h3>
+                        <h3>{language?.position_01_02}</h3>
                         <ul>
                             <li className="introduce factory"><Link href="/career/position/quality">{language?.position_01_01}</Link></li>
-                            {language.language === 'kr' && <li className="go"><Link href="#">{language?.position_01_03}</Link></li>}
+                            {language.language === 'kr' && <li className="go"><Link href="/career/application#job-application-list">{language?.position_01_03}</Link></li>}
 
                         </ul>
                     </div>

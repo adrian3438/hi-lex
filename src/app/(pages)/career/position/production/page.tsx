@@ -18,7 +18,7 @@ export default async function ProductionPage({searchParams : {lang}} : any) {
                         <h3>{language?.position_01_01}</h3>
                         <ul>
                             <li className="introduce"><Link href="/career/position/factory">{language?.position_01_02}</Link></li>
-                            {language.language === 'kr' && <li className="go"><Link href="#">{language?.position_01_03}</Link></li>}
+                            {language.language === 'kr' && <li className="go"><Link href="/career/application#job-application-list">{language?.position_01_03}</Link></li>}
 
                         </ul>
                     </div>
@@ -35,26 +35,24 @@ export default async function ProductionPage({searchParams : {lang}} : any) {
                     <div className="position-content production">
                         <p><Image src="/images/sub/career/position/position-04-01.jpg" alt="" width={1420} height={430}/></p>
                         <dl className="production-01">
-                            <dt>{language?.position_01_70}<span>{language?.position_01_71}</span></dt>
+                            <dt>{language?.position_01_83_01}<span>{language?.position_01_83_02}</span></dt>
                             <dd>
-                                <p>{language?.position_01_72}</p>
+                                <p>{language?.position_01_83_03}</p>
                                 <ul>
-                                    <li>{language?.position_01_73}</li>
-                                    <li>{language?.position_01_74}</li>
-                                    <li>{language?.position_01_75}</li>
+                                    <li>{language?.position_01_83_04}</li>
+                                    <li>{language?.position_01_83_05}</li>
+                                    <li>{language?.position_01_83_06}</li>
                                 </ul>
                             </dd>
                         </dl>
                         <dl className="production-02">
-                            <dt>{language?.position_01_76}<span>{language?.position_01_77}</span></dt>
+                            <dt>{language?.position_01_83_07}<span>{language?.position_01_83_08}</span></dt>
                             <dd>
-                                <p>{language?.position_01_78}</p>
+                                <p>{language?.position_01_83_09}</p>
                                 <ul>
-                                    <li>{language?.position_01_79}</li>
-                                    <li>{language?.position_01_80}</li>
-                                    <li>{language?.position_01_81}</li>
-                                    <li>{language?.position_01_82}</li>
-                                    <li>{language?.position_01_83}</li>
+                                    <li>{language?.position_01_83_10}</li>
+                                    <li>{language?.position_01_83_11}</li>
+                                    <li>{language?.position_01_83_12}</li>
                                 </ul>
                             </dd>
                         </dl>

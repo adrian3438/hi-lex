@@ -17,14 +17,14 @@ export default async function ApplicationPage({searchParams: {lang, page}}: any)
         <div className="application">
           <div className="application-header">
             <h2>Procedure for recruitment</h2>
-            <Link href="#">채용공고 포털사이트</Link>
+            <Link href="#job-opening-list">채용공고</Link>
           </div>
           <section className="full-size">
             <div>
               <div>
                 <Image src="/images/sub/career/application/application-01-pc.png" alt="" width={1420} height={467}/>
               </div>
-              <p><span>1, 2차 면접은 동시에 진행될 수 있습니다.</span></p>
+              <p><span>1, 2차 면접은 동시에 진행될 수 있습니다. <br/>인적성검사 및 레퍼런스 체크가 포함됩니다.</span></p>
             </div>
           </section>
           <section className="application-content2">
@@ -76,8 +76,11 @@ export default async function ApplicationPage({searchParams: {lang, page}}: any)
               <li><span>·</span> 근무시간: 주 5일 08:00~17:00, 야간 20:00~05:00(생산 정규직)</li>
             </ul>
           </section>
+         
+         
           <section className="application-content4">
             <h2>Rank &amp; Title</h2>
+
             <div>
               <div className="ranks">
                 <p className="rank-01">G7</p>
@@ -109,7 +112,44 @@ export default async function ApplicationPage({searchParams: {lang, page}}: any)
                 <p className="rank-position-04">수습사원(경력포함)</p>
               </div>
             </div>
-          </section>
+            </section>
+
+            <section className="application-content4">
+            <div>
+              <div className="ranks">
+                <p className="rank-01">G7</p>
+                <p className="rank-02">G6</p>
+                <p className="rank-03">G5</p>
+              </div>
+              <div className="positions">
+                <p className="rank-position-01">반장</p>
+                <p className="rank-position-02">조장</p>
+                <p className="rank-position-02">리더</p>
+              </div>
+            </div>
+            <div>
+              <div className="ranks">
+                <p className="rank-04">G4</p>
+                <p className="rank-05">G3</p>
+                <p className="rank-06">G2</p>
+                <p className="rank-07">G1</p>
+              </div>
+              <div className="positions">
+                <p className="rank-position-03">사원</p>
+              </div>
+            </div>
+            <div>
+              <div className="ranks">
+                <p className="rank-08">E</p>
+              </div>
+              <div className="positions">
+                <p className="rank-position-04">수습사원(경력포함)</p>
+              </div>
+            </div>
+            </section>
+
+
+
           <section className="application-content5">
             <h2>Evaluation system</h2>
             <p>
@@ -134,7 +174,7 @@ export default async function ApplicationPage({searchParams: {lang, page}}: any)
             </div>
             <p>아래 채용 공고를 확인 후 지원서를 작성하여 상세페이지 내에서 입사지원서류를 업로드 합니다.</p>
           </section>
-          <section className="application-content7">
+          <section id="job-opening-list" className="application-content7">
             <h2>Job Opening List</h2>
             <p>조건을 선택하면 아래에 검색 결과가 표시됩니다. 키워드 검색 시 선택한 조건은 자동 해제 됩니다.</p>
             <ApplicationList page={page || 1}/>
