@@ -109,23 +109,23 @@ export default function EmployeeListPage ({
 
                             <tbody>
                             {data?.map((list:any, index:number) => (
-                              <tr key={index} onClick={() => router.push(`/admin/employee-management/employee?id=${list.ID}`)}>
-                                  <td style={{width: "5%"}}>
+                              <tr key={index}>
+                                  <td style={{width: "5%"}} onClick={() => router.push(`/admin/employee-management/employee?id=${list.ID}`)}>
                                     <span className="readOnly">
                                         {calCulateIndex(page, size, totalCount, index)}
                                     </span>
                                   </td>
-                                  <td style={{width: "8%"}}>
-                                      <span className="readOnly">{list?.recruitAffilate === 'D' ? '대동하이렉스' : '대동도어'}</span>
+                                  <td style={{width: "8%"}} onClick={() => router.push(`/admin/employee-management/employee?id=${list.ID}`)}>
+                                      <span className="readOnly">{list?.recruitAffilate === 'D' ? '대동도어' : '대동하이렉스'}</span>
                                   </td>
-                                  <td style={{width: "7%"}}>
+                                  <td style={{width: "7%"}} onClick={() => router.push(`/admin/employee-management/employee?id=${list.ID}`)}>
                                       <span className="readOnly">
                                           {list?.careerClass === 'C' && '경력'}
                                           {list?.careerClass === 'F' && '신입'}
                                           {list?.careerClass === 'N' && '무관'}
                                       </span>
                                   </td>
-                                  <td style={{width: "7%"}}>
+                                  <td style={{width: "7%"}} onClick={() => router.push(`/admin/employee-management/employee?id=${list.ID}`)}>
                                       <span className="readOnly">
                                           {list?.occupationClass === 'SM' && '영업'}
                                           {list?.occupationClass === 'RD' && 'R&D'}
@@ -135,27 +135,27 @@ export default function EmployeeListPage ({
                                           {list?.occupationClass === 'MP' && '경영'}
                                       </span>
                                   </td>
-                                  <td style={{width: "7%"}}>
+                                  <td style={{width: "7%"}} onClick={() => router.push(`/admin/employee-management/employee?id=${list.ID}`)}>
                                       <span className="readOnly">
                                           {list?.employeementType === 'R' && '정규직'}
                                           {list?.employeementType === 'C' && '계약직'}
                                           {list?.employeementType === 'I' && '인턴'}
                                       </span>
                                   </td>
-                                  <td style={{width: "7%"}}>
+                                  <td style={{width: "7%"}} onClick={() => router.push(`/admin/employee-management/employee?id=${list.ID}`)}>
                                     <span className="readOnly">
                                         {list?.processStatus === 'O' && '진행중'}
                                         {list?.processStatus === 'R' && '접수중'}
                                         {list?.processStatus === 'C' && '접수마감'}
                                     </span>
                                   </td>
-                                  <td style={{width: "25%"}}>
+                                  <td style={{width: "25%"}} onClick={() => router.push(`/admin/employee-management/employee?id=${list.ID}`)}>
                                     <span className="readOnly">
                                         {list?.recruitSubject}
                                     </span>
                                   </td>
                                   <td>
-                                    <span className="readOnly">
+                                    <span className="readOnly" onClick={() => router.push(`/admin/employee-management/employee?id=${list.ID}`)}>
                                         {list?.recruitTerms}
                                     </span>
                                   </td>
@@ -175,6 +175,11 @@ export default function EmployeeListPage ({
                                                 <span className="toggleButton"></span>
                                             </label>
                                         </span>
+                                      </div>
+                                  </td>
+                                  <td>
+                                      <div className="statUsBox">
+                                          <span className="gray">삭제</span>
                                       </div>
                                   </td>
                               </tr>

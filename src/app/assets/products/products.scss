@@ -82,6 +82,7 @@
         &.active {
           background-color: #07A3FF;
           transition: all 0.5s ease-in-out;
+          animation: animate1 2.5s linear infinite;
         }
         &.products-01-01 {
           top: 43%;
@@ -188,7 +189,7 @@
       .products-image-area {
         width: 50%;
         text-align: center;
-        
+
         img {
           vertical-align: top;
         }
@@ -300,5 +301,17 @@
     height: auto;
     margin: 0 auto;
     gap: 10px;
+  }
+}
+
+@keyframes animate1 {
+  0% {
+    box-shadow: none;
+  }
+  50% {
+    box-shadow: 0 0 5px 5px #07A3FF;
+  }
+  100% {
+    box-shadow: none;
   }
 }

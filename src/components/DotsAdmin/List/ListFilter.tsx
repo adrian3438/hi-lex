@@ -114,6 +114,7 @@ export const EmployeeListFilter = [
     {title : '채용공고명', column : ''},
     {title : '채용기간', column : ''},
     {title : '사용여부', column : ''},
+    {title : '삭제', column : ''},
 ]
 
 export const ApplicantListFilter = [
