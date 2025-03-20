@@ -160,7 +160,7 @@ export default function EHS({ language }: Props) {
                         </div>
                     </div>
                     <Image 
-                    src="/images/sub/sustainability/esg/daedong-door-ehs-01.svg" 
+                    src={`/images/sub/sustainability/esg/daedong-door-ehs-01-${language?.lang || 'KR'}.svg`} 
                     alt="" 
                     width={900} 
                     height={700} 
