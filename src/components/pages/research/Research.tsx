@@ -10,7 +10,7 @@ interface Props {
 }
 
 export default function Research({language}: Props) {
-    const [imageIndex, setImageInex] = useState<number>(0);
+    const [imageIndex, setImageIndex] = useState<number>(0);
 
     return (
         <div className="research">
@@ -31,7 +31,7 @@ export default function Research({language}: Props) {
             >
                 <ul>
                     <li>
-                        <Link href="/research/e-latch" onMouseOver={() => setImageInex(0)}>
+                        <Link href="/research/e-latch" onMouseOver={() => setImageIndex(0)}>
                             <p>{language?.research_06}<span>{language?.research_07}</span></p>
                             <div>
                                 <dl>
@@ -43,7 +43,7 @@ export default function Research({language}: Props) {
                         </Link>
                     </li>
                     <li>
-                        <Link href="/research/pds" onMouseOver={() => setImageInex(1)}>
+                        <Link href="/research/pds" onMouseOver={() => setImageIndex(1)}>
                             <p>{language?.research_10}</p>
                             <div>
                                 <dl>
@@ -55,7 +55,7 @@ export default function Research({language}: Props) {
                         </Link>
                     </li>
                     <li>
-                        <Link href="/research/power-lift-gate" onMouseOver={() => setImageInex(2)}>
+                        <Link href="/research/power-lift-gate" onMouseOver={() => setImageIndex(2)}>
                             <p>{language?.research_12}</p>
                             <div>
                                 <dl>
@@ -67,7 +67,7 @@ export default function Research({language}: Props) {
                         </Link>
                     </li>
                     <li>
-                        <Link href="/research/power-hood" onMouseOver={() => setImageInex(3)}>
+                        <Link href="/research/power-hood" onMouseOver={() => setImageIndex(3)}>
                             <p>{language?.research_14}</p>
                             <div>
                                 <dl>
@@ -109,7 +109,7 @@ export default function Research({language}: Props) {
                     <h3>{language?.research_26}</h3>
                     <ul>
                         <li>
-                            <Link href="#">
+                            <Link href="/research/new-technology">
                                 <Image src="/images/sub/research/research-01.png" alt="" width={510} height={443}/>
                                 <div>
                                     {language?.research_27}<br/>

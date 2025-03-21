@@ -38,7 +38,7 @@
     "header_7": "INVESTMENT",
     "header_7_1": "FINANCIAL INFORMATION",
     "header_7_2": "PUBLIC ANNOUNCEMENT",
-   
+
 
     "main_01": "DAEDONG DOOR,",
     "main_02": "the trusted automotive closure system solutions",
@@ -188,12 +188,12 @@
     "research_34": "Research Paper ",
     "research_35": "Presentation ",
     "research_36": "at Academic Conferences",
-    "e-latch-01": "Easy Door Development through Button Operation",
-    "e-latch-02": "Provide a physical door opening mechanism for emergency situations. Enable automatic two-stage locking via actuator connection.",
-    "e-latch-03": "",
-    "e-latch-04": "",
-    "e-latch-05": "",
-    "e-latch-06": "",
+    "e_latch_01": "Easy Door Development through Button Operation",
+    "e_latch_02": "Provide a physical door opening mechanism for emergency situations. Enable automatic two-stage locking via actuator connection.",
+    "e_latch_03": "Power Door Release",
+    "e_latch_04": "Soft Closing",
+    "e_latch_05": "Inside Redundancy Release",
+    "e_latch_06": "Outside Redundancy Release",
     "e-latch-07": "",
     "e-latch-08": "",
     "e-latch-09": "",
@@ -426,11 +426,11 @@
     "location_01": "LOCATION",
     "location_02": "Visit our headquarters to explore our state-of-the-art manufacturing facilities and learn more about our automotive components.",
     "location_03": "Strategically located for your convenience, our headquarters offers easy accessibility.",
-    
+
     "location_04": "64, Cheomdan-daero 124beon-gil, Yeonsu-gu, Incheon, South Korea",
     "location_05": "TEL. +82-32-716-9480~2",
     "location_06": "FAX. +82-32-716-9484",
-    
+
     "location_07": "11-63, Songdo-dong, Yeonsu-gu, Incheon, South Korea",
     "location_08": "TEL. +82-32-716-9480~2",
     "location_09": "FAX. +82-32-716-9484",

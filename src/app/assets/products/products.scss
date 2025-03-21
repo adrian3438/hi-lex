@@ -81,6 +81,7 @@
         box-sizing: border-box;
         &.active {
           background-color: #07A3FF;
+          border: none;
           transition: all 0.5s ease-in-out;
           animation: animate1 2.5s linear infinite;
         }
@@ -101,32 +102,36 @@
           left: 5%;
         }
         &.products-01-05 {
-          top: 40%;
-          left: 23.5%;
+          top: 41%;
+          left: 13.5%;
         }
         &.products-01-06 {
           top: 45%;
-          left: 31%;
+          left: 34%;
         }
         &.products-01-07 {
-          top: 51%;
-          left: 32%;
+          top: 41%;
+          left: 58.5%;
         }
         &.products-01-08 {
-          top: 57%;
-          left: 32%;
+          top: 38%;
+          right: 18.5%;
         }
         &.products-01-09 {
           top: 43%;
           left: 30%;
         }
         &.products-01-10 {
-          top: 65%;
-          left: 20%;
+          top: 37%;
+          right: 15%;
         }
         &.products-01-11 {
-          top: 60%;
-          left: 17%;
+          top: 39%;
+          right: 22%;
+        }
+        &.products-01-12 {
+          top: 55%;
+          right: 21%;
         }
         &.products-02-01 {
           top: 54%;
@@ -162,8 +167,12 @@
           left: 16%;
         }
         &.products-02-09 {
-          top: 27%;
-          left: 46%;
+          top: 42.5%;
+          left: 58%;
+        }
+        &.products-02-10 {
+          top: 31%;
+          right: 11.5%;
         }
 
         &.products-03-01 {
@@ -190,6 +199,11 @@
         width: 50%;
         text-align: center;
 
+        &.reverse {
+          img {
+            transform: scale(-1, 1);
+          }
+        }
         img {
           vertical-align: top;
         }

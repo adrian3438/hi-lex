@@ -33,7 +33,7 @@ export default function DoorChecks() {
                     <div className="products-detail-middle">
                         <h4>Door Checks</h4>
                         <div className="products-area">
-                            <div className="products-image-area">
+                            <div className="products-image-area reverse">
                                 <Image src="/images/sub/products/products-03-01.png" alt="Plastic (Case) Type" width={361} height={545}/>
                                 <p>Plastic (Case) Type</p>
                             </div>

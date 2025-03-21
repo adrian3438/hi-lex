@@ -159,24 +159,24 @@ export default function EHS({ language }: Props) {
                             </div>
                         </div>
                     </div>
-                    <Image 
-                    src={`/images/sub/sustainability/esg/daedong-door-ehs-01-${language?.lang || 'KR'}.svg`} 
-                    alt="" 
-                    width={900} 
-                    height={700} 
-                    style={{ display: "block", margin: "0 auto", marginTop: "200px"}} 
+                    <Image
+                    src={`/images/sub/sustainability/esg/daedong-door-ehs-01-${language?.language.toUpperCase() || 'EN'}.svg`}
+                    alt=""
+                    width={900}
+                    height={700}
+                    style={{ display: "block", margin: "0 auto", marginTop: "200px"}}
                     />
                 </section>
 
                 <section className="esg-section-03">
                     <h3>ACTION PLAN</h3>
 
-                    <Image 
-                    src="/images/sub/sustainability/esg/daedong-door-ehs-02.svg" 
-                    alt="" 
-                    width={1000} 
-                    height={400} 
-                    style={{ display: "block", margin: "0 auto", marginBottom: "100px"  }} 
+                    <Image
+                    src="/images/sub/sustainability/esg/daedong-door-ehs-02.svg"
+                    alt=""
+                    width={1000}
+                    height={400}
+                    style={{ display: "block", margin: "0 auto", marginBottom: "100px"  }}
                     />
                     <ul>
                         <li>

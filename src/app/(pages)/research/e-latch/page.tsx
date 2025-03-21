@@ -23,7 +23,7 @@ export default async function ELatchPage({searchParams : {lang}} : any) {
                 </div>
                 <div className="modeling-area">
                     <div>
-                        <Modeling1/>
+                        <Modeling1 language={language}/>
                     </div>
                 </div>
             </div>
