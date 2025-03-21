@@ -21,6 +21,78 @@
     box-shadow: 0 3px 6px rgba(0,0,0,0.16);
     cursor: pointer;
   }
+
+  .continent {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    max-width: 1600px;
+    width: 100%;
+    background-color: #fff;
+    transform: translateX(-50%);
+    > ul {
+      display: flex;
+      > li {
+        position: relative;
+        width: 33%;
+        > p {
+          cursor: pointer;
+          padding: 0 30px;
+          display: flex;
+          align-items: center;
+          height: 60px;
+          border: 1px solid #707070;
+          color: #707070;
+          font-size: 18px;
+          font-family: "Pretendard-SemiBold", sans-serif;
+          background: url("/images/sub/company/affiliate/area-off.svg") no-repeat calc(100% - 30px) 50%;
+        }
+        &.on {
+          > p {
+            background: url("/images/sub/company/affiliate/area-on.svg") no-repeat calc(100% - 30px) 50%;
+          }
+        }
+        > ul {
+          display: none;
+          width: calc(100%);
+          position: absolute;
+          bottom: 62px;
+          left: 0;
+          background-color: #fff;
+          padding: 30px 0 0;
+          box-sizing: border-box;
+          border: 1px solid #707070;
+          border-bottom: none;
+          max-height: 625px;
+          overflow-y: auto;
+          > li {
+            > p {
+              padding: 0 30px 30px 30px;
+              font-size: 25px;
+              color: #707070;
+              font-family: "Pretendard-SemiBold", sans-serif;
+            }
+            > ul {
+              padding: 0 50px 50px 50px;
+              > li {
+                margin-top: 20px;
+                line-height: 23px;
+                cursor: pointer;
+                &:first-child {
+                  margin-top: 0;
+                }
+              }
+            }
+          }
+        }
+        &.on {
+          > ul {
+            display: block;
+          }
+        }
+      }
+    }
+  }
 }
 .ReactModalPortal{
   .info-detail {
