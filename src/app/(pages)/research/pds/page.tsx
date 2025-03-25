@@ -4,6 +4,7 @@ import Footer from "@/components/common/Footer";
 import {fetchLanguage} from "@/util/fetchLanguage";
 import Link from "next/link";
 import Modeling2 from "@/components/Modeling/ModelViewer2";
+import ResearchDetail from "@/components/pages/research/ResearchDetail";
 
 export default async function PdsPage({searchParams : {lang}} : any) {
     const language = await fetchLanguage(lang);
@@ -21,6 +22,7 @@ export default async function PdsPage({searchParams : {lang}} : any) {
                         <Link href="/products/power-closures">Go to Products</Link>
                     </div>
                 </div>
+                <ResearchDetail initialActiveIndex={1} />
                 <div className="modeling-area">
                     <div>
                         <Modeling2/>
