@@ -5,6 +5,8 @@ import {fetchLanguage} from "@/util/fetchLanguage";
 import Link from "next/link";
 import Modeling1 from "@/components/Modeling/ModelViewer1";
 import ResearchDetail from "@/components/pages/research/ResearchDetail";
+import ArrowUp from "@/components/common/ArrowUp";
+import ArrowDown from "@/components/common/ArrowDown";
 
 export default async function ELatchPage({searchParams : {lang}} : any) {
     const language = await fetchLanguage(lang);
@@ -23,11 +25,13 @@ export default async function ELatchPage({searchParams : {lang}} : any) {
                     </div>
                 </div>
                 <ResearchDetail initialActiveIndex={2} />
+                <ArrowDown/>
                 <div className="modeling-area">
                     <div>
                         <Modeling1 language={language}/>
                     </div>
                 </div>
+                <ArrowUp/>
             </div>
             <Footer language={language}/>
         </>

@@ -5,6 +5,8 @@ import {fetchLanguage} from "@/util/fetchLanguage";
 import Link from "next/link";
 import Modeling4 from "@/components/Modeling/ModelViewer4";
 import ResearchDetail from "@/components/pages/research/ResearchDetail";
+import ArrowUp from "@/components/common/ArrowUp";
+import ArrowDown from "@/components/common/ArrowDown";
 
 export default async function PowerHoodPage({searchParams : {lang}} : any) {
     const language = await fetchLanguage(lang);
@@ -23,11 +25,13 @@ export default async function PowerHoodPage({searchParams : {lang}} : any) {
                     </div>
                 </div>
                 <ResearchDetail initialActiveIndex={9} />
+                <ArrowDown/>
                 <div className="modeling-area">
                     <div>
                         <Modeling4/>
                     </div>
                 </div>
+                <ArrowUp/>
             </div>
             <Footer language={language}/>
         </>

@@ -3,7 +3,7 @@
 import "@/app/assets/products/products.scss";
 import Image from "next/image";
 import { useState, useEffect } from "react";
-// import Link from "next/link";
+import Link from "next/link";
 
 interface ResearchDetailProps {
   initialActiveIndex?: number;
@@ -27,9 +27,9 @@ export default function LatchingSystems({ initialActiveIndex = 0 }: ResearchDeta
             <dd>
               <ul>
                 <li>
-                  <button className={activeIndex === 2 ? 'active' : ''} onClick={() => setActiveIndex(2)}>E-Latch</button>
+                  <button className={activeIndex === 2 ? 'active' : ''} onClick={() => setActiveIndex(2)} >E-Latch</button>
+                  <Link href="/research/e-latch"></Link>
                 </li>
-               
               </ul>
             </dd>
           </dl>
@@ -38,7 +38,8 @@ export default function LatchingSystems({ initialActiveIndex = 0 }: ResearchDeta
             <dd>
               <ul>
                 <li>
-                  <button className={activeIndex === 1 ? 'active' : ''} onClick={() => setActiveIndex(1)}>Power Door Actuator</button>
+                  <button className={activeIndex === 1 ? 'active' : ''} onClick={() => setActiveIndex(1)} >Power Door Actuator</button>
+                  <Link href="/research/pds"> </Link>
                 </li>
               </ul>
             </dd>
@@ -48,7 +49,8 @@ export default function LatchingSystems({ initialActiveIndex = 0 }: ResearchDeta
             <dd>
               <ul>
                 <li>
-                  <button className={activeIndex === 7 ? 'active' : ''} onClick={() => setActiveIndex(7)}>Lift Gate System Set</button>
+                  <button className={activeIndex === 7 ? 'active' : ''} onClick={() => setActiveIndex(7)} >Lift Gate System Set</button>
+                  <Link href="/research/power-lift-gate"></Link>
                 </li>
               </ul>
             </dd>
@@ -58,7 +60,9 @@ export default function LatchingSystems({ initialActiveIndex = 0 }: ResearchDeta
             <dd>
               <ul>
                 <li>
-                  <button className={activeIndex === 9 ? 'active' : ''} onClick={() => setActiveIndex(9)}>Power Cinching Latch</button>
+                  
+                  <button className={activeIndex === 9 ? 'active' : ''} onClick={() => setActiveIndex(9)} >Power Cinching Latch</button>
+                  <Link href="/research/power-hood"></Link>
                 </li>
               </ul>
             </dd>

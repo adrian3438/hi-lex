@@ -5,6 +5,8 @@ import {fetchLanguage} from "@/util/fetchLanguage";
 import Link from "next/link";
 import Modeling2 from "@/components/Modeling/ModelViewer2";
 import ResearchDetail from "@/components/pages/research/ResearchDetail";
+import ArrowUp from "@/components/common/ArrowUp";
+import ArrowDown from "@/components/common/ArrowDown";
 
 export default async function PdsPage({searchParams : {lang}} : any) {
     const language = await fetchLanguage(lang);
@@ -23,11 +25,13 @@ export default async function PdsPage({searchParams : {lang}} : any) {
                     </div>
                 </div>
                 <ResearchDetail initialActiveIndex={1} />
+                <ArrowDown/>
                 <div className="modeling-area">
                     <div>
                         <Modeling2/>
                     </div>
                 </div>
+                <ArrowUp/>
             </div>
             <Footer language={language}/>
         </>
