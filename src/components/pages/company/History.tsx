@@ -40,7 +40,7 @@ export default function History({language}: Props) {
                                     </li>
                                 </ul>
                             </li>
-                            <li>
+                            {/* <li>
                                 <p className="year">{language?.history_01_07}</p>
                                 <ul>
                                     <li>
@@ -48,7 +48,7 @@ export default function History({language}: Props) {
                                         <p className="history-detail">{language?.history_01_09}</p>
                                     </li>
                                 </ul>
-                            </li>
+                            </li> */}
                             <li>
                                 <p className="year">{language?.history_01_10}</p>
                                 <ul>
@@ -56,10 +56,10 @@ export default function History({language}: Props) {
                                         <p className="month">{language?.history_01_11}</p>
                                         <p className="history-detail">{language?.history_01_12}</p>
                                     </li>
-                                    <li>
+                                    {/* <li>
                                         <p className="month">{language?.history_01_13}</p>
                                         <p className="history-detail">{language?.history_01_14}</p>
-                                    </li>
+                                    </li> */}
                                     <li>
                                         <p className="month">{language?.history_01_15}</p>
                                         <p className="history-detail">{language?.history_01_16}</p>
@@ -84,7 +84,7 @@ export default function History({language}: Props) {
                                     </li>
                                 </ul>
                             </li>
-                            <li>
+                            {/* <li>
                                 <p className="year">{language?.history_01_23}</p>
                                 <ul>
                                     <li>
@@ -92,7 +92,7 @@ export default function History({language}: Props) {
                                         <p className="history-detail">{language?.history_01_25}</p>
                                     </li>
                                 </ul>
-                            </li>
+                            </li> */}
                             <li>
                                 <p className="year">{language?.history_01_26}</p>
                                 <ul>
@@ -109,10 +109,10 @@ export default function History({language}: Props) {
                                         <p className="month">{language?.history_01_30}</p>
                                         <p className="history-detail">{language?.history_01_31}</p>
                                     </li>
-                                    <li>
+                                    {/* <li>
                                         <p className="month">{language?.history_01_32}</p>
                                         <p className="history-detail">{language?.history_01_33}</p>
-                                    </li>
+                                    </li> */}
                                 </ul>
                             </li>
                             <li>

@@ -155,12 +155,12 @@ export default function LatchingSystems() {
                                 </p>
                                 <p className="text-area">POWER TRAILGATE LATCH<br/>SEPERATED TYPE &amp; ACTUATOR</p>
                             </li> */}
-              <li>
+              {/* <li>
                 <p className="image-area">
                   <Image src="/images/sub/products/products-02-02.png" alt="LUXURY TYPE" width={284} height={316}/>
                 </p>
                 <p className="text-area">SPINDLE</p>
-              </li>
+              </li> */}
               <li>
                 <p className="image-area">
                   <Image src="/images/sub/products/products-01-09.png" alt="LUXURY TYPE" width={284} height={316}/>
