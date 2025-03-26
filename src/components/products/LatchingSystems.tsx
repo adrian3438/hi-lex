@@ -5,7 +5,7 @@ import Image from "next/image";
 import {useState} from "react";
 import Link from "next/link";
 import ProductsSwiper from "@/components/products/ProductsSwiper";
-import {fetchLanguage} from "@/util/fetchLanguage";
+
 
 export default function LatchingSystems() {
   const [activeIndex, setActiveIndex] = useState<number>(0);
