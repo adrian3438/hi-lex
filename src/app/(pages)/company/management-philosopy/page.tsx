@@ -20,7 +20,9 @@ export default async function HistoryPage({searchParams: {lang}}: any) {
                 <div className="philosopy-container">
                     <section className="philosopy-01">
                         <Image src="/images/sub/company/management-philosopy/philosopy-01.png" alt="" width={1920} height={1080}/>
+                        <br/><br/><br/><br/><br/>
                         <p>{language?.philosopy_02}<br/>{language?.philosopy_02_02}</p>
+                        <br/><br/>
                     </section>
                     <section className="philosopy-02">
                         <h3>{language?.philosopy_03}</h3>

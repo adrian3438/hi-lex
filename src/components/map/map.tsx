@@ -14,7 +14,7 @@ export default function Map() {
                 onLoad={() => setGoogleMapsLoaded(true)} // 로드 완료 후 상태 변경
             >
                 {googleMapsLoaded ? (
-                    <div style={{width: '100%', height: '100vh'}}>
+                    <div style={{width: '100%', height: '90vh'}}>
                         <GoogleMaps address="" google={null}/>
                     </div>
                     ) : (
