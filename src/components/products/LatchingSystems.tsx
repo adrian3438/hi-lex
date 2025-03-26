@@ -5,9 +5,12 @@ import Image from "next/image";
 import {useState} from "react";
 import Link from "next/link";
 import ProductsSwiper from "@/components/products/ProductsSwiper";
+import {fetchLanguage} from "@/util/fetchLanguage";
 
 export default function LatchingSystems() {
   const [activeIndex, setActiveIndex] = useState<number>(0);
+
+  
 
   return (
     <div className="products-detail">
@@ -269,6 +272,18 @@ export default function LatchingSystems() {
                 System is increasing as a trend to enhance convenience.
                 For power closure, it can be operated using a button or
                 remote control.
+                <dl>
+                  <dt>Features</dt>
+                  <dd>
+                    <ul>
+                      <li>Trunk/Tailgate Closure Hold Function</li>
+                      <li>Easy Door Development through Button Operation</li>
+                      <li>Provide a physical door opening mechanisom for emergency situations</li>
+                      <li>Enable automatic two-stage locking via actuator connection (Power Type)</li>
+                      <li>Integrate with Lift Gate Spindle to provide fully automatic door opening and closing fuctions (Power Type)</li>
+                    </ul>
+                  </dd>
+                </dl>
               </div>
             </div>
           </div>
@@ -285,6 +300,12 @@ export default function LatchingSystems() {
                   <Image src="/images/sub/products/products-01-11.png" alt="LUXURY TYPE" width={284} height={316}/>
                 </p>
                 <p className="text-area">POWER TAILGATE LATCH - SEPARATED TYPE & ACTUATOR</p>
+              </li>
+              <li>
+                <p className="image-area">
+                  <Image src="/images/sub/products/products-01-20-02.png" alt="LUXURY TYPE" width={264} height={296}/>
+                </p>
+                <p className="text-area">TAILGATE LATCH</p>
               </li>
               <li>
                 <p className="image-area">

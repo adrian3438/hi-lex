@@ -25,11 +25,12 @@ export default function LatchingSystems() {
             </dd>
           </dl>
           <dl>
-            <dt>Lift Gate System <Link href="/research/power-lift-gate"><Image src="/images/sub/products/3d-link.png" alt="R&D 3D Configurator" width={170} height={20}/></Link></dt>
+            <dt>Lift Gate System</dt>
             <dd>
               <ul>
                 <li>
                   <button className={activeIndex === 2 ? 'active' : ''} onClick={() => setActiveIndex(2)}>Lift Gate System Set</button>
+                  <Link href="/research/power-lift-gate"><Image src="/images/sub/products/3d-link.png" alt="R&D 3D Configurator" width={170} height={20}/></Link>
                 </li>
                 {/* <li>
                                     <button className={activeIndex === 3 ? 'active' : ''} onClick={() => setActiveIndex(3)}>Anti-Pinch Sensor</button>
@@ -138,10 +139,10 @@ export default function LatchingSystems() {
                 <p>SPINDLE</p>
               </div>
               <div className="products-text-area">
-                The Power Door System (PDS) maximizes convenience with its automatic vehicle door opening and closing functionality, offering effortless and smart door operation.<br/>
-                It ensures safety and convenience by providing support at any position during door opening or closing.<br/>
-                The system suppresses vibrations and shaking during door movement, achieving smooth and stable operation while delivering a premium vehicle experience through precise position control.<br/>
-                With rigorous durability testing and environmental testing under extreme conditions, including temperature, humidity, and dust, it ensures consistent performance over prolonged use.
+                The Lift Gate System is a Gate equipped with an automatic opening and closing fuction installed at the rear of the vehicle.<br/>
+                It allows for easy opening and closing with the push of a button, simplyfying the process of loading and unloading luggage.<br/>
+                This system operates through an electric motor to maximize user convenience.<br/>
+                Additionally, it features height adjustment capabilities to accommondate various sitations and includes an obstacle detection function that automaticcally stops the Gate during operation, ensuring safety.
               </div>
             </div>
           </div>
@@ -162,9 +163,9 @@ export default function LatchingSystems() {
               </li>
               <li>
                 <p className="image-area">
-                  <Image src="/images/sub/products/products-01-14.png" alt="LUXURY TYPE" width={284} height={316}/>
+                  <Image src="/images/sub/products/products-01-09.png" alt="LUXURY TYPE" width={284} height={316}/>
                 </p>
-                <p className="text-area">CINCHING LATCH</p>
+                <p className="text-area">POWER TAILGATE LATCH</p>
               </li>
               <li>
                 <p className="image-area">

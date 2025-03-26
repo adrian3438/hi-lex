@@ -35,7 +35,7 @@ export default function LatchingSystems({ initialActiveIndex = 0 }: ResearchDeta
             </dd>
           </dl>
           <dl>
-            <dt>Power Door Latch</dt>
+            <dt>Power Door System</dt>
             <dd>
               <ul>
                 <li>
@@ -52,7 +52,7 @@ export default function LatchingSystems({ initialActiveIndex = 0 }: ResearchDeta
               <ul>
                 <li>
                   <Link href="/research/power-lift-gate">
-                  <button className={activeIndex === 7 ? 'active' : ''} onClick={() => setActiveIndex(7)} style={{ fontSize: '20px', backgroundColor: 'transparent', border: 'none', color: '#023A8E', cursor: 'pointer' }}>Lift Gate System Set</button>
+                  <button className={activeIndex === 7 ? 'active' : ''} onClick={() => setActiveIndex(7)} style={{ fontSize: '20px', backgroundColor: 'transparent', border: 'none', color: '#023A8E', cursor: 'pointer' }}>Lift Gate Cinching Latch</button>
                   </Link>
                 </li>
               </ul>
