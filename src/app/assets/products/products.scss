@@ -57,6 +57,17 @@
                   width: auto;
                   height: auto;
                 }
+                > button {
+                  cursor: pointer;
+                  border: none;
+                  padding: 0;
+                  background: none;
+                  font-size: 20px;
+                  color: #023A8E;
+                  &.active {
+                    color: #FF43CD;
+                  }
+                }
               }
             }
           }

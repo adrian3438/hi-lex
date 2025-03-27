@@ -28,7 +28,7 @@ export default async function PowerHoodPage({searchParams : {lang}} : any) {
                 <ArrowDown/>
                 <div className="modeling-area">
                     <div>
-                        <Modeling4/>
+                        <Modeling4 language={language}/>
                     </div>
                 </div>
                 <ArrowUp/>

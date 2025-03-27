@@ -28,7 +28,7 @@ export default function LatchingSystems({ initialActiveIndex = 0 }: ResearchDeta
               <ul>
                 <li>
                   <Link href="/research/e-latch">
-                  <button className={activeIndex === 2 ? 'active' : ''} onClick={() => setActiveIndex(2)} style={{ fontSize: '20px', backgroundColor: 'transparent', border: 'none', color: '#023A8E', cursor: 'pointer' }}>E-Latch</button>
+                  <button className={activeIndex === 2 ? 'active' : ''} onClick={() => setActiveIndex(2)}>E-Latch</button>
                   </Link>
                 </li>
               </ul>
@@ -40,7 +40,7 @@ export default function LatchingSystems({ initialActiveIndex = 0 }: ResearchDeta
               <ul>
                 <li>
                   <Link href="/research/pds">
-                  <button className={activeIndex === 1 ? 'active' : ''} onClick={() => setActiveIndex(1)} style={{ fontSize: '20px', backgroundColor: 'transparent', border: 'none', color: '#023A8E', cursor: 'pointer' }}>Power Door Actuator</button>
+                  <button className={activeIndex === 1 ? 'active' : ''} onClick={() => setActiveIndex(1)}>Power Door Actuator</button>
                   </Link>
                 </li>
               </ul>
@@ -52,7 +52,7 @@ export default function LatchingSystems({ initialActiveIndex = 0 }: ResearchDeta
               <ul>
                 <li>
                   <Link href="/research/power-lift-gate">
-                  <button className={activeIndex === 7 ? 'active' : ''} onClick={() => setActiveIndex(7)} style={{ fontSize: '20px', backgroundColor: 'transparent', border: 'none', color: '#023A8E', cursor: 'pointer' }}>Lift Gate Cinching Latch</button>
+                  <button className={activeIndex === 7 ? 'active' : ''} onClick={() => setActiveIndex(7)}>Lift Gate Cinching Latch</button>
                   </Link>
                 </li>
               </ul>
@@ -64,7 +64,7 @@ export default function LatchingSystems({ initialActiveIndex = 0 }: ResearchDeta
               <ul>
                 <li>
                   <Link href="/research/power-hood">
-                  <button className={activeIndex === 9 ? 'active' : ''} onClick={() => setActiveIndex(9)} style={{ fontSize: '20px', backgroundColor: 'transparent', border: 'none', color: '#023A8E', cursor: 'pointer' }}>Power Cinching Latch</button>
+                  <button className={activeIndex === 9 ? 'active' : ''} onClick={() => setActiveIndex(9)}>Power Cinching Latch</button>
                   </Link>
                 </li>
               </ul>
