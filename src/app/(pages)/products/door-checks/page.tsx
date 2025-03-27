@@ -18,7 +18,7 @@ export default async function DoorChecksPage({searchParams : {lang}} : any) {
                         <li>{language?.header_2_3}</li>
                     </ul>
                 </div>
-                <DoorChecks/>
+                <DoorChecks language={language}/>
                 <div className="client-slide">
                     <h2>Our Clients</h2>
                     <ClientSlide/>

@@ -4,20 +4,24 @@ import "@/app/assets/products/products.scss";
 import Image from "next/image";
 import {useState} from "react";
 
-export default function DoorChecks() {
+interface Props {
+    language: any
+}
+
+export default function DoorChecks({language}: Props) {
     const [activeIndex, setActiveIndex] = useState<number>(0);
 
     return (
         <div className="products-detail">
-            <h3>DOOR CHECKS</h3>
+            <h3>{language?.product_03_01}</h3>
             <div className="products-detail-top">
                 <div className="products-detail-list">
                     <dl>
-                        <dt>DOOR CHECKS</dt>
+                        <dt>{language?.product_03_02}</dt>
                         <dd>
                             <ul>
                                 <li>
-                                    <button className={activeIndex === 1 ? 'active' : ''} onClick={() => setActiveIndex(1)}>DOOR CHECKS</button>
+                                    <button className={activeIndex === 1 ? 'active' : ''} onClick={() => setActiveIndex(1)}>{language?.product_03_03}</button>
                                 </li>
                             </ul>
                         </dd>
@@ -31,22 +35,14 @@ export default function DoorChecks() {
             {activeIndex === 1 && (
                 <>
                     <div className="products-detail-middle">
-                        <h4>Door Checks</h4>
+                        <h4>{language?.product_03_04}</h4>
                         <div className="products-area">
                             <div className="products-image-area reverse">
                                 <Image src="/images/sub/products/products-03-01.png" alt="Plastic (Case) Type" width={361} height={545}/>
-                                <p>Plastic (Case) Type</p>
+                                <p>{language?.product_03_05}</p>
                             </div>
                             <div className="products-text-area">
-                                The convenience and safety auxiliary device that controls
-                                the full opening of an automobile door and provides step-
-                                by-step operating force during door opening and closing.
-                                A device installed on both the car&#39;s body and the inside of
-                                the door, which is connected and imparts operating force
-                                during door open/close actions to control the angle of
-                                opening and closing. (Prevents unintended angles caused
-                                by slopes, wind, etc., enhancing safety and convenience
-                                and preventing accidents.)
+                                {language?.product_03_06}
                             </div>
                         </div>
                     </div>
@@ -56,19 +52,19 @@ export default function DoorChecks() {
                                 <p className="image-area">
                                     <Image src="/images/sub/products/products-03-02.png" alt="LUXURY TYPE" width={259} height={318}/>
                                 </p>
-                                <p className="text-area">LUXURY TYPE</p>
+                                <p className="text-area">{language?.product_03_07}</p>
                             </li>
                             <li>
                                 <p className="image-area">
                                     <Image src="/images/sub/products/products-03-03.png" alt="LUXURY TYPE" width={284} height={316}/>
                                 </p>
-                                <p className="text-area">SLIDE TYPE</p>
+                                <p className="text-area">{language?.product_03_08}</p>
                             </li>
                             <li>
                                 <p className="image-area">
                                     <Image src="/images/sub/products/products-03-04.png" alt="LUXURY TYPE" width={266} height={315}/>
                                 </p>
-                                <p className="text-area">ROLLER TYPE</p>
+                                <p className="text-area">{language?.product_03_09}</p>
                             </li>
                         </ul>
                     </div>

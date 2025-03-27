@@ -64,7 +64,7 @@ export default function LatchingSystems({ initialActiveIndex = 0 }: ResearchDeta
               <ul>
                 <li>
                   <Link href="/research/power-hood">
-                  <button className={activeIndex === 9 ? 'active' : ''} onClick={() => setActiveIndex(9)}>Power Cinching Latch</button>
+                  <button className={activeIndex === 9 ? 'active' : ''} onClick={() => setActiveIndex(9)}>Power Hood Latch</button>
                   </Link>
                 </li>
               </ul>

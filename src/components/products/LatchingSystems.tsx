@@ -6,59 +6,60 @@ import {useState} from "react";
 import Link from "next/link";
 import ProductsSwiper from "@/components/products/ProductsSwiper";
 
+interface Props {
+  language: any
+}
 
-export default function LatchingSystems() {
+export default function LatchingSystems({language}: Props) {
   const [activeIndex, setActiveIndex] = useState<number>(0);
-
-  
 
   return (
     <div className="products-detail">
-      <h3>LATCHING SYSTEMS</h3>
+      <h3>{language?.product_01_01}</h3>
       <div className="products-detail-top">
         <div className="products-detail-list">
           <dl>
-            <dt>Side Door Latches</dt>
+            <dt>{language?.product_01_02}</dt>
             <dd>
               <ul>
                 <li>
-                  <button className={activeIndex === 1 ? 'active' : ''} onClick={() => setActiveIndex(1)}>Standard Latch</button>
+                  <button className={activeIndex === 1 ? 'active' : ''} onClick={() => setActiveIndex(1)}>{language?.product_01_03}</button>
                 </li>
                 <li>
-                  <button className={activeIndex === 2 ? 'active' : ''} onClick={() => setActiveIndex(2)}>E-Latch</button>
+                  <button className={activeIndex === 2 ? 'active' : ''} onClick={() => setActiveIndex(2)}>{language?.product_01_04}</button>
                   <Link href="/research/e-latch"><Image src="/images/sub/products/3d-link.png" alt="R&D 3D Configurator" width={170} height={20}/></Link>
                 </li>
               </ul>
             </dd>
           </dl>
           <dl>
-            <dt>Secondary Latches</dt>
+            <dt>{language?.product_01_04_01}</dt>
             <dd>
               <ul>
                 <li>
-                  <button className={activeIndex === 3 ? 'active' : ''} onClick={() => setActiveIndex(3)}>Hood Latch / Frunk Latch</button>
+                  <button className={activeIndex === 3 ? 'active' : ''} onClick={() => setActiveIndex(3)}>{language?.product_01_05}</button>
                 </li>
                 <li>
-                  <button className={activeIndex === 4 ? 'active' : ''} onClick={() => setActiveIndex(4)}>Trunk / Tailgate Latch</button>
+                  <button className={activeIndex === 4 ? 'active' : ''} onClick={() => setActiveIndex(4)}>{language?.product_01_06}</button>
                 </li>
                 <li>
-                  <button className={activeIndex === 5 ? 'active' : ''} onClick={() => setActiveIndex(5)}>Pick-up Latch</button>
+                  <button className={activeIndex === 5 ? 'active' : ''} onClick={() => setActiveIndex(5)}>{language?.product_01_07}</button>
                 </li>
                 <li>
-                  <button className={activeIndex === 6 ? 'active' : ''} onClick={() => setActiveIndex(6)}>Quarter Storage Latch</button>
+                  <button className={activeIndex === 6 ? 'active' : ''} onClick={() => setActiveIndex(6)}>{language?.product_01_08}</button>
                 </li>
               </ul>
             </dd>
           </dl>
           <dl>
-            <dt>Sliding Door Locking System</dt>
+            <dt>{language?.product_01_09}</dt>
             <dd>
               <ul>
                 <li>
-                  <button className={activeIndex === 7 ? 'active' : ''} onClick={() => setActiveIndex(7)}>Remote Controller</button>
+                  <button className={activeIndex === 7 ? 'active' : ''} onClick={() => setActiveIndex(7)}>{language?.product_01_10}</button>
                 </li>
                 <li>
-                  <button className={activeIndex === 8 ? 'active' : ''} onClick={() => setActiveIndex(8)}>Sliding Door Latch</button>
+                  <button className={activeIndex === 8 ? 'active' : ''} onClick={() => setActiveIndex(8)}>{language?.product_01_11}</button>
                 </li>
                 {/* <li>
                                     <button className={activeIndex === 8 ? 'active' : ''} onClick={() => setActiveIndex(8)}>Hold Open Lock</button>
@@ -67,11 +68,11 @@ export default function LatchingSystems() {
             </dd>
           </dl>
           <dl>
-            <dt>Strikers</dt>
+            <dt>{language?.product_01_12}</dt>
             <dd>
               <ul>
                 <li>
-                  <button className={activeIndex === 9 ? 'active' : ''} onClick={() => setActiveIndex(9)}>Strikers</button>
+                  <button className={activeIndex === 9 ? 'active' : ''} onClick={() => setActiveIndex(9)}>{language?.product_01_12}</button>
                 </li>
               </ul>
             </dd>
@@ -118,31 +119,23 @@ export default function LatchingSystems() {
       {activeIndex === 1 && (
         <>
           <div className="products-detail-middle">
-            <h4>Standard Latch</h4>
+            <h4>{language?.product_01_13}</h4>
             <div className="products-area">
               <div className="products-image-area">
                 <Image src="/images/sub/products/products-01-01.png" alt="Plastic (Case) Type" width={361} height={545}/>
-                <p>STANDARD Gen3 LATCH</p>
+                <p>{language?.product_01_13_01}</p>
               </div>
               <div className="products-text-area">
-                The panel installed inside the car&#39;s side door, when connected
-                to the vehicle&#39;s striker mounted on the body, maintains the
-                door&#39;s locked state. It can be opened using the door handle
-                (inner/outer) and the cable (rod) connected to it. The door can
-                be opened by operation the handle. There is a knob on the inner
-                handle side, and the door&#39;s lock / unlock status can also be
-                controlled from the outside using a key, or electronically (via
-                trim buttons or a remote control). Additionally, there are
-                various convenience features associated with it.
+                {language?.product_01_14}
                 <dl>
-                  <dt>Features</dt>
+                  <dt>{language?.product_01_15}</dt>
                   <dd>
                     <ul>
-                      <li>Side Door Closure Hold Function</li>
-                      <li>Central Lock/Unlock Function</li>
-                      <li>Door Opening Function with Outside & Inside Handle</li>
-                      <li>Door Ajar Sensing function</li>
-                      <li>Child Lock (Child Safety Function)</li>
+                      <li>{language?.product_01_16}</li>
+                      <li>{language?.product_01_17}</li>
+                      <li>{language?.product_01_18}</li>
+                      <li>{language?.product_01_19}</li>
+                      <li>{language?.product_01_20}</li>
                     </ul>
                   </dd>
                 </dl>
@@ -155,19 +148,19 @@ export default function LatchingSystems() {
                 <p className="image-area">
                   <Image src="/images/sub/products/products-01-03.png" alt="LUXURY TYPE" width={259} height={318}/>
                 </p>
-                <p className="text-area">COMPACT LATCH</p>
+                <p className="text-area">{language?.product_01_21}</p>
               </li>
               <li>
                 <p className="image-area">
                   <Image src="/images/sub/products/products-01-04.png" alt="LUXURY TYPE" width={284} height={316}/>
                 </p>
-                <p className="text-area">STANDARD Gen2 LATCH</p>
+                <p className="text-area">{language?.product_01_22}</p>
               </li>
               <li>
                 <p className="image-area">
                   <Image src="/images/sub/products/products-01-02.png" alt="LUXURY TYPE" width={266} height={315}/>
                 </p>
-                <p className="text-area">STANDARD Gen3 LATCH</p>
+                <p className="text-area">{language?.product_01_23}</p>
               </li>
             </ul>
           </div>
@@ -177,22 +170,22 @@ export default function LatchingSystems() {
       {activeIndex === 2 && (
         <>
           <div className="products-detail-middle">
-            <h4>E-Latch (R&D)</h4>
+            <h4>{language?.product_01_95}</h4>
             <div className="products-area">
               <div className="products-image-area">
                 <Image src="/images/sub/products/products-01-05.png" alt="Plastic (Case) Type" width={361} height={545}/>
-                <p>e-Latch</p>
+                <p>{language?.product_01_96}</p>
               </div>
               <div className="products-text-area">
                 <dl>
-                  <dt>Features</dt>
+                  <dt>{language?.product_01_97}</dt>
                   <dd>
                     <ul>
-                      <li>Easy Door Development through Button Operation</li>
-                      <li>Provide a physical door opening mechanism for emergency situations.</li>
-                      <li>Enable automatic two-stage locking via actuator connection.</li>
-                      <li>Integrate with power door actuators to provide fully automatic door opening and closing functions.</li>
-                      <li>Implement all additional features at a cost equivalent to standard door latches.</li>
+                      <li>{language?.product_01_98}</li>
+                      <li>{language?.product_01_99}</li>
+                      <li>{language?.product_01_100}</li>
+                      <li>{language?.product_01_101}</li>
+                      <li>{language?.product_01_102}</li>
                     </ul>
                   </dd>
                 </dl>
@@ -205,29 +198,21 @@ export default function LatchingSystems() {
       {activeIndex === 3 && (
         <>
           <div className="products-detail-middle">
-            <h4>Hood Latch/Frunk Latch</h4>
+            <h4>{language?.product_01_24}</h4>
             <div className="products-area">
               <div className="products-image-area">
                 <Image src="/images/sub/products/products-01-06.png" alt="Plastic (Case) Type" width={361} height={545}/>
-                <p>HOOD LATCH</p>
+                <p>{language?.product_01_25}</p>
               </div>
               <div className="products-text-area">
-                The Front End Module (FEM) is installed on the vehicle&#39;s
-                body, and when the hood is closed, it remains locked in place
-                by engaging with the striker mounted on the hood.
-                To open the hood, you need to pull the Hood Open Lever
-                located beneath the driver&#39;s seat. When you do this, the
-                Hood Latch is partially released, causing the hood to pop
-                up. With the hood in the popped-up position, you can reach
-                your hand between the gaps and operate the Lever (Hook
-                Safety) to fully open the hood.
+                {language?.product_01_26}
                 <dl>
-                  <dt>Features</dt>
+                  <dt>{language?.product_01_26_01}</dt>
                   <dd>
                     <ul>
-                      <li>Hood Closure Hold Function</li>
-                      <li>Double Locking & Release Function</li>
-                      <li>Release Function by Mechanical & Electricity</li>
+                      <li>{language?.product_01_27}</li>
+                      <li>{language?.product_01_28}</li>
+                      <li>{language?.product_01_29}</li>
                     </ul>
                   </dd>
                 </dl>
@@ -240,13 +225,13 @@ export default function LatchingSystems() {
                 <p className="image-area">
                   <Image src="/images/sub/products/products-01-07.png" alt="LUXURY TYPE" width={651} height={212}/>
                 </p>
-                <p className="text-area">HOOD LATCH RELEASE ACTUATOR</p>
+                <p className="text-area">{language?.product_01_30}</p>
               </li>
               <li>
                 <p className="image-area">
                   <Image src="/images/sub/products/products-01-08.png" alt="LUXURY TYPE" width={284} height={316}/>
                 </p>
-                <p className="text-area">EV TYPE</p>
+                <p className="text-area">{language?.product_01_31}</p>
               </li>
             </ul>
           </div>
@@ -256,31 +241,24 @@ export default function LatchingSystems() {
       {activeIndex === 4 && (
         <>
           <div className="products-detail-middle">
-            <h4>Trunk / Tailgate Latch</h4>
+            <h4>{language?.product_01_32}</h4>
             <div className="products-area">
               <div className="products-image-area">
                 <Image src="/images/sub/products/products-01-09.png" alt="Plastic (Case) Type" width={361} height={545}/>
-                <p>POWER TAILGATE LATCH<br/>
-                  (INTEGRATE TYPE)</p>
+                <p>{language?.product_01_33}<br/>
+                  {language?.product_01_34}</p>
               </div>
               <div className="products-text-area">
-                The opening and locking mechanism of an automobile&#39;s
-                tailgate. A striker attached to the vehicle&#39;s body (or tailgate)
-                that keeps the tailgate closed, and it can be opened using
-                a button, key, handle, handle&#39;s touch sensor, remote control,
-                and similar methods. The adoption of the Power Tailgate
-                System is increasing as a trend to enhance convenience.
-                For power closure, it can be operated using a button or
-                remote control.
+                {language?.product_01_35}
                 <dl>
-                  <dt>Features</dt>
+                  <dt>{language?.product_01_36}</dt>
                   <dd>
                     <ul>
-                      <li>Trunk/Tailgate Closure Hold Function</li>
-                      <li>Easy Door Development through Button Operation</li>
-                      <li>Provide a physical door opening mechanisom for emergency situations</li>
-                      <li>Enable automatic two-stage locking via actuator connection (Power Type)</li>
-                      <li>Integrate with Lift Gate Spindle to provide fully automatic door opening and closing fuctions (Power Type)</li>
+                      <li>{language?.product_01_37}</li>
+                      <li>{language?.product_01_38}</li>
+                      <li>{language?.product_01_39}</li>
+                      <li>{language?.product_01_40}</li>
+                      <li>{language?.product_01_41}</li>
                     </ul>
                   </dd>
                 </dl>
@@ -299,19 +277,19 @@ export default function LatchingSystems() {
                 <p className="image-area">
                   <Image src="/images/sub/products/products-01-11.png" alt="LUXURY TYPE" width={284} height={316}/>
                 </p>
-                <p className="text-area">POWER TAILGATE LATCH - SEPARATED TYPE & ACTUATOR</p>
+                <p className="text-area">{language?.product_01_42}</p>
               </li>
               <li>
                 <p className="image-area">
                   <Image src="/images/sub/products/products-01-20-02.png" alt="LUXURY TYPE" width={264} height={296}/>
                 </p>
-                <p className="text-area">TAILGATE LATCH</p>
+                <p className="text-area">{language?.product_01_43}</p>
               </li>
               <li>
                 <p className="image-area">
                   <Image src="/images/sub/products/products-01-12.png" alt="LUXURY TYPE" width={284} height={316}/>
                 </p>
-                <p className="text-area">TRUNK LID LATCH</p>
+                <p className="text-area">{language?.product_01_44}</p>
               </li>
             </ul>
           </div>
@@ -321,21 +299,21 @@ export default function LatchingSystems() {
       {(activeIndex === 5 || activeIndex === 6) && (
         <>
           <div className="products-detail-middle">
-            <h4>Pick-up Latch / Quarter Storage Latch</h4>
+            <h4>{language?.product_01_45}</h4>
             <div className="products-area">
               <div className="products-image-area">
                 <Image src="/images/sub/products/products-01-13-01.png" alt="Plastic (Case) Type" width={361} height={545}/>
-                <p>Pick-up Latch</p>
+                <p>{language?.product_01_46}</p>
               </div>
               <div className="products-text-area">
                 <dl>
-                  <dt>Features</dt>
+                  <dt>{language?.product_01_47}</dt>
                   <dd>
                     <ul>
-                      <li>Development of a latching structure for the storage space of a pickup truck quarter panel (anti-theft).</li>
-                      <li>Improved user convenience with an electric opening feature.</li>
-                      <li>Enhanced safety through the application of an open detection switch.</li>
-                      <li>Increased storage space by reducing the size.</li>
+                      <li>{language?.product_01_48}</li>
+                      <li>{language?.product_01_49}</li>
+                      <li>{language?.product_01_50}</li>
+                      <li>{language?.product_01_51}</li>
                     </ul>
                   </dd>
                 </dl>
@@ -348,13 +326,13 @@ export default function LatchingSystems() {
                 <p className="image-area">
                   <Image src="/images/sub/products/products-01-13-02.png" alt="LUXURY TYPE" width={701} height={312}/>
                 </p>
-                <p className="text-area">PICK-UP LATCH</p>
+                <p className="text-area">{language?.product_01_52}</p>
               </li>
               <li>
                 <p className="image-area">
                   <Image src="/images/sub/products/products-01-13.png" alt="LUXURY TYPE" width={284} height={316}/>
                 </p>
-                <p className="text-area">QUARTER STORAGE LATCH</p>
+                <p className="text-area">{language?.product_01_53}</p>
               </li>
             </ul>
           </div>
@@ -364,21 +342,21 @@ export default function LatchingSystems() {
       {activeIndex === 7 && (
         <>
           <div className="products-detail-middle">
-            <h4>Remote Controller</h4>
+            <h4>{language?.product_01_63}</h4>
             <div className="products-area">
               <div className="products-image-area">
                 <Image src="/images/sub/products/products-01-15.png" alt="Plastic (Case) Type" width={361} height={545}/>
-                <p>REMOTE CONTROLLER</p>
+                <p>{language?.product_01_64}</p>
               </div>
               <div className="products-text-area">
                 <dl>
-                  <dt>Features</dt>
+                  <dt>{language?.product_01_65}</dt>
                   <dd>
                     <ul>
-                      <li>Development of a latching structure for the storage space of a pickup truck quarter panel (anti-theft).</li>
-                      <li>Improved user convenience with an electric opening feature.</li>
-                      <li>Enhanced safety through the application of an open detection switch.</li>
-                      <li>Increased storage space by reducing the size.</li>
+                      <li>{language?.product_01_66}</li>
+                      <li>{language?.product_01_67}</li>
+                      <li>{language?.product_01_68}</li>
+                      <li>{language?.product_01_69}</li>
                     </ul>
                   </dd>
                 </dl>
@@ -413,21 +391,21 @@ export default function LatchingSystems() {
       {activeIndex === 7 && (
         <>
           <div className="products-detail-middle">
-            <h4>Sliding Door Latch</h4>
+            <h4>{language?.product_01_70}</h4>
             <div className="products-area">
               <div className="products-image-area">
                 <Image src="/images/sub/products/products-01-16.png" alt="Plastic (Case) Type" width={361} height={545}/>
-                <p>FRONT LATCH</p>
+                <p>{language?.product_01_71}</p>
               </div>
               <div className="products-text-area">
                 <dl>
-                  <dt>Features</dt>
+                  <dt>{language?.product_01_72}</dt>
                   <dd>
                     <ul>
-                      <li>Development of a latching structure for the storage space of a pickup truck quarter panel (anti-theft).</li>
-                      <li>Improved user convenience with an electric opening feature.</li>
-                      <li>Enhanced safety through the application of an open detection switch.</li>
-                      <li>Increased storage space by reducing the size.</li>
+                      <li>{language?.product_01_73}</li>
+                      <li>{language?.product_01_74}</li>
+                      <li>{language?.product_01_75}</li>
+                      <li>{language?.product_01_76}</li>
                     </ul>
                   </dd>
                 </dl>
@@ -440,19 +418,19 @@ export default function LatchingSystems() {
                 <p className="image-area">
                   <Image src="/images/sub/products/products-01-16.png" alt="LUXURY TYPE" width={259} height={318}/>
                 </p>
-                <p className="text-area">FRONT LATCH</p>
+                <p className="text-area">{language?.product_01_77}</p>
               </li>
               <li>
                 <p className="image-area">
                   <Image src="/images/sub/products/new-image-comming.png" alt="LUXURY TYPE" width={284} height={316}/>
                 </p>
-                <p className="text-area">REAR LATCH</p>
+                <p className="text-area">{language?.product_01_78}</p>
               </li>
               <li>
                 <p className="image-area">
                   <Image src="/images/sub/products/products-01-17.png" alt="LUXURY TYPE" width={284} height={316}/>
                 </p>
-                <p className="text-area">HOLD OPEN LOCK</p>
+                <p className="text-area">{language?.product_01_79}</p>
               </li>
             </ul>
           </div>
@@ -462,21 +440,21 @@ export default function LatchingSystems() {
       {activeIndex === 8 && (
         <>
           <div className="products-detail-middle">
-            <h4>Hold Open Lock</h4>
+            <h4>{language?.product_01_79}</h4>
             <div className="products-area">
               <div className="products-image-area">
                 <Image src="/images/sub/products/products-01-17.png" alt="Plastic (Case) Type" width={361} height={545}/>
-                <p>HOLD OPEN LOCK</p>
+                <p>{language?.product_01_80}</p>
               </div>
               <div className="products-text-area">
                 <dl>
-                  <dt>Features</dt>
+                  <dt>{language?.product_01_81}</dt>
                   <dd>
                     <ul>
-                      <li>Development of a latching structure for the storage space of a pickup truck quarter panel (anti-theft).</li>
-                      <li>Improved user convenience with an electric opening feature.</li>
-                      <li>Enhanced safety through the application of an open detection switch.</li>
-                      <li>Increased storage space by reducing the size.</li>
+                      <li>{language?.product_01_82}</li>
+                      <li>{language?.product_01_83}</li>
+                      <li>{language?.product_01_84}</li>
+                      <li>{language?.product_01_85}</li>
                     </ul>
                   </dd>
                 </dl>
@@ -489,19 +467,19 @@ export default function LatchingSystems() {
                 <p className="image-area">
                   <Image src="/images/sub/products/products-01-14.png" alt="LUXURY TYPE" width={259} height={318}/>
                 </p>
-                <p className="text-area">CINCHING LATCH</p>
+                <p className="text-area">{language?.product_01_86}</p>
               </li>
               <li>
                 <p className="image-area">
                   <Image src="/images/sub/products/products-01-15.png" alt="LUXURY TYPE" width={284} height={316}/>
                 </p>
-                <p className="text-area">REMOTE CONTROLLER</p>
+                <p className="text-area">{language?.product_01_87}</p>
               </li>
               <li>
                 <p className="image-area">
                   <Image src="/images/sub/products/products-01-16.png" alt="LUXURY TYPE" width={284} height={316}/>
                 </p>
-                <p className="text-area">FRONT LATCH</p>
+                <p className="text-area">{language?.product_01_88}</p>
               </li>
             </ul>
           </div>
@@ -511,20 +489,14 @@ export default function LatchingSystems() {
       {activeIndex === 9 && (
         <>
           <div className="products-detail-middle">
-            <h4>Strikers</h4>
+            <h4>{language?.product_01_89}</h4>
             <div className="products-area">
               <div className="products-image-area">
                 <Image src="/images/sub/products/products-01-20.png" alt="Plastic (Case) Type" width={361} height={545}/>
-                <p>TAILGATE STRIKER</p>
+                <p>{language?.product_01_90}</p>
               </div>
               <div className="products-text-area">
-                The door of the car (Side, Slide, Trunk, Tailgate, etc.) is usually
-                mounted opposite to the latch, and when the door is closed
-                It is combined with Latch to maintain the locked state of the door.
-                In addition to simple locking roles, attach lever for Open, attach
-                switch for detection, attach flow prevention guide, power
-                functions, etc. Additional functions can be added depending on
-                the layout conditions
+                {language?.product_01_91}
               </div>
             </div>
           </div>
@@ -534,19 +506,19 @@ export default function LatchingSystems() {
                 <p className="image-area">
                   <Image src="/images/sub/products/products-01-23.png" alt="LUXURY TYPE" width={259} height={318}/>
                 </p>
-                <p className="text-area">SIDE DOOR STRIKER</p>
+                <p className="text-area">{language?.product_01_92}</p>
               </li>
               <li>
                 <p className="image-area">
                   <Image src="/images/sub/products/products-01-21.png" alt="LUXURY TYPE" width={284} height={316}/>
                 </p>
-                <p className="text-area">TAILGATE STRIKER </p>
+                <p className="text-area">{language?.product_01_93}</p>
               </li>
               <li>
                 <p className="image-area">
                   <Image src="/images/sub/products/products-01-22.png" alt="LUXURY TYPE" width={284} height={316}/>
                 </p>
-                <p className="text-area">PICKUP TAILGATE STRIKER</p>
+                <p className="text-area">{language?.product_01_94}</p>
               </li>
             </ul>
           </div>

@@ -5,31 +5,35 @@ import Image from "next/image";
 import {useState} from "react";
 import Link from "next/link";
 
-export default function LatchingSystems() {
+interface Props {
+  language: any
+}
+
+export default function PowerClosures({language}: Props) {
   const [activeIndex, setActiveIndex] = useState<number>(0);
 
   return (
     <div className="products-detail">
-      <h3>POWER CLOSURES</h3>
+      <h3>{language?.product_02_01}</h3>
       <div className="products-detail-top">
         <div className="products-detail-list">
           <dl>
-            <dt>Side Door Latch</dt>
+            <dt>{language?.product_02_02}</dt>
             <dd>
               <ul>
                 <li>
-                  <button className={activeIndex === 1 ? 'active' : ''} onClick={() => setActiveIndex(1)}>Power Door Actuator</button>
+                  <button className={activeIndex === 1 ? 'active' : ''} onClick={() => setActiveIndex(1)}>{language?.product_02_03}</button>
                   <Link href="/research/pds"><Image src="/images/sub/products/3d-link.png" alt="R&D 3D Configurator" width={170} height={20}/></Link>
                 </li>
               </ul>
             </dd>
           </dl>
           <dl>
-            <dt>Lift Gate System</dt>
+            <dt>{language?.product_02_04}</dt>
             <dd>
               <ul>
                 <li>
-                  <button className={activeIndex === 2 ? 'active' : ''} onClick={() => setActiveIndex(2)}>Lift Gate System Set</button>
+                  <button className={activeIndex === 2 ? 'active' : ''} onClick={() => setActiveIndex(2)}>{language?.product_02_05}</button>
                   <Link href="/research/power-lift-gate"><Image src="/images/sub/products/3d-link.png" alt="R&D 3D Configurator" width={170} height={20}/></Link>
                 </li>
                 {/* <li>
@@ -42,28 +46,28 @@ export default function LatchingSystems() {
             </dd>
           </dl>
           <dl>
-            <dt>Sliding Door System</dt>
+            <dt>{language?.product_02_06}</dt>
             <dd>
               <ul>
                 <li>
-                  <button className={activeIndex === 5 ? 'active' : ''} onClick={() => setActiveIndex(5)}>Sliding Door Latch (with Cinching Actuator)</button>
+                  <button className={activeIndex === 5 ? 'active' : ''} onClick={() => setActiveIndex(5)}>{language?.product_02_07}</button>
                 </li>
                 <li>
-                  <button className={activeIndex === 6 ? 'active' : ''} onClick={() => setActiveIndex(6)}>Drive Unit</button>
+                  <button className={activeIndex === 6 ? 'active' : ''} onClick={() => setActiveIndex(6)}>{language?.product_02_08}</button>
                 </li>
               </ul>
             </dd>
           </dl>
           <dl>
-            <dt>Hood System</dt>
+            <dt>{language?.product_02_09}</dt>
             <dd>
               <ul>
                 <li>
-                  <button className={activeIndex === 7 ? 'active' : ''} onClick={() => setActiveIndex(7)}>Power Cinching Latch</button>
+                  <button className={activeIndex === 7 ? 'active' : ''} onClick={() => setActiveIndex(7)}>{language?.product_02_10}</button>
                   <Link href="/research/power-hood"><Image src="/images/sub/products/3d-link.png" alt="R&D 3D Configurator" width={170} height={20}/></Link>
                 </li>
                 <li>
-                  <button className={activeIndex === 8 ? 'active' : ''} onClick={() => setActiveIndex(8)}>Spindle Drive Unit</button>
+                  <button className={activeIndex === 8 ? 'active' : ''} onClick={() => setActiveIndex(8)}>{language?.product_02_11}</button>
                 </li>
               </ul>
             </dd>
@@ -112,17 +116,17 @@ export default function LatchingSystems() {
       {activeIndex === 1 && (
         <>
           <div className="products-detail-middle">
-            <h4>Power Door System</h4>
+            <h4>{language?.product_02_12}</h4>
             <div className="products-area">
               <div className="products-image-area">
                 <Image src="/images/sub/products/products-02-01.png" alt="Plastic (Case) Type" width={361} height={545}/>
-                <p>STANDARD TYPE</p>
+                <p>{language?.product_02_13}</p>
               </div>
               <div className="products-text-area">
-                The Power Door System (PDS) maximizes convenience with its automatic vehicle door opening and closing functionality, offering effortless and smart door operation.<br/>
-                It ensures safety and convenience by providing support at any position during door opening or closing.<br/>
-                The system suppresses vibrations and shaking during door movement, achieving smooth and stable operation while delivering a premium vehicle experience through precise position control.<br/>
-                With rigorous durability testing and environmental testing under extreme conditions, including temperature, humidity, and dust, it ensures consistent performance over prolonged use.
+                {language?.product_02_14}<br/>
+                {language?.product_02_15}<br/>
+                {language?.product_02_16}<br/>
+                {language?.product_02_17}
               </div>
             </div>
           </div>
@@ -132,17 +136,17 @@ export default function LatchingSystems() {
       {activeIndex === 2 && (
         <>
           <div className="products-detail-middle">
-            <h4>Lift Gate System Set</h4>
+            <h4>{language?.product_02_18}</h4>
             <div className="products-area">
               <div className="products-image-area">
                 <Image src="/images/sub/products/products-02-11.png" alt="Plastic (Case) Type" width={361} height={545}/>
-                <p>SPINDLE</p>
+                <p>{language?.product_02_19}</p>
               </div>
               <div className="products-text-area">
-                The Lift Gate System is a Gate equipped with an automatic opening and closing fuction installed at the rear of the vehicle.<br/>
-                It allows for easy opening and closing with the push of a button, simplyfying the process of loading and unloading luggage.<br/>
-                This system operates through an electric motor to maximize user convenience.<br/>
-                Additionally, it features height adjustment capabilities to accommondate various sitations and includes an obstacle detection function that automaticcally stops the Gate during operation, ensuring safety.
+                {language?.product_02_20}<br/>
+                {language?.product_02_21}<br/>
+                {language?.product_02_22}<br/>
+                {language?.product_02_23}
               </div>
             </div>
           </div>
@@ -165,13 +169,13 @@ export default function LatchingSystems() {
                 <p className="image-area">
                   <Image src="/images/sub/products/products-01-09.png" alt="LUXURY TYPE" width={284} height={316}/>
                 </p>
-                <p className="text-area">POWER TAILGATE LATCH</p>
+                <p className="text-area">{language?.product_02_24}</p>
               </li>
               <li>
                 <p className="image-area">
                   <Image src="/images/sub/products/products-02-06.png" alt="LUXURY TYPE" width={259} height={318}/>
                 </p>
-                <p className="text-area">APS ASSEMBLY</p>
+                <p className="text-area">{language?.product_02_25}</p>
               </li>
             </ul>
           </div>
@@ -241,30 +245,23 @@ export default function LatchingSystems() {
       {activeIndex === 5 && (
         <>
           <div className="products-detail-middle">
-            <h4>Sliding Door Latch (with Cinching Actuator)</h4>
+            <h4>{language?.product_02_26}</h4>
             <div className="products-area">
               <div className="products-image-area">
                 <Image src="/images/sub/products/products-02-04.png" alt="Plastic (Case) Type" width={361} height={545}/>
-                <p>Sliding Door Latch Cinching Type</p>
+                <p>{language?.product_02_27}</p>
               </div>
               <div className="products-text-area">
-                The side door panel of an automobile is installed internally
-                and is responsible for maintaining the locked state of the
-                door when connected to the striker attached to the vehicle&#39;s
-                body. The door can be opened using the door handle (inner
-                /outer) and the cable (rod) that connects to it. On the inner
-                handle side, there is a knob, and the door&#39;s lock/unlock
-                status can be controlled from the outside using a key, or
-                electronically (via trim buttons or a remote control).
+                {language?.product_02_28}
                 <dl>
-                  <dt>Features</dt>
+                  <dt>{language?.product_02_29}</dt>
                   <dd>
                     <ul>
-                      <li>The release force at stages 1 and 2 when disengaging the striker in the locked state</li>
-                      <li>Required functionalities</li>
-                      <li>Regulation of operating force</li>
-                      <li>Durability and environmental resistance</li>
-                      <li>Theft prevention and waterproofing, among other aspects</li>
+                      <li>{language?.product_02_30}</li>
+                      <li>{language?.product_02_31}</li>
+                      <li>{language?.product_02_32}</li>
+                      <li>{language?.product_02_33}</li>
+                      <li>{language?.product_02_34}</li>
                     </ul>
                   </dd>
                 </dl>
@@ -278,19 +275,19 @@ export default function LatchingSystems() {
                 <p className="image-area">
                   <Image src="/images/sub/products/products-02-05.png" alt="LUXURY TYPE" width={259} height={318}/>
                 </p>
-                <p className="text-area">REMOTE CONTROLLER</p>
+                <p className="text-area">{language?.product_02_35}</p>
               </li>
               <li>
                 <p className="image-area">
                   <Image src="/images/sub/products/products-01-16.png" alt="LUXURY TYPE" width={284} height={316}/>
                 </p>
-                <p className="text-area">FRONT LATCH</p>
+                <p className="text-area">{language?.product_02_36}</p>
               </li>
               <li>
                 <p className="image-area">
                   <Image src="/images/sub/products/products-01-17.png" alt="LUXURY TYPE" width={284} height={316}/>
                 </p>
-                <p className="text-area">HOLD OPEN LOCK</p>
+                <p className="text-area">{language?.product_02_37}</p>
               </li>
             </ul>
           </div>
@@ -300,9 +297,9 @@ export default function LatchingSystems() {
       {activeIndex === 6 && (
         <>
           <div className="products-detail-middle">
-            <h4>Drive Unit</h4>
+            <h4>{language?.product_02_38}</h4>
             <div className="products-area">
-              <p style={{fontSize: "25px", fontWeight: 600, padding: "0 20px"}}>Coming Soon</p>
+              <p style={{fontSize: "25px", fontWeight: 600, padding: "0 20px"}}>{language?.product_02_39}</p>
             </div>
           </div>
         </>
@@ -311,22 +308,22 @@ export default function LatchingSystems() {
       {activeIndex === 7 && (
         <>
           <div className="products-detail-middle">
-            <h4>Power Cinching Latch (R&amp;D)</h4>
+            <h4>{language?.product_02_40}</h4>
 
             <div className="products-area">
               <div className="products-image-area">
                 <Image src="/images/sub/products/products-02-03.png" alt="Plastic (Case) Type" width={361} height={545}/>
-                <p>Power Cinching Latch</p>
+                <p>{language?.product_02_41}</p>
               </div>
               <div className="products-text-area">
                 <dl>
-                  <dt>Features</dt>
+                  <dt>{language?.product_02_42}</dt>
                   <dd>
                     <ul>
-                      <li>Dual Operation with One Motor</li>
-                      <li>Power Cinching and Power Release/Manual Release</li>
-                      <li>Enough Cinching Travel for Smoothly Closing</li>
-                      <li>Good Sound Quality</li>
+                      <li>{language?.product_02_43}</li>
+                      <li>{language?.product_02_44}</li>
+                      <li>{language?.product_02_45}</li>
+                      <li>{language?.product_02_46}</li>
                     </ul>
                   </dd>
                 </dl>
@@ -339,19 +336,19 @@ export default function LatchingSystems() {
                 <p className="image-area">
                   <Image src="/images/sub/products/products-01-07.png" alt="LUXURY TYPE" width={259} height={318}/>
                 </p>
-                <p className="text-area">POWER e-HOOD LATCH</p>
+                <p className="text-area">{language?.product_02_47}</p>
               </li>
               <li>
                 <p className="image-area">
                   <Image src="/images/sub/products/products-02-02.png" alt="LUXURY TYPE" width={284} height={316}/>
                 </p>
-                <p className="text-area">SPINDLE</p>
+                <p className="text-area">{language?.product_02_48}</p>
               </li>
               <li>
                 <p className="image-area">
                   <Image src="/images/sub/products/products-02-06.png" alt="LUXURY TYPE" width={284} height={316}/>
                 </p>
-                <p className="text-area">APS</p>
+                <p className="text-area">{language?.product_02_49}</p>
               </li>
             </ul>
           </div>
@@ -361,27 +358,23 @@ export default function LatchingSystems() {
       {activeIndex === 8 && (
         <>
           <div className="products-detail-middle">
-            <h4>Spindle Drive Unit</h4>
+            <h4>{language?.product_02_50}</h4>
             <div className="products-area">
               <div className="products-image-area">
                 <Image src="/images/sub/products/products-02-02.png" alt="Plastic (Case) Type" width={361} height={545}/>
-                <p>Spindle Drive Unit</p>
+                <p>{language?.product_02_51}</p>
               </div>
               <div className="products-text-area">
-                New generation Drive Unit/ECU. The Spindle Drive Unit and
-                Control Unit are components that transmit power to open and
-                close the tailgate, and control this process. As indoor noise is
-                reduced, the Drive Unit should operate in a progressively
-                quieter manner.
+                {language?.product_02_52}
                 <dl>
-                  <dt>Features</dt>
+                  <dt>{language?.product_02_53}</dt>
                   <dd>
                     <ul>
-                      <li>Optimized structure applicable to various automatic opening and closing mechanisms such as tailgates and hoods.</li>
-                      <li>Long-lasting performance through environmental testing under extreme temperatures, humidity, dust, and other conditions.</li>
-                      <li>Optimal mechanism structure designed to minimize operating noise.</li>
-                      <li>Passive selection applied according to the vehicle type<br/>Luxury vehicles: 2-way spindle type / Mid-range and economy vehicles: 1-way gas spring type</li>
-                      <li>Application examples<br/>Power tailgate system / Power trunk & frunk system</li>
+                      <li>{language?.product_02_54}</li>
+                      <li>{language?.product_02_55}</li>
+                      <li>{language?.product_02_56}</li>
+                      <li>{language?.product_02_57}<br/>{language?.product_02_58}</li>
+                      <li>{language?.product_02_59}<br/>{language?.product_02_60}</li>
                     </ul>
                   </dd>
                 </dl>

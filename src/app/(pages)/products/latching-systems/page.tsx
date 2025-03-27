@@ -18,9 +18,9 @@ export default async function LatchingSystemsPage({searchParams : {lang}} : any)
                         <li>{language?.header_2_1}</li>
                     </ul>
                 </div>
-                <LatchingSystems/>
+                <LatchingSystems language={language}/>
                 <div className="client-slide">
-                    <h2>Our Clients</h2>
+                    <h2>{language?.product_01}</h2>
                     <ClientSlide/>
                     <ClientSlideR/>
                 </div>

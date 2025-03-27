@@ -1,11 +1,11 @@
 import Header from "@/components/common/Header";
 import Footer from "@/components/common/Footer";
 import {fetchLanguage} from "@/util/fetchLanguage";
-import PowerClusures from "@/components/products/PowerClusures";
+import PowerClosures from "@/components/products/PowerClosures";
 import ClientSlide from "@/components/products/ClientSlide";
 import ClientSlideR from "@/components/products/ClientSlideR";
 
-export default async function PowerClusuresPage({searchParams : {lang}} : any) {
+export default async function PowerClosuresPage({searchParams : {lang}} : any) {
     const language = await fetchLanguage(lang);
     return (
         <>
@@ -18,7 +18,7 @@ export default async function PowerClusuresPage({searchParams : {lang}} : any) {
                         <li>{language?.header_2_2}</li>
                     </ul>
                 </div>
-                <PowerClusures/>
+                <PowerClosures language={language}/>
                 <div className="client-slide">
                     <h2>Our Clients</h2>
                     <ClientSlide/>
