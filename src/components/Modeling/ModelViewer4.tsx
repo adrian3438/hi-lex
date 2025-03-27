@@ -5,7 +5,6 @@ import { Html, OrbitControls, useGLTF } from '@react-three/drei';
 import {FC, useEffect, useRef, useState} from 'react';
 import * as THREE from 'three';
 import gsap from "gsap";
-import Image from "next/image";
 
 interface ModelProps {
     url: string;
