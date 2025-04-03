@@ -340,3 +340,74 @@
     box-shadow: none;
   }
 }
+
+
+/* 모바일 대응 CSS */
+@media only screen and (max-width: 768px) {
+  .products-detail {
+    padding: 0 10px 150px;
+  }
+  .products-detail-top {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .products-detail-image {
+    max-width: 100%;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  .products-detail-middle {
+    margin: 50px 0 0px;
+    > h4 {
+      font-size: 30px;
+      padding: 15px 30px;
+    }
+    .products-area {
+      flex-direction: column;
+      align-items: left;
+      .products-image-area {
+        width: 100%;
+        img {
+          width: 200%;
+          height: auto;
+          margin: 0 auto;
+        }
+      }
+      
+      .products-text-area {
+        width: 100%;
+        margin-top: 20px;
+      }
+    }
+  }
+  
+  .products-detail-bottom > ul {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .client-slide h2 {
+    font-size: 40px;
+  }
+  .client-slide img {
+    width: 100%;
+    height: auto;
+  }
+  .menu-tabs {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    background-color: #eeeeee;
+    margin-bottom: 20px;
+  }
+  .menu-tabs button {
+    flex: 1;
+    padding: 10px;
+    background: none;
+    border: none;
+    font-size: 18px;
+    color: #023A8E;
+  }
+}
+
