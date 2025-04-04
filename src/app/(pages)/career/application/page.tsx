@@ -82,66 +82,73 @@ export default async function ApplicationPage({searchParams: {lang, page}}: any)
             <h2>Rank &amp; Title</h2>
 
             <div>
-              <div className="ranks">
+              {/* <div className="ranks">
                 <p className="rank-01">G7</p>
                 <p className="rank-02">G6</p>
                 <p className="rank-03">G5</p>
-              </div>
+              </div> */}
               <div className="positions">
+                <p style={{ fontWeight: "600", fontSize: "20px"}}>사무직</p>
                 <p className="rank-position-01">팀장</p>
                 <p className="rank-position-02">연구위원</p>
                 <p className="rank-position-02">책임매니저/책임연구원</p>
+                <p className="rank-position-02">매니저/연구원</p>
               </div>
+              
             </div>
             <div>
-              <div className="ranks">
+              {/* <div className="ranks">
                 <p className="rank-04">G4</p>
                 <p className="rank-05">G3</p>
                 <p className="rank-06">G2</p>
                 <p className="rank-07">G1</p>
-              </div>
-              <div className="positions">
+              </div> */}
+              {/* <div className="positions">
                 <p className="rank-position-03">매니저/연구원</p>
-              </div>
+              </div> */}
             </div>
             <div>
-              <div className="ranks">
+              {/* <div className="ranks">
                 <p className="rank-08">E</p>
-              </div>
+              </div> */}
               <div className="positions">
                 <p className="rank-position-04">수습사원(경력포함)</p>
               </div>
             </div>
             </section>
 
+            <br/><br/><br/>
+
             <section className="application-content4">
             <div>
-              <div className="ranks">
+              {/* <div className="ranks">
                 <p className="rank-01">G7</p>
                 <p className="rank-02">G6</p>
                 <p className="rank-03">G5</p>
-              </div>
+              </div> */}
               <div className="positions">
+                <p style={{ fontWeight: "600", fontSize: "20px"}}>생산직</p>
                 <p className="rank-position-01">반장</p>
                 <p className="rank-position-02">조장</p>
                 <p className="rank-position-02">리더</p>
+                <p className="rank-position-02">사원</p>
               </div>
             </div>
             <div>
-              <div className="ranks">
+              {/* <div className="ranks">
                 <p className="rank-04">G4</p>
                 <p className="rank-05">G3</p>
                 <p className="rank-06">G2</p>
                 <p className="rank-07">G1</p>
-              </div>
-              <div className="positions">
+              </div> */}
+              {/* <div className="positions">
                 <p className="rank-position-03">사원</p>
-              </div>
+              </div> */}
             </div>
             <div>
-              <div className="ranks">
+              {/* <div className="ranks">
                 <p className="rank-08">E</p>
-              </div>
+              </div> */}
               <div className="positions">
                 <p className="rank-position-04">수습사원(경력포함)</p>
               </div>
