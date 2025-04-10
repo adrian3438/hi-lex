@@ -30,7 +30,7 @@ export default function DoorChecks({language}: Props) {
                 </div>
                 <div className="products-detail-image">
                     <Image src="/images/sub/products/daedong-ionic-products.jpg" alt="" width={992} height={499}/>
-                    <Link href="/products/door-checks#products-03-01" >
+                    <Link href="/products/door-checks#products-03-01">
                     <span className={activeIndex === 1 ? 'products-03-01 active' : 'products-03-01'}></span>
                     </Link>
                 </div>
