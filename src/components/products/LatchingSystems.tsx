@@ -23,10 +23,10 @@ export default function LatchingSystems({language}: Props) {
             <dd>
               <ul>
                 <li>
-                  <button className={activeIndex === 1 ? 'active' : ''} onClick={() => setActiveIndex(1)}>{language?.product_01_03}</button>
+                  <button className={activeIndex === 1 ? 'active' : ''} onClick={() => setActiveIndex(1)}><Link href="#productsDetail">{language?.product_01_03}</Link></button>
                 </li>
                 <li>
-                  <button className={activeIndex === 2 ? 'active' : ''} onClick={() => setActiveIndex(2)}>{language?.product_01_04}</button>
+                  <button className={activeIndex === 2 ? 'active' : ''} onClick={() => setActiveIndex(2)}><Link href="#productsDetail">{language?.product_01_04}</Link></button>
                   <Link href="/research/e-latch"><Image src="/images/sub/products/3d-link.png" alt="R&D 3D Configurator" width={170} height={20}/></Link>
                 </li>
               </ul>
@@ -37,16 +37,16 @@ export default function LatchingSystems({language}: Props) {
             <dd>
               <ul>
                 <li>
-                  <button className={activeIndex === 3 ? 'active' : ''} onClick={() => setActiveIndex(3)}>{language?.product_01_05}</button>
+                  <button className={activeIndex === 3 ? 'active' : ''} onClick={() => setActiveIndex(3)}><Link href="#productsDetail">{language?.product_01_05}</Link></button>
                 </li>
                 <li>
-                  <button className={activeIndex === 4 ? 'active' : ''} onClick={() => setActiveIndex(4)}>{language?.product_01_06}</button>
+                  <button className={activeIndex === 4 ? 'active' : ''} onClick={() => setActiveIndex(4)}><Link href="#productsDetail">{language?.product_01_06}</Link></button>
                 </li>
                 <li>
-                  <button className={activeIndex === 5 ? 'active' : ''} onClick={() => setActiveIndex(5)}>{language?.product_01_07}</button>
+                  <button className={activeIndex === 5 ? 'active' : ''} onClick={() => setActiveIndex(5)}><Link href="#productsDetail">{language?.product_01_07}</Link></button>
                 </li>
                 <li>
-                  <button className={activeIndex === 6 ? 'active' : ''} onClick={() => setActiveIndex(6)}>{language?.product_01_08}</button>
+                  <button className={activeIndex === 6 ? 'active' : ''} onClick={() => setActiveIndex(6)}><Link href="#productsDetail">{language?.product_01_08}</Link></button>
                 </li>
               </ul>
             </dd>
@@ -56,10 +56,10 @@ export default function LatchingSystems({language}: Props) {
             <dd>
               <ul>
                 <li>
-                  <button className={activeIndex === 7 ? 'active' : ''} onClick={() => setActiveIndex(7)}>{language?.product_01_10}</button>
+                  <button className={activeIndex === 7 ? 'active' : ''} onClick={() => setActiveIndex(7)}><Link href="#productsDetail">{language?.product_01_10}</Link></button>
                 </li>
                 <li>
-                  <button className={activeIndex === 8 ? 'active' : ''} onClick={() => setActiveIndex(8)}>{language?.product_01_11}</button>
+                  <button className={activeIndex === 8 ? 'active' : ''} onClick={() => setActiveIndex(8)}><Link href="#productsDetail">{language?.product_01_11}</Link></button>
                 </li>
                 {/* <li>
                                     <button className={activeIndex === 8 ? 'active' : ''} onClick={() => setActiveIndex(8)}>Hold Open Lock</button>
@@ -72,7 +72,7 @@ export default function LatchingSystems({language}: Props) {
             <dd>
               <ul>
                 <li>
-                  <button className={activeIndex === 9 ? 'active' : ''} onClick={() => setActiveIndex(9)}>{language?.product_01_12}</button>
+                  <button className={activeIndex === 9 ? 'active' : ''} onClick={() => setActiveIndex(9)}><Link href="#productsDetail">{language?.product_01_12}</Link></button>
                 </li>
               </ul>
             </dd>
@@ -118,7 +118,7 @@ export default function LatchingSystems({language}: Props) {
       </div>
       {activeIndex === 1 && (
         <>
-          <div className="products-detail-middle">
+          <div className="products-detail-middle" id="productsDetail">
             <h4>{language?.product_01_13}</h4>
             <div className="products-area">
               <div className="products-image-area">
@@ -169,7 +169,7 @@ export default function LatchingSystems({language}: Props) {
 
       {activeIndex === 2 && (
         <>
-          <div className="products-detail-middle">
+          <div className="products-detail-middle" id="productsDetail">
             <h4>{language?.product_01_95}</h4>
             <div className="products-area">
               <div className="products-image-area">
@@ -197,7 +197,7 @@ export default function LatchingSystems({language}: Props) {
 
       {activeIndex === 3 && (
         <>
-          <div className="products-detail-middle">
+          <div className="products-detail-middle" id="productsDetail">
             <h4>{language?.product_01_24}</h4>
             <div className="products-area">
               <div className="products-image-area">
@@ -240,7 +240,7 @@ export default function LatchingSystems({language}: Props) {
 
       {activeIndex === 4 && (
         <>
-          <div className="products-detail-middle">
+          <div className="products-detail-middle" id="productsDetail">
             <h4>{language?.product_01_32}</h4>
             <div className="products-area">
               <div className="products-image-area">
@@ -298,7 +298,7 @@ export default function LatchingSystems({language}: Props) {
 
       {(activeIndex === 5 || activeIndex === 6) && (
         <>
-          <div className="products-detail-middle">
+          <div className="products-detail-middle" id="productsDetail">
             <h4>{language?.product_01_45}</h4>
             <div className="products-area">
               <div className="products-image-area">
@@ -341,7 +341,7 @@ export default function LatchingSystems({language}: Props) {
 
       {activeIndex === 7 && (
         <>
-          <div className="products-detail-middle">
+          <div className="products-detail-middle" id="productsDetail">
             <h4>{language?.product_01_63}</h4>
             <div className="products-area">
               <div className="products-image-area">
@@ -390,7 +390,7 @@ export default function LatchingSystems({language}: Props) {
 
       {activeIndex === 7 && (
         <>
-          <div className="products-detail-middle">
+          <div className="products-detail-middle" id="productsDetail">
             <h4>{language?.product_01_70}</h4>
             <div className="products-area">
               <div className="products-image-area">
@@ -439,7 +439,7 @@ export default function LatchingSystems({language}: Props) {
 
       {activeIndex === 8 && (
         <>
-          <div className="products-detail-middle">
+          <div className="products-detail-middle" id="productsDetail">
             <h4>{language?.product_01_79}</h4>
             <div className="products-area">
               <div className="products-image-area">
@@ -488,7 +488,7 @@ export default function LatchingSystems({language}: Props) {
 
       {activeIndex === 9 && (
         <>
-          <div className="products-detail-middle">
+          <div className="products-detail-middle" id="productsDetail">
             <h4>{language?.product_01_89}</h4>
             <div className="products-area">
               <div className="products-image-area">

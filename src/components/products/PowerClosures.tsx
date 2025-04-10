@@ -22,7 +22,7 @@ export default function PowerClosures({language}: Props) {
             <dd>
               <ul>
                 <li>
-                  <button className={activeIndex === 1 ? 'active' : ''} onClick={() => setActiveIndex(1)}>{language?.product_02_03}</button>
+                  <button className={activeIndex === 1 ? 'active' : ''} onClick={() => setActiveIndex(1)}><Link href="#productsDetail">{language?.product_02_03}</Link></button>
                   <Link href="/research/pds"><Image src="/images/sub/products/3d-link.png" alt="R&D 3D Configurator" width={170} height={20}/></Link>
                 </li>
               </ul>
@@ -33,7 +33,7 @@ export default function PowerClosures({language}: Props) {
             <dd>
               <ul>
                 <li>
-                  <button className={activeIndex === 2 ? 'active' : ''} onClick={() => setActiveIndex(2)}>{language?.product_02_05}</button>
+                  <button className={activeIndex === 2 ? 'active' : ''} onClick={() => setActiveIndex(2)}><Link href="#productsDetail">{language?.product_02_05}</Link></button>
                   <Link href="/research/power-lift-gate"><Image src="/images/sub/products/3d-link.png" alt="R&D 3D Configurator" width={170} height={20}/></Link>
                 </li>
                 {/* <li>
@@ -50,10 +50,10 @@ export default function PowerClosures({language}: Props) {
             <dd>
               <ul>
                 <li>
-                  <button className={activeIndex === 5 ? 'active' : ''} onClick={() => setActiveIndex(5)}>{language?.product_02_07}</button>
+                  <button className={activeIndex === 5 ? 'active' : ''} onClick={() => setActiveIndex(5)}><Link href="#productsDetail">{language?.product_02_07}</Link></button>
                 </li>
                 <li>
-                  <button className={activeIndex === 6 ? 'active' : ''} onClick={() => setActiveIndex(6)}>{language?.product_02_08}</button>
+                  <button className={activeIndex === 6 ? 'active' : ''} onClick={() => setActiveIndex(6)}><Link href="#productsDetail">{language?.product_02_08}</Link></button>
                 </li>
               </ul>
             </dd>
@@ -63,11 +63,11 @@ export default function PowerClosures({language}: Props) {
             <dd>
               <ul>
                 <li>
-                  <button className={activeIndex === 7 ? 'active' : ''} onClick={() => setActiveIndex(7)}>{language?.product_02_10}</button>
+                  <button className={activeIndex === 7 ? 'active' : ''} onClick={() => setActiveIndex(7)}><Link href="#productsDetail">{language?.product_02_10}</Link></button>
                   <Link href="/research/power-hood"><Image src="/images/sub/products/3d-link.png" alt="R&D 3D Configurator" width={170} height={20}/></Link>
                 </li>
                 <li>
-                  <button className={activeIndex === 8 ? 'active' : ''} onClick={() => setActiveIndex(8)}>{language?.product_02_11}</button>
+                  <button className={activeIndex === 8 ? 'active' : ''} onClick={() => setActiveIndex(8)}><Link href="#productsDetail">{language?.product_02_11}</Link></button>
                 </li>
               </ul>
             </dd>
@@ -115,7 +115,7 @@ export default function PowerClosures({language}: Props) {
       </div>
       {activeIndex === 1 && (
         <>
-          <div className="products-detail-middle">
+          <div className="products-detail-middle" id="productsDetail">
             <h4>{language?.product_02_12}</h4>
             <div className="products-area">
               <div className="products-image-area">
@@ -135,7 +135,7 @@ export default function PowerClosures({language}: Props) {
 
       {activeIndex === 2 && (
         <>
-          <div className="products-detail-middle">
+          <div className="products-detail-middle" id="productsDetail">
             <h4>{language?.product_02_18}</h4>
             <div className="products-area">
               <div className="products-image-area">
@@ -184,7 +184,7 @@ export default function PowerClosures({language}: Props) {
 
       {activeIndex === 3 && (
         <>
-          <div className="products-detail-middle">
+          <div className="products-detail-middle" id="productsDetail">
             <h4>Anti-Pinch Sensor</h4>
           </div>
           <div className="products-detail-bottom">
@@ -214,7 +214,7 @@ export default function PowerClosures({language}: Props) {
 
       {activeIndex === 4 && (
         <>
-          <div className="products-detail-middle">
+          <div className="products-detail-middle" id="productsDetail">
             <h4>Power Cinching Latch</h4>
           </div>
           <div className="products-detail-bottom">
@@ -244,7 +244,7 @@ export default function PowerClosures({language}: Props) {
 
       {activeIndex === 5 && (
         <>
-          <div className="products-detail-middle">
+          <div className="products-detail-middle" id="productsDetail">
             <h4>{language?.product_02_26}</h4>
             <div className="products-area">
               <div className="products-image-area">
@@ -296,7 +296,7 @@ export default function PowerClosures({language}: Props) {
 
       {activeIndex === 6 && (
         <>
-          <div className="products-detail-middle">
+          <div className="products-detail-middle" id="productsDetail">
             <h4>{language?.product_02_38}</h4>
             <div className="products-area">
               <p style={{fontSize: "25px", fontWeight: 600, padding: "0 20px"}}>{language?.product_02_39}</p>
@@ -307,7 +307,7 @@ export default function PowerClosures({language}: Props) {
 
       {activeIndex === 7 && (
         <>
-          <div className="products-detail-middle">
+          <div className="products-detail-middle" id="productsDetail">
             <h4>{language?.product_02_40}</h4>
 
             <div className="products-area">
@@ -357,7 +357,7 @@ export default function PowerClosures({language}: Props) {
 
       {activeIndex === 8 && (
         <>
-          <div className="products-detail-middle">
+          <div className="products-detail-middle" id="productsDetail">
             <h4>{language?.product_02_50}</h4>
             <div className="products-area">
               <div className="products-image-area">

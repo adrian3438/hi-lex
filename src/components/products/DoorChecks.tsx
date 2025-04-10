@@ -22,7 +22,7 @@ export default function DoorChecks({language}: Props) {
                         <dd>
                             <ul>
                                 <li>
-                                    <button className={activeIndex === 1 ? 'active' : ''} onClick={() => setActiveIndex(1)}>{language?.product_03_03}</button>
+                                    <button className={activeIndex === 1 ? 'active' : ''} onClick={() => setActiveIndex(1)}><Link href="#products-03-01">{language?.product_03_03}</Link></button>
                                 </li>
                             </ul>
                         </dd>

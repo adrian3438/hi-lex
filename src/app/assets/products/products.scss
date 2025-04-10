@@ -45,9 +45,17 @@
                 background: none;
                 font-size: 20px;
                 color: #023A8E;
+                > a {
+                  font-size: 20px;
+                  color: #023A8E;
+                }
                 &.active {
                   color: #FF43CD;
+                  > a {
+                    color: #FF43CD;
+                  }
                 }
+
               }
               > a {
                 display: inline-block;
@@ -194,7 +202,8 @@
     }
   }
   .products-detail-middle {
-    margin: 125px 0 135px;
+    margin: 0 0 135px;
+    padding-top: 125px;
     > h4 {
       background-color: #1B4D99;
       color: #fff;
@@ -375,14 +384,14 @@
           margin: 0 auto;
         }
       }
-      
+
       .products-text-area {
         width: 100%;
         margin-top: 20px;
       }
     }
   }
-  
+
   .products-detail-bottom > ul {
     flex-direction: column;
     gap: 20px;
