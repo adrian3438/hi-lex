@@ -22,7 +22,7 @@ export default function PowerClosures({language}: Props) {
             <dd>
               <ul>
                 <li>
-                  <button className={activeIndex === 1 ? 'active' : ''} onClick={() => setActiveIndex(1)}><Link href="#productsDetail">{language?.product_02_03}</Link></button>
+                  <button className={activeIndex === 1 ? 'active' : ''} onClick={() => setActiveIndex(1)}>{language?.product_02_03}</button>
                   <Link href="/research/pds"><Image src="/images/sub/products/3d-link.png" alt="R&D 3D Configurator" width={170} height={20}/></Link>
                 </li>
               </ul>
@@ -33,7 +33,7 @@ export default function PowerClosures({language}: Props) {
             <dd>
               <ul>
                 <li>
-                  <button className={activeIndex === 2 ? 'active' : ''} onClick={() => setActiveIndex(2)}><Link href="#productsDetail">{language?.product_02_05}</Link></button>
+                  <button className={activeIndex === 2 ? 'active' : ''} onClick={() => setActiveIndex(2)}>{language?.product_02_05}</button>
                   <Link href="/research/power-lift-gate"><Image src="/images/sub/products/3d-link.png" alt="R&D 3D Configurator" width={170} height={20}/></Link>
                 </li>
                 {/* <li>
@@ -50,10 +50,10 @@ export default function PowerClosures({language}: Props) {
             <dd>
               <ul>
                 <li>
-                  <button className={activeIndex === 5 ? 'active' : ''} onClick={() => setActiveIndex(5)}><Link href="#productsDetail">{language?.product_02_07}</Link></button>
+                  <button className={activeIndex === 5 ? 'active' : ''} onClick={() => setActiveIndex(5)}>{language?.product_02_07}</button>
                 </li>
                 <li>
-                  <button className={activeIndex === 6 ? 'active' : ''} onClick={() => setActiveIndex(6)}><Link href="#productsDetail">{language?.product_02_08}</Link></button>
+                  <button className={activeIndex === 6 ? 'active' : ''} onClick={() => setActiveIndex(6)}>{language?.product_02_08}</button>
                 </li>
               </ul>
             </dd>
@@ -63,11 +63,11 @@ export default function PowerClosures({language}: Props) {
             <dd>
               <ul>
                 <li>
-                  <button className={activeIndex === 7 ? 'active' : ''} onClick={() => setActiveIndex(7)}><Link href="#productsDetail">{language?.product_02_10}</Link></button>
+                  <button className={activeIndex === 7 ? 'active' : ''} onClick={() => setActiveIndex(7)}>{language?.product_02_10}</button>
                   <Link href="/research/power-hood"><Image src="/images/sub/products/3d-link.png" alt="R&D 3D Configurator" width={170} height={20}/></Link>
                 </li>
                 <li>
-                  <button className={activeIndex === 8 ? 'active' : ''} onClick={() => setActiveIndex(8)}><Link href="#productsDetail">{language?.product_02_11}</Link></button>
+                  <button className={activeIndex === 8 ? 'active' : ''} onClick={() => setActiveIndex(8)}>{language?.product_02_11}</button>
                 </li>
               </ul>
             </dd>
@@ -77,32 +77,32 @@ export default function PowerClosures({language}: Props) {
           {(activeIndex === 0 || activeIndex === 1) && (
             <>
               <Image src="/images/sub/products/daedong-g90-products.jpg" alt="" width={992} height={499}/>
-              <span className={activeIndex === 1 ? 'products-02-01 active' : 'products-02-01'}></span>
+              <span className={activeIndex === 1 ? 'products-02-01 active' : 'products-02-01'}>{activeIndex === 1 && <Link href="#productsDetail"/>}</span>
             </>
           )}
           {(activeIndex === 2 || activeIndex === 3 || activeIndex === 4) && (
             <>
               <Image src="/images/sub/products/daedong-canival-rear-products.jpg" alt="" width={992} height={499}/>
-              <span className={activeIndex === 2 ? 'products-02-02 active' : 'products-02-02'}></span>
-              <span className={activeIndex === 2 ? 'products-02-03 active' : 'products-02-03'}></span>
-              <span className={activeIndex === 3 ? 'products-02-04 active' : 'products-02-04'}></span>
-              <span className={activeIndex === 3 ? 'products-02-05 active' : 'products-02-05'}></span>
-              <span className={activeIndex === 4 ? 'products-02-06 active' : 'products-02-06'}></span>
+              <span className={activeIndex === 2 ? 'products-02-02 active' : 'products-02-02'}>{activeIndex === 2 && <Link href="#productsDetail"/>}</span>
+              <span className={activeIndex === 2 ? 'products-02-03 active' : 'products-02-03'}>{activeIndex === 2 && <Link href="#productsDetail"/>}</span>
+              <span className={activeIndex === 3 ? 'products-02-04 active' : 'products-02-04'}>{activeIndex === 3 && <Link href="#productsDetail"/>}</span>
+              <span className={activeIndex === 3 ? 'products-02-05 active' : 'products-02-05'}>{activeIndex === 3 && <Link href="#productsDetail"/>}</span>
+              <span className={activeIndex === 4 ? 'products-02-06 active' : 'products-02-06'}>{activeIndex === 4 && <Link href="#productsDetail"/>}</span>
             </>
           )}
           {(activeIndex === 5 || activeIndex === 6) && (
             <>
               <Image src="/images/sub/products/daedong-canival-products.jpg" alt="" width={992} height={499}/>
-              <span className={activeIndex === 5 ? 'products-02-07 active' : 'products-02-07'}></span>
-              <span className={activeIndex === 6 ? 'products-02-10 active' : 'products-02-10'}></span>
+              <span className={activeIndex === 5 ? 'products-02-07 active' : 'products-02-07'}>{activeIndex === 5 && <Link href="#productsDetail"/>}</span>
+              <span className={activeIndex === 6 ? 'products-02-10 active' : 'products-02-10'}>{activeIndex === 6 && <Link href="#productsDetail"/>}</span>
             </>
           )}
 
           {(activeIndex === 7 ||  activeIndex === 8) && (
             <>
                 <Image src="/images/sub/products/daedong-ev9-products.jpg" alt="" width={992} height={499}/>
-                <span className={activeIndex === 7 ? 'products-02-08 active' : 'products-02-08'}></span>
-                <span className={activeIndex === 8 ? 'products-02-09 active' : 'products-02-09'}></span>
+                <span className={activeIndex === 7 ? 'products-02-08 active' : 'products-02-08'}>{activeIndex === 7 && <Link href="#productsDetail"/>}</span>
+                <span className={activeIndex === 8 ? 'products-02-09 active' : 'products-02-09'}>{activeIndex === 8 && <Link href="#productsDetail"/>}</span>
             </>
           )}
             {/*{(activeIndex === 8) && (

@@ -23,10 +23,10 @@ export default function LatchingSystems({language}: Props) {
             <dd>
               <ul>
                 <li>
-                  <button className={activeIndex === 1 ? 'active' : ''} onClick={() => setActiveIndex(1)}><Link href="#productsDetail">{language?.product_01_03}</Link></button>
+                  <button className={activeIndex === 1 ? 'active' : ''} onClick={() => setActiveIndex(1)}>{language?.product_01_03}</button>
                 </li>
                 <li>
-                  <button className={activeIndex === 2 ? 'active' : ''} onClick={() => setActiveIndex(2)}><Link href="#productsDetail">{language?.product_01_04}</Link></button>
+                  <button className={activeIndex === 2 ? 'active' : ''} onClick={() => setActiveIndex(2)}>{language?.product_01_04}</button>
                   <Link href="/research/e-latch"><Image src="/images/sub/products/3d-link.png" alt="R&D 3D Configurator" width={170} height={20}/></Link>
                 </li>
               </ul>
@@ -37,16 +37,16 @@ export default function LatchingSystems({language}: Props) {
             <dd>
               <ul>
                 <li>
-                  <button className={activeIndex === 3 ? 'active' : ''} onClick={() => setActiveIndex(3)}><Link href="#productsDetail">{language?.product_01_05}</Link></button>
+                  <button className={activeIndex === 3 ? 'active' : ''} onClick={() => setActiveIndex(3)}>{language?.product_01_05}</button>
                 </li>
                 <li>
-                  <button className={activeIndex === 4 ? 'active' : ''} onClick={() => setActiveIndex(4)}><Link href="#productsDetail">{language?.product_01_06}</Link></button>
+                  <button className={activeIndex === 4 ? 'active' : ''} onClick={() => setActiveIndex(4)}>{language?.product_01_06}</button>
                 </li>
                 <li>
-                  <button className={activeIndex === 5 ? 'active' : ''} onClick={() => setActiveIndex(5)}><Link href="#productsDetail">{language?.product_01_07}</Link></button>
+                  <button className={activeIndex === 5 ? 'active' : ''} onClick={() => setActiveIndex(5)}>{language?.product_01_07}</button>
                 </li>
                 <li>
-                  <button className={activeIndex === 6 ? 'active' : ''} onClick={() => setActiveIndex(6)}><Link href="#productsDetail">{language?.product_01_08}</Link></button>
+                  <button className={activeIndex === 6 ? 'active' : ''} onClick={() => setActiveIndex(6)}>{language?.product_01_08}</button>
                 </li>
               </ul>
             </dd>
@@ -56,10 +56,10 @@ export default function LatchingSystems({language}: Props) {
             <dd>
               <ul>
                 <li>
-                  <button className={activeIndex === 7 ? 'active' : ''} onClick={() => setActiveIndex(7)}><Link href="#productsDetail">{language?.product_01_10}</Link></button>
+                  <button className={activeIndex === 7 ? 'active' : ''} onClick={() => setActiveIndex(7)}>{language?.product_01_10}</button>
                 </li>
                 <li>
-                  <button className={activeIndex === 8 ? 'active' : ''} onClick={() => setActiveIndex(8)}><Link href="#productsDetail">{language?.product_01_11}</Link></button>
+                  <button className={activeIndex === 8 ? 'active' : ''} onClick={() => setActiveIndex(8)}>{language?.product_01_11}</button>
                 </li>
                 {/* <li>
                                     <button className={activeIndex === 8 ? 'active' : ''} onClick={() => setActiveIndex(8)}>Hold Open Lock</button>
@@ -72,7 +72,7 @@ export default function LatchingSystems({language}: Props) {
             <dd>
               <ul>
                 <li>
-                  <button className={activeIndex === 9 ? 'active' : ''} onClick={() => setActiveIndex(9)}><Link href="#productsDetail">{language?.product_01_12}</Link></button>
+                  <button className={activeIndex === 9 ? 'active' : ''} onClick={() => setActiveIndex(9)}>{language?.product_01_12}</button>
                 </li>
               </ul>
             </dd>
@@ -82,19 +82,19 @@ export default function LatchingSystems({language}: Props) {
           {(activeIndex === 0 || activeIndex === 1 || activeIndex === 2 || activeIndex === 3 || activeIndex === 4) && (
             <>
               <Image src="/images/sub/products/daedong-ionic-products.jpg" alt="" width={992} height={499}/>
-              <span className={activeIndex === 1 ? 'products-01-01 active' : 'products-01-01'}></span>
-              <span className={activeIndex === 1 || activeIndex === 2 ? 'products-01-02 active' : 'products-01-02'}></span>
-              <span className={activeIndex === 3 ? 'products-01-03 active' : 'products-01-03'}></span>
-              <span className={activeIndex === 4 ? 'products-01-04 active' : 'products-01-04'}></span>
+              <span className={activeIndex === 1 ? 'products-01-01 active' : 'products-01-01'}>{activeIndex === 1 && <Link href="#productsDetail"/>}</span>
+              <span className={activeIndex === 1 || activeIndex === 2 ? 'products-01-02 active' : 'products-01-02'}>{(activeIndex === 1 || activeIndex === 2) && <Link href="#productsDetail"/>}</span>
+              <span className={activeIndex === 3 ? 'products-01-03 active' : 'products-01-03'}>{activeIndex === 3 && <Link href="#productsDetail"/>}</span>
+              <span className={activeIndex === 4 ? 'products-01-04 active' : 'products-01-04'}>{activeIndex === 4 && <Link href="#productsDetail"/>}</span>
               {/*<Image src="/images/sub/products/products-01-001.png" alt="" width={992} height={499}/>*/}
             </>
           )}
           {(activeIndex === 5 || activeIndex === 6) && (
             <>
               <Image src="/images/sub/products/daedong-tasman-products.jpg" alt="" width={992} height={499}/>
-              <span className={activeIndex === 5 ? 'products-01-05 active' : 'products-01-05'}></span>
-              <span className={activeIndex === 5 ? 'products-01-06 active' : 'products-01-06'}></span>
-              <span className={activeIndex === 6 ? 'products-01-07 active' : 'products-01-07'}></span>
+              <span className={activeIndex === 5 ? 'products-01-05 active' : 'products-01-05'}>{activeIndex === 5 && <Link href="#productsDetail"/>}</span>
+              <span className={activeIndex === 5 ? 'products-01-06 active' : 'products-01-06'}>{activeIndex === 5 && <Link href="#productsDetail"/>}</span>
+              <span className={activeIndex === 6 ? 'products-01-07 active' : 'products-01-07'}>{activeIndex === 6 && <Link href="#productsDetail"/>}</span>
             </>
           )}
           {(activeIndex === 7 || activeIndex === 8) && (
@@ -102,11 +102,11 @@ export default function LatchingSystems({language}: Props) {
               <Image src="/images/sub/products/daedong-canival-products.jpg" alt="" width={992} height={499}/>
               {/* <span className={activeIndex === 5 ? 'products-01-05 active' : 'products-01-05'}></span> */}
               {/*<span className={activeIndex === 6 ? 'products-01-06 active' : 'products-01-06'}></span>*/}
-              <span className={activeIndex === 7 ? 'products-01-08 active' : 'products-01-08'}></span>
+              <span className={activeIndex === 7 ? 'products-01-08 active' : 'products-01-08'}>{activeIndex === 7 && <Link href="#productsDetail"/>}</span>
               {/*<span className={activeIndex === 8 ? 'products-01-09 active' : 'products-01-09'}></span>*/}
-              <span className={activeIndex === 8 ? 'products-01-10 active' : 'products-01-10'}></span>
-              <span className={activeIndex === 8 ? 'products-01-11 active' : 'products-01-11'}></span>
-              <span className={activeIndex === 8 ? 'products-01-12 active' : 'products-01-12'}></span>
+              <span className={activeIndex === 8 ? 'products-01-10 active' : 'products-01-10'}>{activeIndex === 8 && <Link href="#productsDetail"/>}</span>
+              <span className={activeIndex === 8 ? 'products-01-11 active' : 'products-01-11'}>{activeIndex === 8 && <Link href="#productsDetail"/>}</span>
+              <span className={activeIndex === 8 ? 'products-01-12 active' : 'products-01-12'}>{activeIndex === 8 && <Link href="#productsDetail"/>}</span>
             </>
           )}
           {(activeIndex === 9) && (

@@ -22,7 +22,7 @@ export default function DoorChecks({language}: Props) {
                         <dd>
                             <ul>
                                 <li>
-                                    <button className={activeIndex === 1 ? 'active' : ''} onClick={() => setActiveIndex(1)}><Link href="#products-03-01">{language?.product_03_03}</Link></button>
+                                    <button className={activeIndex === 1 ? 'active' : ''} onClick={() => setActiveIndex(1)}>{language?.product_03_03}</button>
                                 </li>
                             </ul>
                         </dd>
@@ -30,9 +30,7 @@ export default function DoorChecks({language}: Props) {
                 </div>
                 <div className="products-detail-image">
                     <Image src="/images/sub/products/daedong-ionic-products.jpg" alt="" width={992} height={499}/>
-                    <Link href="#products-03-01">
-                    <span className={activeIndex === 1 ? 'products-03-01 active' : 'products-03-01'}></span>
-                    </Link>
+                    <span className={activeIndex === 1 ? 'products-03-01 active' : 'products-03-01'}>{activeIndex === 1 && <Link href="#products-03-01"/>}</span>
                 </div>
             </div>
             {activeIndex === 1 && (
