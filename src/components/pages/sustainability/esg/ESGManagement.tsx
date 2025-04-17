@@ -111,7 +111,7 @@ export default function ESGManagement({ language }: Props) {
                         <li>
                             <div>
                                 <p>{language?.esg_text_01_03}</p>
-                                <p>{language?.esg_text_01_04}</p>
+                                {/* <p>{language?.esg_text_01_04}</p> */}
                             </div>
                             <dl>
                                 <dt>{language?.esg_text_01_05}</dt>
@@ -129,7 +129,7 @@ export default function ESGManagement({ language }: Props) {
                         <li>
                             <div>
                                 <p>{language?.esg_text_01_11}</p>
-                                <p>{language?.esg_text_01_12}</p>
+                                {/* <p>{language?.esg_text_01_12}</p> */}
                             </div>
                             <dl>
                                 <dt>{language?.esg_text_01_13_01}</dt>
@@ -146,7 +146,7 @@ export default function ESGManagement({ language }: Props) {
                         </li>
                         <li>
                             <div>
-                                <p>{language?.esg_text_01_18}</p>
+                                {/* <p>{language?.esg_text_01_18}</p> */}
                                 <p>{language?.esg_text_01_19}</p>
                             </div>
                             <dl>

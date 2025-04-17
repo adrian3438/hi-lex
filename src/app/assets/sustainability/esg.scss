@@ -217,13 +217,15 @@
         > li {
           width: 33%;
           > div {
+            font-weight: 600;
+            padding-top: 35px;
             margin-bottom: 45px;
             aspect-ratio: 500 / 750;
             > p {
               font-size: 40px;
               color: #52575E;
               font-family: "Pretendard-Bold", sans-serif;
-              padding: 30px 49px 0;
+              padding: 30px 49px ;
               &:last-child {
                 padding-top: 10px;
                 font-family: "Pretendard-Medium", sans-serif;
@@ -537,6 +539,7 @@
         color: #52575E;
         font-family: "Pretendard-Bold", sans-serif;
         font-size: 35px;
+        margin-bottom: 50px;
         img {
           vertical-align: top;
           width: 100%;
@@ -1782,6 +1785,45 @@
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .esg {
+    .esg-banner {
+      background-size: cover;
+      width: 100%;
+      height: auto;
+      > .banner-area1 {
+        padding: 120px 0 80px;
+        > h2 {
+          font-size: 30px;
+          margin-bottom: 10px;
+        }
+        > ul {
+          display: block;
+          text-align: center;
+          margin-top: 20px;
+          margin-left: 10px;
+          margin-right: 10px;
+          > li {
+            font-size: 16px;
+            margin: 10px 0;
+            padding-left: 0;
+            position: static;
+            &:before {
+              content: ">";
+              margin-right: 10px;
+            }
+          }
+        }
+      }
+     > .banner-area2 {
+        position: relative;
+        bottom: 80px;
+        text-align: center;
+        > p {
+          font-size: 14px;
+          line-height: 20px;
+        }
+      }
+    }
+    
     .ethical-container {
       .ethical-01 {
         > ul {
@@ -1830,83 +1872,796 @@
 
 @media screen and (max-width: 767px) {
   .esg {
-    .esg-menus {
-      overflow-y: auto;
-      > ul {
-        justify-content: left;
+    .esg-menus > ul > li.active > a {
+      background-color: rgb(52, 194, 161);
+  }
+  .esg-menus > ul > li > a {
+    background-color: rgb(141, 141, 141);
+  }
+    .esg-banner {
+      background-size: cover;
+      width: 100%;
+      height: auto;
+      > .banner-area1 {
+        padding: 120px 0 80px;
+        > h2 {
+          font-size: 30px;
+          margin-bottom: 10px;
+        }
+        > ul {
+          display: block;
+          text-align: center;
+          margin-top: 20px;
+          > li {
+            font-size: 16px;
+            margin: 10px 0;
+            padding-left: 0;
+            position: static;
+           &:before {
+              content: ">";
+              margin-right: 10px;
+              
+            }
+          }
+        }
+        
+      }
+      > .banner-area2 {
+        position: relative;
+        bottom: 80px;
+        text-align: center;
+        > p {
+          font-size: 14px;
+          line-height: 20px;
+        }
       }
     }
-    .ethical-container {
-      .ethical-01 {
+
+    .esg-menus {
+      > ul {
+        margin-top: 75px;
+        flex-wrap: wrap;
+        gap: 1px 1px;
+        > li {
+          width: calc(25% - 1px);
+          
+        }
+      }
+    }
+  
+    /* ESG 경영 */
+    .esg-container {
+      padding: 100px 16px 100px;
+  
+      .esg-section-01,
+      .esg-section-02,
+      .esg-section-03,
+      .esg-section-04 {
+        margin-bottom: 100px;
+  
+        h3 {
+          font-size: 32px;
+          padding-bottom: 20px;
+          margin-bottom: 40px;
+        }
+      }
+  
+      .esg-section-01 {
+        > p {
+          font-size: 18px;
+          line-height: 1.6;
+          margin-bottom: 60px;
+        }
+  
         > ul {
+          flex-direction: column;
+          gap: 40px;
+  
           > li {
-            > dl {
-              flex-wrap: wrap;
-              > dt {
-                margin-bottom: 30px;
+            width: 100%;
+  
+            > div {
+              margin-bottom: 20px;
+              aspect-ratio: 1 / 1.3;
+  
+              > p {
+                font-size: 24px;
+                padding: 20px;
+                &:last-child {
+                  padding-top: 8px;
+                  font-size: 20px;
+                }
               }
-              > dd {
-                > ul {
-                  > li {
-                    flex-wrap: wrap;
-                  }
+            }
+  
+            > dl {
+              padding: 20px;
+              > dt {
+                font-size: 20px;
+                margin-bottom: 20px;
+              }
+              > dd > ul > li {
+                font-size: 16px;
+                margin-top: 15px;
+              }
+            }
+          }
+        }
+      }
+  
+      .esg-section-02 {
+        > ul {
+          flex-direction: column;
+          padding: 30px 20px;
+          gap: 40px;
+  
+          > li {
+            width: 100%;
+  
+            > dl > dt {
+              font-size: 20px;
+              margin-bottom: 20px;
+            }
+  
+            > dl > dd > ul > li {
+              font-size: 16px;
+              margin-top: 15px;
+            }
+          }
+        }
+      }
+  
+      .esg-section-03 {
+        > div {
+          background-size: 100% auto;
+  
+          > p {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+            padding: 20px 20px 20px 60px;
+            font-size: 16px;
+            margin-bottom: 30px;
+            background-position: 15px center;
+          }
+  
+          > ul {
+            flex-direction: column;
+            align-items: center;
+  
+            > li {
+              width: 100%;
+              max-width: 100%;
+              height: auto;
+              padding: 20px 20px 20px 60px;
+              font-size: 16px;
+              background-position: 15px center;
+            }
+          }
+        }
+      }
+  
+      .esg-section-04 {
+        > div {
+          background-position: 50% 30px;
+  
+          > p {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+            padding: 20px 20px 20px 60px;
+            font-size: 16px;
+            margin-bottom: 30px;
+            background-position: 15px center;
+          }
+  
+          > ul {
+            flex-direction: column;
+            gap: 30px;
+  
+            > li {
+              > p {
+                width: 100%;
+                max-width: 100%;
+                height: auto;
+                padding: 20px 20px 20px 60px;
+                font-size: 16px;
+                background-position: 15px center;
+              }
+  
+              > ul {
+                margin-top: 10px;
+  
+                > li {
+                  font-size: 14px;
+                  margin-top: 10px;
                 }
               }
             }
           }
         }
       }
-      .ethical-02 {
-        > ul {
-          > li {
-            width: 100%;
+    }
+   }
+
+
+   /* 기후 변화*/
+   @media (max-width: 768px) {
+    .esg .climate-container {
+      padding: 150px 20px 200px;
+  
+      .esg-section-01 {
+        margin-bottom: 150px;
+        h3 {
+          font-size: 32px;
+          padding-bottom: 30px;
+          margin-bottom: 50px;
+        }
+        > p {
+          font-size: 18px;
+          line-height: 28px;
+        }
+      }
+  
+      .esg-section-02 {
+        margin-bottom: 200px;
+
+      
+        > .top {
+          position: relative;
+      
+          .image-area1 {
+            position: absolute;
+            width: 140px;
+            height: 140px;
+            top: -140px;
+            left: -0px;
+            
+      
+            > p {
+              font-size: 20px;
+              line-height: 30px;
+            }
+          }
+      
+          .image-area2 {
+            height: 250px;
+      
+            > div {
+              h3 {
+                font-size: 24px;
+                line-height: 35px;
+                padding: 0 40px;
+              }
+              p {
+                font-size: 16px;
+                line-height: 22px;
+              }
+            }
+          }
+        }
+      
+        .bottom {
+          /* 👇 위치 고정 제거 */
+          position: static;
+          bottom: auto;
+          margin-top: 50px; /* 👈 top과의 간격 확보 */
+          margin-left: 150px; 
+          text-align: left; 
+          width: calc(100% - 50px);
+
+      
+          > p {
+            font-size: 18px;
+            color: #606060;
+          }
+      
+          > a {
+            font-size: 16px;
+            padding: 24px 90px 24px 60px;
+            background-position: calc(100% - 50px) 50%;
           }
         }
       }
-      .ethical-03 {
-        > ul {
-          > li {
-            flex-wrap: wrap;
+  
+      .esg-section-03 {
+        > .text {
+          padding: 50px 20px 100px;
+  
+          h3 {
+            font-size: 24px;
           }
+          p {
+            font-size: 18px;
+            line-height: 30px;
+            font-family: pretendard-medium;
+          }
+        }
+  
+        > p {
+          font-size: 18px;
+          line-height: 30px;
+        }
+  
+        > .button > a {
+          font-size: 20px;
+          padding: 12px 25px;
         }
       }
     }
+  }
+  
 
+  /* 윤리적 경영 */
 
-    .supply-chain-container {
+  @media (max-width: 1280px) {
+    .ethical-container {
+      padding: 100px 20px 180px;
+  
+      .ethical-01, .ethical-02, .ethical-03 {
+        h2 {
+          font-size: 42px;
+          margin-bottom: 80px;
+        }
+      }
+  
+      .ethical-03 > p {
+        font-size: 18px;
+        margin-bottom: 80px;
+      }
+  
+      .ethical-02 > ul > li {
+        height: 150px;
+        font-size: 24px;
+        width: 100%;
+        max-width: 100%;
+      }
+    }
+  }
+  
+  @media (max-width: 1024px) {
+    .ethical-container {
+      .ethical-01 > ul > li > dl {
+        flex-direction: column;
+        align-items: flex-start;
+  
+        > dt {
+          width: 100%;
+          margin-bottom: 15px;
+        }
+  
+        > dd > ul > li {
+          flex-direction: column;
+  
+          > p {
+            width: 100%;
+            margin-right: 0;
+            margin-bottom: 15px;
+          }
+  
+          > div > p {
+            font-size: 16px;
+          }
+        }
+      }
+  
+      .ethical-02 > ul {
+        flex-direction: column;
+        > li {
+          width: 100%;
+          height: 140px;
+          font-size: 22px;
+        }
+      }
+  
+      .ethical-03 > ul > li {
+        flex-direction: column;
+        > p {
+          width: 100%;
+          padding: 15px 0;
+          font-size: 18px;
+        }
+  
+        > div {
+          font-size: 16px;
+          padding: 20px;
+        }
+      }
+  
+      .button > a {
+        width: 100%;
+        font-size: 14px;
+      }
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .esg .ethical-container .ethical-02 > ul > li {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      width: 100%;
+      height: 171px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: 0 0;
+      font-size: 28px;
+      font-family: "Pretendard-Bold", sans-serif;
+      color: #fff;
+    }
+    .ethical-container {
+      padding: 80px 15px 120px;
+
+      .ethical-01 h2,
+      .ethical-03 h2 {
+        font-size: 32px;
+        padding-bottom: 30px;
+        margin-bottom: 60px;
+      }
+  
+      .ethical-01 > .text {
+        font-size: 16px;
+        line-height: 30px;
+      }
+  
+      .ethical-01 > .image-01,
+      .ethical-01 > .image-02 {
+        margin-top: 80px;
+      }
+  
+      .ethical-03 > p {
+        font-size: 16px;
+        line-height: 26px;
+      }
+  
+      .ethical-04 > p {
+        font-size: 28px;
+      }
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .ethical-container {
+      .ethical-02 > ul > li {
+        font-size: 18px;
+        height: 120px;
+        width: 100%;
+        max-width: 100%;
+      }
+  
+      .ethical-01 > ul > li > dl > dd > ul > li > p {
+        font-size: 16px;
+        height: auto;
+        padding: 10px;
+      }
+  
+      .ethical-03 > ul > li > p {
+        font-size: 16px;
+      }
+  
+      .ethical-03 > ul > li > div {
+        font-size: 15px;
+      }
+    }
+  }
+  
+
+  /* EHS */
+  @media (max-width: 767px) {
+    .ehs-container {
+      padding: 60px 15px;
+      padding-top: 95px !important;
+  
+      .esg-section-01 {
+        h3 {
+          font-size: 34px !important; 
+          margin-bottom: 50px !important;
+        }
+        p {
+          font-size: 18px !important;
+          line-height: 24px !important;
+          padding-bottom: 60px !important;
+
+        }
+      }
+  
       .esg-section-02 {
-        > ul {
-          > li {
-            > dl {
-              > dt {
-                top: -80px
+        > div {
+          flex-direction: column;
+          align-items: center;
+  
+          .top {
+            .image-area1,
+            .image-area2 {
+              text-align: center;
+              h3 {
+                font-size: 24px;
               }
-              > dd {
-                padding-left: 20px;
-                margin-left: 0;
+  
+              p {
+                font-size: 18px;
               }
             }
           }
         }
-      }
-      .esg-section-03 {
-        > div {
-          flex-wrap: wrap;
+  
+        img {
+          width: 100% !important;
+          height: auto !important;
         }
       }
-      .esg-section-04 {
-        > ul {
-          > li {
-            margin-top: 22px;
-            > dl {
-              flex-wrap: wrap;
-              > dd {
-                flex-wrap: wrap;
-              }
-            }
+  
+      .esg-section-03 {
+        
+        h3 {
+          font-size: 24px;
+        }
+        img {
+          width: 100% !important;
+          height: auto !important;
+        }
+  
+        ul {
+          flex-direction: column;
+          padding: 0 20px !important;
+          gap: 20px;
+  
+          li {
+            flex: 1 1 100%;
           }
         }
       }
     }
   }
-}
+  
+  /* =====================
+      📱 Tablet (768px ~ 1024px)
+  ===================== */
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .ehs-container {
+      padding: 80px 20px;
+  
+      .esg-section-02 {
+        > div {
+          flex-direction: column;
+  
+          .top {
+            flex-direction: row;
+            justify-content: space-between;
+  
+            .image-area1,
+            .image-area2 {
+              flex: 1;
+              padding: 10px;
+              h3 {
+                font-size: 1.3rem;
+              }
+  
+              p {
+                font-size: 1rem;
+              }
+            }
+          }
+        }
+      }
+  
+      .esg-section-03 {
+        ul {
+          flex-direction: row;
+          flex-wrap: wrap;
+  
+          li {
+            flex: 1 1 calc(50% - 40px);
+          }
+        }
+      }
+    }
+  }
+  
+  /* SUPPLY CHAIN */
+
+  @media screen and (max-width: 1280px) {
+    .supply-chain-container {
+      padding: 150px 20px 200px;
+  
+      section > h2 {
+        font-size: 40px;
+        padding-bottom: 36px;
+        margin-bottom: 100px;
+      }
+  
+      section > p {
+        font-size: 30px;
+        line-height: 48px;
+      }
+  
+      .esg-section-02 > ul > li > dl > dt {
+        width: 300px;
+        font-size: 20px;
+      }
+  
+      .esg-section-02 > ul > li > dl > dd {
+        padding: 40px 20px 40px 200px;
+        margin-left: 290px;
+      }
+  
+      .esg-section-03 > div > img {
+        max-width: 600px;
+      }
+    }
+  }
+  
+  @media screen and (max-width: 1024px) {
+    .supply-chain-container {
+      padding: 100px 15px 150px;
+  
+      section > h2 {
+        font-size: 32px;
+        padding-bottom: 28px;
+        margin-bottom: 80px;
+      }
+  
+      section > p {
+        font-size: 24px;
+        line-height: 40px;
+      }
+  
+      .esg-section-02 > ul > li > dl > dt {
+        width: 250px;
+        font-size: 18px;
+      }
+  
+      .esg-section-02 > ul > li > dl > dd {
+        padding: 40px 20px 40px 180px;
+        margin-left: 250px;
+        flex-direction: column;
+      }
+  
+      .esg-section-03 > ul {
+        gap: 20px;
+      }
+  
+      .esg-section-03 > div {
+        flex-direction: column;
+        align-items: center;
+  
+        > img {
+          margin: 0 auto;
+          max-width: 100%;
+        }
+  
+        > div {
+          padding: 60px 20px;
+          width: 100%;
+          text-align: center;
+  
+          > p {
+            font-size: 20px;
+          }
+  
+          > a {
+            font-size: 18px;
+          }
+        }
+      }
+  
+      .esg-section-04 > ul > li > dl {
+        flex-direction: column;
+  
+        > dt {
+          width: 100%;
+          font-size: 50px;
+        }
+  
+        > dd {
+          flex-direction: column;
+          padding: 20px;
+        }
+      }
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .supply-chain-container {
+      padding: 80px 20px !important;
+      margin: 0 auto;
+      section > h2 {
+        font-size: 34px !important;
+        margin-bottom: 50px !important;
+      }
+  
+      section > p {
+        font-size: 18px !important;
+        line-height: 24px !important;
+      }
+  
+      .esg-section-02 > ul > li > dl {
+        display: flex;
+        flex-direction: column;
+        align-items: center;        /* 중앙 정렬 핵심 */
+        text-align: center;         /* 텍스트도 중앙 정렬 */
+      }
+    
+      .esg-section-02 > ul > li > dl > dt {
+        width: 100%;
+        max-width: 370px;           /* 기존 디자인 유지 */
+        margin-bottom: 10px;
+        position: relative;
+      }
+    
+      .esg-section-02 > ul > li > dl > dd {
+        width: 100% !important; 
+        padding: 90px 20px 60px 20px !important; 
+        margin-left: 0 !important; 
+      }
+    
+      .esg-section-02 > ul > li > dl > dd > ul {
+        text-align: left; /* 리스트는 좌측 정렬 유지 (선택 사항) */
+      }
+  
+      .esg-section-03 > ul {
+        flex-direction: column;
+        border: none;
+  
+        > li {
+          padding: 120px 0 30px;
+          background-position: center 40px;
+        }
+      }
+  
+      .esg-section-04 > ul > li > dl > dt {
+        font-size: 40px;
+      }
+  
+      .esg-section-04 > ul > li > dl > dd {
+        font-size: 18px;
+  
+        > a {
+          width: 50%;
+          text-align: center;
+        }
+      }
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .supply-chain-container {
+      padding: 80px 10px 120px;
+  
+      section > h2 {
+        font-size: 24px;
+      }
+  
+      section > p {
+        font-size: 18px;
+      }
+  
+      .esg-section-03 > div > div > p {
+        font-size: 18px;
+      }
+  
+      .esg-section-03 > div > div > a {
+        padding: 10px 30px;
+        font-size: 16px;
+      }
+  
+      .esg-section-04 > ul > li > dl > dd {
+        font-size: 16px;
+        gap: 10px;
+  
+        > a {
+          font-size: 16px;
+          padding: 10px 20px;
+        }
+      }
+    }
+  }
+  
+
+  
+
+
+  }
+
+  

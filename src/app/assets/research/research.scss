@@ -216,5 +216,87 @@
         }
       }
     }
+    @media (max-width: 768px) {
+      .link-area {
+        height: auto;
+        margin-bottom: 80px;
+        background-size: cover;
+        background-position: center top;
+        
+    
+        > ul {
+          flex-direction: column;
+    
+          > li {
+            width: 100%;
+            border-left: none;
+            border-top: 1px solid rgba(255, 255, 255, 0.9);
+    
+            &:first-child {
+              border-top: none;
+            }
+    
+            > a {
+              height: auto;
+              padding: 30px 20px;
+              position: relative;
+    
+              > p {
+                display: none;
+                position: static;
+                font-size: 22px;
+                line-height: 1.4;
+                text-align: left;
+                margin-bottom: 15px;
+              }
+    
+              > div {
+                position: static;
+                opacity: 1 !important;
+                padding: 10px 0;
+                background: rgba(0, 0, 0, 0.5);
+                box-sizing: border-box;
+    
+                > dl {
+                  > dt {
+                    font-size: 22px;
+                    margin-bottom: 15px;
+    
+                    span {
+                      color: #18F9DA;
+                    }
+                  }
+    
+                  > dd {
+                    font-size: 14px;
+                    line-height: 1.5;
+                  }
+                }
+    
+                > p {
+                  margin-top: 15px;
+                  font-size: 16px;
+                  padding: 10px 0 10px 50px;
+                  background-size: 18px auto;
+                  background-position: 15px center;
+                }
+              }
+    
+              .link-area ul > li > a.clicked {
+                > p {
+                  opacity: 0;
+                  transition: all 1.2s ease-in-out;
+                }
+                > div {
+                  opacity: 1;
+                  transition: all 1.2s ease-in-out;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
   }
 }

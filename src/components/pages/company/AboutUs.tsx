@@ -201,7 +201,7 @@ export default function AboutUs({language}: Props) {
                             </li>
                             <li>
                                 <h4>{language?.about_65}</h4>
-                                <p className="bar2">
+                                <div className="bar2">
                                     <div>
                                         <span></span>
                                         <ul>
@@ -210,6 +210,7 @@ export default function AboutUs({language}: Props) {
                                             <li>{language?.about_68}</li>
                                         </ul>
                                     </div>
+                                
                                     <div>
                                         <span></span>
                                         <ul>
@@ -218,7 +219,7 @@ export default function AboutUs({language}: Props) {
                                             <li>{language?.about_71}</li>
                                         </ul>
                                     </div>
-                                </p>
+                                </div>
 
                             </li>
                         </ul>

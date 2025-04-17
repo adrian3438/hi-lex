@@ -72,15 +72,56 @@
       width: 100%;
     }
   }
-}
-@media screen and (max-width: 767px) {
   .modal-wrapper {
+    .modal-content {
+      flex-direction: column; /* 세로로 배치 */
+      align-items: flex-start;
+      margin-bottom: 20px;
+    }
+
     .modal-table {
-      min-width: 0;
-      width: 100%;
+      min-width: 100%;
+      
+      thead {
+        th {
+          padding: 18px 5px;
+        }
+      }
+
+      tbody {
+        th, td {
+          padding: 12px 5px;
+        }
+      }
     }
   }
 }
+@media (max-width: 767px) {
+  .modal-wrapper {
+    .modal-content {
+      flex-direction: column; /* 세로로 배치 */
+      align-items: flex-start;
+      margin-bottom: 20px;
+    }
+
+    .modal-table {
+      min-width: 100%;
+      
+      thead {
+        th {
+          padding: 18px 5px;
+        }
+      }
+
+      tbody {
+        th, td {
+          padding: 12px 5px;
+        }
+      }
+    }
+  }
+}
+
 
 /* React Modal Customize */
 .ReactModal__Overlay--after-open {

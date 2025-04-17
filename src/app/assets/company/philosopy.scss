@@ -213,3 +213,62 @@
     }
   }
 }
+
+
+@media (max-width: 1024px) {
+  .philosopy {
+    .philosopy-container {
+      .philosopy-02 {
+        > div {
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          background: none !important; // 배경 제거
+
+          // 각 섹션별 이미지 <img>로 대체할 경우 예시
+          &::before {
+            content: "";
+            display: block;
+            width: 100%;
+            padding-top: 50%; // 비율 유지 (1:2 이미지 기준이면 50%)
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+          }
+
+          &:nth-child(2)::before {
+            background-image: url("/images/sub/company/management-philosopy/philosopy-02.png");
+          }
+          &:nth-child(3)::before {
+            background-image: url("/images/sub/company/management-philosopy/philosopy-03.png");
+          }
+          &:nth-child(4)::before {
+            background-image: url("/images/sub/company/management-philosopy/philosopy-04.png");
+          }
+
+          > dl {
+            width: 100%;
+            padding: 20px;
+            text-align: center;
+
+            > dt {
+              font-size: 20px;
+              margin-bottom: 20px;
+            }
+
+            > dd {
+              > ul {
+                > li {
+                  font-size: 18px;
+                  line-height: 22px;
+                  padding-left: 10px;
+                  text-align: left;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
