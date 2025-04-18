@@ -164,7 +164,7 @@ export default function EHS({ language }: Props) {
                     alt=""
                     width={900}
                     height={700}
-                    style={{ display: "block", margin: "0 auto", marginTop: "200px"}}
+                    style={{ display: "block", margin: "0 auto", marginTop: "200px", maxWidth: '900px', width: '100%', height: 'auto'}}
                     />
                 </section>
 
@@ -176,7 +176,7 @@ export default function EHS({ language }: Props) {
                     alt=""
                     width={1000}
                     height={400}
-                    style={{ display: "block", margin: "0 auto", marginBottom: "100px"  }}
+                    style={{ display: "block", margin: "0 auto", marginBottom: "100px", maxWidth: '1000px', width: '100%', height: 'auto'}}
                     />
                     <ul>
                         <li>

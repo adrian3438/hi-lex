@@ -3,6 +3,8 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 90px;
+  flex-wrap: wrap;
+  gap: 20px 0;
   > h3 {
     color: #023A8E;
     font-size: 50px;
@@ -50,6 +52,7 @@
   margin-bottom: 55px;
   > ul {
     display: flex;
+    flex-wrap: wrap;
     > li {
       flex: 1 1 0;
       border: 1px solid #8E8E8E;
@@ -216,6 +219,21 @@
           }
         }
 
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .position-list {
+    > ul {
+      border-top: 1px solid #8e8e8e;
+      > li {
+        flex: 1 33%;
+        border-top: none;
+        &:nth-child(4) {
+          border-left: 1px solid #8e8e8e;
+        }
       }
     }
   }

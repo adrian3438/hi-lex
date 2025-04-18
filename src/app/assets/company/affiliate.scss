@@ -143,3 +143,34 @@
     }
   }
 }
+
+
+@media screen and (max-width: 767px) {
+  .affiliate {
+    .continent {
+      > ul {
+        > li {
+          > p {
+            padding: 0 10px;
+            background-position: calc(100% - 10px) 50%
+          }
+          &.on {
+            > p {
+              background-position: calc(100% - 10px) 50%
+            }
+          }
+          > ul {
+            > li {
+              > p {
+                padding: 0 10px 30px 10px;
+              }
+              > ul {
+                padding: 0 10px 50px 10px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

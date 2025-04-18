@@ -3,11 +3,14 @@
     position: relative;
     background: url("/images/sub/research/research-banner.png") no-repeat 50% 50%;
     background-size: cover;
-    height: 100vh;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
     > div {
       max-width: 1600px;
-      padding: 255px 20px 0;
+      padding: 100px 20px 30px;
       margin: 0 auto;
+      width: 100%;
       > div {
         max-width: 855px;
         > h2 {
@@ -61,6 +64,7 @@
     > ul {
       display: flex;
       height: 100%;
+      flex-wrap: wrap;
       > li {
         flex: 1 1 0;
         box-sizing: border-box;
@@ -204,10 +208,26 @@
     }
   }
 }
+
+@media screen and (max-width: 1024px) {
+  .research {
+    .link-area {
+      > ul {
+        > li {
+          width: 100%;
+          flex-basis: 100%;
+          border-left: none;
+          border-bottom: 1px solid rgba(255, 255, 255, 0.9);
+          height: auto;
+        }
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 767px) {
   .research {
     .related-contents {
-
       > ul {
         flex-wrap: wrap;
         gap: 20px;
@@ -216,87 +236,87 @@
         }
       }
     }
-    @media (max-width: 768px) {
-      .link-area {
-        height: auto;
-        margin-bottom: 80px;
-        background-size: cover;
-        background-position: center top;
-        
-    
-        > ul {
-          flex-direction: column;
-    
-          > li {
-            width: 100%;
-            border-left: none;
-            border-top: 1px solid rgba(255, 255, 255, 0.9);
-    
-            &:first-child {
-              border-top: none;
-            }
-    
-            > a {
-              height: auto;
-              padding: 30px 20px;
-              position: relative;
-    
-              > p {
-                display: none;
-                position: static;
+  }
+}
+
+@media (max-width: 768px) {
+  .link-area {
+    height: auto;
+    margin-bottom: 80px;
+    background-size: cover;
+    background-position: center top;
+
+
+    > ul {
+      flex-direction: column;
+
+      > li {
+        width: 100%;
+        border-left: none;
+        border-top: 1px solid rgba(255, 255, 255, 0.9);
+
+        &:first-child {
+          border-top: none;
+        }
+
+        > a {
+          height: auto;
+          padding: 30px 20px;
+          position: relative;
+
+          > p {
+            display: none;
+            position: static;
+            font-size: 22px;
+            line-height: 1.4;
+            text-align: left;
+            margin-bottom: 15px;
+          }
+
+          > div {
+            position: static;
+            opacity: 1 !important;
+            padding: 10px 0;
+            background: rgba(0, 0, 0, 0.5);
+            box-sizing: border-box;
+
+            > dl {
+              > dt {
                 font-size: 22px;
-                line-height: 1.4;
-                text-align: left;
                 margin-bottom: 15px;
-              }
-    
-              > div {
-                position: static;
-                opacity: 1 !important;
-                padding: 10px 0;
-                background: rgba(0, 0, 0, 0.5);
-                box-sizing: border-box;
-    
-                > dl {
-                  > dt {
-                    font-size: 22px;
-                    margin-bottom: 15px;
-    
-                    span {
-                      color: #18F9DA;
-                    }
-                  }
-    
-                  > dd {
-                    font-size: 14px;
-                    line-height: 1.5;
-                  }
-                }
-    
-                > p {
-                  margin-top: 15px;
-                  font-size: 16px;
-                  padding: 10px 0 10px 50px;
-                  background-size: 18px auto;
-                  background-position: 15px center;
+
+                span {
+                  color: #18F9DA;
                 }
               }
-    
-              .link-area ul > li > a.clicked {
-                > p {
-                  opacity: 0;
-                  transition: all 1.2s ease-in-out;
-                }
-                > div {
-                  opacity: 1;
-                  transition: all 1.2s ease-in-out;
-                }
+
+              > dd {
+                font-size: 14px;
+                line-height: 1.5;
               }
+            }
+
+            > p {
+              margin-top: 15px;
+              font-size: 16px;
+              padding: 10px 0 10px 50px;
+              background-size: 18px auto;
+              background-position: 15px center;
+            }
+          }
+
+          .link-area ul > li > a.clicked {
+            > p {
+              opacity: 0;
+              transition: all 1.2s ease-in-out;
+            }
+            > div {
+              opacity: 1;
+              transition: all 1.2s ease-in-out;
             }
           }
         }
       }
     }
-
   }
 }
