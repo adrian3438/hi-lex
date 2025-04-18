@@ -1097,6 +1097,22 @@
     "position_01_81": "Operate warehouses and control inventory",
     "position_01_82": "Reduce logistics costs and improve efficiency",
     "position_01_83": "Manage exports, imports, and customs clearance",
+
+
+    "position_01_83_01": "Production Management",
+    "position_01_83_02": "Operations Management",
+    "position_01_83_03": "This department is responsible for efficiently producing the company's products and managing productivity. It manufactures final products by utilizing raw materials and resources, and aims to maximize productivity and reduce costs through production scheduling, resource management, and process improvement.",
+    "position_01_83_04": "Productivity Improvement Activities",
+    "position_01_83_05": "Production Process Supervision and Improvement",
+    "position_01_83_06": "On-site Safety Management",
+    "position_01_83_07": "Manufacturing Technology",
+    "position_01_83_08": "Manufacturing Technology",
+    "position_01_83_09": "This department is responsible for efficient process development, technical support, and quality improvement in the production of the company's products. It focuses on solving technical issues in the production process, developing and introducing new manufacturing processes, and enhancing productivity and reducing costs through technical improvements.",
+    "position_01_83_10": "Process Development and Improvement",
+    "position_01_83_11": "Technical Support and Troubleshooting for Manufacturing Equipment",
+    "position_01_83_12": "Smart Factory Implementation",
+
+
     "position_01_84": "Administration",
     "position_01_85": "Administration",
     "position_01_86": "The Administration department performs activities to maximize company performance and ensure sustainable growth. It enhances overall management efficiency and establishes systems to respond quickly to changes and risks.",
