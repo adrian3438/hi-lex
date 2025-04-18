@@ -39,3 +39,22 @@
     }
   }
 }
+
+@media screen and (max-width: 767px) {
+  .sitemap-container {
+    > div {
+      > dl {
+        flex-wrap: wrap;
+        > dt {
+          width: 100%;
+          font-size: 24px;
+        }
+        > dd {
+          > ul {
+            gap: 20px 58px;
+          }
+        }
+      }
+    }
+  }
+}

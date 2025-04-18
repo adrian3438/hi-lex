@@ -15,7 +15,8 @@ export default function ClientSlide() {
         autoplay: true,
         speed: 3000,
         autoplaySpeed: 3000,
-        cssEase: "linear"
+        cssEase: "linear",
+        arrows: false
     };
 
     return (

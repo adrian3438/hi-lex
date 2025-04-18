@@ -183,13 +183,12 @@ export default function ApplicationList({page}: Props) {
             ))}
             </tbody>
           </table>
-
-          {totalCount !== 0 && (
-            <div style={{marginTop: '30px', display: 'flex', justifyContent: 'center'}}>
-              <Paginate page={page} totalCount={totalCount} size={10}/>
-            </div>
-          )}
         </div>
+        {totalCount !== 0 && (
+          <div style={{marginTop: '30px', display: 'flex', justifyContent: 'center'}}>
+            <Paginate page={page} totalCount={totalCount} size={10}/>
+          </div>
+        )}
       </div>
     </>
   )

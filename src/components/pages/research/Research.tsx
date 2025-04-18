@@ -26,7 +26,7 @@ export default function Research({language}: Props) {
             <div className="title-area">
                 <Image src="/images/sub/research/research-title.png" alt="Discover Our Technologies" width={1249.08} height={93.75} />
             </div>
-            <div className={`link-area ${imageIndex === 0 ? 'link-area1' :  ''} ${imageIndex === 1 ? 'link-area2' :  ''} ${imageIndex === 2 ? 'link-area3' :  ''} ${imageIndex === 3 ? 'link-area4' :  ''}`}
+            <div className={`link-area ${imageIndex === 0 ? 'link-area1' : ''} ${imageIndex === 1 ? 'link-area2' :  ''} ${imageIndex === 2 ? 'link-area3' :  ''} ${imageIndex === 3 ? 'link-area4' :  ''}`}
 
             >
                 <ul>
