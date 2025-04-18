@@ -1,7 +1,7 @@
 import Header from "@/components/common/Header";
 import Footer from "@/components/common/Footer";
 import {fetchLanguage} from "@/util/fetchLanguage";
-import Location from "@/components/pages/company/Domestic";
+import Domestic from "@/components/pages/company/Domestic";
 
 export default async function HistoryPage({searchParams : {lang}} : any) {
     const language = await fetchLanguage(lang);
@@ -17,7 +17,7 @@ export default async function HistoryPage({searchParams : {lang}} : any) {
                     </ul>
                     <p>{language?.location_02}<br/>{language?.location_03}</p>
                 </div>
-                <Location language={language}/>
+                <Domestic language={language}/>
             </div>
             <Footer language={language}/>
         </>
