@@ -22,6 +22,7 @@ export default async function Home({searchParams : {lang}} : any) {
                                 <li><Link href="/company/management-philosopy">{language.header_1_3}</Link></li>
                                 <li><Link href="/company/history">{language.header_1_4}</Link></li>
                                 <li><Link href="/company/affiliate-companies">{language.header_1_5}</Link></li>
+                                <li><Link href="/company/domestic">{language.header_1_6_0}</Link></li>
                                 <li><Link href="/company/location">{language.header_1_6}</Link></li>
                                 <li><Link href="/company/contact-us">{language.header_1_7}</Link></li>
                             </ul>

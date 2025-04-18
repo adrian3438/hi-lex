@@ -38,6 +38,11 @@
         }
       }
     }
+
+    > .vimeo {
+      margin: 0 !important;
+      padding: 0 !important;
+     }
   }
 }
 
@@ -49,6 +54,7 @@
         justify-content: center;
       }
     }
+    
   }
 }
 
@@ -78,6 +84,10 @@
           line-height: 23px;
         }
       }
+      > .vimeo {
+        width: 100%;
+        height: auto;
+       }
     }
   }
 }
@@ -101,6 +111,11 @@
           font-size: 14px;
         }
       }
+      > .vimeo {
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+        padding: 0 !important;
+       }
     }
   }
 }
