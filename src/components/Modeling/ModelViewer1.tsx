@@ -180,3 +180,5 @@ export default function Modeling1({language}: Props) {
         </>
     );
 };
+
+

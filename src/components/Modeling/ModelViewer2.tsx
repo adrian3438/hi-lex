@@ -49,7 +49,7 @@ interface Props {
     language: any
 }
 
-export default function Modeling1({language}: Props) {
+export default function Modeling2({language}: Props) {
     const [buttonIndex, setButtonIndex] = useState<number>();
     const [cameraPosition, setCameraPosition] = useState<[number, number, number]>([0, 0, 2]);
     const [cameraTarget, setCameraTarget] = useState<[number, number, number]>([0, 0, 0]);

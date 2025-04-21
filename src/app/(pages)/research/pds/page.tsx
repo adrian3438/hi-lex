@@ -28,7 +28,7 @@ export default async function PdsPage({searchParams : {lang}} : any) {
                 <ArrowDown/>
                 <div className="modeling-area">
                     <div>
-                        <Modeling2/>
+                        <Modeling2 language={language}/>
                     </div>
                 </div>
                 <ArrowUp/>

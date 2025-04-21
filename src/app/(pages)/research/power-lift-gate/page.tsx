@@ -28,7 +28,7 @@ export default async function PowerLiftGatePage({searchParams : {lang}} : any) {
                 <ArrowDown/>
                 <div className="modeling-area">
                     <div>
-                        <Modeling3/>
+                        <Modeling3 language={language}/>
                     </div>
                 </div>
                 <ArrowUp/>
