@@ -225,35 +225,29 @@
   }
 }
 
-@media screen and (max-width: 767px) {
-  .research {
-    .related-contents {
-      > ul {
-        flex-wrap: wrap;
-        gap: 20px;
-        > li {
-          width: 100%;
-        }
-      }
-    }
-  }
-}
+// @media screen and (max-width: 767px) {
+//   .research {
+//     .related-contents {
+//       > ul {
+//         flex-wrap: wrap;
+//         gap: 20px;
+//         > li {
+//           width: 100%;
+//         }
+//       }
+//     }
+//   }
+// }
 
 @media (max-width: 768px) {
   .link-area {
-    height: auto;
-    margin-bottom: 80px;
-    background-size: cover;
-    background-position: center top;
-
-
     > ul {
-      flex-direction: column;
-
       > li {
-        width: 100%;
-        border-left: none;
-        border-top: 1px solid rgba(255, 255, 255, 0.9);
+          width: 100%;
+          flex-basis: 100%;
+          border-left: none;
+          border-bottom: 1px solid rgba(255, 255, 255, 0.9);
+          height: auto;
 
         &:first-child {
           border-top: none;
@@ -261,16 +255,17 @@
 
         > a {
           height: auto;
-          padding: 30px 20px;
+          padding: 0px 10px;
           position: relative;
+          font-size: 18px;
 
           > p {
             display: none;
             position: static;
-            font-size: 22px;
+            font-size: 18px;
             line-height: 1.4;
             text-align: left;
-            margin-bottom: 15px;
+            margin-bottom: 10px;
           }
 
           > div {
@@ -282,7 +277,7 @@
 
             > dl {
               > dt {
-                font-size: 22px;
+                font-size: 18px;
                 margin-bottom: 15px;
 
                 span {
@@ -319,4 +314,36 @@
       }
     }
   }
-}
+  .related-contents {
+    font-size: 13px;
+    display: flex;
+    flex-direction: column;
+  
+    > h3 {
+      font-size: 18px;
+      padding-bottom: 10px;
+    }
+  
+    > ul {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      max-height: 500px; /* 필요 시 높이 조절 가능 */
+      overflow-y: auto;
+      padding-right: 10px;
+  
+      > li > a > div {
+        position: absolute;
+        margin-left: 130px;
+        text-align: left;
+        color: #868686 !important;
+        font-size: 18px !important;
+        line-height: 20px !important;
+        font-family: "Pretendard-ExtraBold", sans-serif;
+        }
+       
+      }
+    }
+  }
+  
+

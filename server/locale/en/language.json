@@ -222,7 +222,10 @@
     "e-latch-30": "",
 
 
+    "pds_01": "Door Open",
+    "pds_02": "Door Close",
 
+    "tailgate_01": "Soft Closing",
 
 
     "philosopy_01": "MANAGEMENT PHYLOSOPY",

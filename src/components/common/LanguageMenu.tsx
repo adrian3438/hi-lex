@@ -82,6 +82,7 @@ export default function LanguageMenu({language}: Props) {
                         <li className={menuNumber === 3 ? 'on' : ''}>
                             <button onClick={() => handleMobileMenu(3)}>{language.header_3}</button>
                             <ul>
+                                <li><Link href="/research">- {language.header_3}</Link></li>
                                 <li><Link href="/research/e-latch">- {language.header_3_1}</Link></li>
                                 <li><Link href="/research/pds">- {language.header_3_2}</Link></li>
                                 <li><Link href="/research/power-lift-gate">- {language.header_3_3}</Link></li>

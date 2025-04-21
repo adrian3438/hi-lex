@@ -96,7 +96,7 @@ export default function Modeling1({language}: Props) {
                           onClick={() => setButtonIndex(0)}
                         />
                     </Html>
-                    <Html position={[-0.15, -0.9, -0.11]} distanceFactor={10}>
+                    {/* <Html position={[-0.15, -0.9, -0.11]} distanceFactor={10}>
                         <div
                           className="model-detail-button"
                           style={{background: '#00E5FF', padding: '2.5px', borderRadius: '2.5px', pointerEvents: 'auto', cursor: 'pointer',}}
@@ -116,14 +116,20 @@ export default function Modeling1({language}: Props) {
                           style={{background: '#00E5FF', padding: '2.5px', borderRadius: '2.5px', pointerEvents: 'auto', cursor: 'pointer',}}
                           onClick={() => setButtonIndex(3)}
                         />
-                    </Html>
+                    </Html> */}
                 </>
             </Canvas>
             <div className="features col-md-5">
                 {buttonIndex === 0 && (
                   <div className="features-01">
-                      <div className="image-area">
-                          <Image src="/images/sub/company/greeting/ceo-greeting-flags.jpg" alt="extinguisher" width={441} height={268}/>
+                    <div className="image-area">
+                      <iframe
+                        src="https://player.vimeo.com/video/1077167595?h=abcde12345&autoplay=1&loop=1&muted=1"
+                        style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}
+                        allow="autoplay; fullscreen; picture-in-picture"
+                        allowFullScreen
+                        title="Vimeo Video"
+                       ></iframe>
                       </div>
                       <div className="text-area">
                           <h2>{language?.e_latch_03}</h2>
@@ -131,10 +137,16 @@ export default function Modeling1({language}: Props) {
                       <button className="detail-close" onClick={() => setButtonIndex(100)}/>
                   </div>
                 )}
-                {buttonIndex === 1 && (
+                {/* {buttonIndex === 1 && (
                   <div className="features-01">
                       <div className="image-area">
-                          <Image src="/images/sub/company/greeting/ceo-greeting-flags.jpg" alt="extinguisher" width={441} height={268}/>
+                      <iframe
+                        src="https://player.vimeo.com/video/1077167595?h=abcde12345&autoplay=1&loop=1&muted=1"
+                        style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}
+                        allow="autoplay; fullscreen; picture-in-picture"
+                        allowFullScreen
+                        title="Vimeo Video"
+                       ></iframe>
                       </div>
                       <div className="text-area">
                           <h2>{language?.e_latch_04}</h2>
@@ -163,7 +175,7 @@ export default function Modeling1({language}: Props) {
                       </div>
                       <button className="detail-close" onClick={() => setButtonIndex(100)}/>
                   </div>
-                )}
+                )} */}
             </div>
         </>
     );
