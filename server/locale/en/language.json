@@ -432,25 +432,41 @@
     "location_02": "Visit our headquarters to explore our state-of-the-art manufacturing facilities and learn more about our automotive components.",
     "location_03": "Strategically located for your convenience, our headquarters offers easy accessibility.",
 
-    "location_04": "64, Cheomdan-daero 124beon-gil, Yeonsu-gu, Incheon, South Korea",
-    "location_05": "TEL. +82-32-716-9480~2",
-    "location_06": "FAX. +82-32-716-9484",
+    "location_04": "Address:",
+    "location_04_01": "64, Cheomdan-daero 124beon-gil, Yeonsu-gu, Incheon, South Korea",
+    "location_05": "TEL.",
+    "location_05_01": "+82-32-716-9480~2",
+    "location_06": "FAX.",
+    "location_06_01": "+82-32-716-9480~2",
 
-    "location_07": "11-63, Songdo-dong, Yeonsu-gu, Incheon, South Korea",
-    "location_08": "TEL. +82-32-716-9480~2",
-    "location_09": "FAX. +82-32-716-9484",
+
+    "location_07": "Address:",
+    "location_07_01": "11-63, Songdo-dong, Yeonsu-gu, Incheon, South Korea",
+    "location_08": "TEL.",
+    "location_08_01": "+82-32-716-9480~2",
+    "location_09": "FAX.",
+    "location_09_01": "+82-32-716-9484",
+
 
     "location_10": "Carretera Apodaca a Villa Juárez 8456, interior 7 y 8 , Dulces Nombres Industrial Park, Apodaca, N.L, C.P 66647, Mexico",
     "location_11": "",
     "location_12": "",
+    "location_13": "Address: ",
+    "location_14": "B400 Block ‘B’, Panrutti Village, Oragadam – Wallajabad Road, Sriperumbudur Taluk, Kanchipuram District, Kanchipuram, Tamil Nadu 631604 INDIA",
+    "location_15": "Employee:",
+    "location_15_01": "Total 44(Expats: 2, Management: 11, Production: 31)",
 
-    "location_13": "B400 Block ‘B’, Panrutti Village, Oragadam – Wallajabad Road, Sriperumbudur Taluk, Kanchipuram District, Kanchipuram, Tamil Nadu 631604 INDIA",
-    "location_14": "",
-    "location_15": "",
-
+    "location_16_01": "Address:",
     "location_16": "No.68, Yuefeng Road, Zhangjjagang City, Jinagsu Province, China",
-    "location_17": "",
-    "location_18": "",
+    "location_17": "Employee:",
+    "location_18": "Total 42(Expats: 1, Management: 13, Production: 28)",
+
+    "location_19": "Address:",
+    "location_20": "Carretera Apodaca a Villa Juárez 8456, interior 7 y 8 , Dulces Nombres Industrial Park, Apodaca, N.L, C.P 66647, Mexico",
+    "location_21": "Employee:",
+    "location_22": "Total 80(Expats: 2, Management: 8, Production: 70)",
+
+
 
     "product_01": "Our Clients",
     "product_01_01": "LATCHING SYSTEMS",
@@ -1211,7 +1227,7 @@
     "welfare_43": "Lounge",
     "welfare_44": "If you'd like more details, please ",
     "welfare_45": "contact us ",
-    "welfare_46": "through the inquiry form or call us at 032-000-0000.",
+    "welfare_46": "through the inquiry form or call us at 032-716-9480.",
 
     "candidate_01": "Daedong People Leading the Future",
     "candidate_02": "We are looking for fresh talent to lead the future of Daedong Door together.",

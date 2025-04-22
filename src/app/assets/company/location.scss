@@ -1,15 +1,19 @@
 .locations {
   padding-bottom: 80px;
+
   .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
+
     > .location-btns {
       display: flex;
       margin-bottom: 6px;
       gap: 13px;
+
       button {
         border-radius: 5px;
+        margin-bottom: 25px;
         cursor: pointer;
         width: 230px;
         padding: 11px 0;
@@ -19,22 +23,67 @@
         font-family: "Pretendard-Medium", sans-serif;
         background: #fff;
         border: 1px solid #707070;
+
         &.active {
           color: #fff;
           background: #023A8E;
         }
       }
     }
+
     > .daedong-maps {
       margin-bottom: 15px;
     }
-    > .address {
-      p {
-        font-family: "Pretendard-Medium", sans-serif;
-        line-height: 25px;
-        margin-top: 10px;
-        &:first-child {
-          margin-top: 0;
+
+    .address {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      line-height: 26px;
+
+      .address-content {
+        display: flex;
+        align-items: flex-start;
+        gap: 20px;
+
+        @media (max-width: 768px) {
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+        }
+      }
+
+      .address-image {
+        flex-shrink: 0;
+
+        img {
+          max-width: 100%;
+          height: auto;
+        }
+      }
+
+      .address-text {
+        p {
+          font-family: "Pretendard-Medium", sans-serif;
+          line-height: 25px;
+          margin-top: 10px;
+          margin-left: 20px;
+
+          &:first-child {
+            margin-top: 0;
+          }
+
+          > span {
+            font-weight: 700;
+            color: #023A8E;
+          }
+        }
+
+        @media (max-width: 768px) {
+          margin-left: 0;
+
+          p {
+            margin-left: 0;
+          }
         }
       }
     }
@@ -42,23 +91,14 @@
     > .vimeo {
       margin: 0 !important;
       padding: 0 !important;
-     }
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .locations {
-    .container {
-      > .location-btns {
-        flex-wrap: wrap;
-        justify-content: center;
-      }
+      width: 100%;
+      height: auto;
     }
-    
   }
 }
 
-/* 반응형 미디어 쿼리 */
+// --- 반응형
+
 @media (max-width: 768px) {
   .locations {
     padding-bottom: 60px;
@@ -69,13 +109,19 @@
         align-items: stretch;
 
         button {
-          width: 100%; // 버튼이 가로 전체를 차지
+          width: 100%;
           font-size: 16px;
+          margin-bottom: 5px;
         }
       }
 
       > .daedong-maps {
         margin-bottom: 20px;
+
+        > img {
+          max-width: 100%;
+          height: auto;
+        }
       }
 
       > .address {
@@ -84,10 +130,43 @@
           line-height: 23px;
         }
       }
-      > .vimeo {
-        width: 100%;
-        height: auto;
-       }
+      .address-content {
+        display: flex;
+        align-items: flex-start;
+        gap: 20px;
+    
+        @media (max-width: 768px) {
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+        }
+      }
+    
+      .address-image {
+        flex-shrink: 0;
+    
+        iframe {
+          width: 100%;
+          height: auto;
+    
+          @media (max-width: 1024px) {
+            width: 100%;
+            height: auto;
+          }
+    
+          @media (max-width: 768px) {
+            width: 100%;
+            height: auto;
+          }
+    
+          @media (max-width: 480px) {
+            width: 100%;
+            height: auto;
+          }
+        }
+      }
+
+      
     }
   }
 }
@@ -99,8 +178,17 @@
     .container {
       padding: 0 15px;
 
+      > .daedong-maps {
+        margin-bottom: 20px;
+        > img {
+          max-width: 100%;
+          height: auto;
+        }
+      }
+
       > .location-btns {
         gap: 10px;
+
         button {
           font-size: 14px;
         }
@@ -111,11 +199,11 @@
           font-size: 14px;
         }
       }
+
       > .vimeo {
-        margin-top: 0 !important;
-        margin-bottom: 0 !important;
+        margin: 0 !important;
         padding: 0 !important;
-       }
+      }
     }
   }
 }
