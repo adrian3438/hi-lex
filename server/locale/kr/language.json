@@ -431,12 +431,21 @@
     "location_01": "오시는 길",
     "location_02": "대동도어 본사를 방문하셔서 최첨단 제조 시설을 직접 확인하시고 자동차 부품에 대해 더 자세히 알아보세요.",
     "location_03": "고객님의 편의를 위해 전략적으로 위치한 당사는 접근하기 편리한 위치에 있습니다.",
-    "location_04": "대한민국 인천광역시 연수구 첨단대로 124번길, 64",
-    "location_05": "TEL. +82-32-716-9480~2",
-    "location_06": "FAX. +82-32-716-9484",
-    "location_07": "대한민국 인천광역시 연수구 송도동 11-63",
-    "location_08": "TEL. +82-32-716-9480~2",
-    "location_09": "FAX. +82-32-716-9484",
+
+    "location_04": "주소",
+    "location_04_01": "대한민국 인천광역시 연수구 첨단대로 124번길, 64",
+    "location_05": "TEL.",
+    "location_05_01": "+82-32-716-9480~2",
+    "location_06": "FAX.",
+    "location_06_01": "+82-32-716-9480~2",
+
+
+    "location_07": "주소:",
+    "location_07_01": "대한민국 인천광역시 연수구 송도동 11-63",
+    "location_08": "TEL.",
+    "location_08_01": "+82-32-716-9480~2",
+    "location_09": "FAX.",
+    "location_09_01": "+82-32-716-9484",
 
     "location_10": "Carretera Apodaca a Villa Juárez 8456, interior 7 y 8 , Dulces Nombres Industrial Park, Apodaca, N.L, C.P 66647, Mexico",
     "location_11": "",

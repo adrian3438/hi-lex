@@ -16,12 +16,12 @@ export default function Location({language}: Props) {
                 <button className={mapIndex === 1 ? 'active' : ''} onClick={() => setMapIndex(1)}>{language?.location_btn_02}</button>
             </div>
 
-            <div className="vimeo">
+            <div className="vimeo" style={{marginBottom: "20px !important"}}>
                 {mapIndex === 0 && (
-                    <iframe title="vimeo-player" src="https://player.vimeo.com/video/1076618346?h=9cd0f89a01" width="1200" height="800" style={{ border: 0, width: "100%", margin: 0, padding: 0, display: "block" }}  allow="autoplay; fullscreen" allowFullScreen></iframe>
+                    <iframe title="vimeo-player" src="https://player.vimeo.com/video/1076618346?h=9cd0f89a01" style={{ border: 0, width: "100%", margin: 0, padding: 0, display: "block", aspectRatio: "16 / 9" }}  allow="autoplay; fullscreen" allowFullScreen></iframe>
                 )}
                 {mapIndex === 1 && (
-                    <iframe title="vimeo-player" src="https://player.vimeo.com/video/1076618554?h=e882de0700" width="1200" height="800" style={{ border: 0, width: "100%", margin: 0, padding: 0, display: "block" }}  allow="autoplay; fullscreen" allowFullScreen></iframe>
+                    <iframe title="vimeo-player" src="https://player.vimeo.com/video/1076618554?h=e882de0700" style={{ border: 0, width: "100%", margin: 0, padding: 0, display: "block", aspectRatio: "16 / 9" }}  allow="autoplay; fullscreen" allowFullScreen></iframe>
                 )}
             </div>
 
@@ -32,7 +32,7 @@ export default function Location({language}: Props) {
                 {mapIndex === 1 && (
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3170.6845212830367!2d126.64428907628988!3d37.37364103516491!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b7650d69ef6fd%3A0x61b3d7233873a569!2z7J247LKc6rSR7Jet7IucIOyXsOyImOq1rCDshqHrj4Trj5kgMTEtNjM!5e0!3m2!1sko!2skr!4v1735281917864!5m2!1sko!2skr" width="600" height="450" style={{ border: 0, width: "100%", margin: 0, padding: 0, display: "block" }} loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
                 )}
-             
+
             </div> */}
 
             <div className="address">
