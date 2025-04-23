@@ -55,7 +55,7 @@ export default function Modeling4({language}: Props) {
     useEffect(() => {
         switch (buttonIndex) {
             case 0:
-                setCameraPosition([0.5, 0.8, 0]);
+                setCameraPosition([0.8, 0.1, 0]);
                 setCameraTarget([0, 0, 0]);
                 break;
             case 1:
@@ -63,7 +63,7 @@ export default function Modeling4({language}: Props) {
                 setCameraTarget([0, 0, 0]);
                 break;
             case 2:
-                setCameraPosition([0.5, -0.8, 0]);
+                setCameraPosition([0.8, -0.1, 0]);
                 setCameraTarget([0, 0, 0]);
                 break;
         }

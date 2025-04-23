@@ -56,21 +56,13 @@ export default function Modeling2({language}: Props) {
     useEffect(() => {
         switch (buttonIndex) {
             case 0:
-                setCameraPosition([-0.10, 0.14, -0.11+1]);
-                setCameraTarget([-0.10, 0.14, -0.11]);
+                setCameraPosition([0, 0.1, 2]);
+                setCameraTarget([0, 0, 0]);
                 break;
             case 1:
-                setCameraPosition([-0.18, 0.14, -0.11+1]);
-                setCameraTarget([-0.18, 0.14, -0.11]);
+                setCameraPosition([0, -0.1, 2]);
+                setCameraTarget([0, 0, 0]);
                 break;
-            // case 2:
-            //     setCameraPosition([-1, 1, -1]);
-            //     setCameraTarget([0, 0, 0]);
-            //     break;
-            // case 3:
-            //     setCameraPosition([0, 1.5, -1.5]);
-            //     setCameraTarget([0, 0, 0]);
-            //     break;
         }
     }, [buttonIndex]);
 
@@ -103,33 +95,19 @@ export default function Modeling2({language}: Props) {
                           onClick={() => setButtonIndex(1)}
                         />
                     </Html>
-                    {/* <Html position={[-0.72, 0.65, 0.07]} distanceFactor={10}>
-                        <div
-                          className="model-detail-button"
-                          style={{background: '#00E5FF', padding: '2.5px', borderRadius: '2.5px', pointerEvents: 'auto', cursor: 'pointer',}}
-                          onClick={() => setButtonIndex(2)}
-                        />
-                    </Html>
-                    <Html position={[0.4, 0.9, -0.06]} distanceFactor={10}>
-                        <div
-                          className="model-detail-button"
-                          style={{background: '#00E5FF', padding: '2.5px', borderRadius: '2.5px', pointerEvents: 'auto', cursor: 'pointer',}}
-                          onClick={() => setButtonIndex(3)}
-                        />
-                    </Html> */}
                 </>
             </Canvas>
             <div className="features col-md-5">
                 {buttonIndex === 0 && (
                   <div className="features-01">
-                      <div className="image-area">
-                      <iframe
-                        src="https://player.vimeo.com/video/1077158940?h=abcde12345&autoplay=1&loop=1&muted=1"
-                        style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}
-                        allow="autoplay; fullscreen; picture-in-picture"
-                        allowFullScreen
-                        title="Vimeo Video"
-                       ></iframe>
+                      <div className="video-area" style={{aspectRatio: "441 / 249", width: "100%", height: "100%"}}>
+                          <iframe
+                            src="https://player.vimeo.com/video/1077158940?h=abcde12345&autoplay=1&loop=1&muted=1"
+                            style={{width: '100%', height: '100%'}}
+                            allow="autoplay; fullscreen; picture-in-picture"
+                            allowFullScreen
+                            title="Vimeo Video"
+                          ></iframe>
                       </div>
                       <div className="text-area">
                           <h2>{language?.pds_01}</h2>
@@ -139,10 +117,10 @@ export default function Modeling2({language}: Props) {
                 )}
                 {buttonIndex === 1 && (
                   <div className="features-01">
-                      <div className="image-area">
+                      <div className="video-area" style={{aspectRatio: "441 / 249", width: "100%", height: "100%"}}>
                       <iframe
                         src="https://player.vimeo.com/video/1077159325?h=abcde12345&autoplay=1&loop=1&muted=1"
-                        style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}
+                        style={{ width: '100%', height: '100%' }}
                         allow="autoplay; fullscreen; picture-in-picture"
                         allowFullScreen
                         title="Vimeo Video"
@@ -154,28 +132,6 @@ export default function Modeling2({language}: Props) {
                       <button className="detail-close" onClick={() => setButtonIndex(100)}/>
                   </div>
                 )}
-                {/* {buttonIndex === 2 && (
-                  <div className="features-01">
-                      <div className="image-area">
-                          <Image src="/images/sub/company/greeting/ceo-greeting-flags.jpg" alt="extinguisher" width={441} height={268}/>
-                      </div>
-                      <div className="text-area">
-                          <h2>{language?.e_latch_05}</h2>
-                      </div>
-                      <button className="detail-close" onClick={() => setButtonIndex(100)}/>
-                  </div>
-                )}
-                {buttonIndex === 3 && (
-                  <div className="features-01">
-                      <div className="image-area">
-                          <Image src="/images/sub/company/greeting/ceo-greeting-flags.jpg" alt="extinguisher" width={441} height={268}/>
-                      </div>
-                      <div className="text-area">
-                          <h2>{language?.e_latch_06}</h2>
-                      </div>
-                      <button className="detail-close" onClick={() => setButtonIndex(100)}/>
-                  </div>
-                )} */}
             </div>
         </>
     );
