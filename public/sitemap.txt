@@ -51,7 +51,7 @@
   </url>
 
   <url>
-    <loc>https://hi-lexdoor.comlocation/</loc>
+    <loc>https://hi-lexdoor.com/location/</loc>
     <lastmod>2024-04-28</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.9</priority>
@@ -118,7 +118,7 @@
 
 
   <url>
-    <loc>https:/hi-lexdoor.com/research/power-lift-gate/</loc>
+    <loc>https://hi-lexdoor.com/research/power-lift-gate</loc>
     <lastmod>2024-04-28</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.9</priority>
