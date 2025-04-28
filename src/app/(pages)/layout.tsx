@@ -3,6 +3,7 @@ import localFont from "next/font/local";
 import "@/app/(pages)/globals.css";
 import "@/app/assets/common.scss"
 import "@/app/assets/sub.scss"
+import Script from "next/script";
 
 const pretendard = localFont({
   src: "../fonts/Pretendard-Regular.woff",
@@ -22,6 +23,22 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+        <head>
+          {/* Google tag (gtag.js) */}
+          <Script
+            src="https://www.googletagmanager.com/gtag/js?id=G-F0XV21B1ST"
+            strategy="afterInteractive"
+          />
+          <Script id="google-analytics" strategy="afterInteractive">
+            {`
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', 'G-F0XV21B1ST');
+              `}
+          </Script>
+        </head>
+
       <body className={`${pretendard.variable}`}>
         {children}
       </body>
