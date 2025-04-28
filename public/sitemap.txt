@@ -16,56 +16,56 @@
   </url>
 
   <url>
-    <loc>https://www.example.com/about-us/</loc>
+    <loc>https://hi-lexdoor.com/about-us/</loc>
     <lastmod>2024-04-28</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://www.example.com/management-philosopy/</loc>
+    <loc>https://hi-lexdoor.com/management-philosopy/</loc>
     <lastmod>2024-04-28</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://www.example.com/hostory/</loc>
+    <loc>https://hi-lexdoor.com/history/</loc>
     <lastmod>2024-04-28</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://www.example.com/affiliate-companies/</loc>
+    <loc>https://hi-lexdoor.com/affiliate-companies/</loc>
     <lastmod>2024-04-28</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://www.example.com/domestic/</loc>
+    <loc>https://hi-lexdoor.com/domestic/</loc>
     <lastmod>2024-04-28</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://www.example.com/location/</loc>
+    <loc>https://hi-lexdoor.comlocation/</loc>
     <lastmod>2024-04-28</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://www.example.com/contact-us/</loc>
+    <loc>https://hi-lexdoor.com/contact-us/</loc>
     <lastmod>2024-04-28</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://www.example.com/latching-systems/</loc>
+    <loc>https://hi-lexdoor.com/latching-systems/</loc>
     <lastmod>2024-04-28</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.9</priority>
@@ -73,16 +73,7 @@
 
 
   <url>
-    <loc>https://www.example.com/power-closures/</loc>
-    <lastmod>2024-04-28</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.9</priority>
-  </url>
-
-
-
-  <url>
-    <loc>https://www.example.com/door-checks/</loc>
+    <loc>https://hi-lexdoor.com/power-closures/</loc>
     <lastmod>2024-04-28</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.9</priority>
@@ -91,7 +82,7 @@
 
 
   <url>
-    <loc>https://www.example.com/research/</loc>
+    <loc>https://hi-lexdoor.com/door-checks/</loc>
     <lastmod>2024-04-28</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.9</priority>
@@ -100,7 +91,7 @@
 
 
   <url>
-    <loc>https://www.example.com/research/e-latch/</loc>
+    <loc>https://hi-lexdoor.com/research/</loc>
     <lastmod>2024-04-28</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.9</priority>
@@ -109,7 +100,7 @@
 
 
   <url>
-    <loc>https://www.example.com/research/pds/</loc>
+    <loc>https://hi-lexdoor.com/research/e-latch/</loc>
     <lastmod>2024-04-28</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.9</priority>
@@ -118,7 +109,7 @@
 
 
   <url>
-    <loc>https://www.example.com/research/power-lift-gate/</loc>
+    <loc>https://hi-lexdoor.com/research/pds/</loc>
     <lastmod>2024-04-28</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.9</priority>
@@ -127,7 +118,7 @@
 
 
   <url>
-    <loc>https://www.example.com/research/power-hood/</loc>
+    <loc>https:/hi-lexdoor.com/research/power-lift-gate/</loc>
     <lastmod>2024-04-28</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.9</priority>
@@ -136,7 +127,7 @@
 
 
   <url>
-    <loc>https://www.example.com/sustainability/esg-management/</loc>
+    <loc>https://hi-lexdoor.com/research/power-hood/</loc>
     <lastmod>2024-04-28</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.9</priority>
@@ -145,7 +136,7 @@
 
 
   <url>
-    <loc>https://www.example.com/sustainability/climate-change/</loc>
+    <loc>https://hi-lexdoor.com/sustainability/esg-management/</loc>
     <lastmod>2024-04-28</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.9</priority>
@@ -154,119 +145,121 @@
 
 
   <url>
-    <loc>https://www.example.com/sustainability/ethical-business/</loc>
+    <loc>https://hi-lexdoor.com/sustainability/climate-change/</loc>
+    <lastmod>2024-04-28</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+
+
+  <url>
+    <loc>https://hi-lexdoor.com/sustainability/ethical-business/</loc>
     <lastmod>2024-04-28</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://www.example.com/sustainability/ehs/</loc>
+    <loc>https://hi-lexdoor.com/sustainability/ehs/</loc>
     <lastmod>2024-04-28</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://www.example.com/sustainability/supply-chain/</loc>
+    <loc>https://hi-lexdoor.com/sustainability/supply-chain/</loc>
     <lastmod>2024-04-28</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://www.example.com/sustainability/quality-management/</loc>
+    <loc>https://hi-lexdoor.com/sustainability/quality-management/</loc>
     <lastmod>2024-04-28</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://www.example.com/sustainability/sustainability-report/</loc>
+    <loc>https://hi-lexdoor.com/sustainability/sustainability-report/</loc>
     <lastmod>2024-04-28</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://www.example.com/sustainability/whistleblower-complaint/</loc>
+    <loc>https://hi-lexdoor.com/sustainability/whistleblower-complaint/</loc>
     <lastmod>2024-04-28</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://www.example.com/career/position/quality/</loc>
+    <loc>https://hi-lexdoor.com/career/position/quality/</loc>
     <lastmod>2024-04-28</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://www.example.com/career/welfare/</loc>
+    <loc>https://hi-lexdoor.com/career/welfare/</loc>
     <lastmod>2024-04-28</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://www.example.com/</loc>
+    <loc>https://hi-lexdoor.com/career/candidate/</loc>
     <lastmod>2024-04-28</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://www.example.com/career/candidate/</loc>
+    <loc>https://hi-lexdoor.com/career/application/</loc>
     <lastmod>2024-04-28</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://www.example.com/career/application/</loc>
+    <loc>https://hi-lexdoor.com/investment/financial/</loc>
     <lastmod>2024-04-28</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://www.example.com/investment/financial/</loc>
+    <loc>https://hi-lexdoor.com/investment/dart/</loc>
     <lastmod>2024-04-28</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://www.example.com/investment/dart/</loc>
+    <loc>https://hi-lexdoor.com/news/press-release/</loc>
     <lastmod>2024-04-28</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://www.example.com/news/press-release/</loc>
+    <loc>https://hi-lexdoor.com/news/story/</loc>
     <lastmod>2024-04-28</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://www.example.com/news/story/</loc>
+    <loc>https://hi-lexdoor.com/news/events/</loc>
     <lastmod>2024-04-28</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://www.example.com/news/events/</loc>
-    <lastmod>2024-04-28</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.9</priority>
-  </url>
-
-  <url>
-    <loc>https://www.example.com/news/media/</loc>
+    <loc>https://hi-lexdoor.com/news/media/</loc>
     <lastmod>2024-04-28</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.9</priority>
