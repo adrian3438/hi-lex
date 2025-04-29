@@ -32,7 +32,7 @@ export default function Research({language}: Props) {
                 <ul>
                     <li>
                         <Link href="/research/e-latch" onMouseOver={() => setImageIndex(0)}>
-                            <p>{language?.research_06}<span>{language?.research_07}</span></p>
+                            <p>{language?.research_06}</p>
                             <div>
                                 <dl>
                                     <dt>{language?.research_06}<span>{language?.research_07}</span></dt>

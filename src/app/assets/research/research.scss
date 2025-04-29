@@ -241,6 +241,8 @@
 
 @media (max-width: 768px) {
   .link-area {
+    height: auto !important;
+    background-size: cover !important;
     > ul {
       > li {
           width: 100%;
@@ -255,7 +257,7 @@
 
         > a {
           height: auto;
-          padding: 0px 10px;
+          padding: 0;
           position: relative;
           font-size: 18px;
 
@@ -269,9 +271,9 @@
           }
 
           > div {
-            position: static;
+            position: static !important;
             opacity: 1 !important;
-            padding: 10px 0;
+            padding: 10px 20px !important;
             background: rgba(0, 0, 0, 0.5);
             box-sizing: border-box;
 
@@ -318,12 +320,12 @@
     font-size: 13px;
     display: flex;
     flex-direction: column;
-  
+
     > h3 {
       font-size: 18px;
       padding-bottom: 10px;
     }
-  
+
     > ul {
       display: flex;
       flex-direction: column;
@@ -331,7 +333,7 @@
       max-height: 500px; /* 필요 시 높이 조절 가능 */
       overflow-y: auto;
       padding-right: 10px;
-  
+
       > li > a > div {
         position: absolute;
         margin-left: 130px;
@@ -341,9 +343,9 @@
         line-height: 20px !important;
         font-family: "Pretendard-ExtraBold", sans-serif;
         }
-       
+
       }
     }
   }
-  
+
 

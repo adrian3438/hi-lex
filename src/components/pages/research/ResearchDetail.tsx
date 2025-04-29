@@ -23,12 +23,17 @@ export default function LatchingSystems({ initialActiveIndex = 0 }: ResearchDeta
       <div className="products-detail-top">
         <div className="products-detail-list">
           <dl>
-            <dt>Side Door Latches</dt>
+            <dt>Power Sliding Door System</dt>
             <dd>
               <ul>
                 <li>
-                  <Link href="/research/e-latch">
-                  <button className={activeIndex === 2 ? 'active' : ''} onClick={() => setActiveIndex(2)}>E-Latch</button>
+                  <Link href="/research/power-cinching-latch">
+                    <button className={activeIndex === 10 ? 'active' : ''} onClick={() => setActiveIndex(10)}>Power Cinching Latch</button>
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/research/drive-unit">
+                    <button className={activeIndex === 11 ? 'active' : ''} onClick={() => setActiveIndex(11)}>Drive Unit</button>
                   </Link>
                 </li>
               </ul>
@@ -39,27 +44,32 @@ export default function LatchingSystems({ initialActiveIndex = 0 }: ResearchDeta
             <dd>
               <ul>
                 <li>
+                  <Link href="/research/e-latch">
+                    <button className={activeIndex === 2 ? 'active' : ''} onClick={() => setActiveIndex(2)}>E-Latch</button>
+                  </Link>
+                </li>
+                <li>
                   <Link href="/research/pds">
-                  <button className={activeIndex === 1 ? 'active' : ''} onClick={() => setActiveIndex(1)}>Power Door Actuator</button>
+                    <button className={activeIndex === 1 ? 'active' : ''} onClick={() => setActiveIndex(1)}>Power Door Actuator</button>
                   </Link>
                 </li>
               </ul>
             </dd>
           </dl>
           <dl>
-            <dt>Lift Gate System</dt>
+            <dt>Power Lift Gate System</dt>
             <dd>
               <ul>
                 <li>
                   <Link href="/research/power-lift-gate">
-                  <button className={activeIndex === 7 ? 'active' : ''} onClick={() => setActiveIndex(7)}>Lift Gate Cinching Latch</button>
+                  <button className={activeIndex === 7 ? 'active' : ''} onClick={() => setActiveIndex(7)}>Power Tailgate Latch</button>
                   </Link>
                 </li>
               </ul>
             </dd>
           </dl>
           <dl>
-            <dt>Hood System</dt>
+            <dt>Power Hood System</dt>
             <dd>
               <ul>
                 <li>
@@ -87,10 +97,10 @@ export default function LatchingSystems({ initialActiveIndex = 0 }: ResearchDeta
            {(activeIndex === 7 ) && (
              <>
               <Image src="/images/sub/products/daedong-canival-rear-products.jpg" alt="" width={992} height={499}/>
-              <span className={activeIndex === 7 ? 'products-02-02 active' : 'products-02-02'}></span>
+              {/*<span className={activeIndex === 7 ? 'products-02-02 active' : 'products-02-02'}></span>
               <span className={activeIndex === 7 ? 'products-02-03 active' : 'products-02-03'}></span>
               <span className={activeIndex === 7 ? 'products-02-04 active' : 'products-02-04'}></span>
-              <span className={activeIndex === 7 ? 'products-02-05 active' : 'products-02-05'}></span>
+              <span className={activeIndex === 7 ? 'products-02-05 active' : 'products-02-05'}></span>*/}
               <span className={activeIndex === 7 ? 'products-02-06 active' : 'products-02-06'}></span>
              </>
            )}

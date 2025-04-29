@@ -25,6 +25,10 @@ export default function PowerClosures({language}: Props) {
                   <button className={activeIndex === 1 ? 'active' : ''} onClick={() => setActiveIndex(1)}>{language?.product_02_03}</button>
                   <Link href="/research/pds"><Image src="/images/sub/products/3d-link.png" alt="R&D 3D Configurator" width={170} height={20}/></Link>
                 </li>
+                <li>
+                  <button className={activeIndex === 9 ? 'active' : ''} onClick={() => setActiveIndex(9)}>{language?.product_01_04}</button>
+                  <Link href="/research/e-latch"><Image src="/images/sub/products/3d-link.png" alt="R&D 3D Configurator" width={170} height={20}/></Link>
+                </li>
               </ul>
             </dd>
           </dl>
@@ -105,6 +109,15 @@ export default function PowerClosures({language}: Props) {
                 <span className={activeIndex === 8 ? 'products-02-09 active' : 'products-02-09'}>{activeIndex === 8 && <Link href="#productsDetail"/>}</span>
             </>
           )}
+          {activeIndex === 9 && (
+            <>
+              <Image src="/images/sub/products/daedong-ionic-products.jpg" alt="" width={992} height={499}/>
+              <span className={activeIndex === 9 ? 'products-01-02 active' : 'products-01-02'}><Link href="#productsDetail"/></span>
+
+              {/*<Image src="/images/sub/products/products-01-001.png" alt="" width={992} height={499}/>*/}
+            </>
+          )}
+
             {/*{(activeIndex === 8) && (
               <>
                   <Image src="/images/sub/products/daedong-ev9-products.jpg" alt="" width={992} height={499}/>
@@ -375,6 +388,34 @@ export default function PowerClosures({language}: Props) {
                       <li>{language?.product_02_56}</li>
                       <li>{language?.product_02_57}<br/>{language?.product_02_58}</li>
                       <li>{language?.product_02_59}<br/>{language?.product_02_60}</li>
+                    </ul>
+                  </dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+        </>
+      )}
+
+      {activeIndex === 9 && (
+        <>
+          <div className="products-detail-middle" id="productsDetail">
+            <h4>{language?.product_01_95}</h4>
+            <div className="products-area">
+              <div className="products-image-area">
+                <Image src="/images/sub/products/products-01-05.png" alt="Plastic (Case) Type" width={361} height={545}/>
+                <p>{language?.product_01_96}</p>
+              </div>
+              <div className="products-text-area">
+                <dl>
+                  <dt>{language?.product_01_97}</dt>
+                  <dd>
+                    <ul>
+                      <li>{language?.product_01_98}</li>
+                      <li>{language?.product_01_99}</li>
+                      <li>{language?.product_01_100}</li>
+                      <li>{language?.product_01_101}</li>
+                      <li>{language?.product_01_102}</li>
                     </ul>
                   </dd>
                 </dl>

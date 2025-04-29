@@ -67,9 +67,9 @@
 
     > div {
       width: 50%;
-      background: url("/images/sub/company/greeting/songhaksung-signature-01.png") no-repeat 45% 100%;
+      background: url("/images/sub/company/greeting/songhaksung-signature-01.png") no-repeat 30px 100%;
       box-sizing: border-box;
-      padding: 0 40px 50px;
+      padding: 0 40px 100px;
 
       > p {
         color: #fff;
@@ -124,7 +124,8 @@
       > div {
         > div {
           width: 100%;
-          padding: 0 0 150px;
+          padding: 0 0 100px;
+          background-position: 0 100% !important;
         }
       }
     }
