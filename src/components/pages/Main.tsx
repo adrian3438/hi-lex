@@ -108,7 +108,7 @@ export default function Main({ language }: Props) {
                     </div>
                 </div>
             </main>
-            <MainPopup/>
+            {language?.language === 'kr' && <MainPopup/>}
         </>
     );
 }
