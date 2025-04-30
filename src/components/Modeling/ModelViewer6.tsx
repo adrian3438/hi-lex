@@ -50,7 +50,7 @@ interface Props {
 
 export default function Modeling6({language}: Props) {
     const [buttonIndex, setButtonIndex] = useState<number>();
-    const [cameraPosition, setCameraPosition] = useState<[number, number, number]>([0.9, 0, 0]);
+    const [cameraPosition, setCameraPosition] = useState<[number, number, number]>([9.6, 0, 0]);
     const [cameraTarget, setCameraTarget] = useState<[number, number, number]>([0, 0, 0]);
     useEffect(() => {
         switch (buttonIndex) {
@@ -74,7 +74,7 @@ export default function Modeling6({language}: Props) {
               <directionalLight position={[-50, 50, -30]} intensity={0.6} />
               <OrbitControls enableZoom={true} />
               <CameraController newPosition={cameraPosition} targetPosition={cameraTarget}/>
-              <Model url={`/modeling/phl.glb`} />
+              <Model url={`/modeling/updating.glb`} />
               <>
                   <Html position={[0.17, 0, 0]} distanceFactor={5}>
                       <div

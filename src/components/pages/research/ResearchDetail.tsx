@@ -111,6 +111,22 @@ export default function LatchingSystems({ initialActiveIndex = 0 }: ResearchDeta
             {/* <span className={activeIndex === 9 ? 'products-02-09 active' : 'products-02-09'}></span> */}
             </>
            )}
+
+            {(activeIndex === 10) && (
+            <>
+            <Image src="/images/sub/products/daedong-canival-products.jpg" alt="" width={992} height={499}/>
+            <span className={activeIndex === 10 ? 'products-04-01 active' : 'products-04-01'}></span>
+            {/* <span className={activeIndex === 9 ? 'products-02-09 active' : 'products-02-09'}></span> */}
+            </>
+           )}
+
+            {(activeIndex === 11) && (
+            <>
+            <Image src="/images/sub/products/daedong-canival-products.jpg" alt="" width={992} height={499}/>
+            <span className={activeIndex === 11 ? 'products-04-02 active' : 'products-04-02'}></span>
+            {/* <span className={activeIndex === 9 ? 'products-02-09 active' : 'products-02-09'}></span> */}
+            </>
+           )}
         </div>
       </div>
     </div>

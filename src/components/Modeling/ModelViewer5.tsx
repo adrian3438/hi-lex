@@ -50,7 +50,7 @@ interface Props {
 
 export default function Modeling5({language}: Props) {
     const [buttonIndex, setButtonIndex] = useState<number>();
-    const [cameraPosition, setCameraPosition] = useState<[number, number, number]>([0.9, 0, 0]);
+    const [cameraPosition, setCameraPosition] = useState<[number, number, number]>([2.1, 0, 0]);
     const [cameraTarget, setCameraTarget] = useState<[number, number, number]>([0, 0, 0]);
     useEffect(() => {
         switch (buttonIndex) {
@@ -74,7 +74,7 @@ export default function Modeling5({language}: Props) {
               <directionalLight position={[-50, 50, -30]} intensity={0.6} />
               <OrbitControls enableZoom={true} />
               <CameraController newPosition={cameraPosition} targetPosition={cameraTarget}/>
-              <Model url={`/modeling/phl.glb`} />
+              <Model url={`/modeling/power-cinching-latch.glb`} />
               <>
                   <Html position={[0.17, 0, 0]} distanceFactor={5}>
                       <div
@@ -88,11 +88,17 @@ export default function Modeling5({language}: Props) {
           <div className="features col-md-5">
               {buttonIndex === 0 && (
                 <div className="features-01">
-                    <div className="video-area">
-                        <video src="/video/power-cinching-latch/power-cinching-latch-01.mp4" autoPlay muted loop/>
-                    </div>
+                    <div className="video-area" style={{aspectRatio: "441 / 249", width: "100%", height: "100%"}}>
+                          <iframe
+                            src="https://player.vimeo.com/video/1080055014?h=abcde12345&autoplay=1&loop=1&muted=1"
+                            style={{ width: '100%', height: '100%' }}
+                            allow="autoplay; fullscreen; picture-in-picture"
+                            allowFullScreen
+                            title="Vimeo Video"
+                          ></iframe>
+                      </div>
                     <div className="text-area">
-                        <h2>{language?.e_latch_07}</h2>
+                        <h2>{language?.power_cinching_latch_01}</h2>
                     </div>
                     <button className="detail-close" onClick={() => setButtonIndex(100)}/>
                 </div>
