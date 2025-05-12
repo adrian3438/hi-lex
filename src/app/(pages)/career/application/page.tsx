@@ -177,7 +177,9 @@ export default async function ApplicationPage({searchParams: {lang, page}}: any)
           <section className="application-content6">
             <h2>Applicaion Form</h2>
             <div>
+              <button>
               <a href="/download/대동도어 주식회사 자사지원서.docx" download>대동도어(주) 자사지원서</a>
+              ____다운로드</button>
             </div>
             <p>아래 채용 공고를 확인 후 지원서를 작성하여 상세페이지 내에서 입사지원서류를 업로드 합니다.</p>
           </section>

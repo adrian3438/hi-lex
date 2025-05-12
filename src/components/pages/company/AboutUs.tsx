@@ -25,7 +25,7 @@ export default function AboutUs({language}: Props) {
                             <ul>
                                 <li>
                                     <dl>
-                                        <dt>{language?.about_26}</dt>
+                                        <dt>{language?.about_26}<br/>{language?.about_26_01}</dt>
                                         <dd>
                                             <ul>
                                                 <li><Link href="/products/latching-systems">{language?.about_27}</Link></li>
@@ -38,7 +38,7 @@ export default function AboutUs({language}: Props) {
                                 </li>
                                 <li>
                                     <dl>
-                                        <dt>{language?.about_31}</dt>
+                                        <dt>{language?.about_31}<br/>{language?.about_31_01}</dt>
                                         <dd>
                                             <ul>
                                                 <li><Link href="/products/power-closures">{language?.about_32}</Link></li>

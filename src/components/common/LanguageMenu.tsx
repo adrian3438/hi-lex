@@ -116,7 +116,7 @@ export default function LanguageMenu({language}: Props) {
                         <li className={menuNumber === 6 ? 'on' : ''}>
                             <button onClick={() => handleMobileMenu(6)}>{language.header_7}</button>
                             <ul>
-                                <li><Link href="/investment/financial">- {language.header_7_1}</Link></li>
+                                {/* <li><Link href="/investment/financial">- {language.header_7_1}</Link></li> */}
                                 <li><Link href="/investment/dart">- {language.header_7_2}</Link></li>
                             </ul>
                         </li>
