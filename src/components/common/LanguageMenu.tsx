@@ -39,6 +39,7 @@ export default function LanguageMenu({language}: Props) {
         const newParams = new URLSearchParams(query.toString());
         newParams.set('lang', lang);
         router.push(`${currentRoute}?${newParams?.toString()}`);
+        location.reload();
     }
 
     useEffect(()=>{setLang(cookie.LANG)} , [setCookie, cookie, lang]);
