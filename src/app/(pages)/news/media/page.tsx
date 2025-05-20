@@ -39,12 +39,22 @@ export default async function PressReleasePage({searchParams : {lang}} : any) {
                     <dl className="video">
                         <dt>{language?.news_06}</dt>
                         <dd>
+                             <div style={{background: "black"}}>
+                                {/* <div style={{background: "black", textAlign: 'center'}}>{language?.news_06}</div> */}
+                                <iframe width="560" height="315" title="vimeo-player" src="https://player.vimeo.com/video/1085897771?h=6bf77c6da2" allowFullScreen></iframe>
+                            </div>
+                            <div style={{background: "black"}}>
+                                <iframe width="560" height="315" title="vimeo-player" src="https://player.vimeo.com/video/1085897886?h=6bf77c6da2" allowFullScreen></iframe>
+                            </div>
                             <div style={{background: "black"}}>
                                 <iframe width="560" height="315" src="https://www.youtube.com/embed/3vizeSa7xXA?si=wgPVSI5xVQGmyKgN" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
                             </div>
                             <div style={{background: "black"}}>
                                 <iframe width="560" height="315" title="vimeo-player" src="https://player.vimeo.com/video/1043028069?h=6bf77c6da2" allowFullScreen></iframe>
                             </div>
+                           
+
+
                         </dd>
                     </dl>
                 </div>
