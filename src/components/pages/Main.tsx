@@ -4,7 +4,7 @@ import "@/app/assets/main.scss";
 import Image from "next/image";
 import Link from "next/link";
 import { useState, useEffect } from "react";
-import MainPopup from "@/components/main/MainPopup";
+// import MainPopup from "@/components/main/MainPopup";
 
 interface Props {
     language?: any;
@@ -108,7 +108,7 @@ export default function Main({ language }: Props) {
                     </div>
                 </div>
             </main>
-            {language?.language === 'kr' && <MainPopup/>}
+            {/* {language?.language === 'kr' && <MainPopup/>} */}
         </>
     );
 }
