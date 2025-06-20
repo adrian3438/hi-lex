@@ -37,7 +37,10 @@ export default function EHS({ language }: Props) {
                     <p>{language?.esg_text_02}</p>
                 </div>
             </div>
-            <div className="esg-menus" id="esgMenus">
+
+
+            {/* <div className="esg-menus" id="esgMenus"> */}
+            <div className="esg-menus">
                 <ul>
                     <li>
                         <Link href="/sustainability/esg-management">
@@ -109,6 +112,7 @@ export default function EHS({ language }: Props) {
                 <section className="esg-section-01">
                     <h3>{language?.esg_text_03_60}</h3>
                     <p>{language?.esg_text_03_61}</p>
+                    <p>{language?.esg_text_03_61_01}</p>
                 </section>
                 <section className="esg-section-02">
                     <div>

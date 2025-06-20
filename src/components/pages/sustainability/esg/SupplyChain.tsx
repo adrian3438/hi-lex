@@ -106,7 +106,8 @@ export default function SupplyChain({ language }: Props) {
                 </div>*/}
             </div>
 
-            <div className="esg-menus" id="esgMenus">
+            {/* <div className="esg-menus" id="esgMenus"> */}
+            <div className="esg-menus">
                 <ul>
                     <li>
                         <Link href="/sustainability/esg-management">

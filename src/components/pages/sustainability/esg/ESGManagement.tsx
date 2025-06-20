@@ -35,7 +35,9 @@ export default function ESGManagement({ language }: Props) {
                     <p>{language?.esg_text_02}</p>
                 </div>
             </div>
-            <div className="esg-menus" id="esgMenus">
+
+            {/* <div className="esg-menus" id="esgMenus"> */}
+            <div className="esg-menus">
                 <ul>
                     <li className="active">
                         <Link href="/sustainability/esg-management">

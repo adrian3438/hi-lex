@@ -164,7 +164,9 @@ export default function WhistleblowerComplaint({ language }: Props) {
                     </ul>
                 </div>*/}
             </div>
-            <div className="esg-menus" id="esgMenus">
+
+            {/* <div className="esg-menus" id="esgMenus"> */}
+            <div className="esg-menus">
                 <ul>
                     <li>
                         <Link href="/sustainability/esg-management">
