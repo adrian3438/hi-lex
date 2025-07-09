@@ -52,7 +52,7 @@ export default function MainMenu({headerLeave, language}: Props): JSX.Element {
                     </ul>
                 </li>
                 <li className={activeMenu === 3 && !headerLeave ? 'on' : ''}>
-                    <Link href="/sustainability/esg-management" onMouseOver={() => handleMouseOver(3)}>{language.header_4}</Link>
+                    <Link href="/sustainability/ceo-compliance" onMouseOver={() => handleMouseOver(3)}>{language.header_4}</Link>
                     <ul>
                         <li><Link href="/sustainability/esg-management">{language.header_4_1}</Link></li>
                         <li><Link href="/sustainability/climate-change">{language.header_4_2}</Link></li>

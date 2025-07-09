@@ -15,7 +15,7 @@ export default async function HistoryPage({searchParams : {lang}} : any) {
                         <li>{language?.header_1}</li>
                         <li>{language?.header_1_6}</li>
                     </ul>
-                    <p>{language?.location_02}<br/>{language?.location_03}</p>
+                    <p>{language?.location_02_01}<br/>{language?.location_03}</p>
                 </div>
                 <Location language={language}/>
             </div>

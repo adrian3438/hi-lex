@@ -1,0 +1,150 @@
+.greeting {
+  .greeting-text-01 {
+    display: flex;
+    align-items: center;
+    background-color: #ebebeb;
+    padding-left: 300px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    > section {
+      width: 50%;
+
+      img {
+        width: 100%;
+        height: auto;
+        vertical-align: top;
+      }
+    }
+
+    > div {
+      width: 50%;
+      display: flex;
+      justify-content: center;
+
+      > div {
+        max-width: 581px;
+
+        > h3 {
+          font-size: 25px;
+          font-family: "Pretendard-Bold", sans-serif;
+          color: #707070;
+          margin-bottom: 25px;
+        }
+
+        > p {
+          color: #000;
+          font-size: 40px;
+          font-family: "Pretendard-SemiBold", sans-serif;
+          line-height: 48px;
+        }
+
+        > div {
+          > p {
+            color: #707070;
+            font-size: 25px;
+            line-height: 30px;
+            margin-top: 30px;
+          }
+        }
+      }
+    }
+  }
+
+  .greeting-text-02 {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+
+    > div {
+      max-width: 1600px;
+      padding: 0px 20px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: start; // ✅ 왼쪽 정렬
+      align-items: center;
+
+      > div {
+        width: 50%;
+        box-sizing: border-box;
+        padding: 0 40px 100px;
+        margin-left: 220px;
+
+        > p {
+          color: #5c5c5c;
+          font-size: 22px;
+          font-family: "Pretendard-Regular", sans-serif;
+          line-height: 34px;
+          margin-top: 50px;
+
+          &:first-child {
+            margin-top: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+// 🌐 태블릿 (가로 768~1024px)
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .greeting {
+    .greeting-text-01 {
+      flex-wrap: wrap;
+
+      > section,
+      > div {
+        width: 100%;
+        padding: 0 20px;
+      }
+
+      > div {
+        padding-top: 30px;
+        padding-bottom: 30px;
+      }
+    }
+
+    .greeting-text-02 {
+      > div {
+        flex-direction: column;
+        align-items: flex-start;
+
+        > div {
+          width: 100%;
+          padding: 0 20px 100px;
+        }
+      }
+    }
+  }
+}
+
+// 📱 모바일 (가로 767px 이하)
+@media screen and (max-width: 767px) {
+  .greeting {
+    .greeting-text-01 {
+      flex-wrap: wrap;
+
+      > section,
+      > div {
+        width: 100%;
+      }
+
+      > div {
+        padding: 75px 20px;
+      }
+    }
+
+    .greeting-text-02 {
+      > div {
+        flex-direction: column;
+        align-items: flex-start;
+
+        > div {
+          width: 100%;
+          padding: 0 20px 100px;
+          background-position: 0 100% !important;
+        }
+      }
+    }
+  }
+}

@@ -31,12 +31,14 @@
           margin: 0 20px 150px 20px;
           p {
             font-family: "Pretendard-ExtraBold", sans-serif;
-            font-size: 25px;
+            font-size: 24px;
             color: #fff;
             &:last-child {
               margin-top: 10px;
               font-family: "Pretendard-Medium", sans-serif;
               font-size: 35px;
+              line-height: 40px;
+
             }
           }
         }
