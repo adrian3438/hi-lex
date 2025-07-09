@@ -64,7 +64,7 @@ export default function Location({language}: Props) {
                     </div>
                     <div className="address-text">
                       <p><span>{language?.location_16_01}</span></p>
-                      <p>{language?.location_16}</p>
+                      <p>{language?.location_20}</p>
                       <p><span>{language?.location_17}</span></p>
                       <p>{language?.location_18}</p>
                     </div>
