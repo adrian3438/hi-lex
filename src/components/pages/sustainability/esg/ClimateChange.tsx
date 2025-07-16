@@ -184,6 +184,53 @@ export default function ClimateChange({ language }: Props) {
                     <p>{language?.esg_text_02_02}</p>
                     <p>{language?.esg_text_02_02_01}</p>
                     <p><Image src={`/images/sub/sustainability/esg/esg-02-img-01-${language?.language}.png`} alt="" width={1562} height={917}/></p>
+
+
+                    <div className="carbon-table-wrap">
+                    <table className="carbon-table">
+                        <thead>
+                        <tr>
+                            <th>Year</th>
+                            <th>2024</th>
+                            <th>2030</th>
+                            <th>2035</th>
+                            <th>2040</th>
+                            <th>2045</th>
+                            <th>2050</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>SCOPE-1</td>
+                            <td>78</td>
+                            <td>70</td>
+                            <td>55</td>
+                            <td>32</td>
+                            <td>16</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>SCOPE-2</td>
+                            <td>3,806</td>
+                            <td>3,424</td>
+                            <td>2,664</td>
+                            <td>1,522</td>
+                            <td>761</td>
+                            <td>0</td>
+                        </tr>
+                        <tr className="total-row">
+                            <td>TOTAL</td>
+                            <td>3,884</td>
+                            <td>3,494</td>
+                            <td>2,719</td>
+                            <td>1,554</td>
+                            <td>777</td>
+                            <td>0</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    </div>
+
                 </section>
                 <section className="esg-section-02">
                     <Image src="/images/sub/sustainability/esg/esg-02-img-03.png" alt="" width={1600} height={2133}/>
