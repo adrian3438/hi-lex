@@ -430,6 +430,7 @@
     "location_btn_03": "MEXICO FACTORY",
     "location_btn_04": "INDIA FACTORY",
     "location_btn_05": "CHINA FACTORY",
+    "location_btn_06": "POLAND FACTORY",
     "location_01": "LOCATION",
     "location_02": "Visit our headquarters to explore our state-of-the-art manufacturing facilities and learn more about our automotive components.",
     "location_02_01": "Visit our branches to explore our state-of-the-art manufacturing facilities and learn more about our automotive components.",
@@ -469,7 +470,10 @@
     "location_21": "Employee:",
     "location_22": "Total 80(Expats: 2, Management: 8, Production: 70)",
 
-
+    "location_23": "Address:",
+    "location_24": "ul. Mala Laka 28/32, 43-400 Cieszyn, Poland",
+    "location_25": "Main Products:",
+    "location_26": "Control Calble, Hood Latch, Door Checker",
 
     "product_01": "Our Clients",
     "product_01_01": "LATCHING SYSTEM",

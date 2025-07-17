@@ -432,6 +432,7 @@
     "location_btn_03": "멕시코 법인",
     "location_btn_04": "인도 법인",
     "location_btn_05": "중국 법인",
+    "location_btn_06": "폴란드 법인",
     "location_01": "오시는 길",
     "location_02": "대동도어 본사를 방문하셔서 최첨단 제조 시설을 직접 확인하시고 자동차 부품에 대해 더 자세히 알아보세요.",
     "location_02_01": "대동도어 지부를 방문하셔서 최첨단 제조 시설을 직접 확인하시고 자동차 부품에 대해 더 자세히 알아보세요.",
@@ -469,6 +470,12 @@
     "location_20": "Carretera Apodaca a Villa Juárez 8456, interior 7 y 8 , Dulces Nombres Industrial Park, Apodaca, N.L, C.P 66647, Mexico",
     "location_21": "종업원:",
     "location_22": "총인원 80(주재원: 2, 관리직: 8, 생산직: 70)",
+
+
+    "location_23": "주소:",
+    "location_24": "ul. Mala Laka 28/32, 43-400 Cieszyn, Poland",
+    "location_25": "주요생산품:",
+    "location_26": "Control Calble, Hood Latch, Door Checker",
 
     "product_01": "Our Clients",
     "product_01_01": "LATCHING SYSTEMS",

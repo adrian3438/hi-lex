@@ -16,6 +16,7 @@ export default function Location({language}: Props) {
                 <button className={mapIndex === 0 ? 'active' : ''} onClick={() => setMapIndex(0)}>{language?.location_btn_04}</button>
                 <button className={mapIndex === 1 ? 'active' : ''} onClick={() => setMapIndex(1)}>{language?.location_btn_05}</button>
                 <button className={mapIndex === 2 ? 'active' : ''} onClick={() => setMapIndex(2)}>{language?.location_btn_03}</button>
+                <button className={mapIndex === 3 ? 'active' : ''} onClick={() => setMapIndex(3)}>{language?.location_btn_06}</button>
             </div>
 
             <div className="daedong-maps">
@@ -27,6 +28,9 @@ export default function Location({language}: Props) {
                 )}
                 {mapIndex === 2 && (
                     <Image src="/images/sub/company/affiliate/daedong-mexico-factory-overseas.jpg" alt="" width={1291} height={661} />
+                )}
+                 {mapIndex === 3 && (
+                    <Image src="/images/sub/company/affiliate/daedong-poland-factory-overseas.jpg" alt="" width={1291} height={661} />
                 )}
             </div>
 
@@ -67,6 +71,19 @@ export default function Location({language}: Props) {
                       <p>{language?.location_20}</p>
                       <p><span>{language?.location_17}</span></p>
                       <p>{language?.location_18}</p>
+                    </div>
+                  </div>
+                )}
+                 {mapIndex === 3 && (
+                    <div className="address-content">
+                    <div className="address-image">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2577.4526409444493!2d18.615876!3d49.758742!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471401548605071d%3A0xe942c7396e55c62e!2sDaedong%20System%20Poland%20Sp.%20z%20o.o.!5e0!3m2!1sko!2skr!4v1752719713182!5m2!1sko!2skr" width="600" height="350"  loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div className="address-text">
+                      <p><span>{language?.location_23}</span></p>
+                      <p>{language?.location_24}</p>
+                      <p><span>{language?.location_25}</span></p>
+                      <p>{language?.location_26}</p>
                     </div>
                   </div>
                 )}
