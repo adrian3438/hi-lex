@@ -186,7 +186,7 @@ export default function ClimateChange({ language }: Props) {
                     <p><Image src={`/images/sub/sustainability/esg/esg-02-img-01-${language?.language}.png`} alt="" width={1562} height={917}/></p>
 
 
-                    <div className="carbon-table-wrap">
+                    {/* <div className="carbon-table-wrap">
                     <table className="carbon-table">
                         <thead>
                         <tr>
@@ -229,8 +229,7 @@ export default function ClimateChange({ language }: Props) {
                         </tr>
                         </tbody>
                     </table>
-                    </div>
-
+                    </div> */}
                 </section>
                 <section className="esg-section-02">
                     <Image src="/images/sub/sustainability/esg/esg-02-img-03.png" alt="" width={1600} height={2133}/>
