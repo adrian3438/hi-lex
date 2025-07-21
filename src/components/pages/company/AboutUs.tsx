@@ -51,7 +51,7 @@ export default function AboutUs({language}: Props) {
                                 </li>
                                 <li>
                                     <dl>
-                                        <dt>{language?.about_36}</dt>
+                                        <dt>{language?.about_36}<br/>{language?.about_36_01}</dt>
                                         <dd>&nbsp;</dd>
                                     </dl>
                                 </li>
