@@ -29,10 +29,12 @@ export default async function PressReleasePage({searchParams : {lang}} : any) {
                         <dt>{language?.news_05}</dt>
                         <dd>
                             <ul>
-                                <li>
-                                    <p>{language?.news_05_01}</p>
-                                    <a href="/download/대동도어 회사소개서_20240401-compressed.pdf" download>{language?.news_btn_05}</a>
-                                </li>
+                            <li>
+                                <p>{language?.news_05_01}</p>
+                                <a href="/ebook/daedongPR2025Jul/index.html" target="_blank" rel="noopener noreferrer">
+                                {language?.news_btn_05}
+                                </a>
+                            </li>
                             </ul>
                         </dd>
                     </dl>
