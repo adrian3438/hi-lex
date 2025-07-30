@@ -11,54 +11,69 @@ interface Props {
 export default function AboutUs({language}: Props) {
     return (
         <div className="about-us">
+            <div className="container-header-01">
+            <ul className="location">
+            <li>{language?.header_1}</li>
+            <li>{language?.header_1_2}</li>
+            </ul>
+            <h2>{language?.header_1_2}</h2>
+           </div>
+
             <AboutSwiper language={language} />
             <AboutVision language={language} />
+
+
             <div className="about-container">
                 <div className="business">
-                    <h2>{language?.about_23}</h2>
+                   
+                   <Image src="/images/sub/company/about/about-09.png" alt="" width={1600} height={800}/>
+
                     <div>
-                        <div>
+                        <h2>{language?.about_23}</h2>
+                        <div className="text-area">
                             <p>{language?.about_24}</p>
-                            <div className="text-area">
-                                {language?.about_25}
-                            </div>
-                            <ul>
-                                <li>
-                                    <dl>
-                                        <dt>{language?.about_26}<br/>{language?.about_26_01}</dt>
-                                        <dd>
-                                            <ul>
-                                                <li><Link href="/products/latching-systems">{language?.about_27}</Link></li>
-                                                <li><Link href="/products/latching-systems">{language?.about_28}</Link></li>
-                                                <li><Link href="/products/latching-systems">{language?.about_29}</Link></li>
-                                                <li><Link href="/products/latching-systems">{language?.about_30}</Link></li>
-                                            </ul>
-                                        </dd>
-                                    </dl>
-                                </li>
-                                <li>
-                                    <dl>
-                                        <dt>{language?.about_31}<br/>{language?.about_31_01}</dt>
-                                        <dd>
-                                            <ul>
-                                                <li><Link href="/products/power-closures">{language?.about_32}</Link></li>
-                                                <li><Link href="/products/power-closures">{language?.about_33}</Link></li>
-                                                <li><Link href="/products/power-closures">{language?.about_34}</Link></li>
-                                                <li><Link href="/products/power-closures">{language?.about_35}</Link></li>
-                                            </ul>
-                                        </dd>
-                                    </dl>
-                                </li>
-                                <li>
-                                    <dl>
-                                        <dt>{language?.about_36}<br/>{language?.about_36_01}</dt>
-                                        <dd>&nbsp;</dd>
-                                    </dl>
-                                </li>
-                            </ul>
-                            <div className="button">
-                                <Link href="/products/latching-systems">{language?.about_37}</Link>
-                            </div>
+                            <p>{language?.about_25}</p>
+                        </div>
+                     </div>
+
+                     <div>
+                        <ul>
+                        <li className='first'>
+                            <dl>
+                                <dt>{language?.about_26}<br/>{language?.about_26_01}</dt>
+                                <dd>
+                                    <ul>
+                                        <li><Link href="/products/latching-systems">{language?.about_27}</Link></li>
+                                        <li><Link href="/products/latching-systems">{language?.about_28}</Link></li>
+                                        <li><Link href="/products/latching-systems">{language?.about_29}</Link></li>
+                                        <li><Link href="/products/latching-systems">{language?.about_30}</Link></li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                        </li>
+                        <li className='second'>
+                            <dl>
+                                <dt>{language?.about_31}<br/>{language?.about_31_01}</dt>
+                                <dd>
+                                    <ul>
+                                        <li><Link href="/products/power-closures">{language?.about_32}</Link></li>
+                                        <li><Link href="/products/power-closures">{language?.about_33}</Link></li>
+                                        <li><Link href="/products/power-closures">{language?.about_34}</Link></li>
+                                        <li><Link href="/products/power-closures">{language?.about_35}</Link></li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                        </li>
+                        <li className='third'>
+                            <dl>
+                                <dt>{language?.about_36}<br/>{language?.about_36_01}</dt>
+                                <dd>&nbsp;</dd>
+                            </dl>
+                        </li>
+                        </ul>
+
+                        <div className="button">
+                            <Link href="/products/latching-systems">{language?.about_37}</Link>
                         </div>
                     </div>
                 </div>

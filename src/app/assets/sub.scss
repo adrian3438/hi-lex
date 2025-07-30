@@ -1,36 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@400;600&display=swap');
+
 .container-header-01 {
   padding: 220px 20px 0;
-  text-align: center;
   margin-bottom: 60px;
   > h2 {
-    font-size: 45px;
-    font-family: "Pretendard-ExtraBold", sans-serif;
-    color: #023A8E;
-    margin-bottom: 10px;
+    align-self: stretch;
+    color: #FFF;
+    font-family: Unbounded;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 76px; /* 118.75% */
+    margin-bottom: 65px;
+    padding-left: 120px;
   }
   .location {
-    display: inline-flex;
-    margin-bottom: 65px;
+    display: flex;
+    gap: 10px;
+    padding-left: 120px;
     > li {
-      font-family: "Pretendard-SemiBold", sans-serif;
-      margin-left: 20px;
-      padding-left: 35px;
-      position: relative;
-      font-size: 20px;
-      color: #023A8E;
-      &:before {
-        content: ">";
-        position: absolute;
-        top: 0;
-        left: 0;
-      }
-      &:first-child {
-        padding-left: 0;
-        margin-left: 0;
-        &:before {
-          display: none;
-        }
-      }
+    position: relative; // 기준 설정
+    margin-bottom: 20px;
+    color: #24C2FF;
+    font-family: Pretendard;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%; /* 16px */
+    &:before {
+      content: ">";
+      margin-right: 10px;
+    }
+
+    &:first-child:before {
+      display: none;
+    }
     }
   }
   > p {

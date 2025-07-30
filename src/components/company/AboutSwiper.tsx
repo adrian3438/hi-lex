@@ -23,7 +23,7 @@ export default function AboutSwiper({language}: Props) {
             className="about-swiper"
         >
             <SwiperSlide>
-                <Image src="/images/sub/company/about/about-01.png" alt="" width={2000} height={1121}/>
+                <Image src="/images/sub/company/about/about-01.png" alt="" width={1600} height={800}/>
                 <div>
                     <div>
                         <p>{language?.about_08}</p>
@@ -32,7 +32,7 @@ export default function AboutSwiper({language}: Props) {
                 </div>
             </SwiperSlide>
             <SwiperSlide>
-                <Image src="/images/sub/company/about/about-02.png" alt="" width={2000} height={1121}/>
+                <Image src="/images/sub/company/about/about-02.png" alt="" width={1600} height={800}/>
                 <div>
                     <div>
                         <p>{language?.about_03}</p>
@@ -41,7 +41,7 @@ export default function AboutSwiper({language}: Props) {
                 </div>
             </SwiperSlide>
             <SwiperSlide>
-                <Image src="/images/sub/company/about/about-03.png" alt="" width={2000} height={1121}/>
+                <Image src="/images/sub/company/about/about-03.png" alt="" width={1600} height={800}/>
                 <div>
                     <div>
                         <p>{language?.about_06}</p>
@@ -50,7 +50,7 @@ export default function AboutSwiper({language}: Props) {
                 </div>
             </SwiperSlide>
             <SwiperSlide>
-                <Image src="/images/sub/company/about/about-04.png" alt="" width={2000} height={1121}/>
+                <Image src="/images/sub/company/about/about-04.png" alt="" width={1600} height={800}/>
                 <div>
                     <div>
                         <p>{language?.about_08}</p>

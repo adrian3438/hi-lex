@@ -71,15 +71,40 @@ export default function Main({ language }: Props) {
                 </div>
                 <div className="main-section-02">
                     <div>
+                         <Image
+                            src={"/images/main/dddr-vertical-2.png"}
+                            alt=""
+                            width={30}
+                            height={511}
+                        />
+                        <div>
                         <p className="main-section-text-01">{language?.main_05}</p>
                         <p className="main-section-text-02">
                             {language?.main_06}
                         </p>
                         <Link href="/products/latching-systems">{language?.main_08}</Link>
+                        </div>
+                    </div>
+                    <div className="main-section-02-image">
+                        {/* <Image
+                            src={"/images/main/main-section-bg-02.jpg"}
+                            alt=""
+                            width={899}
+                            height={511}
+                        /> */}
                     </div>
                 </div>
                 <div className="main-section-03">
+                    <div className="main-section-03-image">
+                        {/* <Image
+                            src={"/images/main/main-section-bg-03.jpg"}
+                            alt=""
+                            width={899}
+                            height={511}
+                        /> */}
+                    </div>
                     <div>
+                        <div>
                         <p className="main-section-text-01">{language?.main_09}</p>
                         <p className="main-section-text-02">
                             {language?.main_10}
@@ -87,17 +112,50 @@ export default function Main({ language }: Props) {
                             {language?.main_11}
                         </p>
                         <Link href="/research">{language?.main_12}</Link>
+                        </div>
+                        <Image
+                            src={"/images/main/dddr-vertical.png"}
+                            alt=""
+                            width={30}
+                            height={511}
+                        />
                     </div>
+                    
                 </div>
                 <div className="main-section-04">
                     <div>
+                        <Image
+                            src={"/images/main/dddr-vertical-2.png"}
+                            alt=""
+                            width={30}
+                            height={511}
+                        />
+                        <div>
                         <p className="main-section-text-01">{language?.main_13}</p>
                         <p className="main-section-text-02">{language?.main_14}</p>
                         <Link href="/news/story">{language?.main_15}</Link>
+                        </div>
+                    </div>
+                    <div className="main-section-04-image">
+                        {/* <Image
+                            src={"/images/main/main-section-bg-04.jpg"}
+                            alt=""
+                            width={899}
+                            height={511}
+                        /> */}
                     </div>
                 </div>
                 <div className="main-section-05">
+                    <div className="main-section-05-image">
+                        {/* <Image
+                            src={"/images/main/main-section-bg-05.jpg"}
+                            alt=""
+                            width={899}
+                            height={511}
+                        /> */}
+                    </div>
                     <div>
+                        <div>
                         <p className="main-section-text-01">{language?.main_16}</p>
                         <p className="main-section-text-02">
                             {language?.main_17}
@@ -105,6 +163,13 @@ export default function Main({ language }: Props) {
                             {language?.main_18}
                         </p>
                         <Link href="/career/position/quality">{language?.main_19}</Link>
+                        </div>
+                        <Image
+                            src={"/images/main/dddr-vertical.png"}
+                            alt=""
+                            width={30}
+                            height={511}
+                        />
                     </div>
                 </div>
             </main>

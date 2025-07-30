@@ -1,90 +1,122 @@
 .greeting {
   //padding-bottom: 500px;
+  background-color: #000016;
   .greeting-text-01 {
     display: flex;
     align-items: center;
-    flex-direction: row-reverse;
-    background-color: #ebebeb;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #000016;
 
-    > section {
-      width: 50%;
+    > div {
+      width: 1600px;
 
       img {
-        width: 100%;
+        width: 1600px;
         height: auto;
         vertical-align: top;
+        align-items: center;
+
       }
     }
 
-    > div {
-      width: 50%;
-      display: flex;
-      justify-content: center;
-
-      > div {
-        max-width: 581px;
-
-        > h3 {
-          font-size: 25px;
-          font-family: "Pretendard-Bold", sans-serif;
-          color: #707070;
-          margin-bottom: 25px;
-        }
-
-        > p {
-          color: #000;
-          font-size: 40px;
-          font-family: "Pretendard-SemiBold", sans-serif;
-          line-height: 48px;
-        }
-
+     > div {
+        max-width: 1600px;
         > div {
-          > p {
-            color: #707070;
-            font-size: 25px;
-            line-height: 30px;
-            margin-top: 30px;
-          }
+          display: flex; 
+          text-align: left;
+          gap: 100px;               
+          padding: 100px 0px; 
+          margin-top: -40px;
+          margin-bottom: 80px;
+            > h3 {
+            color: #24C2FF;
+            font-family: Pretendard;
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 100%; /* 40px */          
+            }
+
+            > p {
+            color: #FFF;
+            font-family: Pretendard;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 160%; /* 32px */
+            opacity: 0.8;
+            }
         }
       }
     }
   }
-}
+
 
 .greeting-text-02 {
-  background: url("/images/sub/company/greeting/ceo-greeting-car-2.jpg") no-repeat center center;
+  background-color: #ffffff;
   background-size: cover;
   min-height: 100vh;
   display: flex;
+  justify-content: center;
+  position: relative;
 
-  > div {
-    max-width: 1600px;
-    padding: 100px 20px;
-    margin: 0 auto;
+> div {
+      width: 1600px;
+      position: relative;
+
+      img {
+        width: 1600px;
+        height: auto;
+        display: block;
+        margin-top: -100px;
+        z-index: 2;
+        position: relative;
+      }
+  }
+}
+
+
+.greeting-text-03 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 20px;
+  background-color: #fff;
+
+  .greeting-text-image-03 {
     display: flex;
-    justify-content: end;
+    flex-direction: row;  // 가로 정렬
     align-items: center;
+    gap: 60px;            // 이미지와 텍스트 간격
+    max-width: 1600px;
+    width: 100%;
+
+    img {
+      width: 550px;
+      height: auto;
+      display: block;
+      padding-right: 200px; // 이미지 오른쪽 여백
+      
+    }
 
     > div {
-      width: 50%;
-      background: url("/images/sub/company/greeting/songhaksung-signature-01.png") no-repeat 30px 100%;
-      box-sizing: border-box;
-      padding: 0 40px 100px;
-
-      > p {
-        color: #fff;
-        font-size: 22px;
-        font-family: "Pretendard-regular", sans-serif;
-        line-height: 34px;
-        margin-top: 50px;
-
-        &:first-child {
-          margin-top: 0;
-        }
+      flex: 1;
+      p {
+        font-size: 20px;
+        font-family: Pretendard, sans-serif;
+        color: #333;
+        line-height: 1.8;
+        margin-bottom: 16px;
       }
+      img {
+      width: 174px;
+      height: auto;
+     }
     }
   }
 }
+
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .greeting {
