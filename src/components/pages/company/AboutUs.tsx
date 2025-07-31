@@ -26,7 +26,7 @@ export default function AboutUs({language}: Props) {
             <div className="about-container">
                 <div className="business">
                    
-                   <Image src="/images/sub/company/about/about-09.png" alt="" width={1600} height={800}/>
+                   <Image src="/images/sub/company/about/about-09.png" alt="" width={1620} height={800}/>
 
                     <div>
                         <h2>{language?.about_23}</h2>
@@ -49,6 +49,9 @@ export default function AboutUs({language}: Props) {
                                         <li><Link href="/products/latching-systems">{language?.about_30}</Link></li>
                                     </ul>
                                 </dd>
+                                 <div className="button">
+                                <Link href="/products/latching-systems">{language?.about_37}</Link>
+                                </div>
                             </dl>
                         </li>
                         <li className='second'>
@@ -71,10 +74,7 @@ export default function AboutUs({language}: Props) {
                             </dl>
                         </li>
                         </ul>
-
-                        <div className="button">
-                            <Link href="/products/latching-systems">{language?.about_37}</Link>
-                        </div>
+                      
                     </div>
                 </div>
 

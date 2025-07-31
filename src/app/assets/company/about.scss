@@ -217,9 +217,8 @@
       > div {
         display: flex;
         align-items: center;
-        justify-content: top;
+        justify-content: center;
         flex-wrap: wrap;
-        align-items: start;
         margin-top: 100px;
         > h2 {
           color: #192A67;
@@ -234,17 +233,37 @@
             display: flex;
             justify-content: space-between;
             gap: 37px;
+            flex-wrap: wrap;
+            align-items: center;
 
             .first {
               display: flex;
-              width: 400px;
+              width: 440px;
+              height: 506px;
               padding: 40px;
-              flex-direction: column;
-              align-items: flex-end;
               gap: 104px;
+              flex-direction: column;
+              align-items: flex-first;
               border-radius: 20px;
               background: #005EB8;
+              
               > dl {
+                 > .button {
+                  text-align: right;
+                  margin-top: 200px;
+                  > a {
+                    display: inline-block;
+                    padding: 0 27px;
+                    border-radius: 5px;
+                    font-family: "Pretendard", sans-serif;
+                    font-size: 16px;
+                    color: #fff;
+                    background-color: #005EB8;
+                    border: 1px solid #FFF;
+                    height: 55px;
+                    line-height: 55px;
+                  }
+                }
                 > dt {
                 color: #FFF;
                 font-family: Unbounded;
@@ -274,11 +293,12 @@
             }
             .second {
               display: flex;
-              width: 400px;
+              width: 440px;
+              height: 506px;
+              gap: 104px;
               padding: 40px;
               flex-direction: column;
-              align-items: flex-end;
-              gap: 104px;
+              align-items: flex-first;
               border-radius: 20px;
               background: #24C2FF;
               > dl {
@@ -311,11 +331,12 @@
             }
             .third {
               display: flex;
-              width: 400px;
+              width: 440px;
+              height: 506px;
+              gap:104px;
               padding: 40px;
               flex-direction: column;
-              align-items: flex-end;
-              gap: 104px;
+              align-items: flex-first;
               border-radius: 20px;
               background: #29313B;
               > dl {
@@ -348,21 +369,7 @@
             }
           }
 
-          > .button {
-            text-align: right;
-            margin-top: 200px;
-            > a {
-              display: inline-block;
-              padding: 0 27px;
-              border-radius: 28px;
-              font-family: "Pretendard-SemiBold", sans-serif;
-              font-size: 18px;
-              color: #fff;
-              background-color: #00B8F5;
-              height: 55px;
-              line-height: 55px;
-            }
-          }
+         
 
 
         > div {
