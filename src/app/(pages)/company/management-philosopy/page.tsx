@@ -11,15 +11,15 @@ export default async function HistoryPage({searchParams: {lang}}: any) {
             <Header language={language}/>
             <div className="philosopy">
                 <div className="container-header-01">
-                    <h2>{language?.philosopy_01}</h2>
                     <ul className="location">
                         <li>{language?.header_1}</li>
                         <li>{language?.header_1_3}</li>
                     </ul>
+                    <h2>{language?.philosopy_01}</h2>
                 </div>
                 <div className="philosopy-container">
                     <section className="philosopy-01">
-                        <Image src="/images/sub/company/management-philosopy/philosopy-01.png" alt="" width={1920} height={1080}/>
+                        <Image src="/images/sub/company/management-philosopy/philosopy-01.png" alt="" width={1620} height={800}/>
                         <br/><br/><br/><br/><br/>
                         <p>{language?.philosopy_02}<br/>{language?.philosopy_02_02}</p>
                         <br/><br/>

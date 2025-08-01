@@ -15,9 +15,8 @@ export default function Greeting({language}: Props) {
         </ul>
         <h2>{language?.greeting_01}</h2>
       </div>
+
       <div className="greeting-background-color">
-       
-       
         <div className="greeting-text-01">
           <div className="greeting-text-image-01">
             <Image src="/images/sub/company/greeting/ceo-greeting-flags.jpg" alt="" width={1680} height={800}/>

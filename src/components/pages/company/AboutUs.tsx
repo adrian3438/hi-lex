@@ -28,7 +28,7 @@ export default function AboutUs({language}: Props) {
                    
                    <Image src="/images/sub/company/about/about-09.png" alt="" width={1620} height={800}/>
 
-                    <div>
+                     <div>
                         <h2>{language?.about_23}</h2>
                         <div className="text-area">
                             <p>{language?.about_24}</p>
@@ -40,6 +40,7 @@ export default function AboutUs({language}: Props) {
                         <ul>
                         <li className='first'>
                             <dl>
+                                <p>01</p>
                                 <dt>{language?.about_26}<br/>{language?.about_26_01}</dt>
                                 <dd>
                                     <ul>
@@ -56,6 +57,7 @@ export default function AboutUs({language}: Props) {
                         </li>
                         <li className='second'>
                             <dl>
+                                <p>02</p>
                                 <dt>{language?.about_31}<br/>{language?.about_31_01}</dt>
                                 <dd>
                                     <ul>
@@ -65,12 +67,19 @@ export default function AboutUs({language}: Props) {
                                         <li><Link href="/products/power-closures">{language?.about_35}</Link></li>
                                     </ul>
                                 </dd>
+                                <div className="button">
+                                <Link href="/products/power-closures">{language?.about_37}</Link>
+                                </div>
                             </dl>
                         </li>
                         <li className='third'>
                             <dl>
+                                <p>03</p>
                                 <dt>{language?.about_36}<br/>{language?.about_36_01}</dt>
                                 <dd>&nbsp;</dd>
+                                {/* <div className="button">
+                                <Link href="/products/latching-systems">{language?.about_37}</Link>
+                                </div> */}
                             </dl>
                         </li>
                         </ul>
@@ -184,26 +193,40 @@ export default function AboutUs({language}: Props) {
                 </div> */}
 
                 <div className="ci">
-                    <h2>{language?.about_51}</h2>
-                    <p>{language?.about_52}<br/>{language?.about_52_02}</p>
+
+                     <div>
+                        <h2>{language?.about_51}</h2>
+                        <div className="text-area">
+                            <p>{language?.about_52}<br/>{language?.about_52_02}</p>
+                        </div>
+                     </div>
+
                     <div className="ci-image">
+                        <div>
                         <h3>{language?.about_53}</h3>
                         <p>{language?.about_54}</p>
                         <Image src="/images/sub/company/about/ci.png" alt="HI-LEX DAEDONG DOOR" width={1600} height={471}/>
+                        </div>
                     </div>
                     <div className="ci-image">
+                        <div>
                         <h3>{language?.about_55}</h3>
                         <p>{language?.about_56}</p>
                         <Image src="/images/sub/company/about/ci-symbol.png" alt="HI-LEX DAEDONG DOOR" width={1600} height={471}/>
+                        </div>
                     </div>
                     <div className="ci-image">
+                        <div>
                         <h3>{language?.about_57}</h3>
                         <p>{language?.about_58}</p>
                         <Image src="/images/sub/company/about/ci-size.png" alt="HI-LEX DAEDONG DOOR" width={1600} height={384}/>
+                        </div>
                     </div>
                     <div className="ci-color">
+                        <div>
                         <h3>{language?.about_59}</h3>
                         <p>{language?.about_60}</p>
+                        </div>
                         <ul>
                             <li>
                                 <h4>{language?.about_61}</h4>
@@ -240,24 +263,83 @@ export default function AboutUs({language}: Props) {
                         </ul>
                     </div>
                     <div className="ci-download">
-                        <dl>
-                            <dt>{language?.about_72}</dt>
-                            <dd>
-                                <ul>
-                                    <li><a href="/download/대동도어_CI_세로형.ai" download>{language?.about_74}</a></li>
-                                    <li><a href="/download/대동도어_CI_세로형.png" download>{language?.about_75}</a></li>
-                                </ul>
-                            </dd>
-                        </dl>
-                        <dl>
-                            <dt>{language?.about_73}</dt>
-                            <dd>
-                                <ul>
-                                    <li><a href="/download/대동도어_CI_가로형.ai" download>{language?.about_74}</a></li>
-                                    <li><a href="/download/대동도어_CI_가로형.png" download>{language?.about_75}</a></li>
-                                </ul>
-                            </dd>
-                        </dl>
+                        
+                            <div>
+                            <h3>CI DOWNLOAD</h3>
+                            </div>
+
+                            <div>
+                                <div className="ci-items">
+                                <dl className="ci-block">
+                                    <dt>{language?.about_72}</dt>
+                                    <dd>
+                                    <ul>
+                                        <li><a href="/download/대동도어_CI_세로형.ai" download>{language?.about_74} <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                                        <g clip-path="url(#clip0_39_7360)">
+                                            <path d="M24 0.972656H0V24.9727H24V0.972656Z" fill="#005EB8" fill-opacity="0.01"/>
+                                            <path d="M5 12.9759V19.9727H19V12.9727" stroke="#005EB8" stroke-width="1.55556" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M15.5 12.584L12 16.084L8.5 12.584" stroke="#005EB8" stroke-width="1.55556" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M11.9971 5.97266V16.0838" stroke="#005EB8" stroke-width="1.55556" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_39_7360">
+                                            <rect width="24" height="24" fill="white" transform="translate(0 0.972656)"/>
+                                            </clipPath>
+                                        </defs>
+                                        </svg></a></li> 
+                                        <li><a href="/download/대동도어_CI_세로형.png" download>{language?.about_75} <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                                        <g clip-path="url(#clip0_39_7360)">
+                                            <path d="M24 0.972656H0V24.9727H24V0.972656Z" fill="#005EB8" fill-opacity="0.01"/>
+                                            <path d="M5 12.9759V19.9727H19V12.9727" stroke="#005EB8" stroke-width="1.55556" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M15.5 12.584L12 16.084L8.5 12.584" stroke="#005EB8" stroke-width="1.55556" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M11.9971 5.97266V16.0838" stroke="#005EB8" stroke-width="1.55556" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_39_7360">
+                                            <rect width="24" height="24" fill="white" transform="translate(0 0.972656)"/>
+                                            </clipPath>
+                                        </defs>
+                                        </svg></a></li>
+                                    </ul>
+                                    </dd>
+                                </dl>
+                                <dl className="ci-block">
+                                    <dt>{language?.about_73}</dt>
+                                    <dd>
+                                    <ul>
+                                        <li><a href="/download/대동도어_CI_가로형.ai" download>{language?.about_74} <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                                        <g clip-path="url(#clip0_39_7360)">
+                                            <path d="M24 0.972656H0V24.9727H24V0.972656Z" fill="#005EB8" fill-opacity="0.01"/>
+                                            <path d="M5 12.9759V19.9727H19V12.9727" stroke="#005EB8" stroke-width="1.55556" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M15.5 12.584L12 16.084L8.5 12.584" stroke="#005EB8" stroke-width="1.55556" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M11.9971 5.97266V16.0838" stroke="#005EB8" stroke-width="1.55556" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_39_7360">
+                                            <rect width="24" height="24" fill="white" transform="translate(0 0.972656)"/>
+                                            </clipPath>
+                                        </defs>
+                                        </svg></a></li>
+                                                                            <li><a href="/download/대동도어_CI_가로형.png" download>{language?.about_75} <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                                        <g clip-path="url(#clip0_39_7360)">
+                                            <path d="M24 0.972656H0V24.9727H24V0.972656Z" fill="#005EB8" fill-opacity="0.01"/>
+                                            <path d="M5 12.9759V19.9727H19V12.9727" stroke="#005EB8" stroke-width="1.55556" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M15.5 12.584L12 16.084L8.5 12.584" stroke="#005EB8" stroke-width="1.55556" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M11.9971 5.97266V16.0838" stroke="#005EB8" stroke-width="1.55556" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_39_7360">
+                                            <rect width="24" height="24" fill="white" transform="translate(0 0.972656)"/>
+                                            </clipPath>
+                                        </defs>
+                                        </svg></a></li>
+                                    </ul>
+                                    </dd>
+                                </dl>
+                                </div>
+                            </div>
+
+                        
                     </div>
                 </div>
             </div>
