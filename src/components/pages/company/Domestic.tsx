@@ -18,10 +18,10 @@ export default function Location({language}: Props) {
 
             <div className="vimeo" style={{marginBottom: "20px !important"}}>
                 {mapIndex === 0 && (
-                    <iframe title="vimeo-player" src="https://player.vimeo.com/video/1076618346?h=9cd0f89a01" style={{ border: 0, width: "100%", margin: 0, padding: 0, display: "block", aspectRatio: "16 / 9" }}  allow="autoplay; fullscreen" allowFullScreen></iframe>
+                    <iframe title="vimeo-player" src="https://player.vimeo.com/video/1076618346?h=9cd0f89a01" style={{ border: 0, width: "100%", marginTop: "60px", padding: 0, display: "block", aspectRatio: "16 / 9" }}  allow="autoplay; fullscreen" allowFullScreen></iframe>
                 )}
                 {mapIndex === 1 && (
-                    <iframe title="vimeo-player" src="https://player.vimeo.com/video/1076618554?h=e882de0700" style={{ border: 0, width: "100%", margin: 0, padding: 0, display: "block", aspectRatio: "16 / 9" }}  allow="autoplay; fullscreen" allowFullScreen></iframe>
+                    <iframe title="vimeo-player" src="https://player.vimeo.com/video/1076618554?h=e882de0700" style={{ border: 0, width: "100%", marginTop: "60px", padding: 0, display: "block", aspectRatio: "16 / 9" }}  allow="autoplay; fullscreen" allowFullScreen></iframe>
                 )}
             </div>
 

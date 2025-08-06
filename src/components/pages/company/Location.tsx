@@ -21,16 +21,16 @@ export default function Location({language}: Props) {
 
             <div className="daedong-maps">
                 {mapIndex === 0 && (
-                    <Image src="/images/sub/company/affiliate/daedong-india-factory-overseas.png" alt="" width={1291} height={661} />
+                    <Image src="/images/sub/company/affiliate/daedong-india-factory-overseas.png" alt="" width={1600} height={780} />
                 )}
                 {mapIndex === 1 && (
-                    <Image src="/images/sub/company/affiliate/daedong-china-factory-overseas.jpg" alt="" width={1291} height={661} />
+                    <Image src="/images/sub/company/affiliate/daedong-china-factory-overseas.jpg" alt="" width={1600} height={780} />
                 )}
                 {mapIndex === 2 && (
-                    <Image src="/images/sub/company/affiliate/daedong-mexico-factory-overseas.jpg" alt="" width={1291} height={661} />
+                    <Image src="/images/sub/company/affiliate/daedong-mexico-factory-overseas.jpg" alt="" width={1600} height={780} />
                 )}
                  {mapIndex === 3 && (
-                    <Image src="/images/sub/company/affiliate/daedong-poland-factory-overseas.jpg" alt="" width={1291} height={661} />
+                    <Image src="/images/sub/company/affiliate/daedong-poland-factory-overseas.jpg" alt="" width={1600} height={780} />
                 )}
             </div>
 

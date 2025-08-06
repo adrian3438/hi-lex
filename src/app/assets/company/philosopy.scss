@@ -83,60 +83,84 @@
       margin: 0 auto 140px;
       text-align: center;
       > h3 {
+        padding-bottom: 40px;
         display: inline-block;
-        border-bottom: 1px solid #023A8E;
         position: relative;
-        padding-bottom: 46px;
-        font-family: "Pretendard-Bold", sans-serif;
-        font-size: 50px;
+        max-width: 1680px;
         width: 100%;
-        max-width: 580px;
-        color: #023A8E;
-        margin-bottom: 120px;
+        text-align: left;
+        color: #192A67;
+        font-family: Pretendard;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 100%; /* 48px */
       }
       > div {
         display: flex;
-        aspect-ratio: 1600 / 700;
-        align-items: center;
+        flex-direction: column;
+        aspect-ratio: 1600 / 528;
+        align-items: left;
         text-align: left;
         justify-content: end;
         background-size: auto 100% !important;
         margin-bottom: 140px;
-        &:nth-child(2) {
-          background: url("/images/sub/company/management-philosopy/philosopy-02.png") no-repeat 0 0;
-        }
-        &:nth-child(3) {
-          justify-content: start;
-          background: url("/images/sub/company/management-philosopy/philosopy-03.png") no-repeat 100% 0;
-        }
-        &:nth-child(4) {
-          background: url("/images/sub/company/management-philosopy/philosopy-04.png") no-repeat 0 0;
-          margin-bottom: 0;
-        }
+        // &:nth-child(2) {
+        //   background: url("/images/sub/company/management-philosopy/philosopy-02.png") no-repeat 0 0;
+        // }
+        // &:nth-child(3) {
+        //   justify-content: start;
+        //   background: url("/images/sub/company/management-philosopy/philosopy-03.png") no-repeat 100% 0;
+        // }
+        // &:nth-child(4) {
+        //   background: url("/images/sub/company/management-philosopy/philosopy-04.png") no-repeat 0 0;
+        //   margin-bottom: 0;
+        // }
         > dl {
-          width: 390px;
           > dt {
-            font-size: 30px;
-            font-family: "Pretendard-Bold", sans-serif;
+            align-self: stretch;
+            color: #222;
+            font-family: Pretendard;
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 100%; /* 32px */
+            margin-top: 80px;
             margin-bottom: 40px;
           }
           > dd {
             > ul {
+              display: flex;
+              flex-direction: column;
+              gap: 52px;
               > li {
+                display: inline-flex;          // 글자 크기만큼 width, 안의 요소 정렬
+                width: fit-content;
+                white-space: nowrap;
+                align-items: center;
+                gap: 8px;
+
+                padding: 20px 24px;
+                border-radius: 16px;
+                border: 1px solid #D2D2D2;
+                background: rgba(255, 255, 255, 0.30);
+                backdrop-filter: blur(5px);
+
+                color: #333;
+                font-family: Pretendard;
                 font-size: 20px;
-                font-family: "Pretendard-Medium", sans-serif;
-                margin-top: 10px;
-                position: relative;
-                padding-left: 10px;
-                &:first-child {
-                  margin-top: 0;
-                }
-                &:before {
-                  position: absolute;
-                  top: 0;
-                  left: 0;
-                  content: "·";
-                }
+                font-style: normal;
+                font-weight: 400;
+                line-height: 100%; /* 20px */
+              }
+              > li:nth-child(2) {
+                margin-left: 300px;
+              }
+              > li:nth-child(3) {
+                margin-left: 800px;
+              }
+              > li:nth-child(4) {
+                margin-left: 1050px;
               }
             }
           }
@@ -144,96 +168,56 @@
       }
     }
     .philosopy-03 {
+      max-width: 1600px;
       padding: 0 20px;
+      margin: 0 auto 140px;
       text-align: center;
       > h3 {
+        padding-bottom: 40px;
         display: inline-block;
-        border-bottom: 1px solid #023A8E;
         position: relative;
-        padding-bottom: 46px;
-        font-family: "Pretendard-Bold", sans-serif;
-        font-size: 50px;
+        max-width: 1680px;
         width: 100%;
-        max-width: 580px;
-        color: #023A8E;
-        margin-bottom: 120px;
+        text-align: left;
+        color: #192A67;
+        font-family: Pretendard;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 100%; /* 48px */
       }
       > div {
-        background-repeat: no-repeat;
-        background-position: 100% 100%;
-        margin-top: 96px;
-        &:nth-child(2) {
-          margin-top: 0;
-          background-image: url("/images/sub/company/management-philosopy/philosopy-bg-01.png");
-          > dl {
-            > dt {
-              background-image: url("/images/sub/company/management-philosopy/philosopy-05.png");
-            }
-          }
-        }
-        &:nth-child(3) {
-          background-image: url("/images/sub/company/management-philosopy/philosopy-bg-02.png");
-          > dl {
-            > dt {
-              background-image: url("/images/sub/company/management-philosopy/philosopy-06.png");
-            }
-          }
-        }
-        &:nth-child(4) {
-          background-image: url("/images/sub/company/management-philosopy/philosopy-bg-03.png");
-          > dl {
-            > dt {
-              background-image: url("/images/sub/company/management-philosopy/philosopy-07.png");
-            }
-          }
-        }
-        &:nth-child(5) {
-          background-image: url("/images/sub/company/management-philosopy/philosopy-bg-04.png");
-          > dl {
-            > dt {
-              background-image: url("/images/sub/company/management-philosopy/philosopy-08.png");
-            }
-          }
-        }
-        &:nth-child(6) {
-          background-image: url("/images/sub/company/management-philosopy/philosopy-bg-05.png");
-          > dl {
-            > dt {
-              background-image: url("/images/sub/company/management-philosopy/philosopy-09.png");
-            }
-          }
-        }
-        &:nth-child(7) {
-          background-image: url("/images/sub/company/management-philosopy/philosopy-bg-06.png");
-          > dl {
-            > dt {
-              background-image: url("/images/sub/company/management-philosopy/philosopy-10.png");
-            }
-          }
-        }
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(480px, 1fr)); // 반응형
+        gap: 20px 80px;
+        justify-content: center;
+      > div {
+        background: #fff;
+        border: 0px solid #eee;
+        border-radius: 16px;
+        text-align: left;
+        align-items: left;
         > dl {
-          max-width: 1600px;
+          max-width: 533px;
           margin: 0 auto;
           > dt {
-            font-size: 30px;
-            font-family: "Pretendard-Bold", sans-serif;
-            color: #52575E;
-            padding-left: 78px;
-            display: flex;
-            align-items: center;
-            height: 65px;
-            background-repeat: no-repeat;
-            background-position: 0 50%;
-            margin-bottom: 30px;
+            margin-top: 32px;
+            margin-bottom: 32px;
+            color: #005EB8;
+            font-family: Pretendard;
+            font-size: 28px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 150%; /* 42px */
+            text-transform: uppercase;
           }
           > dd {
             > ul {
               text-align: left;
               > li {
                 font-size: 20px;
-                margin-top: 30px;
+                margin-bottom: 30px;
                 position: relative;
-                padding-left: 10px;
                 &:first-child {
                   margin-top: 0;
                 }
@@ -241,14 +225,22 @@
                   position: absolute;
                   top: 0;
                   left: 0;
-                  content: "·";
                 }
                 > p {
-                  font-family: "Pretendard-Medium", sans-serif;
-                  line-height: 28px;
+                  color: #555;
+                  font-family: Pretendard;
+                  font-size: 18px;
+                  font-style: normal;
+                  font-weight: 400;
+                  line-height: 33px; /* 183.333% */
+                  margin-top: 14px;
                   &:first-child {
-                    margin-bottom: 10px;
-                    font-family: "Pretendard-Bold", sans-serif;
+                    color: #111;
+                    font-family: Pretendard;
+                    font-size: 22px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 150%; /* 33px */
                   }
                 }
               }
@@ -256,20 +248,26 @@
           }
         }
       }
-    }
+    }}
+
     .philosopy-04 {
-      margin-top: 200px;
+      max-width: 1000px;
+      padding: 0 316px;
+      margin: 0 auto 140px;
       text-align: center;
-      padding: 0 20px;
+      background-color: #ffffff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       > p {
-        display: inline-flex;
-        align-items: center;
-        height: 162px;
-        background-color: #F4F4F4;
-        border-radius: 11px;
-        box-shadow: 0 3px 6px rgba(0,0,0,0.16);
-        padding: 0 100px;
-        line-height: 28px;
+        color: #005EB8;
+        text-align: center;
+        font-family: Pretendard;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 150%; /* 60px */
+        letter-spacing: 0.8px;
       }
     }
   }

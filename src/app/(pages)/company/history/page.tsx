@@ -10,11 +10,11 @@ export default async function HistoryPage({searchParams : {lang}} : any) {
             <Header language={language}/>
             <div className="history">
                 <div className="container-header-01">
-                    <h2>{language?.history_01}</h2>
                     <ul className="location">
                         <li>{language?.header_1}</li>
                         <li>{language?.header_1_4}</li>
                     </ul>
+                    <h2>{language?.history_01}</h2>
                     <p>{language?.history_02}<br/>{language?.history_03}</p>
                 </div>
                 <History language={language}/>

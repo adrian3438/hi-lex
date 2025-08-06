@@ -28,6 +28,7 @@ export default async function HistoryPage({searchParams: {lang}}: any) {
                         <h3>{language?.philosopy_03}</h3>
                         <div>
                             <dl>
+                                <Image src="/images/sub/company/management-philosopy/philosopy-02.png" alt="" width={1600} height={508}/>
                                 <dt>{language?.philosopy_05}</dt>
                                 <dd>
                                     <ul>
@@ -41,6 +42,7 @@ export default async function HistoryPage({searchParams: {lang}}: any) {
                         </div>
                         <div>
                             <dl>
+                                <Image src="/images/sub/company/management-philosopy/philosopy-03.png" alt="" width={1600} height={508}/>
                                 <dt>{language?.philosopy_11}</dt>
                                 <dd>
                                     <ul>
@@ -53,6 +55,7 @@ export default async function HistoryPage({searchParams: {lang}}: any) {
                         </div>
                         <div>
                             <dl>
+                                <Image src="/images/sub/company/management-philosopy/philosopy-04.png" alt="" width={1600} height={508}/>
                                 <dt>{language?.philosopy_16}</dt>
                                 <dd>
                                     <ul>
@@ -67,135 +70,159 @@ export default async function HistoryPage({searchParams: {lang}}: any) {
                     <section className="philosopy-03">
                         <h3>{language?.philosopy_19}</h3>
                         <div>
-                            <dl>
-                                <dt>{language?.philosopy_20}</dt>
-                                <dd>
-                                    <ul>
-                                        <li>
-                                            <p>{language?.philosopy_21}</p>
-                                            <p>{language?.philosopy_22}</p>
-                                        </li>
-                                        <li>
-                                            <p>{language?.philosopy_23}</p>
-                                            <p>{language?.philosopy_24}</p>
-                                        </li>
-                                        <li>
-                                            <p>{language?.philosopy_25}</p>
-                                            <p>{language?.philosopy_26}</p>
-                                        </li>
-                                    </ul>
-                                </dd>
-                            </dl>
-                        </div>
-                        <div>
-                            <dl>
-                                <dt>{language?.philosopy_27}</dt>
-                                <dd>
-                                    <ul>
-                                        <li>
-                                            <p>{language?.philosopy_28}</p>
-                                            <p>{language?.philosopy_29}</p>
-                                        </li>
-                                        <li>
-                                            <p>{language?.philosopy_30}</p>
-                                            <p>{language?.philosopy_31}</p>
-                                        </li>
-                                        <li>
-                                            <p>{language?.philosopy_32}</p>
-                                            <p>{language?.philosopy_33}</p>
-                                        </li>
-                                    </ul>
-                                </dd>
-                            </dl>
-                        </div>
-                        <div>
-                            <dl>
-                                <dt>{language?.philosopy_34}</dt>
-                                <dd>
-                                    <ul>
-                                        <li>
-                                            <p>{language?.philosopy_35}</p>
-                                            <p>{language?.philosopy_46}</p>
-                                        </li>
-                                        <li>
-                                            <p>{language?.philosopy_37}</p>
-                                            <p>{language?.philosopy_38}</p>
-                                        </li>
-                                        <li>
-                                            <p>{language?.philosopy_39}</p>
-                                            <p>{language?.philosopy_40}</p>
-                                        </li>
-                                    </ul>
-                                </dd>
-                            </dl>
-                        </div>
-                        <div>
-                            <dl>
-                                <dt>{language?.philosopy_41}</dt>
-                                <dd>
-                                    <ul>
-                                        <li>
-                                            <p>{language?.philosopy_42}</p>
-                                            <p>{language?.philosopy_43}</p>
-                                        </li>
-                                        <li>
-                                            <p>{language?.philosopy_44}</p>
-                                            <p>{language?.philosopy_45}</p>
-                                        </li>
-                                        <li>
-                                            <p>{language?.philosopy_46}</p>
-                                            <p>{language?.philosopy_47}</p>
-                                        </li>
-                                    </ul>
-                                </dd>
-                            </dl>
-                        </div>
-                        <div>
-                            <dl>
-                                <dt>{language?.philosopy_48}</dt>
-                                <dd>
-                                    <ul>
-                                        <li>
-                                            <p>{language?.philosopy_49}</p>
-                                            <p>{language?.philosopy_50}</p>
-                                        </li>
-                                        <li>
-                                            <p>{language?.philosopy_51}</p>
-                                            <p>{language?.philosopy_52}</p>
-                                        </li>
-                                        <li>
-                                            <p>{language?.philosopy_53}</p>
-                                            <p>{language?.philosopy_54}</p>
-                                        </li>
-                                    </ul>
-                                </dd>
-                            </dl>
-                        </div>
-                        <div>
-                            <dl>
-                                <dt>{language?.philosopy_55}</dt>
-                                <dd>
-                                    <ul>
-                                        <li>
-                                            <p>{language?.philosopy_56}</p>
-                                            <p>{language?.philosopy_57}</p>
-                                        </li>
-                                        <li>
-                                            <p>{language?.philosopy_58}</p>
-                                            <p>{language?.philosopy_59}</p>
-                                        </li>
-                                        <li>
-                                            <p>{language?.philosopy_60}</p>
-                                            <p>{language?.philosopy_61}</p>
-                                        </li>
-                                    </ul>
-                                </dd>
-                            </dl>
+
+                            <div>
+                                <dl>
+                                    <Image src="/images/sub/company/management-philosopy/philosopy-05.png" alt="" width={64} height={64}/>
+                                    <dt>{language?.philosopy_20}</dt>
+                                    <dd>
+                                        <ul>
+                                            <li>
+                                                <p>{language?.philosopy_21}</p>
+                                                <p>{language?.philosopy_22}</p>
+                                            </li>
+                                            <li>
+                                                <p>{language?.philosopy_23}</p>
+                                                <p>{language?.philosopy_24}</p>
+                                            </li>
+                                            <li>
+                                                <p>{language?.philosopy_25}</p>
+                                                <p>{language?.philosopy_26}</p>
+                                            </li>
+                                        </ul>
+                                    </dd>
+                                </dl>
+                                <Image src="/images/sub/company/management-philosopy/philosopy-bg-01.png" alt="" width={288} height={90}/>
+                            </div>
+
+                            <div>
+                                <dl>
+                                    <Image src="/images/sub/company/management-philosopy/philosopy-06.png" alt="" width={64} height={64}/>
+                                    <dt>{language?.philosopy_27}</dt>
+                                    <dd>
+                                        <ul>
+                                            <li>
+                                                <p>{language?.philosopy_28}</p>
+                                                <p>{language?.philosopy_29}</p>
+                                            </li>
+                                            <li>
+                                                <p>{language?.philosopy_30}</p>
+                                                <p>{language?.philosopy_31}</p>
+                                            </li>
+                                            <li>
+                                                <p>{language?.philosopy_32}</p>
+                                                <p>{language?.philosopy_33}</p>
+                                            </li>
+                                        </ul>
+                                    </dd>
+                                </dl>
+                                <Image src="/images/sub/company/management-philosopy/philosopy-bg-02.png" alt="" width={348} height={100}/>
+                            </div>
+
+                            <div>
+                                <dl>
+                                    <Image src="/images/sub/company/management-philosopy/philosopy-07.png" alt="" width={64} height={64}/>
+                                    <dt>{language?.philosopy_34}</dt>
+                                    <dd>
+                                        <ul>
+                                            <li>
+                                                <p>{language?.philosopy_35}</p>
+                                                <p>{language?.philosopy_46}</p>
+                                            </li>
+                                            <li>
+                                                <p>{language?.philosopy_37}</p>
+                                                <p>{language?.philosopy_38}</p>
+                                            </li>
+                                            <li>
+                                                <p>{language?.philosopy_39}</p>
+                                                <p>{language?.philosopy_40}</p>
+                                            </li>
+                                        </ul>
+                                    </dd>
+                                </dl>
+                                <Image src="/images/sub/company/management-philosopy/philosopy-bg-03.png" alt="" width={380} height={100}/>
+                            </div>
+
+                            <div>
+                                <dl>
+                                    <Image src="/images/sub/company/management-philosopy/philosopy-08.png" alt="" width={64} height={64}/>
+                                    <dt>{language?.philosopy_41}</dt>
+                                    <dd>
+                                        <ul>
+                                            <li>
+                                                <p>{language?.philosopy_42}</p>
+                                                <p>{language?.philosopy_43}</p>
+                                            </li>
+                                            <li>
+                                                <p>{language?.philosopy_44}</p>
+                                                <p>{language?.philosopy_45}</p>
+                                            </li>
+                                            <li>
+                                                <p>{language?.philosopy_46}</p>
+                                                <p>{language?.philosopy_47}</p>
+                                            </li>
+                                        </ul>
+                                    </dd>
+                                </dl>
+                                <Image src="/images/sub/company/management-philosopy/philosopy-bg-04.png" alt="" width={315} height={100}/>
+                            </div>
+
+                            <div>
+                                <dl>
+                                    <Image src="/images/sub/company/management-philosopy/philosopy-09.png" alt="" width={64} height={64}/>
+                                    <dt>{language?.philosopy_48}</dt>
+                                    <dd>
+                                        <ul>
+                                            <li>
+                                                <p>{language?.philosopy_49}</p>
+                                                <p>{language?.philosopy_50}</p>
+                                            </li>
+                                            <li>
+                                                <p>{language?.philosopy_51}</p>
+                                                <p>{language?.philosopy_52}</p>
+                                            </li>
+                                            <li>
+                                                <p>{language?.philosopy_53}</p>
+                                                <p>{language?.philosopy_54}</p>
+                                            </li>
+                                        </ul>
+                                    </dd>
+                                    <Image src="/images/sub/company/management-philosopy/philosopy-bg-05.png" alt="" width={179} height={90}/>
+                                </dl>
+                            </div>
+
+                            <div>
+                                <dl>
+                                    <Image src="/images/sub/company/management-philosopy/philosopy-10.png" alt="" width={64} height={64}/>
+                                    <dt>{language?.philosopy_55}</dt>
+                                    <dd>
+                                        <ul>
+                                            <li>
+                                                <p>{language?.philosopy_56}</p>
+                                                <p>{language?.philosopy_57}</p>
+                                            </li>
+                                            <li>
+                                                <p>{language?.philosopy_58}</p>
+                                                <p>{language?.philosopy_59}</p>
+                                            </li>
+                                            <li>
+                                                <p>{language?.philosopy_60}</p>
+                                                <p>{language?.philosopy_61}</p>
+                                            </li>
+                                            
+                                        </ul>
+                                    </dd>
+                                    <Image src="/images/sub/company/management-philosopy/philosopy-bg-06.png" alt="" width={296} height={90}/>
+                                </dl>
+                            </div>
+
                         </div>
                     </section>
 
                     <section className="philosopy-04">
+                        <Image className="left" src="/images/sub/company/management-philosopy/dddr-vertical-left.png" alt="" width={24} height={296}/>
                         <p>{language?.philosopy_62}</p>
+                        <Image className="right" src="/images/sub/company/management-philosopy/dddr-vertical-right.png" alt="" width={24} height={296}/>
                     </section>
                 </div>
             </div>

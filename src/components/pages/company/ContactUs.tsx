@@ -126,10 +126,7 @@ export default function ContactUs({language}: Props) {
 
     return (
         <div className="inquiry">
-            <div className="content-header">
-                <h2>{language.inquiry_text_01}</h2>
-                <p>{language.inquiry_text_01_01}</p>
-            </div>
+           
             <form method="post">
                 <fieldset className="customer-info">
                     <legend><span>1</span> {language.inquiry_text_02} <i>*</i></legend>
@@ -227,7 +224,10 @@ export default function ContactUs({language}: Props) {
                         </p>
                     </div>
                 </fieldset>*/}
-                <fieldset className="agree">
+                
+            </form>
+
+            <fieldset className="agree">
                     <label>
                         <input type="checkbox" id="agreeConfirm" name="agreeTerms" onChange={() => setCheck(!isCheck)} checked={isCheck}/>
                         {language.inquiry_text_16}
@@ -242,7 +242,8 @@ export default function ContactUs({language}: Props) {
                 <div className="submit">
                     <button type="button" id="goSubmit" onClick={save}>{language.inquiry_text_21}</button>
                 </div>
-            </form>
+
+                
         </div>
     )
 }
