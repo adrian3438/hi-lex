@@ -26,13 +26,11 @@ export default function EHS({ language }: Props) {
         <div className="esg">
             <div className="esg-banner">
                 <div className="banner-area1">
-                    <h2>{language?.header_4_4}</h2>
                     <ul className="location">
                         <li>{language?.header_4}</li>
                         <li>{language?.header_4_4}</li>
                     </ul>
-                </div>
-                <div className="banner-area2">
+                    <h2>{language?.header_4_4}</h2>
                     <p>{language?.esg_text_01}</p>
                     <p>{language?.esg_text_02}</p>
                 </div>
@@ -41,7 +39,7 @@ export default function EHS({ language }: Props) {
 
             {/* <div className="esg-menus" id="esgMenus"> */}
             <div className="esg-menus">
-                <ul>
+                <ul className="esg-menu-list">
                     <li>
                         <Link href="/sustainability/esg-management">
                             <div>
@@ -111,65 +109,32 @@ export default function EHS({ language }: Props) {
             <div className="ehs-container">
                 <section className="esg-section-01">
                     <h3>{language?.esg_text_03_60}</h3>
-                    <p>{language?.esg_text_03_61}</p>
-                    <p>{language?.esg_text_03_61_01}</p>
+                    <p>{language?.esg_text_03_61}{language?.esg_text_03_61_01}</p>
                 </section>
                 <section className="esg-section-02">
                     <div>
                         <Image src="/images/sub/sustainability/esg/ehs-02.png" alt="" width={501} height={334}/>
-                        <div className="top">
-                            <div className="image-area1">
-                                <p>
-                                    {language?.esg_text_03_62}<br/>
-                                    {language?.esg_text_03_63}
-                                </p>
-                            </div>
-                            <div className="image-area2">
-                                <div>
-                                    <h3>{language?.esg_text_03_64}</h3>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                     <div>
                         <Image src="/images/sub/sustainability/esg/ehs-04.png" alt="" width={501} height={334}/>
-                        <div className="top">
-                            <div className="image-area1">
-                                <p>
-                                    {language?.esg_text_03_68}<br/>
-                                    {language?.esg_text_03_69}
-                                </p>
-                            </div>
-                            <div className="image-area2">
-                                <div>
-                                    <h3>{language?.esg_text_03_70}</h3>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                     <div>
                         <Image src="/images/sub/sustainability/esg/ehs-06.png" alt="" width={501} height={334}/>
-                        <div className="top">
-                            <div className="image-area1">
-                                <p>
-                                    {language?.esg_text_03_75}<br/>
-                                    {language?.esg_text_03_76}
-                                </p>
-                            </div>
-                            <div className="image-area2">
-                                <div>
-                                    <h3>{language?.esg_text_03_77}</h3>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                     <Image
-                    src={`/images/sub/sustainability/esg/daedong-door-ehs-01-${language?.language.toUpperCase() || 'EN'}.svg`}
-                    alt=""
-                    width={900}
-                    height={700}
-                    style={{ display: "block", margin: "0 auto", marginTop: "200px", maxWidth: '900px', width: '100%', height: 'auto'}}
-                    />
+                        src={`/images/sub/sustainability/esg/daedong-door-ehs-01-${language?.language.toUpperCase() || 'EN'}.svg`}
+                        alt=""
+                        width={900}
+                        height={700}
+                        style={{
+                            display: "block",
+                            margin: "0 auto",
+                            marginTop: "200px",
+                            maxWidth: "100%",
+                            height: "auto",
+                        }}
+                        priority
+                        />
                 </section>
 
                 <section className="esg-section-03">

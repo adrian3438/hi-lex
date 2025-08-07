@@ -1,105 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@400;600&display=swap');
+
+
 .esg {
   .esg-banner {
     position: relative;
     background: url("/images/sub/sustainability/esg/esg-banner.png") no-repeat 50% 50%;
     background-size: cover;
-    height: 100vh;
-    text-align: center;
-    > .banner-area1 {
-      padding: 220px 20px 0;
-      > h2 {
-        margin-bottom: 10px;
-        color: #fff;
-        font-size: 45px;
-        font-family: "Pretendard-ExtraBold", sans-serif;
-      }
-      > ul {
-        display: inline-flex;
-        > li {
-          font-family: "Pretendard-SemiBold", sans-serif;
-          margin-left: 20px;
-          padding-left: 35px;
-          position: relative;
-          font-size: 20px;
-          color: #fff;
+    height: 60vh;
+    text-align: bottom;
+    .banner-area1 {
+         padding: 220px 20px 0;
+         margin-bottom: 60px;
+        .location {
+          display: flex;
+          gap: 10px;
+          padding-left: 120px;
+          > li {
+          position: relative; // 기준 설정
+          margin-bottom: 20px;
+          color: #fFF;
+          font-family: Pretendard;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 100%; /* 16px */
           &:before {
             content: ">";
-            position: absolute;
-            top: 0;
-            left: 0;
+            margin-right: 10px;
           }
-          &:first-child {
-            padding-left: 0;
-            margin-left: 0;
-          }
-        }
-      }
-    }
-    > .banner-area2 {
-      position: absolute;
-      bottom: 298px;
-      left: 50%;
-      width: 100%;
-      transform: translateX(-50%);
-      > p {
-        color: #fff;
-        font-family: "Pretendard-Medium", sans-serif;
-        line-height: 20px;
-        &:last-child {
-          margin-top: 15px;
-        }
-      }
-    }
-    .esg-menu {
-      position: absolute;
-      left: 50%;
-      bottom: 0;
-      max-width: 1600px;
-      width: 100%;
-      transform: translateX(-50%);
-      > ul {
-        display: flex;
-        justify-content: center;
-        gap: 25px 1px;
-        > li {
-          display: flex;
-          max-width: 300px;
-          width: 100%;
-          height: 74px;
-          align-items: center;
-          justify-content: center;
-          &.active {
-            > a {
-              background-color: rgba(52, 194, 160, 0.46);
-            }
-          }
-          > a {
-            //border-radius: 9px;
-            background-color: rgba(183, 183, 183, 0.46);
-            display: flex;
-            width: 100%;
-            height: 100%;
-            align-items: center;
-            flex-wrap: wrap;
-            justify-content: center;
-            > div {
-              > p {
-                width: 100%;
-                height: auto;
-                color: #fff;
-                font-size: 30px;
-                font-family: "Pretendard-Medium", sans-serif;
-                &:last-child {
-                  margin-top: 3px;
-                  font-size: 20px;
-                }
-              }
 
-            }
+          &:first-child:before {
+            display: none;
+          }
           }
         }
+         > h2 {
+          align-self: stretch;
+          color: #FFF;
+          font-family: Unbounded;
+          font-size: 64px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 76px; /* 118.75% */
+          padding-bottom: 65px;
+          margin-bottom: 0px;
+          padding-left: 120px;
+        }
+        > p {
+          color: #FFF;
+          text-shadow: 4px 4px 10px #000;
+          font-family: Pretendard;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 160%; /* 32px */;
+          padding-left: 120px;
+        }
       }
-    }
+
+   
+    // .esg-menu {
+    //   position: absolute;
+    //   left: 50%;
+    //   bottom: 0;
+    //   max-width: 1600px;
+    //   width: 100%;
+    //   transform: translateX(-50%);
+    //   > ul {
+    //     display: flex;
+    //     justify-content: center;
+    //     gap: 25px 1px;
+    //     > li {
+    //       display: flex;
+    //       max-width: 300px;
+    //       width: 100%;
+    //       height: 74px;
+    //       align-items: center;
+    //       justify-content: center;
+    //       &.active {
+    //         > a {
+    //           background-color: rgba(52, 194, 160, 0.46);
+    //         }
+    //       }
+    //       > a {
+    //         //border-radius: 9px;
+    //         background-color: rgba(183, 183, 183, 0.46);
+    //         display: flex;
+    //         width: 100%;
+    //         height: 100%;
+    //         align-items: center;
+    //         flex-wrap: wrap;
+    //         justify-content: center;
+    //         > div {
+    //           > p {
+    //             width: 100%;
+    //             height: auto;
+    //             color: #fff;
+    //             font-size: 30px;
+    //             font-family: "Pretendard-Medium", sans-serif;
+    //             &:last-child {
+    //               margin-top: 3px;
+    //               font-size: 20px;
+    //             }
+    //           }
+
+    //         }
+    //       }
+    //     }
+    //   }
+    // }
   }
   .ethical-tab {
     max-width: 1600px;
@@ -132,59 +141,7 @@
       }
     }
   }
-  // .esg-menus {
-  //   position: sticky;
-  //   top: 100px;
-  //   max-width: 1600px;
-  //   margin: -74px auto 0;
-  //   width: 100%;
-  //   z-index: 11;
-  //   //transform: translateX(-50%);
-  //   > ul {
-  //     display: flex;
-  //     justify-content: center;
-  //     gap: 25px 1px;
-  //     > li {
-  //       display: flex;
-  //       max-width: 300px;
-  //       width: 100%;
-  //       height: 74px;
-  //       align-items: center;
-  //       justify-content: center;
-  //       text-align: center;
-  //       &.active {
-  //         > a {
-  //           background-color: rgb(31, 170, 138);
-  //         }
-  //       }
-  //       > a {
-  //         //border-radius: 9px;
-  //         background-color: rgb(201, 201, 201);    
-  //         border-radius: 3px;
-  //         display: flex;
-  //         width: 100%;
-  //         height: 100%;
-  //         align-items: center;
-  //         flex-wrap: wrap;
-  //         justify-content: center;
-  //         > div {
-  //           > p {
-  //             width: 100%;
-  //             height: auto;
-  //             color: #fff;
-  //             font-size: 20px;
-  //             font-family: "Pretendard-Medium", sans-serif;
-  //             &:last-child {
-  //               margin-top: 3px;
-  //               font-size: 15px;
-  //             }
-  //           }
-
-  //         }
-  //       }
-  //     }
-  //   }
-  // }
+  
 
 .esg-menus {
   position: sticky;
@@ -194,66 +151,114 @@
   width: 100%;
   z-index: 11;
 
-  > ul {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 16px;
 
-    > li {
+ > .esg-menu-list {
+      position: relative;
+      z-index: 10;
+      margin-top:  -50px;
       display: flex;
       width: 100%;
-      max-width: 180px;
-      height: 74px;
-      align-items: center;
       justify-content: center;
-      text-align: center;
-      border-radius: 12px;
-      transition: all 0.3s ease;
+      align-items: center;
+      gap: 30px;
+      border-radius: 16px;
+      background: #FFF;
+      box-shadow: 0 0 64px 0 rgba(0, 0, 0, 0.12);
+      height: 100px;
+      z-index: 999;
 
-      &.active > a {
-        background-color: #00796b; // 더 진한 포인트 색상
-        box-shadow: 0 6px 14px rgba(0, 0, 0, 0.25);
-        > div > p {
-          color: #fff; // 활성화된 메뉴의 텍스트 색상
-        }
-      }
-
-      > a {
-        background-color: #f5f5f5; // 더 밝은 회색 톤
-        border-radius: 12px;
+      > li {
         display: flex;
-        width: 100%;
-        height: 100%;
         align-items: center;
         justify-content: center;
-        flex-direction: column;
-        padding: 8px 12px;
-        text-decoration: none;
-        transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+        text-align: center;
+        padding: 0;
+        background: #FFF;
+        color: #000; // 기본 색상
+        font-family: Pretendard;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 100%;
+        cursor: pointer;
+        border: none; // 기본 버튼에는 밑줄 없음
 
-        &:hover {
-          background-color: #eeeeee;
-          transform: translateY(-4px);
-          box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
-        }
-
-        > div > p {
-          color: #333;
-          font-family: "Pretendard-Medium", sans-serif;
-          font-size: 18px;
-          line-height: 1.4;
-          width: 100%;
-
-          &:last-child {
-            font-size: 14px;
-            margin-top: 4px;
-            opacity: 0.6;
-          }
+       &.active {
+          color: #005EB8;
+          background: rgba(255, 255, 255, 0.162);
+          border-radius: 5px;
+          box-shadow: 0 4px 12px rgba(27, 100, 142, 0.3);
+          transform: translateY(-2px);
+          transition: all 0.2s ease;
         }
       }
     }
-  }
+
+
+
+
+
+
+  // > ul {
+  //   display: flex;
+  //   justify-content: center;
+  //   flex-wrap: wrap;
+  //   gap: 16px;
+
+  //   > li {
+  //     display: flex;
+  //     width: 100%;
+  //     max-width: 180px;
+  //     height: 74px;
+  //     align-items: center;
+  //     justify-content: center;
+  //     text-align: center;
+  //     border-radius: 12px;
+  //     transition: all 0.3s ease;
+
+  //     &.active > a {
+  //       background-color: #00796b; // 더 진한 포인트 색상
+  //       box-shadow: 0 6px 14px rgba(0, 0, 0, 0.25);
+  //       > div > p {
+  //         color: #fff; // 활성화된 메뉴의 텍스트 색상
+  //       }
+  //     }
+
+  //     > a {
+  //       background-color: #f5f5f5; // 더 밝은 회색 톤
+  //       border-radius: 12px;
+  //       display: flex;
+  //       width: 100%;
+  //       height: 100%;
+  //       align-items: center;
+  //       justify-content: center;
+  //       flex-direction: column;
+  //       padding: 8px 12px;
+  //       text-decoration: none;
+  //       transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+
+  //       &:hover {
+  //         background-color: #eeeeee;
+  //         transform: translateY(-4px);
+  //         box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  //       }
+
+  //       > div > p {
+  //         color: #333;
+  //         font-family: "Pretendard-Medium", sans-serif;
+  //         font-size: 18px;
+  //         line-height: 1.4;
+  //         width: 100%;
+
+  //         &:last-child {
+  //           font-size: 14px;
+  //           margin-top: 4px;
+  //           opacity: 0.6;
+  //         }
+  //       }
+  //     }
+  //   }
+  // }
 }
 
 
@@ -261,30 +266,35 @@
 
   /* ESG 경영 */
   .esg-container {
-    max-width: 1500px;
-    padding: 195px 20px 250px;
+    max-width: 1600px;
+    padding: 100px 20px 250px;
     margin: 0 auto;
     .esg-section-01 {
-      text-align: center;
       margin-bottom: 180px;
+      .esg-section-header{
+      display: flex;
+      flex-direction: row;
+      text-align: left;
+      padding-bottom: 140px;
+      gap: 100px;
       h3 {
-        display: inline-block;
-        border-bottom: 1px solid #023A8E;
-        position: relative;
-        padding-bottom: 46px;
-        font-family: "Pretendard-Bold", sans-serif;
-        font-size: 50px;
-        width: 100%;
-        max-width: 580px;
-        color: #023A8E;
-        margin-bottom: 50px;
+        color: #192A67;
+        font-family: Pretendard;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 100%; /* 48px */
       }
       > p {
-        line-height: 35px;
-        font-size: 28px;
-        color: #52575E;
-        font-family: "Pretendard-Bold", sans-serif;
-        margin-bottom: 100px;
+        max-width: 1106px;
+        width: 100%;
+        color: #222;
+        font-family: Pretendard;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 150%; /* 48px */
+       }
       }
       > ul {
         display: flex;
@@ -292,36 +302,48 @@
         text-align: left;
         > li {
           width: 33%;
-          > div {
-            font-weight: 600;
-            padding-top: 35px;
-            margin-bottom: 45px;
-            aspect-ratio: 500 / 750;
-            > p {
-              font-size: 35px;
-              color: #52575E;
-              font-family: "Pretendard-Bold", sans-serif;
-              padding: 30px 49px ;
+          > p {
+              color: #111;
+              font-family: Pretendard;
+              font-size: 40px;
+              font-style: normal;
+              font-weight: 600;
+              line-height: 100%; /* 40px */
+              padding-bottom: 40px;
               &:last-child {
                 padding-top: 10px;
                 font-family: "Pretendard-Medium", sans-serif;
               }
             }
+          > div {
+            font-weight: 600;
+            padding-top: 35px;
+            aspect-ratio: 500 / 500;
+            
           }
           > dl {
-            background-color: #FBFBFB;
+            background-color: #fbfbfb00;
             padding: 24px 20px 28px;
             > dt {
-              font-size: 25px;
-              font-family: "Pretendard-Medium", sans-serif;
-              margin-bottom: 39px;
+              color: #222;
+              font-family: Pretendard;
+              font-size: 24px;
+              font-style: normal;
+              font-weight: 700;
+              line-height: 130%; /* 31.2px */
+              padding-bottom: 24px;
             }
             > dd {
               > ul {
                 > li {
-                  margin-top: 35px;
-                  padding-left: 10px;
-                  position: relative;
+                  position: relative; // ✅ 기준점 추가
+                  padding-left: 20px; // ✅ 점과 텍스트 간격
+                  color: #555;
+                  font-family: Pretendard;
+                  font-size: 20px;
+                  font-style: normal;
+                  font-weight: 400;
+                  line-height: 180%; /* 36px */
                   &:first-child {
                     margin-top: 0;
                   }
@@ -338,19 +360,19 @@
           &:nth-child(1) {
             > div {
               background: url("/images/sub/sustainability/esg/daedong-esg-environment.png") no-repeat 0 0;
-              background-size: 100% 100%;
+              background-size: 90% 90%;
             }
           }
           &:nth-child(2) {
             > div {
               background: url("/images/sub/sustainability/esg/daedong-esg-social.png") no-repeat 0 0;
-              background-size: 100% 100%;
+              background-size: 90% 90%;
             }
           }
           &:nth-child(3) {
             > div {
               background: url("/images/sub/sustainability/esg/daedong-esg-governance.png") no-repeat 0 0;
-              background-size: 100% 100%;
+              background-size: 90% 90%;
               > p {
                 color: #fff;
               }
@@ -361,44 +383,50 @@
     }
 
     .esg-section-02 {
-      text-align: center;
+      text-align: left;
       margin-bottom: 180px;
       h3 {
-        display: inline-block;
-        border-bottom: 1px solid #023A8E;
-        position: relative;
-        padding-bottom: 46px;
-        font-family: "Pretendard-Bold", sans-serif;
-        font-size: 50px;
-        width: 100%;
-        max-width: 580px;
-        color: #023A8E;
-        margin-bottom: 45px;
+        color: #192A67;
+        font-family: Pretendard;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 100%; /* 48px */
+        padding-bottom: 80px;
       }
       > ul {
-        padding: 64px 110px;
-        background-color: #FBFBFB;
+        background-color: #fbfbfb00;
         display: flex;
         flex-wrap: wrap;
         text-align: left;
-        gap: 150px 2%;
+        gap: 120px 2%;
         > li {
           width: 32%;
           > dl {
             > dt {
-              color: #52575E;
-              font-family: "Pretendard-Bold", sans-serif;
-              font-size: 25px;
-              margin-bottom: 44px;
+              color: #005EB8;
+              font-family: Pretendard;
+              font-size: 28px;
+              font-style: normal;
+              font-weight: 700;
+              line-height: 150%; /* 42px */
+              text-transform: uppercase;
+              padding-bottom: 28px;
             }
             > dd {
               > ul {
                 > li {
+                  position: relative; // ✅ 기준점 추가
+                  padding-left: 20px; // ✅ 점과 텍스트 간격
+                  color: #555;
+                  font-family: Pretendard;
                   font-size: 20px;
-                  color: #52575E;
-                  margin-top: 35px;
-                  padding-left: 10px;
-                  position: relative;
+                  font-style: normal;
+                  font-weight: 400;
+                  line-height: 180%; /* 36px */
+                  flex: 1 0 0;
+                  max-width: 500px;
+                  width: 100%;
                   &:first-child {
                     margin-top: 0;
                   }
@@ -416,20 +444,15 @@
       }
     }
     .esg-section-03 {
-      text-align: center;
+      text-align: left;
       margin-bottom: 180px;
       h3 {
-        display: inline-block;
-        border-bottom: 1px solid #023A8E;
-        position: relative;
-        padding-bottom: 46px;
-        font-family: "Pretendard-Bold", sans-serif;
-        font-size: 50px;
-        width: 100%;
-        max-width: 580px;
-        color: #023A8E;
-        margin-bottom: 60px;
-
+        color: #192A67;
+        font-family: Pretendard;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 100%; /* 48px */
       }
       > img {
         max-width: 1000px;
@@ -505,91 +528,104 @@
     }
 
     .esg-section-04 {
-      text-align: center;
+      text-align: left;
       h3 {
-        display: inline-block;
-        border-bottom: 1px solid #023A8E;
-        position: relative;
-        padding-bottom: 46px;
-        font-family: "Pretendard-Bold", sans-serif;
-        font-size: 50px;
-        width: 100%;
-        max-width: 580px;
-        color: #023A8E;
-        margin-bottom: 60px;
+        color: #192A67;
+        font-family: Pretendard;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 100%; /* 48px */
+        padding-bottom: 120px;
       }
       > div {
-        background: url("/images/sub/sustainability/esg/esg-01-bg-10.png") no-repeat 50% 70px;
+        background: url("/images/sub/sustainability/esg/esg-01-bg-10.png") no-repeat 49% 170px;
         > p {
           text-align: center;
-          background-color: #F2F2F2;
-          width: 216px;
-          height: 80px;
+          width: 400px;
+          height: 216px;
           box-sizing: border-box;
-          padding-left: 95px;
           display: flex;
+          flex-direction: column;
           justify-content: center;
           align-items: center;
-          margin: 0 auto 41px;
-          color: #5A5A5A;
-          font-size: 20px;
-          font-family: "Pretendard-Medium", sans-serif;
-          background-repeat: no-repeat;
-          background-position: 25px 50%;
-          &.esg-section-text-01 {
-            background-image: url("/images/sub/sustainability/esg/esg-01-bg-11.png");
-          }
+          margin: 0 auto 130px;
+          color: #005EB8;
+          text-align: center;
+          font-family: Pretendard;
+          font-size: 28px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 150%; /* 42px */
+          text-transform: uppercase;
+          // &.esg-section-text-01 {
+          //   background-image: url("/images/sub/sustainability/esg/esg-01-bg-11.png");
+          // }
         }
         > ul {
           display: flex;
           justify-content: center;
-          gap: 20px 13%;
+          text-align: center;
+          gap: 18px 21%;
           > li {
+            max-width: 400px;
+            width: 100%;
+            word-break: keep-all;
+            white-space: normal;
             > p {
-              max-width: 215px;
+              max-width: 400px;
               width: 100%;
               display: flex;
+              flex-direction: column;
               justify-content: center;
               align-items: center;
               height: 80px;
-              background-color: #F2F2F2;
               box-sizing: border-box;
-              padding-left: 90px;
-              background-position: 25px 50%;
               background-repeat: no-repeat;
-              font-size: 20px;
-              font-family: "Pretendard-Medium", sans-serif;
-              color: #5A5A5A;
+              color: #005EB8;
+              text-align: center;
+              font-family: Pretendard;
+              font-size: 28px;
+              font-style: normal;
+              font-weight: 700;
+              line-height: 150%; /* 42px */
+              text-transform: uppercase;
             }
             > ul {
               margin-top: 16px;
-              text-align: left;
+              text-align: center;
+              border-radius: 10px;
+              border: 1px solid #999;
+              background: #FFF;
               > li {
-                margin-top: 10px;
-                padding-left: 10px;
-                position: relative;
+                display: flex;
+                padding: 15px 30px;
+                flex-direction: column;
+                align-items: center;
+                gap: 24px;
+                align-self: stretch;
+                color: #333;
+                font-family: Pretendard;
+                font-size: 22px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 150%; /* 33px */
                 &:first-child {
                   margin-top: 0;
-                }
-                &:before {
-                  position: absolute;
-                  top: 0;
-                  left: 0;
-                  content: "·";
                 }
               }
             }
 
-            &:nth-child(1) {
-              > p {
-                background-image: url("/images/sub/sustainability/esg/esg-01-bg-12.png");
-              }
-            }
-            &:nth-child(2) {
-              > p {
-                background-image: url("/images/sub/sustainability/esg/esg-01-bg-13.png");
-              }
-            }
+            // &:nth-child(1) {
+            //   > p {
+            //     background-image: url("/images/sub/sustainability/esg/esg-01-bg-12.png");
+            //   }
+            // }
+            // &:nth-child(2) {
+            //   > p {
+            //     background-image: url("/images/sub/sustainability/esg/esg-01-bg-13.png");
+            //   }
+            // }
           }
         }
       }
@@ -598,68 +634,151 @@
 
   /* 기후 변화 */
   .climate-container {
-    max-width: 1500px;
-    padding: 195px 20px 250px;
+    max-width: 1600px;
+    padding: 100px 20px 250px;
     margin: 0 auto;
     .esg-section-01 {
-      text-align: center;
-      margin-bottom: 192px;
+      text-align: left;
+      .climate-container-section-01 {
+      display: flex;
+      justify-content: left;
+      align-items: left;
+      background-color: #fff;
+      padding-bottom: 50px;
       h3 {
-        display: inline-block;
-        border-bottom: 1px solid #023A8E;
-        position: relative;
-        padding-bottom: 46px;
-        font-family: "Pretendard-Bold", sans-serif;
-        font-size: 50px;
-        width: 100%;
-        max-width: 580px;
-        color: #023A8E;
-        margin-bottom: 50px;
+        color: #192A67;
+        font-family: Pretendard;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 100%; /* 48px */
       }
       > p {
-        line-height: 40px;
-        color: #52575E;
-        font-family: "Pretendard-Bold", sans-serif;
-        font-size: 28px;
-        margin-bottom: 10px;
-        img {
-          margin-top: 50px;
-          vertical-align: top;
-          width: 100%;
+        max-width: 1106px;
+        width: 100%;
+        color: #222;
+        font-family: Pretendard;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 150%; /* 48px */
+       }
+      }
+      .image-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center; /* 수직 가운데 정렬 */
+      margin-top: 50px;
+      margin-bottom: 200px;
+      }
+      .image-wrapper img {
+        width: 90%;
+        height: auto;
+      }
+    }
+      // .carbon-table-wrap {
+      //   overflow-x: auto;
+      //   margin-top: 2rem;
+      //   }
+
+      //   .carbon-table {
+      //     width: 100%;
+      //     border-collapse: collapse;
+      //     text-align: center;
+      //     font-size: 18px;
+      //     color: #222;
+      //   }
+
+      //   .carbon-table th,
+      //   .carbon-table td {
+      //     border: 1px solid #999;
+      //     padding: 12px;
+      //     min-width: 80px;
+      //   }
+
+      //   .carbon-table thead th {
+      //     background-color: #f7f7f7;
+      //     font-weight: bold;
+      //   }
+
+      //   .carbon-table .total-row td {
+      //     font-weight: bold;
+      //     background-color: #f0f0f0;
+      //   }
+
+
+    .esg-section-02 {
+      display: flex;
+      flex-direction: start;      
+      justify-content: space-between;
+
+      .subject{
+        max-width: 520px;
+        width: 100%;
+        color: #192A67;
+        font-family: Pretendard;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 100%; /* 48px */
+        display: flex;
+        align-items: flex-start;
+        gap: 53px;
+        align-self: stretch;
+      }
+      .text{
+        > h2 {
+          color: #222;
+          font-family: Pretendard;
+          font-size: 32px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 150%; /* 48px */
+          margin-bottom: 24px;
+        }
+        > p{
+          color: #333;
+          font-family: Pretendard;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 160%; /* 32px */
+          width: 830px;
+        }
+        > a {
+          margin-top: 32px;
+          margin-bottom: 32px;
+          width: 200px;
           height: auto;
+          display: flex;
+          padding: 10px 14px;
+          justify-content: center;
+          align-items: center;
+          gap: 4px;
+          border-radius: 8px;
+          background: #24C2FF;
+          color: #FFF;
+          font-family: Pretendard;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 100%; /* 16px */
+          :after {
+            content: "";
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            background: url("/images/common/arrowright.png") no-repeat center center;
+            background-size: contain;
+            flex-shrink: 0;
+          }
         }
       }
-      .carbon-table-wrap {
-        overflow-x: auto;
-        margin-top: 2rem;
-        }
 
-        .carbon-table {
-          width: 100%;
-          border-collapse: collapse;
-          text-align: center;
-          font-size: 18px;
-          color: #222;
-        }
-
-        .carbon-table th,
-        .carbon-table td {
-          border: 1px solid #999;
-          padding: 12px;
-          min-width: 80px;
-        }
-
-        .carbon-table thead th {
-          background-color: #f7f7f7;
-          font-weight: bold;
-        }
-
-        .carbon-table .total-row td {
-          font-weight: bold;
-          background-color: #f0f0f0;
-        }
 
     }
+
+
 
     .esg-section-02 {
       position: relative;
@@ -774,48 +893,87 @@
         }
       }
     }
-    .esg-section-03 {
-      > .text {
-        border: 1px solid #DEDEDE;
-        padding: 62px 100px 115px;
-        margin-bottom: 160px;
-        h3 {
-          font-family: "Pretendard-Bold", sans-serif;
-          font-size: 40px;
-          color: #606060;
-          text-align: center;
-          margin-bottom: 68px;
-        }
-        p {
-          color: #52575E;
-          font-size: 25px;
-          font-family: "Pretendard-Light", sans-serif;
-          margin-bottom: 30px;
-          line-height: 35px;
-          &:last-child {
-            margin-bottom: 0;
-          }
-        }
+
+    .philosopy-03 {
+      max-width: 1000px;
+      padding: 0 316px;
+      margin: 0 auto 140px;
+      text-align: center;
+      background-color: #ffffff;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      flex-direction: row;
+      > div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 200px;
+        padding-right: 200px;
+      > h3 {
+        width: 1000px;
+        color: #005EB8;
+        text-align: center;
+        font-family: Pretendard;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 140%; /* 56px */
+        letter-spacing: 0.8px;
       }
       > p {
+        width: 1104px;
+        color: #333;
         text-align: center;
-        font-family: "Pretendard-Light", sans-serif;
-        line-height: 35px;
-        color: #52575E;
-        font-size: 25px;
-        margin-bottom: 45px;
+        font-family: Pretendard;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 33px; /* 165% */
       }
-      > .button {
+      }
+    }
+
+
+
+    .esg-section-04 {
+        display: flex;
+        flex-direction: column;
+        padding: 80px 120px;
+        justify-content: space-between;
+        align-items: center;
+        align-self: stretch;
+        border-radius: 24px;
+        background: #005EB8;
+      .text {
+        color: #FFF;
         text-align: center;
+        font-family: Pretendard;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 150%; /* 60px */
+        letter-spacing: 0.8px;
+        width: 1000px;
+        padding-bottom: 58px;
+      }
+      
+      > .button {
+          text-align: center;
         > a {
-          display: inline-block;
-          padding: 15px 30px;
-          color: #52575E;
-          font-size: 25px;
-          font-family: "Pretendard-Medium", sans-serif;
-          background-color: #F4F4F4;
-          border-radius: 11px;
-          box-shadow: 0 3px 6px rgba(0,0,0,0.16);
+          display: flex;
+          padding: 10px 14px;
+          justify-content: center;
+          align-items: center;
+          gap: 4px;
+          border-radius: 8px;
+          background: #24C2FF;
+          color: #FFF;
+          font-family: Pretendard;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 100%; /* 18px */
         }
       }
     }
@@ -824,7 +982,7 @@
 
   /* 윤리경영 */
   .ethical-container {
-    max-width: 1450px;
+    max-width: 1600px;
     margin: 0 auto;
     padding: 145px 20px 260px;
     .button {
@@ -842,18 +1000,15 @@
     }
     .ethical-01 {
       margin-bottom: 220px;
-      text-align: center;
+      text-align: left;
       h2 {
-        display: inline-block;
-        border-bottom: 1px solid #023A8E;
-        position: relative;
-        padding-bottom: 46px;
-        font-family: "Pretendard-Bold", sans-serif;
-        font-size: 50px;
-        width: 100%;
-        max-width: 580px;
-        color: #023A8E;
-        margin-bottom: 120px;
+        color: #192A67;
+        font-family: Pretendard;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 100%; /* 48px */
+        padding-bottom: 80px;
       }
       h3 {
         display: inline-block;
@@ -893,131 +1048,247 @@
       }
       > ul {
         text-align: left;
-        > li {
+        > li.ethical-01-01 {
           margin-top: 100px;
+          display: flex;
+          padding: 56px;
+          flex-direction: column;
+          justify-content: top;
+          align-items: flex-start;
+          gap: 56px;
+          align-self: stretch;
+          border-radius: 24px;
+          background: #192A67;
           &:first-child {
             margin-top: 0;
           }
           > dl {
             display: flex;
+            flex-direction: column;
             align-items: center;
+            text-align: left;
             > dt {
+              max-width: 1300px;
               width: 100%;
               flex-shrink: 0;
-              max-width: 300px;
-              color: #0F3553;
-              font-size: 28px;
-              font-family: "Pretendard-Bold", sans-serif;
-              line-height: 35px;
+              color: #24C2FF;
+              font-family: Pretendard;
+              font-size: 32px;
+              font-style: normal;
+              font-weight: 700;
+              line-height: 150%; /* 48px */
+              padding-bottom: 56px;
             }
             > dd {
               > ul {
+                display: flex; // 가로 정렬
+                flex-wrap: wrap; // 줄 바꿈 허용 (원하지 않으면 제거)
+                gap: 35px 45px; // 세로 간격 35px, 가로 간격 45px
                 > li {
+                  max-width: 432px;
+                  width: 100%;
                   display: flex;
-                  margin-top: 35px;
-                  &:first-child {
-                    margin-top: 0;
-                  }
+                  padding: 32px;
+                  flex-direction: column;
+                  justify-content: top;
+                  align-items: flex-start;
+                  gap: 24px;
+                  flex: 1 0 0;
+                  border-radius: 16px;
+                  background: rgba(255, 255, 255, 0.06);
+                  // &:first-child {
+                  //   margin-top: 0;
+                  // }
                   > p {
                     display: flex;
-                    align-items: center;
+                    flex-direction: column; // 세로 배치 유지
+                    align-items: left;
                     box-sizing: border-box;
                     width: 300px;
                     height: 79px;
                     flex-shrink: 0;
-                    border: 1px solid #707070;
                     color: #fff;
                     font-size: 18px;
                     font-family: "Pretendard-Medium", sans-serif;
                     line-height: 25px;
                     border-radius: 10px;
                     justify-content: center;
-                    text-align: center;
+                    text-align: left;
                     margin-right: 45px;
                   }
                   > div {
                     > p {
-                      font-size: 18px;
-                      font-family: "Pretendard-Medium", sans-serif;
-                      line-height: 35px;
+                      align-self: stretch;
+                      color: #FFF;
+                      font-family: Pretendard;
+                      font-size: 20px;
+                      font-style: normal;
+                      font-weight: 400;
+                      line-height: 180%; /* 36px */
+                      opacity: 0.8;
                     }
                   }
                 }
               }
             }
           }
-          &:nth-child(1) {
-            > dl {
-              > dd {
-                > ul {
-                  > li {
-                    > p {
-                      background-color: #16A4B4;
-                    }
-                  }
-                }
-              }
-            }
+          // &:nth-child(1) {
+          //   > dl {
+          //     > dd {
+          //       > ul {
+          //         > li {
+          //           > p {
+          //             background-color: #16A4B4;
+          //           }
+          //         }
+          //       }
+          //     }
+          //   }
+          // }
+          // &:nth-child(2) {
+          //   > dl {
+          //     > dd {
+          //       > ul {
+          //         > li {
+          //           > p {
+          //             background-color: #167EB4;
+          //           }
+          //         }
+          //       }
+          //     }
+          //   }
+          // }
+          // &:nth-child(3) {
+          //   > dl {
+          //     > dd {
+          //       > ul {
+          //         > li {
+          //           > p {
+          //             background-color: #1660B4;
+          //           }
+          //         }
+          //       }
+          //     }
+          //   }
+          // }
+          // &:nth-child(4) {
+          //   > dl {
+          //     > dd {
+          //       > ul {
+          //         > li {
+          //           > p {
+          //             background-color: #162BB4;
+          //           }
+          //         }
+          //       }
+          //     }
+          //   }
+          // }
+          // &:nth-child(5) {
+          //   > dl {
+          //     > dd {
+          //       > ul {
+          //         > li {
+          //           > p {
+          //             background-color: #4F16B4;
+          //           }
+          //         }
+          //       }
+          //     }
+          //   }
+          // }
+          // &:nth-child(6) {
+          //   > dl {
+          //     > dd {
+          //       > ul {
+          //         > li {
+          //           > p {
+          //             background-color: #8B16B4;
+          //           }
+          //         }
+          //       }
+          //     }
+          //   }
+          // }
+        }
+        > li.ethical-01-02 {
+          margin-top: 100px;
+          display: flex;
+          padding: 56px;
+          flex-direction: column;
+          justify-content: top;
+          align-items: flex-start;
+          gap: 56px;
+          align-self: stretch;
+          border-radius: 24px;
+          background: #192A67;
+          &:first-child {
+            margin-top: 0;
           }
-          &:nth-child(2) {
-            > dl {
-              > dd {
-                > ul {
-                  > li {
-                    > p {
-                      background-color: #167EB4;
-                    }
-                  }
-                }
-              }
+          > dl {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: left;
+            > dt {
+              max-width: 1300px;
+              width: 100%;
+              flex-shrink: 0;
+              color: #24C2FF;
+              font-family: Pretendard;
+              font-size: 32px;
+              font-style: normal;
+              font-weight: 700;
+              line-height: 150%; /* 48px */
+              padding-bottom: 56px;
             }
-          }
-          &:nth-child(3) {
-            > dl {
-              > dd {
-                > ul {
-                  > li {
-                    > p {
-                      background-color: #1660B4;
-                    }
+            > dd {
+              > ul {
+                display: flex; // 가로 정렬
+                flex-wrap: wrap; // 줄 바꿈 허용 (원하지 않으면 제거)
+                gap: 35px 45px; // 세로 간격 35px, 가로 간격 45px
+                > li {
+                  max-width: 1300px;
+                  width: 100%;
+                  display: flex;
+                  padding: 32px;
+                  flex-direction: column;
+                  justify-content: top;
+                  align-items: flex-start;
+                  gap: 24px;
+                  flex: 1 0 0;
+                  border-radius: 16px;
+                  background: rgba(255, 255, 255, 0.06);
+                  // &:first-child {
+                  //   margin-top: 0;
+                  // }
+                  > p {
+                    display: flex;
+                    flex-direction: column; // 세로 배치 유지
+                    align-items: left;
+                    box-sizing: border-box;
+                    width: 300px;
+                    height: 79px;
+                    flex-shrink: 0;
+                    color: #fff;
+                    font-size: 18px;
+                    font-family: "Pretendard-Medium", sans-serif;
+                    line-height: 25px;
+                    border-radius: 10px;
+                    justify-content: center;
+                    text-align: left;
+                    margin-right: 45px;
                   }
-                }
-              }
-            }
-          }
-          &:nth-child(4) {
-            > dl {
-              > dd {
-                > ul {
-                  > li {
+                  > div {
                     > p {
-                      background-color: #162BB4;
-                    }
-                  }
-                }
-              }
-            }
-          }
-          &:nth-child(5) {
-            > dl {
-              > dd {
-                > ul {
-                  > li {
-                    > p {
-                      background-color: #4F16B4;
-                    }
-                  }
-                }
-              }
-            }
-          }
-          &:nth-child(6) {
-            > dl {
-              > dd {
-                > ul {
-                  > li {
-                    > p {
-                      background-color: #8B16B4;
+                      align-self: stretch;
+                      color: #FFF;
+                      font-family: Pretendard;
+                      font-size: 20px;
+                      font-style: normal;
+                      font-weight: 400;
+                      line-height: 180%; /* 36px */
+                      opacity: 0.8;
                     }
                   }
                 }
@@ -1028,19 +1299,16 @@
       }
     }
     .ethical-02 {
-      text-align: center;
+      text-align: left;
       margin-bottom: 250px;
       h2 {
-        display: inline-block;
-        border-bottom: 1px solid #023A8E;
-        position: relative;
-        padding-bottom: 46px;
-        font-family: "Pretendard-Bold", sans-serif;
-        font-size: 50px;
-        width: 100%;
-        max-width: 580px;
-        color: #023A8E;
-        margin-bottom: 120px;
+        color: #192A67;
+        font-family: Pretendard;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 100%; /* 48px */
+        padding-bottom: 80px;
       }
       > ul {
         display: flex;
@@ -1091,64 +1359,104 @@
       }
     }
     .ethical-03 {
-      text-align: center;
+      text-align: left;
       margin-bottom: 175px;
+      background-image: url('/images/sub/sustainability/dddr-d-logo.svg');
+      background-repeat: no-repeat;
+      background-size: 700px;
+      background-position: center center;
+      @media (max-width: 768px) {
+        background-size: 100%;            // 또는 contain
+        background-position: center top;  // 또는 원하는 위치
+        background-repeat: no-repeat;
+        }
+      > div {
+      display: flex;
+      flex-direction: row;
       h2 {
-        display: inline-block;
-        border-bottom: 1px solid #023A8E;
-        position: relative;
-        padding-bottom: 46px;
-        font-family: "Pretendard-Bold", sans-serif;
-        font-size: 50px;
+        max-width: 600px;
         width: 100%;
-        max-width: 580px;
-        color: #023A8E;
-        margin-bottom: 45px;
+        color: #192A67;
+        font-family: Pretendard;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 120%; /* 57.6px */
       }
       > p {
-        font-size: 20px;
-        color: #52575E;
-        line-height: 30px;
-        margin-bottom: 120px;
-      }
+        display: flex;
+        width: 1084px;
+        flex-direction: column;
+        justify-content: center;
+        align-self: stretch;
+        color: #222;
+        font-family: Pretendard;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 150%; /* 48px */
+      }}
       > ul {
+        display: flex;
+        flex-wrap: wrap; // 줄바꿈 허용
+        gap: 30px; // li 간격 (원하는 만큼 조절)
         > li {
           display: flex;
-          margin-top: 22px;
+          flex-direction: column;
+          width: calc(33.333% - 20px); // 3등분 + 간격 보정
           gap: 11px;
           &:first-child {
             margin-top: 0;
           }
           > p {
+            padding-top: 100px;
+            text-align: left;
+            align-items: left;
+            justify-content: left;
             flex-shrink: 0;
-            width: 206px;
-            background: #F4F4F4;
-            color: #023A8E;
-            font-size: 20px;
-            font-family: "Pretendard-Bold", sans-serif;
-            box-shadow: 0 3px 6px rgba(0,0,0,0.16);
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            color: #005EB8;
+            font-family: Pretendard;
+            font-size: 30px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 100%; /* 30px */
           }
           > div {
+            padding-top: 32px;
+            align-self: stretch;
+            color: #333;
+            font-family: Pretendard;
             font-size: 20px;
-            line-height: 25px;
-            background: #FBFBFB;
-            box-shadow: 0 3px 6px rgba(0,0,0,0.16);
-            padding: 24px 0;
-            width: 100%;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 180%; /* 36px */
           }
         }
       }
     }
     .ethical-04 {
       text-align: center;
+      display: flex;
+      flex-direction: column;
+      padding: 80px 120px;
+      justify-content: space-between;
+      align-items: center;
+      align-self: stretch;
+      border-radius: 24px;
+      background: #005EB8;
       > p {
-        color: #52575E;
-        font-size: 35px;
-        font-family: "Pretendard-Bold", sans-serif;
-        margin-bottom: 35px;
+        width: 1000px;
+        color: #FFF;
+        text-align: center;
+        font-family: Pretendard;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 150%; /* 60px */
+        letter-spacing: 0.8px;
+      }
+      > img {
+        padding-top: 48px;
       }
     }
     .ethical-05 {
@@ -1345,113 +1653,67 @@
 
   /* EHS */
   .ehs-container {
-    max-width: 1500px;
-    padding: 195px 20px 250px;
+    max-width: 1600px;
+    padding: 100px 20px 50px;
     margin: 0 auto;
     .esg-section-01 {
-      text-align: center;
+      text-align: left;
       margin-bottom: 262px;
+      display: flex;
+      flex-direction: row;
       h3 {
-        display: inline-block;
-        border-bottom: 1px solid #023A8E;
-        position: relative;
-        padding-bottom: 46px;
-        font-family: "Pretendard-Bold", sans-serif;
-        font-size: 50px;
-        width: 100%;
-        max-width: 580px;
-        color: #023A8E;
-        margin-bottom: 60px;
+        color: #192A67;
+        font-family: Pretendard;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 130%; /* 62.4px */
       }
       > p {
-        line-height: 45px;
-        color: #52575E;
-        font-family: "Pretendard-Bold", sans-serif;
-        font-size: 28px;
-        img {
-          vertical-align: top;
-          width: 100%;
-          height: auto;
-        }
+        max-width: 1106px;
+        width: 100%;
+        padding-left: 80px;
+        color: #222;
+        font-family: Pretendard;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 150%; /* 48px */
+        // img {
+        //   vertical-align: top;
+        //   width: 100%;
+        //   height: auto;
+        // }
       }
     }
     .esg-section-02 {
       display: flex;
-      flex-wrap: wrap;
-      gap: 20px 1%;
+      flex-direction: column;
       > div {
         position: relative;
-        flex-basis: 32%;
         > img {
-          width: 100%;
+          width: 40%;
           height: auto;
           aspect-ratio: 501 / 334;
-          vertical-align: top;
+          display: block; // inline 성격 제거
         }
-        &:nth-child(1) {
-          > .top {
-            .image-area1 {
-              background-image: url("/images/sub/sustainability/esg/ehs-01.png");
-            }
-          }
+          &:nth-child(1) > img {
+          margin-left: 0;         // 왼쪽 정렬
         }
-        &:nth-child(2) {
-          > .top {
-            .image-area1 {
-              background-image: url("/images/sub/sustainability/esg/ehs-03.png");
-            }
-          }
+          &:nth-child(2) > img {
+          margin: 0 auto;         // 가운데 정렬
         }
-        &:nth-child(3) {
-          > .top {
-            .image-area1 {
-              background-image: url("/images/sub/sustainability/esg/ehs-05.png");
-            }
-          }
+          &:nth-child(3) > img {
+          margin-left: auto;      // 오른쪽 정렬
         }
-        > .top {
-          .image-area1 {
-            position: absolute;
-            width: 130px;
-            height: 130px;
-            top: -50px;
-            right: 17px;
-            background-color: rgb(2, 155, 53);
-            display: flex;
-            align-items: end;
-            background-repeat: no-repeat;
-            background-position: calc(100% - 18px) 18px;
-            > p {
-              color: #fff;
-              padding: 0 0 10px 15px;
-              font-family: "Pretendard-Light", sans-serif;
-              font-size: 18px;
-              line-height: 20px;
-            }
-          }
-          .image-area2 {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            background-color: #ffffffd2;
-            border: 1px solid #DEDEDE;
-            display: flex;
-            max-width: 242px;
-            width: 100%;
-            height: 60px;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            > div {
-              > h3 {
-                color: #606060;
-                font-size: 33px;
-                font-family: "Pretendard-Bold", sans-serif;
-              }
-            }
-          }
-        }
+      }
+      > img {
+        width: auto;            // 원본 크기 유지
+        max-width: 100%;        // 넘칠 경우 줄어들게
+        height: auto;
+        display: block;
+        margin: 0 auto;
+        aspect-ratio: 900 / 511;
       }
     }
     .esg-section-03 {
@@ -1459,19 +1721,18 @@
       margin-top: 180px;
       margin-bottom: 180px;
       h3 {
-        display: inline-block;
-        position: relative;
-        padding-top: 35px;
-        padding-bottom: 50px;
-        font-family: "Pretendard-Bold", sans-serif;
-        font-size: 45px;
-        width: 100%;
-        max-width: 580px;
-        color: #646464;
-        margin-bottom: 60px;
-        background-color: #ececec;
-        border-radius: 5px;
-
+        display: flex;
+        padding: 10px 120px;
+        align-items: center;
+        gap: 10px;
+        align-self: stretch;
+        color: #192A67;
+        font-family: Pretendard;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 130%; /* 62.4px */
+        padding-bottom: 102px;
       }
       > ul {
         padding: 64px 110px;
@@ -1479,27 +1740,33 @@
         display: flex;
         flex-wrap: wrap;
         text-align: left;
-        gap: 150px 2%;
+        gap: 120px 2%;
         > li {
           width: 32%;
           > dl {
             > dt {
-              color: #52575E;
-              font-family: "Pretendard-Bold", sans-serif;
-              font-size: 25px;
-              margin-bottom: 44px;
+              align-self: stretch;
+              color: #005EB8;
+              font-family: Pretendard;
+              font-size: 28px;
+              font-style: normal;
+              font-weight: 700;
+              line-height: 150%; /* 42px */
+              text-transform: uppercase;
+              padding-bottom: 32px;
             }
             > dd {
               > ul {
                 > li {
-                  font-size: 20px;
-                  color: #52575E;
-                  margin-top: 35px;
-                  padding-left: 10px;
                   position: relative;
-                  &:first-child {
-                    margin-top: 0;
-                  }
+                  padding-left: 1em; // ← 여백 확보
+                  flex: 1 0 0;
+                  color: #555;
+                  font-family: Pretendard;
+                  font-size: 20px;
+                  font-style: normal;
+                  font-weight: 400;
+                  line-height: 180%; /* 36px */
                   &:before {
                     position: absolute;
                     top: 0;
@@ -1671,14 +1938,14 @@
 
   /* Supply Chain */
   .supply-chain-container {
-    max-width: 1400px;
-    padding: 195px 20px 250px;
+    max-width: 1600px;
+    padding: 100px 20px 250px;
     margin: 0 auto;
     > section {
-      text-align: center;
+      text-align: left;
       > h2 {
         display: inline-block;
-        border-bottom: 1px solid #023A8E;
+        // border-bottom: 1px solid #023A8E;
         position: relative;
         padding-bottom: 46px;
         font-family: "Pretendard-Bold", sans-serif;
@@ -1696,70 +1963,119 @@
       }
     }
     .esg-section-01 {
-      margin-bottom: 230px;
+      margin-bottom: 100px;
+      display: flex;
+      flex-direction: row;
+      > h2 {
+        color: #192A67;
+        font-family: Pretendard;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 130%; /* 62.4px */
+      }
+      > p {
+        width: 1106px;
+        color: #222;
+        font-family: Pretendard;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 150%; /* 48px */
+      }
     }
     .esg-section-02 {
       margin-bottom: 230px;
       > h2 {
-        margin-bottom: 120px;
+        align-self: stretch;
+        color: #192A67;
+        font-family: Pretendard;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 100%; /* 48px */
       }
       > ul {
-        > li {
-          margin-top: 100px;
-          &:first-child {
-            margin-top: 0;
-          }
-          > dl {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px; // 아이템 사이 여백
+      > li {
+        width: calc(50% - 20px); // 양쪽 gap 고려해서 50%
+        margin-top: 100px;
+
+    &:nth-child(-n+2) {
+      margin-top: 0; // 첫 행 2개만 top margin 제거
+    }
+
+    > dl {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+
+      > dt {
+        position: relative;
+        align-self: stretch;
+        display: flex;
+        align-items: flex-start;
+        gap: 32px;
+        text-align: left;
+        justify-content: left;
+        color: #005EB8;
+        font-family: Pretendard;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 150%; /* 42px */
+        text-transform: uppercase;
+        margin-bottom: 32px;
+      }
+        
+      > dd {
+        box-sizing: border-box;
+        text-align: left;
+        display: flex;
+
+        > ul {
+          > li {
+            margin-top: 35px;
+            padding-left: 20px;
             position: relative;
-            > dt {
-              position: absolute;
-              top: -60px;
-              left: 0;
-              background: #07A3FF;
-              box-shadow: 0 3px 6px rgba(0,0,0,0.16);
-              color: #fff;
-              display: flex;
-              align-items: center;
-              text-align: center;
-              justify-content: center;
-              font-size: 22px;
-              line-height: 30px;
-              width: 370px;
-              height: 119px;
+            flex: 1 0 0;
+            color: #555;
+            font-family: Pretendard;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 180%; /* 36px */
+            &:first-child {
+              margin-top: 0;
             }
-            > dd {
-              box-sizing: border-box;
-              box-shadow: 0 3px 6px rgba(0,0,0,0.16);
-              background-color: #F2F2F2;
-              padding: 60px 20px 60px 230px;
-              margin-left: 327px;
-              text-align: left;
-              display: flex;
-              > ul {
-                > li {
-                  margin-top: 35px;
-                  padding-left: 10px;
-                  position: relative;
-                  &:first-child {
-                    margin-top: 0;
-                  }
-                  &:before {
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    content: "·";
-                  }
-                }
-              }
+
+            &:before {
+              position: absolute;
+              top: 0;
+              left: 0;
+              content: "·";
             }
           }
         }
       }
     }
+  }
+}
+    }
     .esg-section-03 {
       margin-bottom: 230px;
+      > h2 {
+        align-self: stretch;
+        color: #192A67;
+        font-family: Pretendard;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 100%; /* 48px */
+      }
       > ul {
-        border: 1px solid #B9B9B9;
         display: flex;
         gap: 0 20px;
         justify-content: space-evenly;
@@ -1793,46 +2109,104 @@
           &:nth-child(8) {
             background-image: url("/images/sub/sustainability/esg/supply-chain-08.png");
           }
+          .text-wrap {
+            border: 1px solid #D2D2D2;
+            background: #FFF;
+            border-radius: 12px;
+            margin: 0 auto;
+            line-height: 28px;
+            display: flex;
+            padding: 10px 16px;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            gap: 10px;
+            align-self: stretch;
+            height: 60px;
+          }
         }
       }
+
       > div {
         display: flex;
+        flex-direction: column;
         justify-content: space-between;
-        margin-top: -10px;
-        align-items: flex-end;
-        > img {
-          position: relative;
-          margin-left: 20px;
-          z-index: 10;
-          max-width: 830px;
-          width: 100%;
-          height: auto;
+        text-align: center;
+        align-items: center;
+        > p {
+          border-radius: 100px;
+          color: #FFF;
+          font-family: Pretendard;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 100%; /* 20px */
+          padding: 20px 24px;
+          gap: 10px;
+          margin-bottom: 8px;
         }
-        > div {
-          display: flex;
-          flex-wrap: wrap;
-          height: 100%;
-          padding: 140px 0;
-          background-color: #F8F8F8;
-          border-radius: 11px;
-          justify-content: center;
-          > p {
-            color: #52575E;
-            width: 100%;
-            margin-bottom: 45px;
-            font-size: 25px;
-          }
-          > a {
-            display: inline-block;
-            font-size: 20px;
-            color: #52575E;
-            border: 1px solid #52575E;
-            padding: 13px 54px;
-          }
+        :nth-child(1) {
+          background-color: #00B3F8;
         }
+        :nth-child(2) {
+          background-color: #005EB8;
+        }
+        :nth-child(3) {
+          background-color: #012391;
+        }
+          background-image: url('/images/sub/sustainability/Union.png'); // 원하는 이미지 경로
+          background-repeat: no-repeat;
+          background-size: 500px;         // 또는 contain, auto
+          background-position: center center;
       }
+
+      // > div {
+      //   display: flex;
+      //   justify-content: space-between;
+      //   margin-top: -10px;
+      //   align-items: flex-end;
+      //   > img {
+      //     position: relative;
+      //     margin-left: 20px;
+      //     z-index: 10;
+      //     max-width: 830px;
+      //     width: 100%;
+      //     height: auto;
+      //   }
+      //   > div {
+      //     display: flex;
+      //     flex-wrap: wrap;
+      //     height: 100%;
+      //     padding: 140px 0;
+      //     background-color: #F8F8F8;
+      //     border-radius: 11px;
+      //     justify-content: center;
+      //     > p {
+      //       color: #52575E;
+      //       width: 100%;
+      //       margin-bottom: 45px;
+      //       font-size: 25px;
+      //     }
+      //     > a {
+      //       display: inline-block;
+      //       font-size: 20px;
+      //       color: #52575E;
+      //       border: 1px solid #52575E;
+      //       padding: 13px 54px;
+      //     }
+      //   }
+      // }
     }
     .esg-section-04 {
+      > h2 {
+        align-self: stretch;
+        color: #192A67;
+        font-family: Pretendard;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 100%; /* 48px */
+      }
       > ul {
         > li {
           margin-top: 22px;

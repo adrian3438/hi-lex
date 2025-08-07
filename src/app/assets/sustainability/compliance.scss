@@ -1,4 +1,123 @@
-.greeting {
+.compliance {
+  .container-header-01 {
+  background-color: #000016;
+  padding: 220px 0px 0;
+  margin-bottom: 0px;
+  > h2 {
+    align-self: stretch;
+    color: #FFF;
+    font-family: Unbounded;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 76px; /* 118.75% */
+    padding-bottom: 65px;
+    margin-bottom: 0px;
+  }
+  .location {
+    display: flex;
+    gap: 10px;
+    padding-left: 120px;
+    > li {
+    position: relative; // 기준 설정
+    margin-bottom: 20px;
+    color: #24C2FF;
+    font-family: Pretendard;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%; /* 16px */
+    &:before {
+      content: ">";
+      margin-right: 10px;
+    }
+
+    &:first-child:before {
+      display: none;
+    }
+    }
+  }
+  > p {
+    color: #52575E;
+    font-size: 18px;
+    font-family: "Pretendard-Medium", sans-serif;
+    line-height: 35px;
+  }
+}
+
+
+.compliance-subject {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    background-color: #fff;
+    padding-left: 120px;
+    padding-top: 100px;
+    padding-bottom: 50px;
+
+    > h3 {
+      color: #192A67;
+      font-family: Pretendard;
+      font-size: 48px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 100%; /* 48px */
+    }
+  }
+
+.greeting-text-03 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 20px;
+  background-color: #fff;
+
+  .greeting-text-image-03 {
+    display: flex;
+    flex-direction: row;  // 가로 정렬
+    align-items: center;
+    gap: 60px;            // 이미지와 텍스트 간격
+    max-width: 1600px;
+    width: 100%;
+
+    img {
+      max-width: 466px;
+      width: 100%;
+      height: auto;
+      display: block;
+      padding-right: 200px; // 이미지 오른쪽 여백
+      
+    }
+
+    > div {
+      width: 100%;
+      max-width: 820px;
+      flex: 1;
+      h3 {
+        color: #222;
+        font-family: Pretendard;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 150%; /* 48px */
+      }
+      p {
+        color: #333;
+        font-family: Pretendard;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 160%; /* 32px */
+      }
+      img {
+      width: 174px;
+      height: auto;
+     }
+    }
+  }
+}
+
+
   .greeting-text-01 {
     display: flex;
     align-items: center;

@@ -1,48 +1,112 @@
 .research {
   .research-banner {
-    position: relative;
-    background: url("/images/sub/research/research-banner.png") no-repeat 50% 50%;
-    background-size: cover;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    > div {
-      max-width: 1600px;
-      padding: 100px 20px 30px;
-      margin: 0 auto;
-      width: 100%;
-      > div {
-        max-width: 855px;
+       padding: 220px 20px 0;
+       margin-bottom: 0px;
+       background-color: #000016;
+
+       > img {
+        max-width: 1600px;
+        width: 100%;
+        height: auto;
+        vertical-align: top;
+        text-align: center;
+        align-items: center;
+        padding-left: 120px;
+        padding-bottom: 40px;
+       }
+
+
+       > div {
+        display: flex;
+        flex-direction: column;
         > h2 {
-          color: #fff;
-          font-family: "Pretendard-ExtraBold", sans-serif;
-          font-size: 45px;
+          align-self: stretch;
+          color: #FFF;
+          font-family: Unbounded;
+          font-size: 64px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 76px; /* 118.75% */
+          padding-bottom: 65px;
+          margin-bottom: 0px;
+          padding-left: 120px;
         }
-        > .text-01 {
-          color: #fff;
-          font-size: 45px;
-          font-family: "Pretendard-SemiBold", sans-serif;
-          line-height: 54px;
-          margin: 30px 0 25px;
-        }
-        > .text-02 {
-          color: #fff;
-          font-size: 18px;
-          font-family: "Pretendard-Medium", sans-serif;
-          line-height: 21px;
+        .location {
+          display: flex;
+          gap: 10px;
+          padding-left: 120px;
+          > li {
+          position: relative; // 기준 설정
+          margin-bottom: 20px;
+          color: #24C2FF;
+          font-family: Pretendard;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 100%; /* 16px */
+          &:before {
+            content: ">";
+            margin-right: 10px;
+          }
+
+          &:first-child:before {
+            display: none;
+          }
+          }
         }
       }
+
+
+       .research-text {
+          position: relative;
+          margin: 0 0px 0px 0px;
+          display: flex;
+          text-align: left;
+          justify-content: start;
+          flex-direction: row;
+          gap: 100px; 
+          padding-left: 120px;
+          padding-bottom: 40px;
+          max-width: 1600px;
+          width: 100%;
+          p {
+            color: #24C2FF;
+            font-family: Pretendard;
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 100%; /* 40px */   
+            &:last-child {
+            color: #FFF;
+            font-family: Pretendard;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 160%; /* 32px */
+            opacity: 0.8;
+
+            }
+          }
+        }
     }
   }
+
+
   .title-area {
-    max-width: 1600px;
-    padding: 0 20px;
-    margin: 118px auto 85px;
-    > img {
-      max-width: 1249.08px;
-      width: 100%;
-      height: auto;
-    }
+      text-align: left;
+      max-width: 1600px;
+      padding-left: 120px;
+    > h2 {
+          display: inline-block;
+          position: relative;
+          font-family: "Pretendard-Bold", sans-serif;
+          font-size: 50px;
+          width: 100%;
+          max-width: 1000px;
+          color: #192A67;
+          padding-top: 120px;
+          padding-bottom: 40px;
+        }
   }
   .link-area {
     height: 812px;
@@ -142,6 +206,61 @@
     }
   }
 
+.research-text-03 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 20px;
+  background-color: #fff;
+
+  .research-text-image-03 {
+    display: flex;
+    flex-direction: row;  // 가로 정렬
+    align-items: center;
+    gap: 60px;            // 이미지와 텍스트 간격
+    max-width: 1600px;
+    width: 100%;
+
+    img {
+      width: 550px;
+      height: auto;
+      display: block;
+      padding-right: 200px; // 이미지 오른쪽 여백
+      
+    }
+
+    > div {
+      flex: 1;
+      h3 {
+        color: #333;
+        font-family: Pretendard;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 160%; /* 51.2px */
+        padding-bottom: 40px;
+      }
+
+      p {
+        color: #333;
+        font-family: Pretendard;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 160%; /* 32px */
+        align-self: stretch;
+        padding-bottom: 40px;
+      }
+      img {
+      width: 174px;
+      height: auto;
+     }
+    }
+  }
+}
+
+
+
   .research-container {
     max-width: 1600px;
     margin: 0 auto;
@@ -168,46 +287,58 @@
     }
   }
   .related-contents {
-    text-align: center;
+    text-align: left;
     > h3 {
       display: inline-block;
-      border-bottom: 1px solid #023A8E;
       position: relative;
-      padding-bottom: 46px;
       font-family: "Pretendard-Bold", sans-serif;
       font-size: 50px;
       width: 100%;
-      max-width: 580px;
-      color: #023A8E;
-      margin-bottom: 80px;
+      max-width: 600px;
+      color: #192A67;
+      padding-bottom: 40px;
     }
     > ul {
       display: flex;
-      justify-content: space-between;
+      flex-direction: column;
       > li {
         width: 32%;
         > a {
-          display: block;
           position: relative;
+          display: flex;
+          flex-direction: column;
           > img {
             width: 100%;
             height: auto;
           }
           > div {
-            position: absolute;
-            bottom: 30px;
-            left: 30px;
+            width: 100%;
             text-align: left;
-            color: #F6F3F3;
-            font-size: 35px;
-            line-height: 41px;
-            font-family: "Pretendard-ExtraBold", sans-serif;
+            color: #222;
+            font-family: Pretendard;
+            font-size: 28px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 130%; /* 41.6px */
+            padding-top: 40px;
+            align-self: stretch;
           }
         }
+         
+      }
+      .research-01 {
+        padding-left: 0px;
+      }
+      .research-02 {
+        padding-left: 550px;
+      }
+      
+      .research-03 {
+        padding-left: 1090px;
       }
     }
   }
-}
+
 
 @media screen and (max-width: 1024px) {
   .research {

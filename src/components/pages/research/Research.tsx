@@ -15,16 +15,24 @@ export default function Research({language}: Props) {
     return (
         <div className="research">
             <div className="research-banner">
-                <div>
                     <div>
-                        <h2>{language?.research_01}</h2>
-                        <p className="text-01">{language?.research_02}<br/>{language?.research_03}</p>
-                        <p className="text-02">{language?.research_04}</p>
+                    <ul className="location">
+                    <li>{language?.header_3}</li>
+                    </ul>
+                    <h2>{language?.research_01}</h2>
                     </div>
-                </div>
+
+                    <Image src="/images/sub/research/research-banner.png" alt="" width={1620} height={800}/>
+
+                    <div className="research-text">
+                    <p className="text-01">{language?.research_02}</p>
+                    <p className="text-02">{language?.research_04}</p>
+                    </div>
             </div>
+
             <div className="title-area">
-                <Image src="/images/sub/research/research-title.png" alt="Discover Our Technologies" width={1249.08} height={93.75} />
+                <h2>Discover Our Technologies</h2>
+                {/* <Image src="/images/sub/research/research-title.png" alt="Discover Our Technologies" width={1249.08} height={93.75} /> */}
             </div>
             <div className={`link-area ${imageIndex === 0 ? 'link-area1' : ''} ${imageIndex === 1 ? 'link-area2' :  ''} ${imageIndex === 2 ? 'link-area3' :  ''} ${imageIndex === 3 ? 'link-area4' :  ''}`}
 
@@ -80,60 +88,55 @@ export default function Research({language}: Props) {
                     </li>
                 </ul>
             </div>
+
+
+            <div className="research-text-03">
+                      <div className="research-text-image-03">
+                        <Image src="/images/sub/research/dddr-d-big.svg" alt="" width={500} height={500}/>
+                        <div>
+                          <h3>{language?.research_16}</h3>
+                          <p>{language?.research_17} {language?.research_18}</p>
+                          <p>{language?.research_19} {language?.research_19_02}</p>
+                          <p>{language?.research_20}<br/>{language?.research_21}</p>
+                          <p>{language?.research_22}{language?.research_23}</p>
+                          <p>{language?.research_24}{language?.research_25}</p>
+                          <p>{language?.research_25_02}</p>
+                        </div>
+                      </div>
+            </div>
+
+
             <div className="research-container">
-                <section className="research-detail">
-                    <h3>{language?.research_16}</h3>
-                    <div>
-                        {language?.research_17}<br/>
-                        {language?.research_18}
-                    </div>
-                    <div>
-                        {language?.research_19}<br/>
-                        {language?.research_19_02}
-                    </div>
-                    <div>
-                        {language?.research_20}<br/>
-                        {language?.research_21}
-                    </div>
-                    <div>
-                        {language?.research_22}<br/>
-                        {language?.research_23}
-                    </div>
-                    <div>
-                        {language?.research_24}<br/>
-                        {language?.research_25}<br/>
-                        {language?.research_25_02}
-                    </div>
-                </section>
+                
                 <section className="related-contents">
                     <h3>{language?.research_26}</h3>
                     <ul>
-                        <li>
+                        <li className="research-01">
                             <Link href="/research/new-technology">
                                 <Image src="/images/sub/research/research-01.png" alt="" width={510} height={443}/>
                                 <div>
-                                    {language?.research_27}<br/>
-                                    {language?.research_29}<br/>
+                                    {language?.research_27}
+                                    {language?.research_29}
                                     {language?.research_30}
                                 </div>
                             </Link>
                         </li>
-                        <li>
+                        <li className="research-02">
                             <Link href="#">
                                 <Image src="/images/sub/research/research-02.png" alt="" width={510} height={443}/>
                                 <div>
-                                    {language?.research_31}<br/>
-                                    {language?.research_32}<br/>
+                                    {language?.research_31}
+                                    {language?.research_32}
                                     {language?.research_33}
                                 </div>
                             </Link>
                         </li>
-                        <li>
+                        <li className="research-03">
                             <Link href="#">
                                 <Image src="/images/sub/research/research-03.png" alt="" width={510} height={443}/>
                                 <div>
-                                    {language?.research_34}<br/>
-                                    {language?.research_35}<br/>
+                                    {language?.research_34}
+                                    {language?.research_35}
                                     {language?.research_36}
                                 </div>
                             </Link>

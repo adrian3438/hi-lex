@@ -28,15 +28,13 @@ export default function ClimateChange({ language }: Props) {
         <div className="esg">
             <div className="esg-banner">
                 <div className="banner-area1">
-                    <h2>{language?.header_4_2}</h2>
                     <ul className="location">
                         <li>{language?.header_4}</li>
                         <li>{language?.header_4_2}</li>
                     </ul>
-                </div>
-                <div className="banner-area2">
-                    <p>{language?.esg_text_01}</p>
-                    <p>{language?.esg_text_02}</p>
+                    <h2>{language?.header_4_2}</h2>
+                        <p>{language?.esg_text_01}</p>
+                        <p>{language?.esg_text_02}</p>
                 </div>
                 {/*<div className="esg-menu">
                     <ul>
@@ -111,7 +109,7 @@ export default function ClimateChange({ language }: Props) {
            
            {/* <div className="esg-menus" id="esgMenus"> */}
             <div className="esg-menus">
-                <ul>
+                <ul className="esg-menu-list">
                     <li>
                         <Link href="/sustainability/esg-management">
                             <div>
@@ -180,12 +178,14 @@ export default function ClimateChange({ language }: Props) {
             </div>
             <div className="climate-container">
                 <section className="esg-section-01">
+                    <div className="climate-container-section-01">
                     <h3>{language?.esg_text_02_01}</h3>
-                    <p>{language?.esg_text_02_02}</p>
-                    <p>{language?.esg_text_02_02_01}</p>
-                    <p><Image src={`/images/sub/sustainability/esg/esg-02-img-01-${language?.language}.png`} alt="" width={1562} height={917}/></p>
-
-
+                    <p>{language?.esg_text_02_02}{language?.esg_text_02_02_01}</p>
+                    </div>
+                    <div className="image-wrapper">
+                    <Image src={`/images/sub/sustainability/esg/esg-02-img-01-${language?.language}.png`} alt="" width={1562} height={917}/>
+                    </div>
+                    
                     {/* <div className="carbon-table-wrap">
                     <table className="carbon-table">
                         <thead>
@@ -231,83 +231,63 @@ export default function ClimateChange({ language }: Props) {
                     </table>
                     </div> */}
                 </section>
+
+
                 <section className="esg-section-02">
-                    <Image src="/images/sub/sustainability/esg/esg-02-img-03.png" alt="" width={1600} height={2133}/>
-                    <div className="top">
-                        <div className="image-area1">
-                            <p>
-                                {language?.esg_text_02_03}<br/>
-                                {language?.esg_text_02_04}
-                            </p>
-                        </div>
-                        <div className="image-area2">
-                            <div>
-                                <h3>{language?.esg_text_02_05}</h3>
-                                <p>{language?.esg_text_02_06}</p>
-                            </div>
-                        </div>
+                    <div className="subject">
+                        <h3>{language?.esg_text_02_05}</h3>
                     </div>
-                    <div className="bottom">
+                     <div className="text">
+                        <h2>{language?.esg_text_02_06}</h2>
                         <p>{language?.esg_text_02_07}</p>
                         <p>{language?.esg_text_02_08}</p>
                         <p>{language?.esg_text_02_09}</p>
                         <p>{language?.esg_text_02_10}</p>
-                        <Link href="#">{language?.esg_text_02_11}</Link>
+                         <Link href="#">{language?.esg_text_02_11}</Link>
+                         <Image src="/images/sub/sustainability/esg/esg-02-img-03.png" alt="" width={1107} height={612}/>
                     </div>
                 </section>
-                <section className="esg-section-02">
-                    <Image src="/images/sub/sustainability/esg/esg-02-img-05.png" alt="" width={1600} height={1067}/>
-                    <div className="top">
-                        <div className="image-area1">
-                            <p>
-                                {language?.esg_text_02_12}<br/>
-                                {language?.esg_text_02_13}
-                            </p>
-                        </div>
-                        <div className="image-area2">
-                            <div>
-                                <h3>{language?.esg_text_02_14}</h3>
-                                {/*<p>{language?.esg_text_02_15}</p>*/}
-                            </div>
-                        </div>
+
+                 <section className="esg-section-02">
+                    <div className="subject">
+                        <h3>{language?.esg_text_02_12}</h3>
                     </div>
-                    <div className="bottom">
+                     <div className="text">
+                        <h2>{language?.esg_text_02_14}</h2>
                         <p>{language?.esg_text_02_16}</p>
                         <p>{language?.esg_text_02_17}</p>
                         <p>{language?.esg_text_02_18}</p>
                         <p>{language?.esg_text_02_19}</p>
                         <Link href="#">{language?.esg_text_02_20}</Link>
+                         <Image src="/images/sub/sustainability/esg/esg-02-img-05.png" alt="" width={1107} height={612}/>
                     </div>
                 </section>
 
-                <section className="esg-section-02">
-                    <Image src="/images/sub/sustainability/esg/esg-02-img-07.png" alt="" width={1600} height={1600}/>
-                    <div className="top">
-                        <div className="image-area1">
-                            <p>
-                                CO<sup>2</sup><br/>
-                                {language?.esg_text_02_21}
-                            </p>
-                        </div>
-                        <div className="image-area2">
-                            <div>
-                                <h3>{language?.esg_text_02_22}</h3>
-                                {/*<p>{language?.esg_text_02_23}</p>*/}
-                            </div>
-                        </div>
+                 <section className="esg-section-02">
+                    <div className="subject">
+                        <h3>{language?.esg_text_02_21}</h3>
                     </div>
-                    <div className="bottom">
+                     <div className="text">
+                        <h2>{language?.esg_text_02_22}</h2>
                         <p>{language?.esg_text_02_24}</p>
                         <Link href="#">{language?.esg_text_02_25}</Link>
+                         <Image src="/images/sub/sustainability/esg/esg-02-img-07.png" alt="" width={1107} height={612}/>
                     </div>
                 </section>
-                <section className="esg-section-03">
-                    <div className="text">
-                        <h3>{language?.esg_text_02_26}<br/>{language?.esg_text_02_27}</h3>
-                        <p>{language?.esg_text_02_28}</p>
+
+
+                <section className="philosopy-03">
+                        <Image className="left" src="/images/sub/company/management-philosopy/dddr-vertical-left.png" alt="" width={24} height={296}/>
+                        <div>
+                        <h3>{language?.esg_text_02_26}<br/>{language?.esg_text_02_27}</h3><br/>
+                        <p>{language?.esg_text_02_28}</p><br/>
                         <p>{language?.esg_text_02_29}</p>
-                    </div>
-                    <p>{language?.esg_text_02_30}</p>
+                        </div>
+                        <Image className="right" src="/images/sub/company/management-philosopy/dddr-vertical-right.png" alt="" width={24} height={296}/>
+                </section>
+
+                <section className="esg-section-04">
+                    <p className="text">{language?.esg_text_02_30}</p>
                     <div className="button">
                         <Link href="/company/contact-us">{language?.esg_text_02_31}</Link>
                     </div>

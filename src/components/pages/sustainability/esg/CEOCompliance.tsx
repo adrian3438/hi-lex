@@ -1,5 +1,5 @@
 import "@/app/assets/sustainability/compliance.scss"
-// import Image from "next/image";
+import Image from "next/image";
 
 interface Props {
   language: any
@@ -7,39 +7,34 @@ interface Props {
 
 export default function Compliance({language}: Props) {
   return (
-    <div className="greeting">
+    <div className="compliance">
       <div className="container-header-01">
-        <h2>{language?.ceo_compliance_01}</h2>
         <ul className="location">
           <li>{language?.header_4}</li>
           <li>{language?.ceo_compliance_01}</li>
         </ul>
+        <h2>{language?.ceo_compliance_01}</h2>
       </div>
-      <div className="greeting-background-color">
-        <div className="greeting-text-01">
-          {/* <section className="greeting-text-image-01">
-            <Image src="/images/sub/company/greeting/ceo-greeting-flags.jpg" alt="" width={954} height={615}/>
-          </section> */}
-          <div>
-            <div>
+
+          <div className="compliance-subject">
               <h3>{language?.ceo_compliance_01}</h3><br/>
-              <p>{language?.ceo_compliance_02}</p>
-              <p>{language?.ceo_compliance_03}</p>
-            </div>
           </div>
-        </div>
 
-        <div className="greeting-text-02">
-          <div>
-            <div>
-              <p>{language?.ceo_compliance_04}</p><br/>
-              <p>{language?.ceo_compliance_05}</p><br/>
-              <p>{language?.ceo_compliance_06}</p><br/>
-              <p>{language?.ceo_compliance_07}</p><br/>
-              <p>{language?.ceo_compliance_08}</p>
 
-            </div>
-          </div>
+       <div className="greeting-text-03">
+                <div className="greeting-text-image-03">
+                  <Image src="/images/sub/sustainability/dddr-d-big.svg" alt="" width={466} height={776}/>
+                  <div>
+                    <h3>{language?.ceo_compliance_02}{language?.ceo_compliance_03}</h3><br/>
+                    <p>{language?.ceo_compliance_04}</p><br/>
+                    <p>{language?.ceo_compliance_05}</p><br/>
+                    <p>{language?.ceo_compliance_06}</p><br/>
+                    <p>{language?.ceo_compliance_07}</p><br/>
+                    <p>{language?.ceo_compliance_08}</p>
+                    <Image src="/images/sub/company/greeting/songhaksung-signature.png" alt="" width={174} height={94}/>
+                  </div>
+                </div>
+       </div>
 
           {/*<section className="greeting-text-image-02">
             <Image src="/images/sub/company/greeting/ceo-greeting-car-2.jpg" alt="" width={1920} height={1195}/>
@@ -48,8 +43,6 @@ export default function Compliance({language}: Props) {
             </div>
           </section>*/}
         </div>
-      </div>
-    </div>
   )
 }
 

@@ -3,6 +3,7 @@
 import "@/app/assets/sustainability/esg.scss";
 import Link from "next/link";
 import {useEffect} from "react";
+import Image from "next/image";
 
 interface Props {
     language?: any;
@@ -24,13 +25,11 @@ export default function ESGManagement({ language }: Props) {
         <div className="esg">
             <div className="esg-banner">
                 <div className="banner-area1">
-                    <h2>{language?.header_4_1}</h2>
                     <ul className="location">
                         <li>{language?.header_4}</li>
                         <li>{language?.header_4_1}</li>
                     </ul>
-                </div>
-                <div className="banner-area2">
+                    <h2>{language?.header_4_1}</h2>
                     <p>{language?.esg_text_01}</p>
                     <p>{language?.esg_text_02}</p>
                 </div>
@@ -38,7 +37,7 @@ export default function ESGManagement({ language }: Props) {
 
             {/* <div className="esg-menus" id="esgMenus"> */}
             <div className="esg-menus">
-                <ul>
+                <ul className="esg-menu-list">
                     <li className="active">
                         <Link href="/sustainability/esg-management">
                             <div>
@@ -105,15 +104,18 @@ export default function ESGManagement({ language }: Props) {
                     </li>
                 </ul>
             </div>
+
+
             <div className="esg-container">
                 <section className="esg-section-01">
+                    <div className="esg-section-header">
                     <h3>{language?.esg_text_01_01}</h3>
                     <p>{language?.esg_text_01_02}</p>
+                    </div>
                     <ul>
                         <li>
+                            <p>{language?.esg_text_01_03}</p>
                             <div>
-                                <p>{language?.esg_text_01_03}</p>
-                                {/* <p>{language?.esg_text_01_04}</p> */}
                             </div>
                             <dl>
                                 <dt>{language?.esg_text_01_05}</dt>
@@ -129,9 +131,8 @@ export default function ESGManagement({ language }: Props) {
                             </dl>
                         </li>
                         <li>
+                            <p>{language?.esg_text_01_11}</p>
                             <div>
-                                <p>{language?.esg_text_01_11}</p>
-                                {/* <p>{language?.esg_text_01_12}</p> */}
                             </div>
                             <dl>
                                 <dt>{language?.esg_text_01_13_01}</dt>
@@ -147,9 +148,8 @@ export default function ESGManagement({ language }: Props) {
                             </dl>
                         </li>
                         <li>
+                            <p>{language?.esg_text_01_19}</p>
                             <div>
-                                {/* <p>{language?.esg_text_01_18}</p> */}
-                                <p>{language?.esg_text_01_19}</p>
                             </div>
                             <dl>
                                 <dt>{language?.esg_text_01_20}</dt>
@@ -258,9 +258,13 @@ export default function ESGManagement({ language }: Props) {
                 <section className="esg-section-04">
                     <h3>{language?.esg_text_01_53}</h3>
                     <div>
-                        <p className="esg-section-text-01">{language?.esg_text_01_54}<br/>({language?.esg_text_01_55})</p>
+                        <p className="esg-section-text-01">
+                            <Image src="/images/sub/sustainability/esg/esg-01-bg-02.png" alt="" width={60} height={60} />
+                            {language?.esg_text_01_54}<br/>({language?.esg_text_01_55})
+                        </p>
                         <ul>
                             <li className="esg-section-text-04">
+                                <Image src="/images/sub/sustainability/esg/esg-01-bg-04.png" alt="" width={60} height={60} />
                                 <p>{language?.esg_text_01_56}</p>
                                 <ul>
                                     <li>{language?.esg_text_01_57}</li>
@@ -271,6 +275,7 @@ export default function ESGManagement({ language }: Props) {
                                 </ul>
                             </li>
                             <li className="esg-section-text-05">
+                                <Image src="/images/sub/sustainability/esg/esg-01-bg-13.png" alt="" width={60} height={60} />
                                 <p>{language?.esg_text_01_62}</p>
                                 <ul>
                                     <li>{language?.esg_text_01_63}</li>

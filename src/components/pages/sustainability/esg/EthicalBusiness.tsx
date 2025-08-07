@@ -27,13 +27,11 @@ export default function EthicalBusiness({ language }: Props) {
         <div className="esg">
             <div className="esg-banner">
                 <div className="banner-area1">
-                    <h2>{language?.header_4_3}</h2>
                     <ul className="location">
                         <li>{language?.header_4}</li>
                         <li>{language?.header_4_3}</li>
                     </ul>
-                </div>
-                <div className="banner-area2">
+                    <h2>{language?.header_4_3}</h2>
                     <p>{language?.esg_text_01}</p>
                     <p>{language?.esg_text_02}</p>
                 </div>
@@ -110,7 +108,7 @@ export default function EthicalBusiness({ language }: Props) {
 
             {/* <div className="esg-menus" id="esgMenus"> */}
             <div className="esg-menus">
-                <ul>
+                <ul className="esg-menu-list">
                     <li>
                         <Link href="/sustainability/esg-management">
                             <div>
@@ -189,36 +187,36 @@ export default function EthicalBusiness({ language }: Props) {
             {activeIndex === 0 && (
                 <div className="ethical-container">
                     <section className="ethical-01">
-                        <h2>{language?.esg_text_03_85}</h2>
+                        <h2>{language?.esg_text_03_85}<br/>{language?.esg_text_03_85_01}</h2>
                         <ul>
-                            <li>
+                            <li className="ethical-01-01">
                                 <dl>
-                                    <dt>{language?.esg_text_03_01} <br/>{language?.esg_text_03_02}</dt>
+                                    <dt>{language?.esg_text_03_01} {language?.esg_text_03_02}</dt>
                                     <dd>
                                         <ul>
                                             <li>
                                                 <p>{language?.esg_text_03_03}</p>
-                                                <div>
-                                                    <p>{language?.esg_text_03_04}</p>
-                                                </div>
+                                                  <div>
+                                                  <p>{language?.esg_text_03_04}</p>
+                                                  </div>
                                             </li>
                                             <li>
                                                 <p>{language?.esg_text_03_05}</p>
-                                                <div>
+                                                    <div>
                                                     <p>{language?.esg_text_03_06}</p>
-                                                </div>
+                                                    </div>
                                             </li>
                                             <li>
                                                 <p>{language?.esg_text_03_07}</p>
-                                                <div>
+                                                    <div>
                                                     <p>{language?.esg_text_03_08}</p>
-                                                </div>
+                                                    </div>
                                             </li>
                                         </ul>
                                     </dd>
                                 </dl>
                             </li>
-                            <li>
+                            <li className="ethical-01-01">
                                 <dl>
                                     <dt>{language?.esg_text_03_09}</dt>
                                     <dd>
@@ -245,7 +243,7 @@ export default function EthicalBusiness({ language }: Props) {
                                     </dd>
                                 </dl>
                             </li>
-                            <li>
+                            <li className="ethical-01-02">
                                 <dl>
                                     <dt>{language?.esg_text_03_16}</dt>
                                     <dd>
@@ -260,9 +258,9 @@ export default function EthicalBusiness({ language }: Props) {
                                     </dd>
                                 </dl>
                             </li>
-                            <li>
+                            <li className="ethical-01-01">
                                 <dl>
-                                    <dt>{language?.esg_text_03_19} <br/>{language?.esg_text_03_19_02}</dt>
+                                    <dt>{language?.esg_text_03_19} {language?.esg_text_03_19_02}</dt>
                                     <dd>
                                         <ul>
                                             <li>
@@ -287,7 +285,7 @@ export default function EthicalBusiness({ language }: Props) {
                                     </dd>
                                 </dl>
                             </li>
-                            <li>
+                            <li className="ethical-01-02">
                                 <dl>
                                     <dt>{language?.esg_text_03_26}</dt>
                                     <dd>
@@ -302,7 +300,7 @@ export default function EthicalBusiness({ language }: Props) {
                                     </dd>
                                 </dl>
                             </li>
-                            <li>
+                            <li className="ethical-01-02">
                                 <dl>
                                     <dt>{language?.esg_text_03_29}</dt>
                                     <dd>
@@ -334,8 +332,10 @@ export default function EthicalBusiness({ language }: Props) {
                         </ul>
                     </section>
                     <section className="ethical-03">
+                        <div>
                         <h2>{language?.esg_text_03_42}</h2>
                         <p>{language?.esg_text_03_43}<br/>{language?.esg_text_03_43_01}</p>
+                        </div>
                         <ul>
                             <li>
                                 <p>{language?.esg_text_03_44}</p>
@@ -425,7 +425,7 @@ export default function EthicalBusiness({ language }: Props) {
                     </section>
                     <section className="ethical-04">
                         <p>{language?.esg_text_03_59}</p>
-                        <Image src="/images/common/logo.png" alt="대동 하이렉스" width={217} height={36}/>
+                        <Image src="/images/common/logo-white.png" alt="대동 하이렉스" width={217} height={36}/>
                     </section>
                 </div>
             )}

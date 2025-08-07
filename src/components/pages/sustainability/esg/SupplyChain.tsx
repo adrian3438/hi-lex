@@ -26,13 +26,11 @@ export default function SupplyChain({ language }: Props) {
         <div className="esg">
             <div className="esg-banner">
                 <div className="banner-area1">
-                    <h2>{language?.header_4_5}</h2>
                     <ul className="location">
                         <li>{language?.header_4}</li>
                         <li>{language?.header_4_5}</li>
                     </ul>
-                </div>
-                <div className="banner-area2">
+                    <h2>{language?.header_4_5}</h2>
                     <p>{language?.esg_text_01}</p>
                     <p>{language?.esg_text_02}</p>
                 </div>
@@ -108,7 +106,7 @@ export default function SupplyChain({ language }: Props) {
 
             {/* <div className="esg-menus" id="esgMenus"> */}
             <div className="esg-menus">
-                <ul>
+                <ul className="esg-menu-list">
                     <li>
                         <Link href="/sustainability/esg-management">
                             <div>
@@ -232,21 +230,29 @@ export default function SupplyChain({ language }: Props) {
                 <section className="esg-section-03">
                     <h2>{language?.esg_text_05_19}</h2>
                     <ul>
-                        <li>{language?.esg_text_05_20}<br/>{language?.esg_text_05_21}</li>
-                        <li>{language?.esg_text_05_22}<br/>{language?.esg_text_05_23}</li>
-                        <li>{language?.esg_text_05_24}<br/>{language?.esg_text_05_25}</li>
-                        <li>{language?.esg_text_05_26}</li>
-                        <li>{language?.esg_text_05_27}<br/>{language?.esg_text_05_28}</li>
-                        <li>{language?.esg_text_05_29}<br/>{language?.esg_text_05_30}</li>
-                        <li>{language?.esg_text_05_31}<br/>{language?.esg_text_05_32}</li>
+                        <li><div className="text-wrap">{language?.esg_text_05_20}<br/>{language?.esg_text_05_21}</div></li>
+                        <li><div className="text-wrap">{language?.esg_text_05_22}<br/>{language?.esg_text_05_23}</div></li>
+                        <li><div className="text-wrap">{language?.esg_text_05_24}<br/>{language?.esg_text_05_25}</div></li>
+                        <li><div className="text-wrap">{language?.esg_text_05_26}</div></li>
+                        <li><div className="text-wrap">{language?.esg_text_05_27}<br/>{language?.esg_text_05_28}</div></li>
+                        <li><div className="text-wrap">{language?.esg_text_05_29}<br/>{language?.esg_text_05_30}</div></li>
+                        <li><div className="text-wrap">{language?.esg_text_05_31}<br/>{language?.esg_text_05_32}</div></li>
                     </ul>
+
                     <div>
+                        <p>01. Fair Trade for Social Responsibility</p>
+                        <p>02. Enhancing supplier competitiveness for sustainable management</p>
+                        <p>03. Building trust for responsible sourcing of raw materials</p>
+                    </div>
+
+
+                    {/* <div>
                         <Image src="/images/sub/sustainability/esg/supply-chain-01.png" alt="" width={830} height={656}/>
                         <div>
                             <p>{language?.esg_text_05_33}</p>
                             <Link href="#">{language?.esg_text_05_34}</Link>
                         </div>
-                    </div>
+                    </div> */}
                 </section>
                 <section className="esg-section-04">
                     <h2>{language?.esg_text_05_35}</h2>

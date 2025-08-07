@@ -26,13 +26,11 @@ export default function QualityManagement({ language }: Props) {
         <div className="esg">
             <div className="esg-banner">
                 <div className="banner-area1">
-                    <h2>{language?.header_4_6}</h2>
                     <ul className="location">
                         <li>{language?.header_4}</li>
                         <li>{language?.header_4_6}</li>
                     </ul>
-                </div>
-                <div className="banner-area2">
+                    <h2>{language?.header_4_6}</h2>
                     <p>{language?.esg_text_01}</p>
                     <p>{language?.esg_text_02}</p>
                 </div>
@@ -108,7 +106,7 @@ export default function QualityManagement({ language }: Props) {
             
             {/* <div className="esg-menus" id="esgMenus"> */}
             <div className="esg-menus">
-                <ul>
+                <ul className="esg-menu-list">
                     <li>
                         <Link href="/sustainability/esg-management">
                             <div>
