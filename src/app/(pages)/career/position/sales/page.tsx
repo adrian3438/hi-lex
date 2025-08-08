@@ -33,7 +33,8 @@ export default async function SalesPage({searchParams : {lang}} : any) {
                         </ul>
                     </div>
                     <div className="position-content sales">
-                        <p><Image src="/images/sub/career/position/position-02.png" alt="" width={1420} height={430}/></p>
+                        <p><Image src="/images/sub/career/position/position-02.png" alt="" width={1420} height={430}/></p><br/><br/>
+                        <p><Image src="/images/common/logobarwide.png" alt="" width={1600} height={24}/></p>
                         <dl className="sales-01">
                             <dt>{language?.position_01_33}<span>{language?.position_01_34}</span></dt>
                             <dd>

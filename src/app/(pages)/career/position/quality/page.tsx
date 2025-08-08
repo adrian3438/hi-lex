@@ -32,7 +32,9 @@ export default async function QualityPage({searchParams : {lang}} : any) {
                         </ul>
                     </div>
                     <div className="position-content quality">
-                        <p><Image src="/images/sub/career/position/position-01-01.jpg" alt="" width={1420} height={430}/></p>
+                        <p><Image src="/images/sub/career/position/position-01-01.jpg" alt="" width={1420} height={430}/></p><br/><br/>
+                        <p><Image src="/images/common/logobarwide.png" alt="" width={1600} height={24}/></p>
+                        {/* <div className="quality-wrap"> */}
                         <dl className="quality-01">
                             <dt>{language?.position_01_10}<span>{language?.position_01_11}</span></dt>
                             <dd>
@@ -77,9 +79,10 @@ export default async function QualityPage({searchParams : {lang}} : any) {
                                 </ul>
                             </dd>
                         </dl>
+                        </div>
                     </div>
                 </div>
-            </div>
+            {/* </div> */}
             <Footer language={language}/>
         </>
     )

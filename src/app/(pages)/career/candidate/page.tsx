@@ -15,6 +15,7 @@ export default async function CandidatePage({searchParams : {lang}} : any) {
                 <div className="candidate">
                     <div className="candidate-content">
                         <p><Image src="/images/sub/career/candidate/daedong-door-ideal-candidate.png" alt="" width={1420} height={799}/></p>
+                        <p className="candidate-image-2"><Image src="/images/common/logobarwide.png" alt="" width={1600} height={24}/></p>
                         <div className="title-area">
                             <h3>{language?.candidate_01}</h3>
                             <p>{language?.candidate_02}</p>

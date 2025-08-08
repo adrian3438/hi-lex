@@ -33,7 +33,8 @@ export default async function RndPage({searchParams : {lang}} : any) {
                         </ul>
                     </div>
                     <div className="position-content research">
-                        <p><Image src="/images/sub/career/position/position-03.png" alt="" width={1420} height={430}/></p>
+                        <p><Image src="/images/sub/career/position/position-03.png" alt="" width={1420} height={430}/></p><br/><br/>
+                        <p><Image src="/images/common/logobarwide.png" alt="" width={1600} height={24}/></p>
                         <dl className="research-01">
                             <dt>{language?.position_01_41}<span>{language?.position_01_42}</span></dt>
                             <dd>

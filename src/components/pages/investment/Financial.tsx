@@ -8,9 +8,20 @@ interface Props {
 export default function Financial({language}: Props) {
     return (
         <div className="about-us">
+            <div className="esg-banner">
+                <div className="banner-area1">
+                    <ul className="location">
+                        <li>{language?.header_7}</li>
+                        <li>{language?.header_7_1}</li>
+                    </ul>
+                    <h2>{language?.header_7_1}</h2>
+                    {/* <p>{language?.esg_text_01}</p>
+                    <p>{language?.esg_text_02}</p> */}
+                </div>
+            </div>
+
             <div className="about-container">
                 <div className="financial">
-                    <h2>{language?.financial_01}</h2>
                     <div className="table">
                         <p>{language?.financial_02}</p>
                         <table>

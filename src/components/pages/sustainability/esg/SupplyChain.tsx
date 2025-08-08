@@ -239,10 +239,18 @@ export default function SupplyChain({ language }: Props) {
                         <li><div className="text-wrap">{language?.esg_text_05_31}<br/>{language?.esg_text_05_32}</div></li>
                     </ul>
 
-                    <div>
-                        <p>01. Fair Trade for Social Responsibility</p>
-                        <p>02. Enhancing supplier competitiveness for sustainable management</p>
-                        <p>03. Building trust for responsible sourcing of raw materials</p>
+
+                    <div className="bigarrowdown">
+                        <div>
+                        <p><span>{language?.esg_text_05_41}</span>{language?.esg_text_05_42}</p>
+                        <p><span>{language?.esg_text_05_43}</span>{language?.esg_text_05_44}</p>
+                        <p><span>{language?.esg_text_05_45}</span>{language?.esg_text_05_46}</p>
+                        </div>
+                    </div>
+
+                    <div className="supplychainreadmore">
+                        <p>{language?.esg_text_05_47}</p>
+                        <Link href="#">{language?.esg_text_05_40}</Link>
                     </div>
 
 
@@ -259,7 +267,7 @@ export default function SupplyChain({ language }: Props) {
                     <ul>
                         <li>
                             <dl>
-                                <dt>01</dt>
+                                <dt>01.</dt>
                                 <dd>
                                     {language?.esg_text_05_36}
                                     <Link href="#">{language?.esg_text_05_40}</Link>
@@ -268,7 +276,7 @@ export default function SupplyChain({ language }: Props) {
                         </li>
                         <li>
                             <dl>
-                                <dt>02</dt>
+                                <dt>02.</dt>
                                 <dd>
                                     {language?.esg_text_05_37}
                                     <Link href="#">{language?.esg_text_05_40}</Link>
@@ -277,7 +285,7 @@ export default function SupplyChain({ language }: Props) {
                         </li>
                         <li>
                             <dl>
-                                <dt>03</dt>
+                                <dt>03.</dt>
                                 <dd>
                                     {language?.esg_text_05_38}
                                     <Link href="#">{language?.esg_text_05_40}</Link>
@@ -286,7 +294,7 @@ export default function SupplyChain({ language }: Props) {
                         </li>
                         <li>
                             <dl>
-                                <dt>04</dt>
+                                <dt>04.</dt>
                                 <dd>
                                     {language?.esg_text_05_39}
                                     <Link href="#">{language?.esg_text_05_40}</Link>

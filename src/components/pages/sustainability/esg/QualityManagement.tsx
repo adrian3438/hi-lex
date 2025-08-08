@@ -175,10 +175,12 @@ export default function QualityManagement({ language }: Props) {
             </div>
             <div className="esg-container">
                 <section className="esg-section-01">
+                    <div>
                     <h3>{language?.esg_text_06_01}</h3>
                     <p>{language?.esg_text_06_02}<br/>{language?.esg_text_06_03}</p>
+                    </div>
                     <p className="image-area">
-                        <Image src={`/images/sub/sustainability/esg/quality-01-${language.language}.png`} alt="" width={1028} height={1028} style={{maxWidth: "1028px", width: "100%", height: "auto"}}/>
+                        <Image src={`/images/sub/sustainability/esg/quality-01-${language.language}.svg`} alt="" width={1028} height={1028} style={{maxWidth: "1028px", width: "100%", height: "auto"}}/>
                     </p>
                     <div className="quality-management">
                         <dl className="quality-01">

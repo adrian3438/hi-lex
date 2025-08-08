@@ -233,8 +233,8 @@ export default function WhistleblowerComplaint({ language }: Props) {
                 </ul>
             </div>
             <div className="esg-container">
-                <section className="esg-section-01">
-                    <h3>{language?.esg_text_08_01}</h3>
+                <h3>{language?.esg_text_08_01}</h3>
+                <section className="esg-section-ws">
                     <div className="whistleblower-table">
                         <h4>{language?.esg_text_08_02} <Link href="/sustainability/whistleblower-complaint/guide">{language?.esg_text_08_16}</Link></h4>
                         <table>
@@ -269,7 +269,7 @@ export default function WhistleblowerComplaint({ language }: Props) {
                         </div>
                     </div>
                 </section>
-                <section className="esg-section-02">
+                <section className="esg-section-ws">
                     <div className="whistleblower-table">
                         <h4>{language?.esg_text_08_17}</h4>
                         <table>
@@ -294,7 +294,7 @@ export default function WhistleblowerComplaint({ language }: Props) {
                     </div>
                 </section>
 
-                <section className="esg-section-02">
+                <section className="esg-section-ws">
                     <div className="whistleblower-table">
                         <h4>{language?.esg_text_08_23}</h4>
                         <table>
@@ -338,7 +338,7 @@ export default function WhistleblowerComplaint({ language }: Props) {
                     </div>
                 </section>
 
-                <section className="esg-section-05">
+                <section className="esg-section-ws">
                     <div className="whistleblower-table">
                         <h4>{language?.esg_text_08_32}</h4>
                         <table>

@@ -10,11 +10,12 @@ export default async function NewTechnology({searchParams : {lang}} : any) {
     <>
       <Header language={language}/>
       <div className="new-technology">
-        <div className="container-header-01"><h2>{language?.research_27} {language?.research_29} {language?.research_30}</h2>
+        <div className="container-header-01">
           <ul className="location">
             <li>R&amp;D</li>
             <li>{language?.research_27}{language?.research_29}{language?.research_30}</li>
           </ul>
+          <h2>{language?.research_27} {language?.research_29} {language?.research_30}</h2>
         </div>
         <div className="new-tech-process">
           <p className="pc"><Image src={`/images/sub/research/new-technology/new-tech-process-pc-${language?.language}.jpg`} alt="" width={1920} height={1079}/></p>

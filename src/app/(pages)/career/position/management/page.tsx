@@ -32,7 +32,8 @@ export default async function QualityPage({searchParams : {lang}} : any) {
                         </ul>
                     </div>
                     <div className="position-content management">
-                        <p><Image src="/images/sub/career/position/position-06.png" alt="" width={1420} height={430}/></p>
+                        <p><Image src="/images/sub/career/position/position-06.png" alt="" width={1420} height={430}/></p><br/><br/>
+                        <p><Image src="/images/common/logobarwide.png" alt="" width={1600} height={24}/></p>
                         <dl className="management-01">
                             <dt>{language?.position_01_84}<span>{language?.position_01_85}</span></dt>
                             <dd>

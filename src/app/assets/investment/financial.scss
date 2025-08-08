@@ -1,13 +1,68 @@
 .about-us {
-    padding-top: 250px;
-    padding-bottom: 250px;
+.banner-area1 {
+         padding: 220px 20px 0;
+         margin-bottom: 60px;
+         background-color: #000016;
+        .location {
+          display: flex;
+          gap: 10px;
+          padding-left: 120px;
+          > li {
+          position: relative; // 기준 설정
+          margin-bottom: 20px;
+          color: #fFF;
+          font-family: Pretendard;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 100%; /* 16px */
+          &:before {
+            content: ">";
+            margin-right: 10px;
+          }
+
+          &:first-child:before {
+            display: none;
+          }
+          }
+        }
+         > h2 {
+          align-self: stretch;
+          color: #FFF;
+          font-family: Unbounded;
+          font-size: 64px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 76px; /* 118.75% */
+          padding-bottom: 65px;
+          margin-bottom: 0px;
+          padding-left: 120px;
+        }
+        > p {
+          color: #FFF;
+          text-shadow: 4px 4px 10px #000;
+          font-family: Pretendard;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 160%; /* 32px */;
+          padding-left: 120px;
+        }
+      }
+
+
+
+
+
+
+
+
     .about-container {
       max-width: 1400px;
       padding: 0 20px;
       margin: 0 auto;
     }
-    
-  
+     
     h2 {
       display: inline-block;
       border-bottom: 1px solid #023A8E;

@@ -24,7 +24,7 @@ export default function SustainabilityReport({ language }: Props) {
     return (
         <div className="esg">
             <div className="esg-banner">
-                <div className="banner-area1">
+                <div className="banner-area1"> 
                     
                     <ul className="location">
                         <li>{language?.header_4}</li>
@@ -174,8 +174,8 @@ export default function SustainabilityReport({ language }: Props) {
                 </ul>
             </div>
             <div className="esg-container">
+                <h3>{language?.esg_text_07_01}</h3>
                 <section className="esg-section-01">
-                    <h3>{language?.esg_text_07_01}</h3>
                     <div className="sustainability-download">
                         <h4>{language?.esg_text_07_02}</h4>
                         <table>

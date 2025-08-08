@@ -12,19 +12,21 @@ export default async function PressReleasePage({searchParams : {lang, page}} : a
             <Header language={language}/>
             <div className="news">
                 <div className="container-header-01">
-                    <h2>{language?.header_6}</h2>
                     <ul className="location">
                         <li>{language?.header_6}</li>
                         <li>{language?.header_6_1}</li>
                     </ul>
+                    <h2>{language?.header_6_1}</h2>
                     <p>{language?.news_01}</p>
                 </div>
-                <ul className="news-menu">
-                    <li className="active"><Link href="/news/press-release">{language.news_btn_01}</Link></li>
-                    <li><Link href="/news/story">{language.news_btn_02}</Link></li>
-                    <li><Link href="/news/events">{language.news_btn_03}</Link></li>
-                    <li><Link href="/news/media">{language.news_btn_04}</Link></li>
-                </ul>
+                <div className="news-menu">
+                    <ul>
+                        <li className="active"><Link href="/news/press-release">{language.news_btn_01}</Link></li>
+                        <li><Link href="/news/story">{language.news_btn_02}</Link></li>
+                        <li><Link href="/news/events">{language.news_btn_03}</Link></li>
+                        <li><Link href="/news/media">{language.news_btn_04}</Link></li>
+                    </ul>
+                </div>
                 <PressRelease language={language} page={page || 1}/>
             </div>
             <Footer language={language}/>
