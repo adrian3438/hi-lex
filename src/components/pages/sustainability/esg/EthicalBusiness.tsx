@@ -433,22 +433,77 @@ export default function EthicalBusiness({ language }: Props) {
 
             {activeIndex === 1 && (
                 <div className="ethical-container">
-                    <section className="ethical-01">
+                    <section className="ethical-06">
                         <h2>{language?.esg_text_03_86}</h2>
-                        <p className="text">{language?.esg_text_03_87}<br/>{language?.esg_text_03_88}</p>
+                        <div>
+                        <p>{language?.esg_text_03_87}<br/>{language?.esg_text_03_88}</p>
+                        </div>
                     </section>
-                    <section className="ethical-01">
+                    <section className="ethical-07">
                         <h2>{language?.esg_text_03_89}</h2>
-                        <p className="text">{language?.esg_text_03_90}</p>
-                        <p className="image-01"><Image src={`/images/sub/sustainability/unfair-01-${language?.language}.png`} alt="" width={648} height={346}/></p>
+                        <div>
+                        <p>{language?.esg_text_03_90}</p>
+                        <div className="ethical-06-02">
+                            <div>
+                              <p><Image src={`/images/sub/sustainability/esg/esg-01-bg-02.png`} alt="" width={64} height={64}/></p>
+                              <h3>{language?.esg_text_03_92_01}</h3>
+                           </div>
+                            <div>
+                             <p><Image src={`/images/sub/sustainability/esg/esg-01-bg-04.png`} alt="" width={64} height={64}/></p>
+                              <h3>{language?.esg_text_03_92_02}</h3>
+                              <p className="text">{language?.esg_text_03_92_03}</p>
+                              <p className="text">{language?.esg_text_03_92_04}</p>
+                              <p className="text">{language?.esg_text_03_92_05}</p>
+                           </div>
+                           <div>
+                              <p><Image src={`/images/sub/sustainability/esg/esg-01-bg-13.png`} alt="" width={64} height={64}/></p>
+                              <h3>{language?.esg_text_03_92_06}</h3>
+                              <p className="text">{language?.esg_text_03_92_07}</p>
+                           </div>
+                        </div>
+                        </div>
                     </section>
-                    <section className="ethical-01">
+                    
+                    <section className="ethical-08">
+                        <div className="button">
                         <h2>{language?.esg_text_03_91}</h2>
-                        <p className="image-02"><Image src={`/images/sub/sustainability/unfair-02-${language?.language}.png`} alt="" width={1402} height={494}/></p>
-                    </section>
-                    <div className="button">
                         <Link href="/sustainability/whistleblower-complaint">{language?.esg_text_03_92}</Link>
-                    </div>
+                        </div>
+                        <div className="ethical-06-03">
+                            <div>
+                              <p className="subject">1 STEP</p>
+                                <div>
+                                  <p className="image-02"><Image src={`/images/sub/sustainability/esg/esg-ethics-01.png`} alt="" width={60} height={60}/></p> 
+                                  <p className="text">{language?.esg_text_03_92_08}<br/>{language?.esg_text_03_92_09}</p>
+                                </div>
+                                <div>
+                                  <p className="image-02"><Image src={`/images/sub/sustainability/esg/esg-ethics-02.png`}  alt="" width={60} height={60}/></p> 
+                                  <p className="text">{language?.esg_text_03_92_10}</p>
+                                </div>
+                           </div>
+                           <div>
+                              <p className="subject">2 STEP</p>
+                                <div>
+                                  <p className="image-02"><Image src={`/images/sub/sustainability/esg/esg-ethics-03.png`}  alt="" width={60} height={60}/></p> 
+                                  <p className="text">{language?.esg_text_03_92_11}<br/>{language?.esg_text_03_92_12}</p>
+                                </div>
+                           </div>
+                           <div>
+                              <p className="subject">3 STEP</p>
+                                <div>
+                                  <p className="image-02"><Image src={`/images/sub/sustainability/esg/esg-ethics-04.png`}  alt="" width={60} height={60}/></p> 
+                                  <p className="text">{language?.esg_text_03_92_13}<br/>{language?.esg_text_03_92_14}</p>
+                                </div>
+                           </div>
+                           <div>
+                              <p className="subject">4 STEP</p>
+                                <div>
+                                  <p className="image-02"><Image src={`/images/sub/sustainability/esg/esg-ethics-05.png`}  alt="" width={60} height={60}/></p> 
+                                  <p className="text">{language?.esg_text_03_92_15}<br/>{language?.esg_text_03_92_16}</p>
+                                </div>
+                           </div>
+                        </div>
+                    </section>
                 </div>
             )}
 

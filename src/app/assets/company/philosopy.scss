@@ -251,24 +251,37 @@
     }}
 
     .philosopy-04 {
-      max-width: 1000px;
-      padding: 0 316px;
+      position: relative; /* 이미지 절대 배치용 */
+      max-width: 100%;
       margin: 0 auto 140px;
-      text-align: center;
+      padding: 0; /* 패딩 제거 */
       background-color: #ffffff;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      > p {
-        color: #005EB8;
-        text-align: center;
-        font-family: Pretendard;
-        font-size: 40px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: 150%; /* 60px */
-        letter-spacing: 0.8px;
-      }
+      text-align: center;
+    }
+
+    .philosopy-04 > p {
+      color: #005EB8;
+      font-family: Pretendard;
+      font-size: 40px;
+      font-weight: 600;
+      line-height: 150%;
+      letter-spacing: 0.8px;
+      display: inline-block;
+      max-width: 1000px;
+    }
+
+    .philosopy-04 .left {
+      position: absolute;
+      top: 50%;
+      left: 8%;
+      transform: translateY(-50%);
+    }
+
+    .philosopy-04 .right {
+      position: absolute;
+      top: 50%;
+      right: 8%;
+      transform: translateY(-50%);
     }
   }
 }
