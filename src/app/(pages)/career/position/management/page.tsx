@@ -95,6 +95,8 @@ export default async function QualityPage({searchParams : {lang}} : any) {
                                     <li>{language?.position_01_119}</li>
                                     <li>{language?.position_01_120}</li>
                                     <li>{language?.position_01_121}</li>
+                                    <li>{language?.position_01_121_2}</li>
+                                    <li>{language?.position_01_121_3}</li>
                                 </ul>
                             </dd>
                         </dl>
