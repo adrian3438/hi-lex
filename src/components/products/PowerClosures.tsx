@@ -70,9 +70,9 @@ export default function PowerClosures({language}: Props) {
                   <button className={activeIndex === 7 ? 'active' : ''} onClick={() => setActiveIndex(7)}>{language?.product_02_10}</button>
                   <Link href="/research/power-hood"><Image src="/images/sub/products/3d-link.png" alt="R&D 3D Configurator" width={170} height={20}/></Link>
                 </li>
-                <li>
+                {/*<li>
                   <button className={activeIndex === 8 ? 'active' : ''} onClick={() => setActiveIndex(8)}>{language?.product_02_11}</button>
-                </li>
+                </li>*/}
               </ul>
             </dd>
           </dl>
@@ -106,7 +106,7 @@ export default function PowerClosures({language}: Props) {
             <>
                 <Image src="/images/sub/products/daedong-ev9-products.jpg" alt="" width={992} height={499}/>
                 <span className={activeIndex === 7 ? 'products-02-08 active' : 'products-02-08'}>{activeIndex === 7 && <Link href="#productsDetail"/>}</span>
-                <span className={activeIndex === 8 ? 'products-02-09 active' : 'products-02-09'}>{activeIndex === 8 && <Link href="#productsDetail"/>}</span>
+                {/*<span className={activeIndex === 8 ? 'products-02-09 active' : 'products-02-09'}>{activeIndex === 8 && <Link href="#productsDetail"/>}</span>*/}
             </>
           )}
           {activeIndex === 9 && (
@@ -343,7 +343,7 @@ export default function PowerClosures({language}: Props) {
               </div>
             </div>
           </div>
-          <div className="products-detail-bottom">
+          {/*<div className="products-detail-bottom">
             <ul>
               <li>
                 <p className="image-area">
@@ -364,7 +364,7 @@ export default function PowerClosures({language}: Props) {
                 <p className="text-area">{language?.product_02_49}</p>
               </li>
             </ul>
-          </div>
+          </div>*/}
         </>
       )}
 

@@ -16,7 +16,7 @@ export default function EmployeeList ({searchParams : {
               size={size || 25}
               keyword={keyword || ''}
               column={column || 'date'}
-              order={order || 'asc'}
+              order={order || 'desc'}
             />
         </>
     )
