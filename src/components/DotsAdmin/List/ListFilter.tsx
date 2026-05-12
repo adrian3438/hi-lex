@@ -122,4 +122,5 @@ export const ApplicantListFilter = [
     {title : '이름', column : ''},
     {title : '전화번호', column : ''},
     {title : '업로드 파일', column : ''},
+    {title : '등록일', column : ''},
 ]

@@ -70,7 +70,7 @@ export default function ApplicantListPage ({
                             <tbody>
                             {data?.map((list:any, index:number) => (
                               <tr key={index}>
-                                  <td style={{width: '5%', cursor: 'default'}} >
+                                  <td style={{width: '5%', cursor: 'default'}}>
                                     <span className="readOnly">
                                         {calCulateIndex(page, size, totalCount, index)}
                                     </span>
@@ -86,6 +86,9 @@ export default function ApplicantListPage ({
                                   </td>
                                   <td style={{width: '40%', cursor: 'default'}}>
                                       <span className="readOnly"><a href={list?.attachedFile} download>{list?.attachedFileName}</a></span>
+                                  </td>
+                                  <td style={{cursor: 'default'}}>
+                                      <span className="readOnly">{list?.createDate}</span>
                                   </td>
                               </tr>
                             ))}
