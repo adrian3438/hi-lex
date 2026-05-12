@@ -171,6 +171,7 @@ html,body,
 .admin_wrap .pagerBox p{font-size: 13px; font-weight: 400; color: #CCCCCC;}
 .admin_wrap .pagerBox > div{display: flex;}
 .admin_wrap .pagerBox > div button{transition: background-color 0.2s ease-out; position: relative; width: 28px; height: 28px; border-radius: 5px; border: none;}
+.admin_wrap .pagerBox > div button.Mui-selected {font-weight: 600}
 .admin_wrap .pagerBox > div button:after{content: ''; display: block; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); width: 4px; height: 8px; background-repeat: no-repeat; background-position: center; background-size: contain;}
 .admin_wrap .pagerBox > div button:hover{background-color: #1B6ADD;}
 .admin_wrap .pagerBox > div .left:after{background-image: url('/images/dotsAdmin/admin_pager_left.png');}
