@@ -82,7 +82,7 @@ export default function ApplicantListPage ({
                                       <span className="readOnly">{list?.applicantName}</span>
                                   </td>
                                   <td style={{width: '5%', cursor: 'default'}}>
-                                      <span className="readOnly">{!list?.applicantSex ? '-' : list?.applicantSex === 'M' ? '남' : '녀'}</span>
+                                      <span className="readOnly">{!list?.applicantSex ? '-' : list?.applicantSex === 'M' ? '남' : '여'}</span>
                                   </td>
                                   <td style={{width: '5%', cursor: 'default'}}>
                                       <span className="readOnly">{!list?.applicantAge ? '-' : `만 ${list.applicantAge}세`}</span>
@@ -100,11 +100,11 @@ export default function ApplicantListPage ({
                                   <td style={{width: '5%', cursor: 'default'}}>
                                       <span className="readOnly">{list?.applicantMobile}</span>
                                   </td>
-                                  <td style={{width: '7%', cursor: 'default'}}>
-                                      <span className="readOnly">{!list?.applicantExpectedSalary ? '-' : `연 ${parseInt(list.applicantExpectedSalary).toLocaleString()}만원`}</span>
-                                  </td>
                                   <td style={{width: '6%', cursor: 'default'}}>
                                       <span className="readOnly">{!list?.applicantCareer ? '-' : list.applicantCareer}</span>
+                                  </td>
+                                  <td style={{width: '7%', cursor: 'default'}}>
+                                      <span className="readOnly">{!list?.applicantExpectedSalary ? '-' : `연 ${parseInt(list.applicantExpectedSalary).toLocaleString()}만원`}</span>
                                   </td>
                                   <td style={{width: '25%', cursor: 'default'}}>
                                       <span className="readOnly"><a href={list?.attachedFile} download>{list?.attachedFileName}</a></span>
