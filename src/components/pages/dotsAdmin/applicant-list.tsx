@@ -70,21 +70,43 @@ export default function ApplicantListPage ({
                             <tbody>
                             {data?.map((list:any, index:number) => (
                               <tr key={index}>
-                                  <td style={{width: '5%', cursor: 'default'}}>
+                                  <td style={{width: '4%', cursor: 'default'}}>
                                     <span className="readOnly">
                                         {calCulateIndex(page, size, totalCount, index)}
                                     </span>
                                   </td>
-                                  <td style={{width: '15%', cursor: 'default'}}>
+                                  <td style={{width: '18%', cursor: 'default'}}>
                                       <span className="readOnly">{list?.recuritSubject}</span>
                                   </td>
-                                  <td style={{width: '10%', cursor: 'default'}}>
+                                  <td style={{width: '5%', cursor: 'default'}}>
                                       <span className="readOnly">{list?.applicantName}</span>
                                   </td>
-                                  <td style={{width: '15%', cursor: 'default'}}>
+                                  <td style={{width: '5%', cursor: 'default'}}>
+                                      <span className="readOnly">{!list?.applicantSex ? '-' : list?.applicantSex === 'M' ? '남' : '녀'}</span>
+                                  </td>
+                                  <td style={{width: '5%', cursor: 'default'}}>
+                                      <span className="readOnly">{!list?.applicantAge ? '-' : `만 ${list.applicantAge}세`}</span>
+                                  </td>
+                                  <td style={{width: '5%', cursor: 'default'}}>
+                                      <span className="readOnly">
+                                          {!list.applicantEducationLevel && '-'}
+                                          {list.applicantEducationLevel === 'S1' && '중학교 졸업'}
+                                          {list.applicantEducationLevel === 'S2' && '고등학교 졸업'}
+                                          {list.applicantEducationLevel === 'S3' && '대학교 졸업'}
+                                          {list.applicantEducationLevel === 'S4' && '대학원 졸업'}
+                                          {list.applicantEducationLevel === 'S5' && '박사'}
+                                      </span>
+                                  </td>
+                                  <td style={{width: '5%', cursor: 'default'}}>
                                       <span className="readOnly">{list?.applicantMobile}</span>
                                   </td>
-                                  <td style={{width: '40%', cursor: 'default'}}>
+                                  <td style={{width: '7%', cursor: 'default'}}>
+                                      <span className="readOnly">{!list?.applicantExpectedSalary ? '-' : `연 ${parseInt(list.applicantExpectedSalary).toLocaleString()}만원`}</span>
+                                  </td>
+                                  <td style={{width: '6%', cursor: 'default'}}>
+                                      <span className="readOnly">{!list?.applicantCareer ? '-' : list.applicantCareer}</span>
+                                  </td>
+                                  <td style={{width: '25%', cursor: 'default'}}>
                                       <span className="readOnly"><a href={list?.attachedFile} download>{list?.attachedFileName}</a></span>
                                   </td>
                                   <td style={{cursor: 'default'}}>

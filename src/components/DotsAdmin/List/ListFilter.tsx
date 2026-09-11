@@ -120,7 +120,12 @@ export const EmployeeListFilter = [
 export const ApplicantListFilter = [
     {title : '채용공고명', column : ''},
     {title : '이름', column : ''},
-    {title : '전화번호', column : ''},
-    {title : '업로드 파일', column : ''},
+    {title : '성별', column : ''},
+    {title : '나이', column : ''},
+    {title : '최종학력', column : ''},
+    {title : '연락처', column : ''},
+    {title : '경력사항', column : ''},
+    {title : '희망연봉', column : ''},
+    {title : '지원서 파일', column : ''},
     {title : '등록일', column : ''},
 ]

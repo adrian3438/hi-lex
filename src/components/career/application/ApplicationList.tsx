@@ -5,6 +5,9 @@ import api from "@/lib/api";
 import Paginate from "@/components/DotsAdmin/Paginate/paginate";
 import {usePathname, useRouter} from "next/navigation";
 
+// 대동하이렉스 사이트 주소 (운영 전환 시 이 값만 변경)
+const HILEX_SITE_URL = 'http://hilex2026.cafe24.com';
+
 interface Props {
   page: any;
 }
@@ -92,6 +95,15 @@ export default function ApplicationList({page}: Props) {
     setKeyword(e.target.value);
   }
 
+  // 대동하이렉스(H) 공고는 하이렉스 사이트 상세 페이지로, 그 외(대동도어)는 자사 상세 페이지로 이동
+  function moveToDetail(list: any) {
+    if (list?.recruitAffilate === 'H') {
+      location.href = `${HILEX_SITE_URL}/career/application/detail?id=${list?.ID}&applicationClass=${list?.recruitAffilate}`;
+      return;
+    }
+    router.push(`/career/application/${list?.ID}`);
+  }
+
   return (
     <>
       <div className="checks">
@@ -149,7 +161,7 @@ export default function ApplicationList({page}: Props) {
           <table>
             <tbody>
             {listData && listData?.length > 0 && listData.map((list:any, index:number) => (
-              <tr key={index} onClick={() => router.push(`/career/application/${list?.ID}`)}>
+              <tr key={index} onClick={() => moveToDetail(list)}>
                 <th scope="row">
                   {list?.recruitAffilate === 'H' && '대동하이렉스'}
                   {list?.recruitAffilate === 'D' && '대동도어'}

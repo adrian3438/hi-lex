@@ -466,15 +466,22 @@
   }
 
   .form-detail-info {
-    margin-bottom: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px 20px;
+    margin-bottom: 25px;
     > div {
       position: relative;
-      height: 60px;
-      padding-left: 155px;
-      margin-top: 11px;
+      height: 50px;
+      padding-left: 115px;
+      // 파일 업로드 / 경력사항은 한 줄 전체 사용
+      &.full {
+        grid-column: 1 / -1;
+      }
       &.file {
-        margin-top: 0;
+        padding-left: 145px;
         label {
+          width: 135px;
           color: #fff;
           background: #0057E2;
         }
@@ -485,44 +492,106 @@
           box-sizing: border-box;
           border: 1px solid #DDDDDD;
           border-radius: 5px;
-          height: 60px;
-          line-height: 60px;
-          padding: 0 60px 0 10px;
+          height: 50px;
+          line-height: 48px;
+          padding: 0 45px 0 10px;
           font-size: 15px;
+          color: #555555;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
         }
       }
-      label {
+      label,
+      .field-label {
         position: absolute;
         top: 0;
         left: 0;
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 145px;
-        height: 60px;
+        width: 105px;
+        height: 50px;
         border-radius: 5px;
         border: 1px solid #ddd;
         background: #F6F6F6;
-        font-size: 15px;
+        font-size: 14px;
         color: #999999;
+        white-space: nowrap;
         box-sizing: border-box;
       }
-      input[type="text"] {
+      input[type="text"],
+      input[type="number"],
+      select {
         width: 100%;
         box-sizing: border-box;
         border: 1px solid #DDDDDD;
         border-radius: 5px;
-        height: 60px;
+        height: 50px;
         color: #555555;
         font-size: 15px;
-        padding: 0 60px 0 10px;
+        padding: 0 45px 0 10px;
+      }
+      input::placeholder {
+        color: #bbbbbb;
+      }
+      select {
+        appearance: none;
+        cursor: pointer;
+        background: #fff url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%23999' d='M1.41 0 6 4.59 10.59 0 12 1.42 6 7.42 0 1.42z'/%3E%3C/svg%3E") no-repeat right 14px center;
+      }
+      // 초기화(X) 버튼이 없는 행은 우측 여백을 줄인다
+      &.no-reset {
+        input[type="text"],
+        select {
+          padding-right: 32px;
+        }
+      }
+      // 성별 - 라디오 버튼
+      &.sex {
+        .radio-group {
+          display: flex;
+          gap: 8px;
+          height: 50px;
+          input[type="radio"] {
+            display: none;
+          }
+          label {
+            position: static;
+            flex: 1;
+            width: auto;
+            cursor: pointer;
+            background: #fff;
+            color: #555555;
+            transition: all .2s;
+          }
+          input[type="radio"]:checked + label {
+            border-color: #0057E2;
+            background: #0057E2;
+            color: #fff;
+          }
+        }
+      }
+      // 희망연봉 - 단위 표기
+      &.salary {
+        input[type="text"] {
+          padding-right: 50px;
+        }
+        .unit {
+          position: absolute;
+          top: 50%;
+          right: 14px;
+          transform: translateY(-50%);
+          font-size: 15px;
+          color: #999999;
+        }
       }
       button {
         cursor: pointer;
         position: absolute;
         transform: translateY(-50%);
         top: 50%;
-        right: 25px;
+        right: 16px;
         background: #999;
         border: none;
         border-radius: 50%;
@@ -553,17 +622,17 @@
     margin-top: 30px;
     background-color: #F9F9F9;
     margin: 0 -40px;
-    padding: 25px 40px 35px;
+    padding: 20px 40px 30px;
     > p {
       color: #666666;
       font-size: 14px;
-      margin-bottom: 10px;
+      margin-bottom: 6px;
     }
     > div {
       display: flex;
       justify-content: end;
       gap: 12px 12px;
-      margin-top: 30px;
+      margin-top: 22px;
       button {
         width: 140px;
         height: 50px;
@@ -575,6 +644,73 @@
         cursor: pointer;
         &:first-child {
           background: #ccc;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .form-detail {
+    .form-detail-header {
+      gap: 6px;
+      margin-bottom: 16px;
+      > p {
+        font-size: 17px;
+      }
+    }
+
+    .form-detail-info {
+      grid-template-columns: minmax(0, 1fr);
+      gap: 8px;
+      margin-bottom: 20px;
+      > div {
+        height: 46px;
+        padding-left: 90px;
+        label,
+        .field-label {
+          width: 82px;
+          height: 46px;
+          font-size: 14px;
+        }
+        &.file {
+          padding-left: 118px;
+          label {
+            width: 110px;
+            font-size: 13px;
+          }
+          > div {
+            height: 46px;
+            line-height: 44px;
+            font-size: 14px;
+          }
+        }
+        input[type="text"],
+        input[type="number"],
+        select {
+          height: 46px;
+          font-size: 14px;
+        }
+        &.sex .radio-group {
+          height: 46px;
+          label {
+            height: 46px;
+          }
+        }
+      }
+    }
+
+    .form-detail-bottom {
+      padding: 20px 40px 30px;
+      > p {
+        font-size: 13px;
+        margin-bottom: 8px;
+      }
+      > div {
+        margin-top: 20px;
+        button {
+          flex: 1;
+          width: auto;
         }
       }
     }
